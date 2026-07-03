@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPOC · Guía de supervivencia para el residente de MFyC</title>
+  <meta name="description" content="Diagnóstico, tratamiento crónico, exacerbación, soporte ventilatorio, antibióticos y alta en EPOC.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-bar">
+  <a class="brand" href="../index.html" aria-label="Inicio">
+    <span class="brand-mark">MF</span>
+    <span class="brand-text">Guía MFyC</span>
+  </a>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <a href="../index.html">Inicio</a>
+    <a href="../urgencias/index.html">Urgencias</a>
+    <a href="../cardio/index.html">Cardio</a>
+    <a href="../infecciosas/index.html">Infecciosas</a>
+    <a href="../guardias/index.html">Guardias</a>
+  </nav>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
+</header>
+
+<main class="doc-layout">
+  <aside class="module-rail" aria-label="Índice del módulo">
+    <a class="rail-home" href="index.html">Índice de Neumología</a>
+    <strong>Vía aérea</strong>
+    <a href="asma.html">Asma</a>
+    <a class="is-active" href="epoc.html">EPOC</a>
+    <strong>Infección</strong>
+    <a href="neumonia-y-bronquitis.html">Neumonía, bronquitis y broncoespasmo</a>
+    <a href="rinitis-y-rinosinusitis.html">Rinitis alérgica y rinosinusitis</a>
+    <strong>Gravedad</strong>
+    <a href="insuficiencia-respiratoria.html">Insuficiencia respiratoria y SDRA</a>
+  </aside>
+
+  <article class="article">
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Neumología</a><span>/</span><span>EPOC</span>
+    </nav>
+    <header class="article-header guide-header">
+      <span class="eyebrow">Vía aérea</span>
+      <h1>EPOC</h1>
+      <p class="lead">Diagnóstico por espirometría, tratamiento por síntomas/exacerbaciones y manejo de la agudización con oxígeno objetivo, broncodilatadores, corticoide corto y antibiótico solo si toca.</p>
+      <div class="status-row">
+        <span class="pill">GOLD ABE</span>
+        <span class="pill">SpO2 88-92 %</span>
+        <span class="pill">VMNI</span>
+        <span class="pill">Anthonisen</span>
+      </div>
+    </header>
+
+    <nav class="guide-toc" aria-label="Índice de la ficha">
+      <strong>En esta ficha</strong>
+      <div>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#actividad">Actividad</a>
+        <a href="#cronico">Crónico</a>
+        <a href="#ics">ICS</a>
+        <a href="#add-on">Add-on</a>
+        <a href="#agudizacion">Agudización</a>
+        <a href="#primeros-minutos">0-60 min</a>
+        <a href="#antibiotico">Antibiótico</a>
+        <a href="#pronostico">Pronóstico</a>
+        <a href="#ingreso-alta">Ingreso y alta</a>
+        <a href="#fuentes">Fuentes</a>
+      </div>
+    </nav>
+
+    <section class="article-content">
+      <div class="clinical-lede" data-tone="blue">
+        <div>
+          <span class="eyebrow">EPOC en una línea</span>
+          <h2>No trates el FEV1: trata síntomas y riesgo de exacerbación</h2>
+        </div>
+        <p>La espirometría confirma y gradúa limitación, pero el tratamiento inicial se decide por disnea y exacerbaciones. Una sola exacerbación moderada o grave en el último año ya pesa mucho.</p>
+      </div>
+
+      <section class="warning-panel compact" aria-label="Regla de seguridad en EPOC agudizado">
+        <strong>En la agudización, oxígeno controlado y gasometría si hay duda</strong>
+        <p>Objetivo SpO2 88-92 % si riesgo de retención de CO2. Somnolencia, confusión, tiraje, silencio auscultatorio, pH bajo o PaCO2 alta desplazan el caso hacia VMNI, ingreso o UCI.</p>
+      </section>
+
+      <div class="signal-strip" aria-label="Tres prioridades en EPOC agudizado">
+        <span data-tone="red"><strong>G</strong><em>Gasometría si gravedad: somnolencia, tiraje, hipoxemia o sospecha de CO2.</em></span>
+        <span data-tone="amber"><strong>O</strong><em>Oxígeno controlado: 88-92 % si retentor o riesgo de hipercapnia.</em></span>
+        <span data-tone="blue"><strong>A</strong><em>Antibiótico selectivo: purulencia, Anthonisen o ventilación; no por disnea aislada.</em></span>
+      </div>
+
+      <div class="quick-rules" aria-label="Puerta rápida EPOC">
+        <strong>Puerta EPOC</strong>
+        <span>Consulta: síntomas + exacerbaciones, no solo FEV1.</span>
+        <span>ICS: eosinófilos y exacerbaciones mandan.</span>
+        <span>Agudización: SatO2 88-92 % si retentor.</span>
+        <span>pH &lt;7,35 + CO2 alta: VMNI.</span>
+        <span>Antibiótico: purulencia o ventilación.</span>
+      </div>
+
+      <section class="practice-section" id="diagnostico">
+        <div class="practice-section-head">
+          <span class="section-kicker">Consulta</span>
+          <h2>Diagnóstico y estratificación</h2>
+          <p>Sospecha en fumador/exfumador o exposición relevante con disnea, tos crónica o expectoración; confirma siempre con espirometría posbroncodilatador.</p>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card" data-tone="blue">
+            <span>Confirmación</span>
+            <strong>FEV1/FVC pos-BD &lt;0,70</strong>
+            <p>Si disponible, usar LIN o z-score para evitar errores por edad.</p>
+          </article>
+          <article class="highlight-card" data-tone="green">
+            <span>GOLD 1-4</span>
+            <strong>FEV1: ≥80, 50-79, 30-49, &lt;30 %</strong>
+            <p>Sirve para gravedad funcional, no para elegir por sí solo el primer inhalador.</p>
+          </article>
+          <article class="highlight-card" data-tone="amber">
+            <span>Grupo ABE</span>
+            <strong>A/B por síntomas, E por exacerbación</strong>
+            <p>A: poca disnea y 0 exacerbaciones. B: más síntomas y 0 exacerbaciones. E: ≥1 exacerbación moderada o grave.</p>
+          </article>
+          <article class="highlight-card" data-tone="red">
+            <span>Buscar solapamiento</span>
+            <strong>Asma, bronquiectasias, IC y cáncer</strong>
+            <p>Si eosinofilia alta, reversibilidad marcada o clínica atópica, piensa en rasgos asmáticos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="practice-section" id="actividad">
+        <div class="practice-section-head">
+          <span class="section-kicker">Objetivo GOLD</span>
+          <h2>Baja actividad de enfermedad</h2>
+          <p>La consulta útil no solo clasifica GOLD: busca que el paciente deje de tener actividad clínica, exacerbaciones y deterioro funcional acelerado.</p>
+        </div>
+        <div class="quick-rules">
+          <article>
+            <strong>Baja actividad</strong>
+            <p>Sin exacerbaciones, sin empeoramiento de síntomas y sin pérdida acelerada de función pulmonar en el periodo evaluado.</p>
+          </article>
+          <article>
+            <strong>Estabilidad</strong>
+            <p>Baja actividad mantenida sin exacerbaciones ni deterioro funcional relevante.</p>
+          </article>
+          <article>
+            <strong>Control</strong>
+            <p>Baja actividad con impacto sintomático por debajo del umbral que el paciente considera aceptable.</p>
+          </article>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <caption>Intervenciones no farmacológicas que no son decorativas</caption>
+            <thead><tr><th>Intervención</th><th>A quién</th><th>Objetivo</th></tr></thead>
+            <tbody>
+              <tr><td>Deshabituación tabáquica</td><td>Todo fumador.</td><td>Mayor impacto en historia natural.</td></tr>
+              <tr><td>Rehabilitación pulmonar</td><td>Grupos B/E, ingreso reciente o disnea persistente.</td><td>Reducir disnea, reingresos y mejorar calidad de vida.</td></tr>
+              <tr><td>Vacunación</td><td>Según edad, comorbilidad y calendario vigente.</td><td>Reducir infecciones y exacerbaciones.</td></tr>
+              <tr><td>Actividad física</td><td>Todos, adaptada a capacidad.</td><td>Evitar desacondicionamiento y fragilidad.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="practice-section" id="cronico">
+        <div class="practice-section-head">
+          <span class="section-kicker">Mantenimiento</span>
+          <h2>Tratamiento inicial y seguimiento</h2>
+          <p>El primer paso se decide por ABE; después ajustas por rasgo tratable predominante: disnea o exacerbaciones.</p>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <thead><tr><th>Situación</th><th>Inicio razonable</th><th>Si persiste problema</th></tr></thead>
+            <tbody>
+              <tr><td>Grupo A</td><td>Un broncodilatador; preferible LABA o LAMA si disponible.</td><td>Revisar técnica, actividad, comorbilidad y diagnóstico.</td></tr>
+              <tr><td>Grupo B</td><td>LABA + LAMA de inicio.</td><td>Cambio de molécula/dispositivo, rehabilitación, considerar opciones add-on si disnea persistente.</td></tr>
+              <tr><td>Grupo E</td><td>LABA + LAMA.</td><td>Escalar según eosinófilos y exacerbaciones.</td></tr>
+              <tr><td>Grupo E con eos ≥300</td><td>Considerar triple terapia LABA + LAMA + ICS.</td><td>Si exacerbaciones pese a triple, valorar azitromicina, roflumilast o biológico según perfil.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="action-stack">
+          <article><strong>No farmacológico que cambia pronóstico</strong><p>Deshabituación tabáquica, rehabilitación pulmonar en sintomáticos/exacerbadores, actividad física y vacunación según calendario vigente.</p></article>
+          <article><strong>Seguimiento útil</strong><p>Revisar síntomas, exacerbaciones, técnica inhalatoria, adherencia, eosinófilos si se plantea ICS y comorbilidades cardiovasculares o infecciosas.</p></article>
+        </div>
+      </section>
+
+      <section class="practice-section" id="ics">
+        <div class="practice-section-head">
+          <span class="section-kicker">Corticoide inhalado</span>
+          <h2>Cuándo añadir o retirar ICS</h2>
+          <p>En EPOC no hay monoterapia con ICS y se evita LABA+ICS si hay alternativa triple cuando el ICS está indicado.</p>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <thead><tr><th>A favor de ICS</th><th>Zona gris</th><th>En contra</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>Hospitalización previa por EPOC, ≥2 exacerbaciones moderadas/año, eos ≥300, asma concomitante.</td>
+                <td>Una exacerbación moderada/año con eos 100-300.</td>
+                <td>Neumonías de repetición, eos &lt;100, infección micobacteriana previa.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout warning">
+          <span class="callout-title">Retirada de ICS</span>
+          <p>Considerarla si se inició sin indicación, no hay respuesta o hay neumonías recurrentes. Evitar retirada brusca si eos ≥300 por mayor riesgo de exacerbación.</p>
+        </div>
+      </section>
+
+      <section class="practice-section" id="add-on">
+        <div class="practice-section-head">
+          <span class="section-kicker">Tras LABA/LAMA o triple terapia</span>
+          <h2>Qué hacer cuando sigue con disnea o exacerbaciones</h2>
+          <p>El seguimiento ya no mira el grupo ABE inicial: mira el problema dominante actual.</p>
+        </div>
+        <div class="decision-board">
+          <article class="decision-node" data-tone="blue">
+            <span>Disnea</span>
+            <strong>Monoterapia → LABA + LAMA</strong>
+            <p>Si persiste, revisar dispositivo/molécula, comorbilidad, rehabilitación y considerar ensifentrine como add-on donde esté disponible.</p>
+          </article>
+          <article class="decision-node" data-tone="amber">
+            <span>Exacerbaciones eos &lt;100</span>
+            <strong>No T2 / poco beneficio ICS</strong>
+            <p>Considerar azitromicina si no fumador y roflumilast si FEV1 &lt;50 % con bronquitis crónica.</p>
+          </article>
+          <article class="decision-node" data-tone="green">
+            <span>Exacerbaciones eos ≥100</span>
+            <strong>Escalar a triple terapia</strong>
+            <p>La respuesta al ICS es mayor con eos ≥300.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>Triple y sigue exacerbando</span>
+            <strong>Fenotipo de add-on</strong>
+            <p>Dupilumab si bronquitis crónica + eos ≥300 según nota GOLD; mepolizumab en eosinofilia seleccionada.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="practice-section" id="agudizacion">
+        <div class="practice-section-head">
+          <span class="section-kicker">Urgencias</span>
+          <h2>Exacerbación de EPOC</h2>
+          <p>Empeoramiento agudo de disnea, tos o esputo en días, con necesidad de cambiar tratamiento.</p>
+        </div>
+        <div class="timeline" id="primeros-minutos" aria-label="Primeros 60 minutos de la agudización de EPOC">
+          <article>
+            <span>0 min</span>
+            <strong>Oxígeno controlado y gravedad clínica</strong>
+            <p>Objetivo SpO2 88-92 % si riesgo de retención de CO2. Busca tiraje, respiración paradójica, cianosis, edemas nuevos, shock o encefalopatía hipercápnica.</p>
+          </article>
+          <article>
+            <span>10 min</span>
+            <strong>Gasometría y diagnóstico alternativo</strong>
+            <p>pH y PaCO2 deciden gravedad y VMNI. Radiografía y ECG evitan cerrar como EPOC una neumonía, neumotórax, edema pulmonar, isquemia o arritmia.</p>
+          </article>
+          <article>
+            <span>20 min</span>
+            <strong>Broncodilatador y corticoide corto</strong>
+            <p>SABA + SAMA al inicio; prednisona 40 mg/día 5 días si exacerbación que requiere tratamiento sistémico. La vía IV queda para intolerancia oral o extrema gravedad.</p>
+          </article>
+          <article>
+            <span>60 min</span>
+            <strong>Escalar si hay acidosis o agotamiento</strong>
+            <p>pH &le;7,35 con PaCO2 &ge;45 orienta a VMNI; pH &lt;7,25 persistente, shock, estupor o parada inminente obligan a UCI.</p>
+          </article>
+        </div>
+        <div class="decision-board">
+          <article class="decision-node" data-tone="green">
+            <span>Leve</span>
+            <strong>Sin criterios de moderada/grave</strong>
+            <p>Optimizar inhaladores, valorar corticoide corto y seguimiento estrecho.</p>
+          </article>
+          <article class="decision-node" data-tone="amber">
+            <span>Moderada</span>
+            <strong>≥3 de: VAS disnea ≥5, FR ≥24, FC ≥95, SatO2 &lt;92 %, PCR ≥10</strong>
+            <p>Analítica, gasometría, Rx tórax, broncodilatadores, corticoide y decidir antibiótico.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>Grave</span>
+            <strong>PaO2 ≤60 o pH &lt;7,35 con PaCO2 &gt;45</strong>
+            <p>Fallo respiratorio. Valorar VMNI, ingreso y UCI si no corrige.</p>
+          </article>
+        </div>
+        <div class="dose-strip">
+          <div class="dose-item"><span>Oxígeno</span><strong>Objetivo SpO2 88-92 %</strong><p>Evitar hiperoxia en retentores de CO2.</p></div>
+          <div class="dose-item"><span>Rescate inhalado</span><strong>SABA + SAMA</strong><p>Salbutamol + ipratropio repetidos inicialmente.</p></div>
+          <div class="dose-item"><span>Corticoide</span><strong>Prednisona 40 mg/día x 5 días</strong><p>VO si puede. IV solo si no tolera o extrema gravedad.</p></div>
+          <div class="dose-item"><span>Soporte</span><strong>VMNI si pH ≤7,35 y PaCO2 ≥45</strong><p>GNAF puede ayudar en hipoxemia; BiPAP si fallo hipercápnico.</p></div>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <thead><tr><th>Prueba</th><th>Para qué sirve en la agudización</th></tr></thead>
+            <tbody>
+              <tr><td>Gasometría arterial o venosa</td><td>Detectar hipercapnia y acidosis; decide VMNI y gravedad.</td></tr>
+              <tr><td>Radiografía de tórax</td><td>Descartar neumonía, neumotórax, derrame o edema pulmonar.</td></tr>
+              <tr><td>ECG</td><td>Buscar isquemia, arritmia o sobrecarga derecha.</td></tr>
+              <tr><td>Hemograma, iones, renal, PCR</td><td>Etiología, comorbilidad, seguridad farmacológica y antibiótico.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="practice-section" id="antibiotico">
+        <div class="practice-section-head">
+          <span class="section-kicker">Antibiótico</span>
+          <h2>Solo si hay sospecha bacteriana suficiente</h2>
+          <p>La purulencia del esputo pesa mucho: sin ella, la indicación suele ser más débil salvo ventilación mecánica o cultivo previo relevante.</p>
+        </div>
+        <div class="callout important">
+          <span class="callout-title">Criterios Anthonisen ampliados</span>
+          <p>Antibiótico si hay ≥2 de 4: aumento de disnea, fiebre, aumento de volumen de esputo, aumento de purulencia; uno debe ser purulencia. También si precisa ventilación mecánica o cultivo previo positivo relevante.</p>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <thead><tr><th>Escenario</th><th>Opción local recogida en la nota</th><th>Duración</th></tr></thead>
+            <tbody>
+              <tr><td>Leve/moderada sin comorbilidad</td><td>Amoxicilina-clavulánico 500/125 mg cada 8 h.</td><td>5 días</td></tr>
+              <tr><td>Moderada con comorbilidad o grave</td><td>Amoxicilina-clavulánico 500/125 mg cada 8 h o levofloxacino 500 mg/24 h.</td><td>5-7 días</td></tr>
+              <tr><td>FEV1 &lt;30 % o riesgo de Pseudomonas</td><td>Ciprofloxacino 750 mg cada 12 h.</td><td>7-10 días</td></tr>
+              <tr><td>Alergia a betalactámicos</td><td>Azitromicina 500 mg/24 h o levofloxacino.</td><td>Según opción y gravedad</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="microcopy">Riesgo de Pseudomonas: bronquiectasias, ingresos repetidos, antibióticos frecuentes o intubación previa.</p>
+      </section>
+
+      <section class="practice-section" id="pronostico">
+        <div class="practice-section-head">
+          <span class="section-kicker">Riesgo en la agudización</span>
+          <h2>Escalas y medidas hospitalarias que no deben olvidarse</h2>
+          <p>BAP-65 y DECAF no sustituyen al juicio clínico, pero ayudan a ordenar riesgo intrahospitalario y necesidad de UCI.</p>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <thead><tr><th>Herramienta/medida</th><th>Componentes</th><th>Uso práctico</th></tr></thead>
+            <tbody>
+              <tr><td>BAP-65</td><td>BUN, alteración mental, pulso, edad &gt;65.</td><td>Estratifica riesgo intrahospitalario e ingreso en UCI.</td></tr>
+              <tr><td>DECAF</td><td>Disnea, eosinopenia, consolidación, acidosis, fibrilación auricular.</td><td>Predice mortalidad hospitalaria en exacerbación.</td></tr>
+              <tr><td>Profilaxis TEV</td><td>HBPM si exacerbación grave hospitalizada y no contraindicación.</td><td>Evitar evento tromboembólico en paciente inmovilizado/inflamado.</td></tr>
+              <tr><td>Vitamina D</td><td>Determinar si ingreso; suplementar déficit grave.</td><td>La nota fuente recoge reducción de episodios/hospitalizaciones en déficit grave.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="practice-section" id="ingreso-alta">
+        <div class="practice-section-head">
+          <span class="section-kicker">Destino</span>
+          <h2>Ingreso, UCI y alta segura</h2>
+          <p>La decisión no es solo gasometría: cuenta respuesta al tratamiento, comorbilidad, soporte domiciliario y posibilidad de autocuidado.</p>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <thead><tr><th>Ingresar si</th><th>UCI si</th><th>Alta si</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>Disnea brusca sin respuesta, comorbilidad grave, cianosis/edemas nuevos, fracaso ambulatorio o apoyo insuficiente.</td>
+                <td>Disnea extrema refractaria, shock, pH &lt;7,25 persistente tras VMNI, parada respiratoria inminente o estupor.</td>
+                <td>Come, duerme y se maneja; estable 12-24 h; SatO2/gases seguros; comprende tratamiento y tiene revisión.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="action-stack">
+          <article><strong>Antes del alta</strong><p>Conciliar LABA/LAMA, decidir ICS según eos/exacerbaciones, completar prednisona solo hasta 5 días y enseñar inhaladores.</p></article>
+          <article><strong>Seguimiento</strong><p>AP en 2-4 semanas, espirometría de control a 6-8 semanas si procede y rehabilitación precoz tras ingreso.</p></article>
+        </div>
+      </section>
+
+      <aside class="source-note compact-source" aria-labelledby="fuentes">
+        <h2 id="fuentes">Fuentes y verificación</h2>
+        <p>Contenido contrastado con las notas locales autorizadas EPOC - Manejo Crónico y EPOC - Exacerbación y Manejo Agudo, basadas en GOLD 2025/2026, y con el tratamiento antibiótico local recogido en PROA FJD dentro de la nota fuente.</p>
+      </aside>
+    </section>
+  </article>
+</main>
+<footer class="footer">Neumología · Guía de supervivencia para el residente de MFyC</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

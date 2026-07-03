@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insuficiencia respiratoria y SDRA · Guía de supervivencia para el residente de MFyC</title>
+  <meta name="description" content="Lectura de gasometría, gradiente alveolo-arterial, soporte respiratorio y síndrome de distrés respiratorio agudo.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-bar">
+  <a class="brand" href="../index.html" aria-label="Inicio">
+    <span class="brand-mark">MF</span>
+    <span class="brand-text">Guía MFyC</span>
+  </a>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <a href="../index.html">Inicio</a>
+    <a href="../urgencias/index.html">Urgencias</a>
+    <a href="../cardio/index.html">Cardio</a>
+    <a href="../infecciosas/index.html">Infecciosas</a>
+    <a href="../guardias/index.html">Guardias</a>
+  </nav>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
+</header>
+
+<main class="doc-layout">
+  <aside class="module-rail" aria-label="Índice del módulo">
+    <a class="rail-home" href="index.html">Índice de Neumología</a>
+    <strong>Vía aérea</strong>
+    <a href="asma.html">Asma</a>
+    <a href="epoc.html">EPOC</a>
+    <strong>Infección</strong>
+    <a href="neumonia-y-bronquitis.html">Neumonía, bronquitis y broncoespasmo</a>
+    <a href="rinitis-y-rinosinusitis.html">Rinitis alérgica y rinosinusitis</a>
+    <strong>Gravedad</strong>
+    <a class="is-active" href="insuficiencia-respiratoria.html">Insuficiencia respiratoria y SDRA</a>
+  </aside>
+
+  <article class="article">
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Neumología</a><span>/</span><span>Insuficiencia respiratoria y SDRA</span>
+    </nav>
+    <header class="article-header guide-header">
+      <span class="eyebrow">Gravedad</span>
+      <h1>Insuficiencia respiratoria y SDRA</h1>
+      <p class="lead">Usa la gasometría para decidir si falla el intercambio, la ventilación o ambos; después elige oxígeno, alto flujo, VNI o vía aérea avanzada según mecanismo y gravedad, con especial cuidado ante síndrome de distrés respiratorio agudo.</p>
+      <div class="status-row">
+        <span class="pill">Vía aérea</span>
+        <span class="pill">PaO2/PaCO2</span>
+        <span class="pill">SpO2 objetivo</span>
+        <span class="pill">PAFI</span>
+      </div>
+    </header>
+
+    <nav class="guide-toc" aria-label="Índice de la ficha">
+      <strong>En esta ficha</strong>
+      <div>
+        <a href="#abc">ABC</a>
+        <a href="#gasometria">Gasometría</a>
+        <a href="#gradiente">Gradiente A-a</a>
+        <a href="#soporte">Soporte</a>
+        <a href="#reevaluacion">Reevaluación</a>
+        <a href="#sdra">SDRA</a>
+        <a href="#ventilacion">Ventilación</a>
+        <a href="#trampas">Trampas</a>
+        <a href="#fuentes">Fuentes</a>
+      </div>
+    </nav>
+
+    <section class="article-content">
+      <div class="clinical-lede" data-tone="red">
+        <div>
+          <span class="eyebrow">Prioridad</span>
+          <h2>Primero protege vía aérea, luego interpreta</h2>
+        </div>
+        <p>La lectura gasométrica no debe retrasar ABC: secreciones, Glasgow bajo, incapacidad para proteger vía aérea o agotamiento respiratorio cambian el manejo antes que cualquier fórmula.</p>
+      </div>
+
+      <div class="signal-strip" aria-label="Tres decisiones iniciales en insuficiencia respiratoria">
+        <span data-tone="red"><strong>A</strong><em>Airway primero: secreciones, vómitos, Glasgow bajo o agotamiento mandan UCI/IOT.</em></span>
+        <span data-tone="blue"><strong>G</strong><em>Gasometría decide mecanismo: hipoxemia, hipercapnia y pH guían el soporte.</em></span>
+        <span data-tone="amber"><strong>S</strong><em>Shunt/SDRA: si no corrige con FiO2 alta, necesita presión positiva y PEEP.</em></span>
+      </div>
+
+      <div class="quick-rules" aria-label="Decisiones previas a la interpretación gasométrica">
+        <article>
+          <strong>¿Protege vía aérea?</strong>
+          <span>Secreciones, vómitos, Glasgow bajo o agotamiento pesan más que calcular gradientes.</span>
+        </article>
+        <article>
+          <strong>¿Qué objetivo de saturación?</strong>
+          <span>94-98 % en hipoxemia habitual; 88-92 % si riesgo de retención de CO2 y gasometría de control.</span>
+        </article>
+        <article>
+          <strong>¿Falla ventilación?</strong>
+          <span>PaCO2 alta con pH bajo obliga a soporte ventilatorio, no solo a subir oxígeno.</span>
+        </article>
+        <article>
+          <strong>¿Hay shunt/SDRA?</strong>
+          <span>Hipoxemia que no corrige con FiO2 alta necesita presión positiva, PEEP y UCI.</span>
+        </article>
+      </div>
+
+      <div class="timeline" aria-label="Escalada práctica del soporte respiratorio">
+        <article>
+          <span>1</span>
+          <strong>Oxígeno convencional</strong>
+          <p>Si corrige rápido y baja el trabajo respiratorio. Objetivo 94-98 %, o 88-92 % si riesgo de retención de CO2.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <strong>GNAF</strong>
+          <p>Hipoxemia pura con necesidad creciente o trabajo respiratorio, mientras tratas la causa y vigilas respuesta.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <strong>VNI / CPAP</strong>
+          <p>EAP o EPOC con acidosis si coopera y protege vía aérea. No usar como sala de espera si fracasa.</p>
+        </article>
+        <article>
+          <span>4</span>
+          <strong>IOT / UCI</strong>
+          <p>Glasgow bajo, shock, vómitos, secreciones no manejables, fracaso de VNI o shunt/SDRA con hipoxemia refractaria.</p>
+        </article>
+      </div>
+
+      <section class="practice-section" id="abc">
+        <div class="practice-section-head">
+          <span class="section-kicker">Primeros minutos</span>
+          <h2>Decide soporte antes de entretenerte con la fórmula</h2>
+          <p>La gasometría explica el mecanismo, pero la cama te dice si el paciente necesita oxígeno, presión positiva o vía aérea avanzada ya.</p>
+        </div>
+        <div class="decision-board">
+          <article class="decision-node" data-tone="red">
+            <span>A</span>
+            <strong>No protege vía aérea</strong>
+            <p>Secreciones, Glasgow bajo, vómitos, agotamiento o incapacidad para hablar: aspirar, pedir ayuda y preparar intubación/UCI.</p>
+          </article>
+          <article class="decision-node" data-tone="blue">
+            <span>Hipoxemia pura</span>
+            <strong>Oxígeno para SpO2 94-98 %</strong>
+            <p>Si precisa FiO2 creciente o mantiene trabajo respiratorio, escalar a alto flujo mientras tratas la causa.</p>
+          </article>
+          <article class="decision-node" data-tone="amber">
+            <span>Riesgo hipercápnico</span>
+            <strong>SpO2 88-92 % y gasometría de control</strong>
+            <p>EPOC u obesidad-hipoventilación: no persigas saturaciones normales si empeoras la retención de CO2.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>Acidosis o shunt</span>
+            <strong>Presión positiva o vía aérea avanzada</strong>
+            <p>VNI en EAP/EPOC con acidosis si coopera; SDRA o hipoxemia refractaria necesitan UCI y PEEP.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="practice-section" id="gasometria">
+        <div class="practice-section-head">
+          <span class="section-kicker">Gasometría</span>
+          <h2>Clasificar el fallo respiratorio</h2>
+          <p>La insuficiencia respiratoria se define por PaO2 &lt;60 mmHg y/o PaCO2 &gt;45 mmHg respirando aire ambiente a nivel del mar.</p>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card" data-tone="blue">
+            <span>Tipo I</span>
+            <strong>Hipoxémica: PaO2 &lt;60 con PaCO2 normal o baja</strong>
+            <p>Piensa en neumonía, edema pulmonar, TEP, SDRA o shunt.</p>
+          </article>
+          <article class="highlight-card" data-tone="amber">
+            <span>Tipo II</span>
+            <strong>Hipercápnica: PaCO2 &gt;45</strong>
+            <p>Hipoventilación, EPOC, neuromuscular, fármacos depresores o agotamiento.</p>
+          </article>
+          <article class="highlight-card" data-tone="red">
+            <span>Aguda</span>
+            <strong>pH bajo con bicarbonato normal</strong>
+            <p>El CO2 subió rápido: riesgo de deterioro neurológico y necesidad de soporte.</p>
+          </article>
+          <article class="highlight-card" data-tone="green">
+            <span>Crónica agudizada</span>
+            <strong>Bicarbonato elevado</strong>
+            <p>Compensación metabólica previa; compara con basal si existe.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="practice-section" id="gradiente">
+        <div class="practice-section-head">
+          <span class="section-kicker">Diferencial</span>
+          <h2>Gradiente alveolo-arterial</h2>
+          <p>Te dice si el pulmón intercambia mal o si el problema principal es extrapulmonar.</p>
+        </div>
+        <div class="decision-board">
+          <article class="decision-node" data-tone="green">
+            <span>Fórmula práctica</span>
+            <strong>A-aO2 esperado = 2,5 + 0,21 x edad</strong>
+            <p>Usa el resultado como orientación, no como sustituto del contexto clínico.</p>
+          </article>
+          <article class="decision-node" data-tone="blue">
+            <span>Gradiente normal</span>
+            <strong>Pulmón que intercambia razonablemente</strong>
+            <p>Depresión SNC, opiáceos, neuromuscular, obstrucción alta o altitud.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>Gradiente elevado</span>
+            <strong>Problema pulmonar o vascular</strong>
+            <p>Neumonía, edema, TEP, SDRA, shunt, EPID o atelectasias.</p>
+          </article>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <thead><tr><th>Gasometría + imagen</th><th>Diagnósticos que debes buscar</th></tr></thead>
+            <tbody>
+              <tr><td>Hipercapnia con A-a normal</td><td>Hipoventilación pura: opiáceos, ELA, Guillain-Barré, obesidad-hipoventilación.</td></tr>
+              <tr><td>Hipercapnia con A-a alto</td><td>Pulmón enfermo con fallo ventilatorio: EPOC agudizado grave, asma casi fatal.</td></tr>
+              <tr><td>Hipoxemia con Rx localizada</td><td>Neumonía, atelectasia, contusión, infarto pulmonar.</td></tr>
+              <tr><td>Hipoxemia con Rx difusa</td><td>Edema pulmonar, SDRA, neumonía bilateral, hemorragia alveolar.</td></tr>
+              <tr><td>Hipoxemia con Rx aparentemente normal</td><td>TEP, microatelectasias, shunt intracardiaco.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="practice-section" id="soporte">
+        <div class="practice-section-head">
+          <span class="section-kicker">Tratamiento inicial</span>
+          <h2>Elegir soporte respiratorio</h2>
+          <p>Mientras tratas la causa: antibiótico, diurético, broncodilatador, anticoagulación o lo que corresponda.</p>
+        </div>
+        <div class="table-wrap compare-matrix">
+          <table>
+            <thead><tr><th>Situación</th><th>Objetivo</th><th>Soporte inicial</th></tr></thead>
+            <tbody>
+              <tr><td>Hipoxemia pura sin retención</td><td>SpO2 94-98 %</td><td>Oxígeno convencional; alto flujo si trabajo respiratorio o necesidad creciente.</td></tr>
+              <tr><td>Riesgo de hipercapnia, EPOC</td><td>SpO2 88-92 %</td><td>Oxígeno controlado y gasometría de control.</td></tr>
+              <tr><td>EAP o EPOC con acidosis</td><td>Reducir trabajo respiratorio y mejorar ventilación.</td><td>VNI/CPAP según problema; BiPAP si hipercapnia.</td></tr>
+              <tr><td>Glasgow bajo, shock, secreciones no manejables o fracaso de VNI</td><td>Proteger vía aérea.</td><td>Preparar intubación y UCI.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="action-stack">
+          <article><strong>Oxígeno convencional</strong><p>Útil si corrige rápido y el trabajo respiratorio baja. Si cada vez necesita más flujo, no esperes a que se agote.</p></article>
+          <article><strong>GNAF</strong><p>Mejor encaje en hipoxemia pura con trabajo respiratorio, siempre con vigilancia estrecha de respuesta clínica.</p></article>
+          <article><strong>VNI/CPAP</strong><p>Mejor evidencia práctica en edema agudo de pulmón y EPOC reagudizado con acidosis si el paciente coopera y protege vía aérea.</p></article>
+          <article><strong>Vía aérea avanzada</strong><p>Indicada si no protege vía aérea, hay shock, secreciones no manejables, fracaso de soporte no invasivo o deterioro neurológico.</p></article>
+        </div>
+        <div class="callout warning">
+          <span class="callout-title">Shunt verdadero</span>
+          <p>Si la hipoxemia apenas corrige con FiO2 alta, piensa en shunt: SDRA, edema pulmonar masivo o neumonía extensa. Suele necesitar presión positiva para reclutar alveolos.</p>
+        </div>
+      </section>
+
+      <section class="practice-section" id="reevaluacion">
+        <div class="practice-section-head">
+          <span class="section-kicker">No invasivo con reloj</span>
+          <h2>Reevaluar VNI/GNAF antes de que el paciente claudique</h2>
+          <p>La presión positiva no invasiva y el alto flujo son una prueba vigilada, no una forma de ganar tiempo indefinido. Si el trabajo respiratorio, la conciencia o la gasometría van a peor, la decisión es UCI e intubación.</p>
+        </div>
+        <div class="timeline" aria-label="Reloj de reevaluación del soporte no invasivo">
+          <article>
+            <span>0 min</span>
+            <strong>Indicación limpia</strong>
+            <p>BiPAP si fallo hipercápnico con acidosis; CPAP si EAP cardiogénico o necesidad de reclutamiento. Fuera si no protege vía aérea, vomita, está en shock, no coopera o acumula secreciones.</p>
+          </article>
+          <article>
+            <span>30-60 min</span>
+            <strong>Control clínico y gasométrico</strong>
+            <p>Repite gasometría si había acidosis/hipercapnia. Mira FR real, habla, tiraje, paradoja abdominal, tolerancia a la mascarilla, SpO2/FiO2 y nivel de consciencia.</p>
+          </article>
+          <article>
+            <span>Mejora</span>
+            <strong>Seguir y tratar causa</strong>
+            <p>pH sube, PaCO2 baja o se estabiliza, disminuye el trabajo respiratorio y el paciente está más despierto: mantener soporte, ajustar FiO2 al objetivo y perseguir el desencadenante.</p>
+          </article>
+          <article>
+            <span>Fracaso</span>
+            <strong>No retrasar IOT/UCI</strong>
+            <p>pH/PaCO2 no mejoran, Glasgow cae, aparece agotamiento con bradipnea, shock o hipoxemia refractaria: la prueba ha fallado aunque la mascarilla parezca “puesta”.</p>
+          </article>
+        </div>
+        <div class="decision-board">
+          <article class="decision-node" data-tone="amber">
+            <span>EPOC / retenedor</span>
+            <strong>BiPAP si pH ≤7,35 y PaCO2 ≥45</strong>
+            <p>El umbral lo marca la acidosis hipercápnica, no una cifra aislada de CO2 en un retenedor crónico. Objetivo de SpO2 88-92 %.</p>
+          </article>
+          <article class="decision-node" data-tone="blue">
+            <span>EAP / IC</span>
+            <strong>CPAP si disnea grave o hipoxemia pese a FiO2</strong>
+            <p>Útil cuando predominan congestión y reclutamiento alveolar. Si hay hipercapnia importante puede necesitar BiPAP.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>Criterios duros</span>
+            <strong>Intubar si pH &lt;7,25 persiste tras 1 h bien ajustada</strong>
+            <p>También si parada, bradipnea por agotamiento, Glasgow en descenso, hipoxemia refractaria o inestabilidad hemodinámica.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="practice-section" id="sdra">
+        <div class="practice-section-head">
+          <span class="section-kicker">UCI</span>
+          <h2>SDRA: síndrome de distrés respiratorio agudo</h2>
+          <p>Lesión pulmonar aguda difusa con edema no cardiogénico, baja distensibilidad y shunt.</p>
+        </div>
+        <div class="decision-board">
+          <article class="decision-node" data-tone="blue">
+            <span>Tiempo</span>
+            <strong>Inicio o empeoramiento en ≤7 días</strong>
+            <p>Tras insulto clínico: neumonía, sepsis, aspiración, trauma, pancreatitis, transfusión.</p>
+          </article>
+          <article class="decision-node" data-tone="amber">
+            <span>Imagen</span>
+            <strong>Infiltrados bilaterales</strong>
+            <p>No explicados por derrame, atelectasia lobar o nódulos.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>Origen</span>
+            <strong>No edema cardiogénico puro</strong>
+            <p>Si no hay factor de riesgo claro, eco para descartar origen hidrostático.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>Oxigenación</span>
+            <strong>PAFI ≤300 con PEEP/CPAP ≥5</strong>
+            <p>Leve 201-300, moderado 101-200, grave ≤100.</p>
+          </article>
+        </div>
+        <div class="clinical-split">
+          <div class="content-panel">
+            <h2>Qué está pasando</h2>
+            <ul>
+              <li>La inflamación rompe la barrera alvéolo-capilar y llena el alvéolo de edema rico en proteínas.</li>
+              <li>La pérdida de surfactante favorece colapso alveolar, atelectrauma y shunt que responde mal a FiO2 alta.</li>
+              <li>El pulmón ventilable se hace pequeño y rígido: de ahí el enfoque de volumen bajo, PEEP y presión meseta segura.</li>
+            </ul>
+          </div>
+          <div class="content-panel">
+            <h2>Busca el insulto</h2>
+            <ul>
+              <li>Directo pulmonar: neumonía, aspiración, contusión, inhalación tóxica o casi ahogamiento.</li>
+              <li>Indirecto sistémico: sepsis, politrauma, pancreatitis grave, grandes quemados o politransfusión/TRALI.</li>
+              <li>Si no hay desencadenante claro, descarta edema cardiogénico con ecocardiograma y contexto hemodinámico.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice-section" id="ventilacion">
+        <div class="practice-section-head">
+          <span class="section-kicker">Soporte avanzado</span>
+          <h2>Ventilación protectora en SDRA</h2>
+          <p>El pulmón disponible es pequeño y rígido; la estrategia busca evitar volutrauma, barotrauma y atelectrauma.</p>
+        </div>
+        <div class="dose-strip">
+          <div class="dose-item"><span>Volumen corriente</span><strong>5-7 ml/kg de peso predicho</strong><p>Bajo volumen para evitar sobredistensión.</p></div>
+          <div class="dose-item"><span>Plateau</span><strong>&lt;30 cmH2O</strong><p>Límite de seguridad frente a barotrauma.</p></div>
+          <div class="dose-item"><span>Driving pressure</span><strong>&lt;15 cmH2O si posible</strong><p>Plateau menos PEEP.</p></div>
+          <div class="dose-item"><span>Hipercapnia permisiva</span><strong>pH ≥7,15-7,20</strong><p>Se tolera CO2 si protege pulmón y hemodinámica.</p></div>
+        </div>
+        <div class="action-stack">
+          <article><strong>Medidas base</strong><p>Fluidoterapia restrictiva, sedoanalgesia para sincronía, bloqueo neuromuscular en fases precoces muy graves si precisa.</p></article>
+          <article><strong>Rescate</strong><p>Prono al menos 16 horas en SDRA moderado-grave, valorar corticoides según evolución y ECMO en centro especializado si hipoxemia refractaria.</p></article>
+        </div>
+      </section>
+
+      <section class="practice-section" id="trampas">
+        <div class="practice-section-head">
+          <span class="section-kicker">Iatrogenia respiratoria</span>
+          <h2>Trampas de IRA y SDRA</h2>
+        </div>
+        <ul class="trap-list">
+          <li>Mirar solo la SpO2 y no el trabajo respiratorio: una saturación aceptable puede preceder a claudicación.</li>
+          <li>Dar oxígeno alto a un retenedor de CO2 sin objetivo 88-92% ni gasometría de control.</li>
+          <li>Intentar VNI en paciente que no protege vía aérea, vomita, está en shock o no coopera.</li>
+          <li>Confundir shunt con “falta de oxígeno”: si no corrige con FiO2 alta, necesita presión positiva y UCI.</li>
+          <li>Calcular PAFI sin saber FiO2/PEEP o sin contexto de edema cardiogénico vs SDRA.</li>
+          <li>Ventilar SDRA con volumen corriente alto porque “está muy hipoxémico”: empeora volutrauma.</li>
+        </ul>
+      </section>
+
+      <aside class="source-note compact-source" aria-labelledby="fuentes">
+        <h2 id="fuentes">Base clínica usada</h2>
+        <p>Notas locales basadas en Manual de Diagnóstico y Terapéutica Médica 12 de Octubre, capítulo de insuficiencia respiratoria y SDRA, y apuntes locales de disnea aguda/MUST.</p>
+      </aside>
+    </section>
+  </article>
+</main>
+<footer class="footer">Neumología · Guía de supervivencia para el residente de MFyC</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

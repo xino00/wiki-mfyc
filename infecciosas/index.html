@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infecciosas · Guía de supervivencia para el residente de MFyC</title>
+  <meta name="description" content="Guía práctica de Infecciosas para guardias, urgencias, consulta y planta.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-bar">
+  <a class="brand" href="../index.html" aria-label="Inicio">
+    <span class="brand-mark">MF</span>
+    <span class="brand-text">Guía MFyC</span>
+  </a>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <a href="../index.html">Inicio</a>
+    <a href="../urgencias/index.html">Urgencias</a>
+    <a href="../cardio/index.html">Cardio</a>
+    <a href="../infecciosas/index.html">Infecciosas</a>
+    <a href="../guardias/index.html">Guardias</a>
+  </nav>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
+</header>
+
+<main class="shell">
+  <section class="module-hero practical-hero">
+    <div>
+      <nav class="breadcrumb" aria-label="Migas de pan">
+        <a href="../index.html">Inicio</a><span>/</span><span>Infecciosas</span>
+      </nav>
+      <span class="eyebrow">Guardia · consulta · planta</span>
+      <h1>Infecciosas</h1>
+      <p class="lead">Entrada rápida a decisiones de infectología clínica: foco, gravedad, cultivos, antibiótico empírico, resistencias y alta segura.</p>
+      <div class="signal-strip" aria-label="Prioridades de infectología">
+        <span data-tone="red"><strong>G</strong><em>Gravedad primero</em></span>
+        <span data-tone="amber"><strong>F</strong><em>Foco y muestras</em></span>
+        <span data-tone="green"><strong>A</strong><em>Antibiótico y revisión</em></span>
+      </div>
+      <div class="hero-actions">
+        <a class="open-tool" href="proa-betalactamicos-cefalosporinas-y-carbapenemicos.html">Betalactámicos y mapa bacteriano</a>
+        <a class="ghost-link" href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html">Guía PROA</a>
+      </div>
+    </div>
+    <aside class="action-panel" aria-label="Primeras decisiones">
+      <h2>Primera pantalla mental</h2>
+      <ol class="tight-list">
+        <li><strong>Gravedad:</strong> shock, lactato, neutropenia, inmunosupresión, foco no controlado.</li>
+        <li><strong>Muestras:</strong> cultivos antes de antibiótico si no retrasa una situación tiempo-dependiente.</li>
+        <li><strong>Foco:</strong> respiratorio, urinario, abdominal, piel/partes blandas, catéter o desconocido.</li>
+        <li><strong>Riesgo MDR:</strong> ingresos, antibióticos previos, colonización, dispositivos y epidemiología local.</li>
+      </ol>
+    </aside>
+  </section>
+
+  <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
+    <label class="search-box" for="module-search">
+      <span>Buscar en Infecciosas</span>
+      <input id="module-search" type="search" placeholder="sepsis, ITU, neutropenia, BLEE, candidemia..." data-filter-input>
+    </label>
+  </section>
+  <div id="module-empty" class="empty-state">No hay entradas que coincidan con la búsqueda.</div>
+
+  <section class="section-band" aria-labelledby="guardia">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Tiempo-dependiente</span>
+        <h2 id="guardia">Si estás de guardia</h2>
+      </div>
+      <p>Problemas donde importa actuar antes de tener toda la información cerrada.</p>
+    </div>
+    <div class="card-grid">
+      <a class="note-card priority-card" href="sepsis-y-shock-septico.html" data-category="Sepsis" data-search="sepsis shock septico disfuncion organica lactato hemocultivos cultivos foco control foco control fuente antibiotico hipotension hipoperfusion oliguria confusion piel moteada relleno capilar cristaloide balanceado fluidos noradrenalina vasopresor tam uci area monitorizada destino sofa qsofa reevaluacion diagrama puerta tres no esperar organo falla infeccion probable muestras retraso no antibiotico shock foco perfusion minuto 1">
+        <span class="card-kicker">Shock / UCI</span>
+        <h3>Sepsis y shock séptico</h3>
+        <p>Reconocer gravedad, activar bundle, obtener cultivos, iniciar antibiótico y decidir fluidos/vasopresor.</p>
+        <span class="card-meta"><span class="pill">Primera hora</span><span class="pill">UCI</span></span>
+      </a>
+      <a class="note-card" href="sepsis-abordaje-inicial-ssc-2026.html" data-category="Sepsis" data-search="sepsis abordaje inicial ssc 2026 sofa qsofa no descarta trampas puerta news news2 mews sirs lactato hemocultivos cultivos bundle primera hora carriles simultaneos paralelo infeccion perfusion destino foco control dispositivo drenaje relleno capilar diuresis fluidos noradrenalina disfuncion organica shock septico probabilidad definitiva probable posible triaje codigo sepsis evaluacion activa 3 horas uci">
+        <span class="card-kicker">SSC 2026</span>
+        <h3>Sepsis: abordaje inicial</h3>
+        <p>Reconocimiento, gravedad, cultivos, lactato, foco probable y primeras decisiones antes de cerrar etiología.</p>
+        <span class="card-meta"><span class="pill">Bundle</span><span class="pill">Triaje</span></span>
+      </a>
+      <a class="note-card" href="sepsis-hemodinamica-y-reanimacion-ssc-2026.html" data-category="Sepsis" data-search="sepsis hemodinamica reanimacion ssc 2026 trampas cristaloides balanceados fluidos 30 ml kg lactato relleno capilar trc tam noradrenalina periferica precoz via central vasopresina epinefrina vasopresores dobutamina shock septico respuesta dinamica pvc retirada fluidos diureticos de resucitacion de-resucitacion uci semaforo hemodinamico sobrecarga sensorio diuresis tres mandos perfusion trc lactato diuresis fluido litro hipoperfusion clara vasopresor tam baja espera pasiva">
+        <span class="card-kicker">SSC 2026</span>
+        <h3>Sepsis: hemodinámica</h3>
+        <p>Fluidos, reevaluación de perfusión, TAM, lactato y vasopresores en shock séptico.</p>
+        <span class="card-meta"><span class="pill">Fluidos</span><span class="pill">Vasopresor</span></span>
+      </a>
+      <a class="note-card" href="sepsis-antiinfecciosos-y-soporte-vital-ssc-2026.html" data-category="Sepsis" data-search="sepsis antiinfecciosos soporte vital ssc 2026 tratamiento activo proporcional trampas timeline reloj antibiotico empirico primera hora 0 1 1 6 24 48 72 control foco organos desescalada mdr blee sarm candida candidemia antifungico anaerobios beta lactamicos carga perfusion prolongada hfnc ventilacion sdra corticoides hidrocortisona glucemia nutricion filtro cobertura tres cierres tiempo shock probable reciben primera dosis primera hora espectro proporcional mdr anaerobios candida solo riesgo revision 48 72 soporte real foco oxigeno ventilacion protectora vasopresor antes adyuvantes">
+        <span class="card-kicker">SSC 2026</span>
+        <h3>Sepsis: antiinfecciosos y soporte</h3>
+        <p>Antibiótico empírico, control del foco, desescalada y soporte vital asociado.</p>
+        <span class="card-meta"><span class="pill">Antibiótico</span><span class="pill">Foco</span></span>
+      </a>
+      <a class="note-card" href="sepsis-cuidados-post-uci-y-objetivos-ssc-2026.html" data-category="Sepsis" data-search="sepsis post uci objetivos cuidados ssc 2026 superviviente pics rehabilitacion delirium secuelas cognitivas fisicas emocionales salud mental objetivos cuidados paliativos handoff transicion salida segura foco cultivos pendientes reaviso responsable conciliacion medicacion farmaceutica retirar antipsicoticos ibp comunicacion alta seguimiento atencion primaria recuperacion funcion cognicion animo nutricion cuidador directivas anticipadas time limited trial tlt trabajo social cuidador funcion basal">
+        <span class="card-kicker">SSC 2026</span>
+        <h3>Sepsis: post-UCI y objetivos</h3>
+        <p>Seguimiento del superviviente, secuelas, comunicación, objetivos de cuidados y transición segura.</p>
+        <span class="card-meta"><span class="pill">Post-UCI</span><span class="pill">Seguimiento</span></span>
+      </a>
+      <a class="note-card priority-card" href="neutropenia-febril-nf.html" data-category="Infecciones sistémicas" data-search="neutropenia febril fiebre neutropenica primera hora no negociables timeline mascc cancer hemato quimioterapia neutrofilos 500 anc hemocultivos 0 15 30 60 cvc cateter muestra periferica via central muestras utiles mucositis perine tacto rectal contraindicado piperacilina tazobactam cefepime ceftazidima meropenem antipseudomonico pseudomonas sarm candida hongo profilaxis quinolona mascc 21 bajo riesgo real observacion soporte social seguimiento experto ambulatorio inestable fungica fiebre persistente 48 72 retirada c difficile bgn mr">
+        <span class="card-kicker">Inmunodeprimido</span>
+        <h3>Neutropenia febril</h3>
+        <p>Emergencia infecciosa: riesgo, cultivos, antibiótico en la primera hora y reevaluación a 48-72 h.</p>
+        <span class="card-meta"><span class="pill">Oncohematología</span><span class="pill">Ingreso</span></span>
+      </a>
+      <a class="note-card" href="bacteriemia-y-candidemia.html" data-category="Infecciones sistémicas" data-search="bacteriemia fungemia candidemia aviso microbiologia flujo no negociables hemocultivos seriados candida score cvc cateter retirar cvc foco npt nutricion parenteral uci perforacion digestiva neutropenia inmunosupresion b d glucano bdg beta d glucano equinocandina entrada anidulafungina micafungina caspofungina fluconazol secuenciacion anfotericina voriconazol endocarditis ecocardiograma funduscopia fondo ojo embolias absceso snc hemocultivos 48 72 duracion 14 dias primer hemocultivo negativo">
+        <span class="card-kicker">Hemocultivos positivos</span>
+        <h3>Bacteriemia y candidemia</h3>
+        <p>Qué hacer al recibir el aviso: foco, repetición de cultivos, catéter, Candida Score y duración.</p>
+        <span class="card-meta"><span class="pill">Planta</span><span class="pill">Microbiología</span></span>
+      </a>
+      <a class="note-card" href="infecciones-intraabdominales-iia.html" data-category="Otros cuadros" data-search="peritonitis absceso intraabdominal iia abdomen sepsis perforacion necrosis dehiscencia cirugia drenaje percutaneo control foco foco abierto fuga tc coleccion colecistitis colangitis diverticulitis apendicitis anaerobios enterococo candida frme reevaluacion 48 72 no mejora duracion corta metronidazol ceftriaxona piperacilina tazobactam meropenem ertapenem tres mandos foco necrosis cierre antibiotico drenaje muestra util resistencia candida">
+        <span class="card-kicker">Abdomen</span>
+        <h3>Infección intraabdominal</h3>
+        <p>Peritonitis, absceso y antibiótico empírico, con énfasis en control del foco.</p>
+        <span class="card-meta"><span class="pill">Cirugía</span><span class="pill">Control de foco</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-band" aria-labelledby="sindromes">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Consulta y urgencias</span>
+        <h2 id="sindromes">Síndromes frecuentes</h2>
+      </div>
+    </div>
+    <div class="card-grid">
+      <a class="note-card" href="proa-infecciones-respiratorias.html" data-category="Síndromes ambulatorios" data-search="faringitis centor estreptococo test rapido otitis media aguda oma otorrea sinusitis rinosinusitis bronquitis viral no antibiotico interruptores gravedad mala evolucion neumonia nac destino epoc reagudizado anthonisen purulencia psi curb 65 revision 48 horas respiratorio amoxicilina clavulanico azitromicina levofloxacino cefditoreno pseudomonas ciprofloxacino tres interruptores viral curso revision epoc tos aislada oxigenacion molecula">
+        <span class="card-kicker">Respiratorio</span>
+        <h3>Vías respiratorias</h3>
+        <p>Vías altas, bronquitis, EPOC reagudizado y neumonía: cuándo antibiótico y cuál elegir.</p>
+        <span class="card-meta"><span class="pill">CAP</span><span class="pill">Urgencias</span></span>
+      </a>
+      <a class="note-card" href="proa-infecciones-del-tracto-urinario-itu.html" data-category="Síndromes ambulatorios" data-search="itu cistitis triaje proa no tratar no perder pielonefritis prostatitis fiebre urinaria bacteriuria asintomatica no tratar urocultivo nitritos olor color sedimento bolsa colectora fosfomicina nitrofurantoina no pielonefritis ceftriaxona cefixima ciprofloxacino quinolona empirica amikacina dispositivo sonda nefrostomia muestra rotular blee klebsiella coli antibiograma carbapenem parenquima renal tres puertas sintomas mandan tacto sugestivo tejido previos escalar">
+        <span class="card-kicker">Urinario</span>
+        <h3>ITU, pielonefritis y prostatitis</h3>
+        <p>Separar cistitis simple, ITU complicada y fiebre urinaria; cultivo, ingreso y antibiótico inicial.</p>
+        <span class="card-meta"><span class="pill">MAP</span><span class="pill">Alta</span></span>
+      </a>
+      <a class="note-card" href="proa-infecciones-de-piel-y-partes-blandas.html" data-category="Síndromes ambulatorios" data-search="celulitis erisipela absceso drenaje incision purulenta no purulenta cuatro puertas superficial fluctuacion pus torunda aspirado biopsia impetigo foliculitis mordedura perro gato humana pasteurella eikenella bacteroides profilaxis tetanos rabia amoxicilina clavulanico cefadroxilo cefalexina clindamicina cotrimoxazol linezolid sarm mrsa agua salada vibrio vulnificus erysipelothrix agua dulce aeromonas puncion plantar pseudomonas espinas sporothrix exposicion ambiental no pauta automatica muestra profunda seguimiento tres puertas pautar piel pus drenaje exposicion patogenos aspirado tejido profundo">
+        <span class="card-kicker">Piel</span>
+        <h3>Piel y partes blandas</h3>
+        <p>Celulitis, erisipela, absceso, mordeduras y heridas: drenaje, cobertura y criterios de ingreso.</p>
+        <span class="card-meta"><span class="pill">Curas</span><span class="pill">Trauma menor</span></span>
+      </a>
+      <a class="note-card" href="proa-infecciones-gastrointestinales.html" data-category="Síndromes ambulatorios" data-search="diarrea gastroenteritis gea puerta diarrea hidratacion tolerancia no cultivo no antibiotico mapa sindromico coprocultivo inflamatoria no inflamatoria sangre moco fiebre deshidratacion sepsis inmunodeprimido brote manipulador alimentos eii viajero india sudeste asiatico loperamida racecadotrilo toxigenica azitromicina pauta omitida confirmar protocolo ciprofloxacino clostridioides difficile cdi toxina pcr vancomicina oral fidaxomicina recurrencia parasitos heces entamoeba hsh vih no test cura ibp tres cierres volumen primero leve sin inflamacion riesgo no necesita cultivo antibiotico inflamatoria sepsis inmunodepresion brote cambian muestras destino cdi cierra clinica retirar desencadenantes no pedir test cura">
+        <span class="card-kicker">Digestivo</span>
+        <h3>Diarrea infecciosa y CDI</h3>
+        <p>Inflamatoria vs no inflamatoria, diarrea del viajero y sospecha de Clostridioides difficile.</p>
+        <span class="card-meta"><span class="pill">Hidratación</span><span class="pill">Aislamiento</span></span>
+      </a>
+      <a class="note-card" href="proa-infecciones-de-transmision-sexual-its.html" data-category="Síndromes ambulatorios" data-search="its puerta its cierres obligatorios mapa sindromico trampas errores frecuentes serologias vih vhb vhc sifilis uretritis cervicitis exudado proctitis tenesmo rectal faringea localizacion lgv linfogranuloma venereo hsh epididimitis orquiepididimitis escroto eip revision dolor escrotal dudoso chancro neurosifilis herpes genital vesiculas ulcera mpox lesion umbilicada vaginosis tricomoniasis candidiasis vulvovaginal ladillas ceftriaxona doxiciclina azitromicina penicilina valaciclovir metronidazol serologia">
+        <span class="card-kicker">ITS</span>
+        <h3>Infecciones de transmisión sexual</h3>
+        <p>Síndrome uretral, cervicitis, proctitis, orquiepididimitis, EIP, úlceras y vulvovaginitis.</p>
+        <span class="card-meta"><span class="pill">Tratamiento sindrómico</span></span>
+      </a>
+      <a class="note-card" href="gripe-sindrome-gripal.html" data-category="Otros cuadros" data-search="gripe sindrome gripal influenza puerta gripe alta segura reconsulta mapa riesgo oseltamivir antiviral 48 horas test covid vrs coinfeccion neumonia sobreinfeccion no antibiotico hipoxemia sato2 disnea focalidad confusion dolor toracico mala tolerancia embarazada inmunodeprimido alto riesgo fiebre bifasica viral epidemia urgencias funcion renal tres preguntas alta gravedad residencia comorbilidad empeora descompensacion">
+        <span class="card-kicker">Viral estacional</span>
+        <h3>Gripe y síndrome gripal</h3>
+        <p>Diagnóstico clínico, pacientes de riesgo, antivirales y criterios de reevaluación.</p>
+        <span class="card-meta"><span class="pill">Invierno</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-band" aria-labelledby="proa">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Tratamiento</span>
+        <h2 id="proa">Antibióticos y resistencias</h2>
+      </div>
+      <p>Para pasar de “tengo un foco” a “qué antibiótico, por qué vía y durante cuánto”.</p>
+    </div>
+    <div class="card-grid">
+      <a class="note-card" href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html" data-category="PROA y antimicrobianos" data-search="proa checklist antibioticos antimicrobianos semaforo empezar ampliar estrechar salir suspender mapa muestra cultivos sindromes foco gravedad alergias funcion renal fg dosis carga mantenimiento ajuste peso interacciones pseudomonas sarm anaerobios blee paso intravenoso oral iv vo biodisponibilidad desescalada antibiograma duracion revision 48 72 control foco tres cierres firmar antibiotico paciente real embarazo qt acortar suspender no infeccion">
+        <span class="card-kicker">PROA</span>
+        <h3>Guía de antimicrobianos</h3>
+        <p>Resumen por síndromes, dosificación de uso frecuente, ajuste por peso y paso IV a VO.</p>
+        <span class="card-meta"><span class="pill">Dosis</span><span class="pill">IV a VO</span></span>
+      </a>
+      <a class="note-card" href="proa-betalactamicos-cefalosporinas-y-carbapenemicos.html" data-category="PROA y antimicrobianos" data-search="betalactamicos beta lactamicos lectura 90 segundos filtros foco patogeno resistencia exposicion salida algoritmo candados seguridad ceftriaxona sola no vale mapa bacteriano gram penicilinas cefalosporinas carbapenemicos espectro huecos dosis carga mantenimiento funcion renal fg cmi dialisis trrc farmacia proa revision 48 72 suspender lame ape listeria enterococcus pseudomonas anaerobios sarm cefepime ampc blee cre dtr kpc oxa48 mbl ceftazidima avibactam piperacilina tazobactam ceftriaxona comodin meropenem ertapenem aztreonam alergia neurotoxicidad perfusion extendida desescalada">
+        <span class="card-kicker">Beta-lactámicos</span>
+        <h3>Betalactámicos y mapa bacteriano</h3>
+        <p>Espectro por familia, huecos de cobertura, patógenos frecuentes y dosis/ajuste renal.</p>
+        <span class="card-meta"><span class="pill">Espectro</span><span class="pill">Dosis</span></span>
+      </a>
+      <a class="note-card" href="proa-quinolonas-macrolidos-y-relacionados.html" data-category="PROA y antimicrobianos" data-search="quinolonas macrolidos frenos semaforo seguridad ciprofloxacino levofloxacino moxifloxacino azitromicina claritromicina clindamicina doxiciclina linezolid qt ecg potasio interacciones ajuste renal fg dialisis trrc pseudomonas no moxifloxacino foco sensibilidad sarm enterococcus resistente vancomicina erv biodisponibilidad oral serotoninergico isrs imao calcio hierro lacteos antiacidos child pugh hemograma neuropatia duracion paso vo">
+        <span class="card-kicker">PROA</span>
+        <h3>Quinolonas, macrólidos y relacionados</h3>
+        <p>Ciprofloxacino, levofloxacino, moxifloxacino, macrólidos, clindamicina, doxiciclina y linezolid con dosis y cautelas.</p>
+        <span class="card-meta"><span class="pill">Ajustes</span><span class="pill">Interacciones</span></span>
+      </a>
+      <a class="note-card" href="proa-otros-antimicrobianos-aminoglucosidos-glucopeptidos-y-miscelanea.html" data-category="PROA y antimicrobianos" data-search="aminoglucosidos margen estrecho veto foco semaforo seguridad amikacina gentamicina tobramicina pico valle vancomicina teicoplanina auc mic farmacia daptomicina no neumonia surfactante ck dalbavancina alta precoz colistina rescate metronidazol alcohol child pugh cotrimoxazol potasio fosfomicina sodio tigeciclina bacteriemia fidaxomicina c difficile vancomicina oral ajuste renal niveles monitorizacion toxicidad hd dp trrc tres cierres niveles fg dialisis antes pauta larga foco veto daptomicina no neumonia tigeciclina no bacteriemia vancomicina iv no cdi luminal toxicidad esperada rinon oido ck sodio potasio hemograma plan">
+        <span class="card-kicker">PROA</span>
+        <h3>Otros antimicrobianos</h3>
+        <p>Aminoglucósidos, glucopéptidos y miscelánea: dosis, monitorización, toxicidad y ajustes.</p>
+        <span class="card-meta"><span class="pill">Monitorización</span><span class="pill">Toxicidad</span></span>
+      </a>
+      <a class="note-card" href="perfusion-extendida-continua-de-betalactamicos.html" data-category="PROA y antimicrobianos" data-search="perfusion extendida continua betalactamicos beta lactamicos cambia no cambia espectro exposicion curva pk pd piperacilina tazobactam meropenem cefepime ceftazidima carga bolo 30 minutos fT CMI tiempo dependiente bomba sepsis shock pseudomonas bgn mdr cmi alta bling iii dosis carga mantenimiento prescripcion orden farmacia compatibilidad via luz ajuste renal estabilidad foco desescalada tres condiciones activo patogeno probable carga primero revisar diario">
+        <span class="card-kicker">PK/PD</span>
+        <h3>Perfusión extendida de beta-lactámicos</h3>
+        <p>Cuándo prolongar la infusión, cómo cargar primero, qué aporta en infección grave o CMI elevada y qué no soluciona.</p>
+        <span class="card-meta"><span class="pill">Sepsis</span><span class="pill">MDR</span></span>
+      </a>
+      <a class="note-card priority-card" href="gramnegativos-resistentes-idsa-2024-estudio-interactivo.html" data-category="PROA y antimicrobianos" data-search="gramnegativos resistentes bgnmr puerta mdr timeline clinica foco mecanismo salida mecanismo opcion blee ampc cre kpc oxa oxa48 mbl pseudomonas dtr acinetobacter crab stenotrophomonas colonizacion infeccion ast antibiograma carbapenemasa cistitis baja invasiva shock foco cefepime cefiderocol ceftazidima avibactam caz avi meropenem vaborbactam imipenem relebactam sulbactam durlobactam tmp smx minociclina desescalada">
+        <span class="card-kicker">MDR</span>
+        <h3>Gramnegativos resistentes</h3>
+        <p>BLEE, AmpC, CRE, Pseudomonas DTR, CRAB y Stenotrophomonas: elegir por enzima, foco y gravedad.</p>
+        <span class="card-meta"><span class="pill">MDR</span><span class="pill">Matriz</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section-band" aria-labelledby="planta">
+    <div class="section-head">
+      <div>
+        <span class="section-kicker">Planta y seguimiento</span>
+        <h2 id="planta">Infección sistémica y situaciones especiales</h2>
+      </div>
+    </div>
+    <div class="card-grid">
+      <a class="note-card" href="vih-diagnostico-y-manejo-inicial.html" data-category="Infecciones sistémicas" data-search="vih diagnostico primer contacto primera visita no perder tres decisiones elisa cuarta generacion antigeno p24 confirmacion western blot carga viral cd4 bajo sida oportunistas pjp pneumocystis disnea tos muguet toxoplasma cotrimoxazol profilaxis tar biktarvy dovato no cd4 200 no vhb bic taf ftc dtg 3tc vhb coinfeccion vhc its tb embarazo hla b5701 gesida">
+        <span class="card-kicker">VIH</span>
+        <h3>Diagnóstico y manejo inicial de VIH</h3>
+        <p>Confirmación, CD4, infecciones oportunistas, TAR de inicio y profilaxis.</p>
+      </a>
+      <a class="note-card" href="tuberculosis-tb.html" data-category="Infecciones sistémicas" data-search="tuberculosis tb tbc ruta tb tres decisiones trampas sospecha circuito destino inicial aislamiento respiratorio desde sospecha pulmonar presion negativa domicilio habitacion individual conviviente alto riesgo itl infeccion tuberculosa latente descartar activa enfermedad activa baciloscopia x3 cultivo xpert mtb rif rifampicina interacciones anticoncepcion anticoagulacion tar isoniazida pirazinamida etambutol 2hrze 4hr mantoux igra bcg edo contactos hemoptisis cavitacion n95 piridoxina hepatotoxicidad salud publica adherencia">
+        <span class="card-kicker">Respiratorio / salud pública</span>
+        <h3>Tuberculosis</h3>
+        <p>ITL vs TB activa, aislamiento, diagnóstico microbiológico y pauta estándar.</p>
+      </a>
+      <a class="note-card" href="hepatitis-virales-a-e.html" data-category="Infecciones sistémicas" data-search="hepatitis virales candados serologicos vha vhb vhc vhd vhe aghbs anti hbc anti hbs igm anti hbc aislado adn vhb oculta arn vhc core serologia vacunado cronica aguda tenofovir entecavir taf aad epclusa maviret sofosbuvir velpatasvir glecaprevir pibrentasvir delta inmunosupresion reactivacion fib4 hbsag antes aad interacciones cirrosis">
+        <span class="card-kicker">Serología</span>
+        <h3>Hepatitis virales</h3>
+        <p>Interpretación VHB, VHC y tratamiento antiviral básico.</p>
+      </a>
+      <a class="note-card" href="profilaxis-postexposicion-biologica-ppe.html" data-category="Otros cuadros" data-search="profilaxis postexposicion biologica ppe pep pinchazo salpicadura exposicion accidente vih vhb vhc tdf ftc dolutegravir raltegravir truvada 72 horas 28 dias no esperar serologia fuente desconocida ighb hbig vacuna anti hbs aghbs anti vhc arn vhc nat 3 6 semanas seguimiento agresion sexual udvp tres relojes riesgo relevante empezar antes cerrar todo vacuna aghbs fuente basal arn temprano cierre serologico">
+        <span class="card-kicker">Accidente biológico</span>
+        <h3>Profilaxis postexposición</h3>
+        <p>Pinchazo o salpicadura: actuación inmediata, VHB, VHC, VIH y ventana de inicio.</p>
+      </a>
+      <a class="note-card" href="infecciones-nosocomiales.html" data-category="Infecciones sistémicas" data-search="nosocomial secuencia timeline dispositivo mapa foco hospitalario fiebre ingresado no infecciosa cateter intravascular cvc hemocultivos rotulado candida staphylococcus aureus pseudomonas bgn sitio quirurgico herida profundidad drenaje desbridamiento neumonia hospitalaria nih nav mdr retirada cateter sellado tunelizado temporal tvp farmacos duracion corta tres cierres dispositivo primero cvc sonda herida via aerea muestras rotuladas retira cateter shock persistencia aureus pseudomonas bgn candida foco profundo drena desbrida nav buena respuesta no semanas">
+        <span class="card-kicker">Hospital</span>
+        <h3>Infecciones nosocomiales</h3>
+        <p>Catéter, sitio quirúrgico y neumonía nosocomial: retirada, duración y foco.</p>
+      </a>
+      <a class="note-card" href="osteomielitis-y-artritis-septica.html" data-category="Otros cuadros" data-search="osteomielitis artritis septica espondilodiscitis pie diabetico protesis articular biofilm artrocentesis liquido sinovial cristales hemocultivos biopsia osea muestra antes antibiotico rm probe to bone s aureus sasm sarm cloxacilina ceftriaxona vancomicina daptomicina linezolid pseudomonas dair recambio protesis rodilla cadera fistula osteosintesis tres cierres infeccion osteoarticular muestra antes antibiotico osteomielitis estable sangre hueso valen semanas articulacion caliente artrocentesis urgente fiebre puede faltar protesis material biofilm muestras profundas cirugia no solo receta">
+        <span class="card-kicker">Osteoarticular</span>
+        <h3>Osteomielitis y artritis séptica</h3>
+        <p>Dolor osteoarticular con fiebre, muestras antes de antibiótico y duración prolongada.</p>
+      </a>
+      <a class="note-card" href="covid-19.html" data-category="Otros cuadros" data-search="covid sars cov 2 puerta covid no perder respiratorio neumonia viral mapa gravedad spo2 sato2 95 trabajo respiratorio taquipnea hipoxemia oxigeno aislamiento fase viral hiperrespuesta inflamatoria dexametasona remdesivir nirmatrelvir ritonavir tocilizumab baricitinib trombosis sangrado anticoagulacion hbpm antiviral protocolo 2022 vigente no protocolo actual no antibiotico no corticoide sin hipoxemia interacciones fg transaminasas dimero d verificar tres filtros respiracion manda confusion agotamiento fase clinica antiviral precoz vigencia protocolo actual">
+        <span class="card-kicker">Respiratorio viral</span>
+        <h3>COVID-19</h3>
+        <p>Estratificación clínica, oxígeno, aislamiento, trombosis y límites de un protocolo que cambia rápido.</p>
+        <span class="card-meta"><span class="pill">Oxígeno</span><span class="pill">Aislamiento</span></span>
+      </a>
+      <a class="note-card" href="enfermedades-del-viajero-aproximacion-practica.html" data-category="Otros cuadros" data-search="viajero migrante puerta primeros minutos circuito protegido fiebre importada no perder malaria zona endemica gota gruesa frotis urgente resultado pendiente responsable trazabilidad contacto artesunato gravedad fiebre persistente medicina tropical hemocultivos incubacion exposicion diarrea viajero disenteria sangre moco sudeste asiatico campylobacter tifoidea rickettsiosis aislamiento ebola lassa mers meningitis eosinofilia parasitos fiebre hemorragica tres cierres malaria zona endemica fiebre gota gruesa frotis revisados no solo pedidos aislamiento sangrado distres meningismo exposicion compatible cambian circuito diarrea persistente eosinofilia viajero migrante parasitos tropical">
+        <span class="card-kicker">Medicina tropical</span>
+        <h3>Enfermedades del viajero</h3>
+        <p>Fiebre importada, malaria como no-perder, diarrea del viajero, aislamiento y derivación a Tropical.</p>
+        <span class="card-meta"><span class="pill">Malaria</span><span class="pill">Diarrea</span></span>
+      </a>
+      <a class="note-card" href="ulceras-por-presion-upp.html" data-category="Otros cuadros" data-search="ulceras por presion upp estadio braden cura lecho humedo analgesia nutricion desbridamiento infeccion colonizacion cultivo positivo no antibiotico sistemico celulitis sepsis osteomielitis exudado necrosis presion descarga cambios posturales tres condiciones cambiar aposito prominencia cultivo aislado via nutricion dolor">
+        <span class="card-kicker">Curas</span>
+        <h3>Úlceras por presión</h3>
+        <p>Estadios, curas, desbridamiento y cuándo sospechar infección profunda u osteomielitis.</p>
+        <span class="card-meta"><span class="pill">Cura</span><span class="pill">Desbridamiento</span></span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">Infecciosas como guía práctica: prioriza gravedad, foco, cultivos, antibiótico y reevaluación.</footer>
+<script src="../app.js"></script>
+</body>
+</html>

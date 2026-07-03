@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gramnegativos resistentes · Guía de supervivencia para el residente de MFyC</title>
+  <meta name="description" content="Guía práctica de gramnegativos resistentes: BLEE, AmpC, CRE, Pseudomonas DTR, CRAB y Stenotrophomonas.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-bar">
+  <a class="brand" href="../index.html" aria-label="Inicio">
+    <span class="brand-mark">MF</span>
+    <span class="brand-text">Guía MFyC</span>
+  </a>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <a href="../index.html">Inicio</a>
+    <a href="../urgencias/index.html">Urgencias</a>
+    <a href="../cardio/index.html">Cardio</a>
+    <a href="../infecciosas/index.html">Infecciosas</a>
+    <a href="../guardias/index.html">Guardias</a>
+  </nav>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
+</header>
+
+<main class="doc-layout">
+  <aside class="module-rail" aria-label="Índice del módulo">
+    <a class="rail-home" href="index.html">Índice de Infecciosas</a>
+    <strong>Tiempo-dependiente</strong>
+    <a href="sepsis-y-shock-septico.html">Sepsis y shock séptico</a>
+    <a href="neutropenia-febril-nf.html">Neutropenia febril</a>
+    <a href="bacteriemia-y-candidemia.html">Bacteriemia y candidemia</a>
+    <strong>Antibióticos</strong>
+    <a href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html">Guía PROA</a>
+    <a href="proa-betalactamicos-cefalosporinas-y-carbapenemicos.html">Beta-lactámicos</a>
+    <a href="perfusion-extendida-continua-de-betalactamicos.html">Perfusión extendida</a>
+    <a class="is-active" href="gramnegativos-resistentes-idsa-2024-estudio-interactivo.html">Gramnegativos resistentes</a>
+    <strong>Síndromes</strong>
+    <a href="proa-infecciones-del-tracto-urinario-itu.html">ITU</a>
+    <a href="proa-infecciones-respiratorias.html">Respiratorias</a>
+    <a href="infecciones-intraabdominales-iia.html">Intraabdominales</a>
+  </aside>
+
+  <article class="article">
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Gramnegativos resistentes</span>
+    </nav>
+
+    <header class="article-header guide-header">
+      <span class="eyebrow">PROA · multirresistentes</span>
+      <h1>Gramnegativos resistentes</h1>
+      <p class="lead">Ficha de guardia para pasar de “cultivo con BLEE, AmpC, CRE, Pseudomonas DTR, CRAB o Stenotrophomonas” a una decisión razonada: infección real, foco, antibiograma, mecanismo y control de foco.</p>
+      <div class="signal-strip organism-strip" aria-label="Orden de decisión en gramnegativos resistentes">
+        <span data-tone="red"><strong>I</strong><em>Infección real</em></span>
+        <span data-tone="amber"><strong>A</strong><em>AST y mecanismo</em></span>
+        <span data-tone="green"><strong>F</strong><em>Foco y control</em></span>
+      </div>
+      <div class="status-row">
+        <span class="pill">Micro primero</span>
+        <span class="pill">Foco antes que lista</span>
+        <span class="pill">Reevaluar al antibiograma</span>
+      </div>
+    </header>
+
+    <section class="warning-panel compact" aria-label="Aviso clínico">
+      <strong>Antes de escalar</strong>
+      <p>Estas recomendaciones asumen germen identificado y sensibilidad in vitro conocida. En shock, neutropenia, UCI o foco no controlado, avisa a Infecciosas/PROA y ajusta a disponibilidad local, función renal y toxicidad.</p>
+    </section>
+
+    <div class="clinical-lede" data-tone="amber">
+      <div>
+        <span class="eyebrow">Resistencia no equivale a tratamiento</span>
+        <h2>El antibiograma solo decide después de resolver tres preguntas clínicas</h2>
+      </div>
+      <p>Primero confirma si el aislado representa infección real; después separa foco urinario bajo de infección invasiva; por último pide el mecanismo que cambia el inhibidor. Esa secuencia evita tanto infratratar un shock como gastar carbapenémicos o combinaciones nuevas en colonización.</p>
+    </div>
+
+    <div class="quick-rules" aria-label="Reglas de seguridad en gramnegativos resistentes">
+      <strong>MDR en 5 cortes</strong>
+      <span>No hay síndrome infeccioso: no escalar por colonización.</span>
+      <span>Cistitis baja: ahorrar carbapenémico si hay opción activa.</span>
+      <span>Invasiva o shock: beta-lactámico activo y control de foco.</span>
+      <span>CRE: pedir carbapenemasa antes de elegir inhibidor.</span>
+      <span>CRAB/Steno: confirmar infección real antes de combinar.</span>
+    </div>
+
+    <section class="timeline" aria-label="Secuencia práctica ante un gramnegativo resistente">
+      <article>
+        <span>1</span>
+        <strong>Clínica</strong>
+        <p>Fiebre, sepsis, foco, síntomas urinarios, infiltrado, bacteriemia o absceso: sin síndrome compatible no escales por el cultivo.</p>
+      </article>
+      <article>
+        <span>2</span>
+        <strong>Foco</strong>
+        <p>Cistitis baja permite opciones urinarias; pielonefritis, bacteriemia, neumonía, abdomen o shock piden tratamiento sistémico activo.</p>
+      </article>
+      <article>
+        <span>3</span>
+        <strong>Mecanismo</strong>
+        <p>BLEE, AmpC, KPC, OXA-48-like, MBL, DTR, CRAB o Steno cambian la familia útil y los huecos peligrosos.</p>
+      </article>
+      <article>
+        <span>4</span>
+        <strong>Salida</strong>
+        <p>Con foco controlado y evolución estable, desescala, pasa a VO activa si encaja o suspende si era colonización.</p>
+      </article>
+    </section>
+
+    <nav class="guide-toc" aria-label="Índice de la ficha">
+      <strong>En esta ficha</strong>
+      <div>
+        <a href="#puerta">Puerta</a>
+        <a href="#enfoque">Enfoque</a>
+        <a href="#micro">Qué pedir</a>
+        <a href="#enterobacterales">Enterobacterales</a>
+        <a href="#pseudomonas">Pseudomonas DTR</a>
+        <a href="#crab">CRAB</a>
+        <a href="#steno">Stenotrophomonas</a>
+        <a href="#matriz">Matriz</a>
+        <a href="#conducta">Conducta</a>
+        <a href="#errores">Errores</a>
+      </div>
+    </nav>
+
+    <section class="article-content">
+      <section class="practice-section" id="puerta">
+        <div class="practice-section-head">
+          <span class="section-kicker">Puerta MDR</span>
+          <h2>No trates el antibiograma: confirma infección, foco y mecanismo</h2>
+          <p>El cultivo resistente solo es una parte de la decisión. La ficha funciona cuando separas colonización de infección y pides a Microbiología el dato que cambia el fármaco.</p>
+        </div>
+        <div class="decision-board">
+          <article class="decision-node" data-tone="green">
+            <span>Colonización</span>
+            <strong>No escalar sin síndrome infeccioso</strong>
+            <p>Orina, vía aérea, heridas, CRAB y Stenotrophomonas dan falsos problemas si el paciente no tiene clínica compatible.</p>
+          </article>
+          <article class="decision-node" data-tone="blue">
+            <span>Cistitis baja</span>
+            <strong>Ahorrar carbapenémico si hay opción urinaria</strong>
+            <p>Nitrofurantoína, TMP-SMX, quinolona o fosfomicina solo encajan si el foco es urinario bajo y el germen/foco lo permiten.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>Invasiva/grave</span>
+            <strong>Beta-lactámico activo y foco controlado</strong>
+            <p>Bacteriemia, pielonefritis, neumonía, abdomen, shock o neutropenia obligan a cubrir de forma activa y revisar drenaje/retirada.</p>
+          </article>
+          <article class="decision-node" data-tone="amber">
+            <span>CRE / MBL / DTR</span>
+            <strong>Pide carbapenemasa y AST ampliado</strong>
+            <p>KPC, OXA-48-like, MBL, Pseudomonas DTR, CRAB y Steno no se resuelven con el mismo inhibidor.</p>
+          </article>
+        </div>
+        <div class="action-stack">
+          <article><strong>Antes de llamar PROA</strong><p>Lleva foco, gravedad, aislamientos previos, colonización, función renal, alergias y control de foco pendiente.</p></article>
+          <article><strong>Enterobacterales</strong><p>BLEE extraurinario grave pide carbapenémico; AmpC invasivo pide cefepime si sensible o carbapenémico si gravedad/CMI.</p></article>
+          <article><strong>No fermentadores</strong><p>Pseudomonas DTR, CRAB y Steno exigen diferenciar colonización de infección antes de ampliar tratamiento.</p></article>
+          <article><strong>Desescalada</strong><p>Si está estable, foco controlado y hay opción oral activa con buena absorción, no prolongues IV por inercia.</p></article>
+        </div>
+      </section>
+
+      <h2 id="enfoque">Enfoque de guardia</h2>
+      <p>Cuando aparece un gramnegativo resistente, no empieces por memorizar antibióticos. Primero decide si hay infección real y qué problema clínico estás tratando.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Pregunta en orden</th>
+              <th>Si la respuesta es sí</th>
+              <th>Si la respuesta es no</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. ¿Hay clínica de infección?</strong><br>Fiebre, sepsis, piuria con síntomas, infiltrado compatible, bacteriemia, absceso o foco claro.</td>
+              <td>Trata el síndrome, no solo el cultivo.</td>
+              <td>No escales por colonización. Revisa muestra, repite si hace falta y observa.</td>
+            </tr>
+            <tr>
+              <td><strong>2. ¿Es cistitis no complicada?</strong><br>Sin fiebre, sin dolor lumbar, sin prostatitis, sin bacteriemia y sin mal estado general.</td>
+              <td>Prioriza fármacos urinarios activos y evita carbapenémicos si hay alternativa.</td>
+              <td>Maneja como pielonefritis, ITU complicada o infección invasiva según foco.</td>
+            </tr>
+            <tr>
+              <td><strong>3. ¿El foco está controlado?</strong><br>Drenaje, retirada de catéter, desobstrucción urinaria, cirugía si precisa.</td>
+              <td>Puede tener sentido estrechar o pasar a vía oral si hay opción activa.</td>
+              <td>No confíes solo en cambiar antibiótico: busca control de foco.</td>
+            </tr>
+            <tr>
+              <td><strong>4. ¿Conoces el mecanismo?</strong><br>BLEE, AmpC, KPC, OXA-48-like, MBL, DTR Pseudomonas, CRAB o Stenotrophomonas.</td>
+              <td>Elige la tabla correspondiente de esta ficha.</td>
+              <td>Pide AST completo y, si es CRE, tipado de carbapenemasa.</td>
+            </tr>
+            <tr>
+              <td><strong>5. ¿El paciente está grave?</strong><br>Shock, neutropenia, UCI, inmunosupresión importante o foco no controlado.</td>
+              <td>Cubre de forma activa desde el inicio y avisa a Infecciosas/PROA.</td>
+              <td>Permite una elección más estrecha si el foco y el antibiograma lo permiten.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <aside class="callout important">
+        <strong class="callout-title">Regla útil</strong>
+        <p>No trates una “S” del antibiograma fuera de contexto. En BLEE, AmpC inducible y carbapenemasas, el mecanismo y el foco pueden pesar más que una sensibilidad aislada.</p>
+      </aside>
+
+      <aside class="callout info">
+        <strong class="callout-title">Siglas de la ficha</strong>
+        <p>CAZ-AVI: ceftazidima-avibactam. MVB: meropenem-vaborbactam. IMI-REL: imipenem-cilastatina-relebactam. ATM: aztreonam. DTR: difícil de tratar por resistencia.</p>
+      </aside>
+
+      <h2 id="micro">Qué pedir a Microbiología</h2>
+      <div class="micro-grid">
+        <article>
+          <span class="card-kicker">Siempre</span>
+          <h3>AST completo</h3>
+          <p>Incluye opciones orales cuando sea posible: TMP-SMX, quinolonas, nitrofurantoína/fosfomicina si es foco urinario y proceden.</p>
+        </article>
+        <article>
+          <span class="card-kicker">CRE</span>
+          <h3>Carbapenemasa</h3>
+          <p>Distinguir no carbapenemasa, KPC, OXA-48-like y MBL evita elegir un inhibidor sin actividad.</p>
+        </article>
+        <article>
+          <span class="card-kicker">DTR PA</span>
+          <h3>Nuevos beta-lactámicos</h3>
+          <p>Solicita actividad frente a ceftolozano-tazobactam, ceftazidima-avibactam, imipenem-relebactam y cefiderocol.</p>
+        </article>
+        <article>
+          <span class="card-kicker">MBL / Steno</span>
+          <h3>Combinación CAZ-AVI + aztreonam</h3>
+          <p>IDSA recoge métodos de laboratorio para evaluar la combinación cuando el mecanismo lo requiere.</p>
+        </article>
+      </div>
+
+      <div class="highlight-grid" aria-label="Mecanismos que cambian la elección antibiótica">
+        <article class="highlight-card" data-tone="green">
+          <span>BLEE</span>
+          <strong>Foco urinario bajo no es lo mismo que invasivo</strong>
+          <p>Cistitis no complicada permite ahorrar carbapenémico si hay opción urinaria activa. Foco extraurinario grave empuja a carbapenémico.</p>
+        </article>
+        <article class="highlight-card" data-tone="amber">
+          <span>AmpC</span>
+          <strong>Cefepime si encaja; no ceftriaxona invasiva</strong>
+          <p>Enterobacter cloacae complex, Klebsiella aerogenes y Citrobacter freundii obligan a pensar en inducción aunque el informe parezca cómodo.</p>
+        </article>
+        <article class="highlight-card" data-tone="red">
+          <span>CRE</span>
+          <strong>Sin carbapenemasa vas a ciegas</strong>
+          <p>KPC, OXA-48-like, MBL o no-carbapenemasa llevan a opciones distintas. Pide tipado y AST ampliado antes de elegir inhibidor.</p>
+        </article>
+        <article class="highlight-card" data-tone="blue">
+          <span>No fermentadores</span>
+          <strong>Primero colonización; luego combinación o agente nuevo</strong>
+          <p>Pseudomonas DTR, CRAB y Stenotrophomonas requieren síndrome infeccioso real, foco claro y sensibilidad dirigida.</p>
+        </article>
+      </div>
+
+      <div class="table-wrap">
+        <table class="decision-table">
+          <thead>
+            <tr>
+              <th>Situación</th>
+              <th>Opción preferente si el aislado es sensible</th>
+              <th>No caer en</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BLEE, cistitis no complicada</strong></td>
+              <td>Nitrofurantoína o TMP-SMX. Alternativas: quinolona, carbapenémico, aminoglucósido monodosis o fosfomicina solo si E. coli.</td>
+              <td>Usar carbapenémico si hay opción urinaria activa y paciente estable.</td>
+            </tr>
+            <tr>
+              <td><strong>BLEE, pielonefritis o ITU complicada</strong></td>
+              <td>TMP-SMX, ciprofloxacino o levofloxacino si sensibles; carbapenémico si resistencia, toxicidad o gravedad inicial.</td>
+              <td>Fosfomicina o nitrofurantoína para pielonefritis.</td>
+            </tr>
+            <tr>
+              <td><strong>BLEE, foco extraurinario</strong></td>
+              <td>Meropenem, imipenem-cilastatina o ertapenem. Si crítico o hipoalbuminemia: meropenem/imipenem mejor que ertapenem.</td>
+              <td>Piperacilina-tazobactam o cefepime aunque el informe parezca favorable.</td>
+            </tr>
+            <tr>
+              <td><strong>AmpC de riesgo moderado</strong></td>
+              <td>Cefepime si sensible; carbapenémico si gravedad, CMI problemática o sospecha de BLEE coproducida.</td>
+              <td>Ceftriaxona, cefotaxima, ceftazidima o piperacilina-tazobactam para infección invasiva.</td>
+            </tr>
+            <tr>
+              <td><strong>CRE urinario</strong></td>
+              <td>Si hay sensibilidad, TMP-SMX o quinolona. En pielonefritis/ITU complicada también CAZ-AVI, MVB, IMI-REL o cefiderocol.</td>
+              <td>Fosfomicina para pielonefritis o ITU complicada.</td>
+            </tr>
+            <tr>
+              <td><strong>CRE extraurinario</strong></td>
+              <td>Elegir por carbapenemasa: no carbapenemasa, KPC, OXA-48-like o MBL.</td>
+              <td>Combinación “por si acaso” con aminoglucósido, quinolona, tetraciclina o polimixina si ya hay beta-lactámico activo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="enterobacterales">Enterobacterales</h2>
+      <div class="mechanism-grid">
+        <article class="mechanism-card" data-accent="green">
+          <h3>BLEE</h3>
+          <p>Las BLEE inactivan penicilinas, cefalosporinas y aztreonam. Suelen conservar sensibilidad a carbapenémicos, pero pueden acumular otras resistencias.</p>
+          <ul>
+            <li>Cistitis no complicada: no escalar si hay opción urinaria activa.</li>
+            <li>Pielonefritis/ITU complicada: TMP-SMX o quinolona si sensibles; carbapenémico si no.</li>
+            <li>Foco extraurinario: carbapenémico; paso a VO solo si estable, foco controlado, absorción correcta y sensibilidad a TMP-SMX o quinolona.</li>
+          </ul>
+        </article>
+        <article class="mechanism-card" data-accent="amber">
+          <h3>AmpC inducible</h3>
+          <p>Enterobacter cloacae complex, Klebsiella aerogenes y Citrobacter freundii son el grupo práctico de riesgo moderado.</p>
+          <ul>
+            <li>Cefepime es la opción de trabajo en infección relevante si el aislado es sensible.</li>
+            <li>Evita cefalosporinas de 3.ª en infección invasiva aunque salgan sensibles.</li>
+            <li>Ampicilina, amoxicilina-clavulánico, ampicilina-sulbactam y cefalosporinas de 1.ª-2.ª no son opciones por resistencia intrínseca.</li>
+          </ul>
+        </article>
+        <article class="mechanism-card" data-accent="violet">
+          <h3>CRE</h3>
+          <p>CRE no es un único problema: puede ser por carbapenemasa o por BLEE/AmpC con pérdida de porinas. La diferencia decide el fármaco.</p>
+          <ul>
+            <li>No carbapenemasa, meropenem/imipenem sensible: carbapenémico en infusión extendida.</li>
+            <li>KPC: meropenem-vaborbactam, ceftazidima-avibactam o imipenem-relebactam.</li>
+            <li>OXA-48-like: ceftazidima-avibactam; cefiderocol como alternativa.</li>
+            <li>MBL: ceftazidima-avibactam + aztreonam o cefiderocol.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="quick-rules" aria-label="Reglas rápidas para enterobacterales">
+        <strong>Atajos seguros</strong>
+        <span>BLEE extraurinario grave = carbapenémico.</span>
+        <span>AmpC invasivo = cefepime o carbapenémico, no ceftriaxona.</span>
+        <span>CRE = pedir carbapenemasa antes de elegir inhibidor.</span>
+      </div>
+
+      <h2 id="pseudomonas">Pseudomonas DTR</h2>
+      <p>DTR Pseudomonas aeruginosa se refiere a no sensibilidad frente a los beta-lactámicos antipseudomónicos habituales y fluoroquinolonas. Si conserva sensibilidad a un beta-lactámico tradicional no carbapenémico, IDSA prefiere usarlo a dosis altas/perfusión extendida antes que gastar de entrada un agente nuevo, salvo paciente crítico o mal control de foco.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Foco</th>
+              <th>Opciones IDSA</th>
+              <th>Comentario práctico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cistitis no complicada</td>
+              <td>Ceftolozano-tazobactam, ceftazidima-avibactam, imipenem-relebactam o cefiderocol. Alternativa: tobramicina o amikacina monodosis.</td>
+              <td>No usar fosfomicina oral para Pseudomonas DTR.</td>
+            </tr>
+            <tr>
+              <td>Pielonefritis / ITU complicada</td>
+              <td>Ceftolozano-tazobactam, ceftazidima-avibactam, imipenem-relebactam o cefiderocol. Aminoglucósido diario como alternativa.</td>
+              <td>Valora nefrotoxicidad y duración si usas aminoglucósido.</td>
+            </tr>
+            <tr>
+              <td>Extraurinario</td>
+              <td>Ceftolozano-tazobactam, ceftazidima-avibactam o imipenem-relebactam. Cefiderocol como alternativa.</td>
+              <td>Una vez confirmada sensibilidad a uno de estos beta-lactámicos, IDSA no sugiere combinación de rutina.</td>
+            </tr>
+            <tr>
+              <td>MBL confirmada o sospechada</td>
+              <td>Cefiderocol.</td>
+              <td>CAZ-AVI + aztreonam no aporta de forma fiable en MBL de Pseudomonas.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="crab">CRAB</h2>
+      <div class="clinical-split">
+        <section class="content-panel">
+          <h3>Cuándo tratar</h3>
+          <ul>
+            <li>CRAB en respiratorio, heridas o dispositivos puede ser colonización.</li>
+            <li>Antes de escalar, exige clínica compatible, foco razonable y posibilidad de control de foco.</li>
+            <li>En infección real, IDSA favorece tratamiento combinado al menos hasta mejoría clínica.</li>
+          </ul>
+        </section>
+        <section class="content-panel">
+          <h3>Con qué tratar</h3>
+          <ul>
+            <li>Preferente: sulbactam-durlobactam + meropenem o imipenem-cilastatina.</li>
+            <li>Si no disponible: ampicilina-sulbactam a alta dosis, 27 g/día de ampicilina-sulbactam con 9 g/día de sulbactam, junto a otro agente.</li>
+            <li>Ese segundo agente puede ser polimixina B, minociclina, tigeciclina o cefiderocol según sensibilidad y contexto.</li>
+          </ul>
+        </section>
+      </div>
+      <aside class="callout warning">
+        <strong class="callout-title">Trampa CRAB</strong>
+        <p>Meropenem o imipenem no se recomiendan para CRAB salvo como acompañantes de sulbactam-durlobactam. Cefiderocol se reserva para refractarios, intolerancia o resistencia a otras opciones y debe usarse en combinación.</p>
+      </aside>
+
+      <h2 id="steno">Stenotrophomonas maltophilia</h2>
+      <div class="clinical-split">
+        <section class="content-panel">
+          <h3>Primera pregunta: colonización</h3>
+          <ul>
+            <li>Frecuente en vía aérea crónica, ventilación, fibrosis quística, dispositivos y cultivos polimicrobianos.</li>
+            <li>Tratar si hay síndrome infeccioso real, bacteriemia o neumonía compatible, sobre todo en inmunodeprimido o paciente grave.</li>
+            <li>IDSA se centra en infección moderada-grave, no en hallazgo casual.</li>
+          </ul>
+        </section>
+        <section class="content-panel">
+          <h3>Tratamiento si infección real</h3>
+          <ul>
+            <li>Opción 1: dos agentes entre cefiderocol, minociclina, TMP-SMX o levofloxacino, al menos hasta mejoría clínica.</li>
+            <li>Opción 2: ceftazidima-avibactam + aztreonam.</li>
+            <li>TMP-SMX se usa como componente de combinación; IDSA sugiere 10-15 mg/kg/día del componente trimetoprim si se elige.</li>
+            <li>Ceftazidima no es una opción de tratamiento; CLSI ya no mantiene breakpoints para Stenotrophomonas.</li>
+          </ul>
+        </section>
+      </div>
+
+      <h2 id="matriz">Matriz de inhibidores</h2>
+      <p>La matriz resume uso clínico orientativo según IDSA. No sustituye al AST ni a la disponibilidad del hospital.</p>
+      <div class="table-wrap">
+        <table class="resistance-matrix">
+          <thead>
+            <tr>
+              <th>Mecanismo</th>
+              <th>Avibactam</th>
+              <th>Vaborbactam</th>
+              <th>Relebactam</th>
+              <th>Durlobactam</th>
+              <th>Clave práctica</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>BLEE</strong></td>
+              <td><span class="pill">Reservar</span></td>
+              <td><span class="pill">Reservar</span></td>
+              <td><span class="pill">Reservar</span></td>
+              <td><span class="pill">No clínico</span></td>
+              <td>Usar carbapenémico u opciones urinarias/orales activas; guardar las combinaciones nuevas beta-lactámico/inhibidor para resistencia a carbapenémicos.</td>
+            </tr>
+            <tr>
+              <td><strong>AmpC</strong></td>
+              <td><span class="pill">Reservar</span></td>
+              <td><span class="pill">Reservar</span></td>
+              <td><span class="pill">Reservar</span></td>
+              <td><span class="pill">No clínico</span></td>
+              <td>Cefepime si sensible; las combinaciones nuevas beta-lactámico/inhibidor y cefiderocol se reservan para carbapenem-resistencia.</td>
+            </tr>
+            <tr>
+              <td><strong>KPC</strong></td>
+              <td><span class="pill">Sí</span></td>
+              <td><span class="pill">Sí</span></td>
+              <td><span class="pill">Sí</span></td>
+              <td><span class="pill">No clínico</span></td>
+              <td>MVB, CAZ-AVI o IMI-REL son opciones preferentes si el aislado es sensible.</td>
+            </tr>
+            <tr>
+              <td><strong>OXA-48-like</strong></td>
+              <td><span class="pill">Sí</span></td>
+              <td><span class="pill">No</span></td>
+              <td><span class="pill">No</span></td>
+              <td><span class="pill">No clínico</span></td>
+              <td>CAZ-AVI es la referencia; cefiderocol queda como alternativa.</td>
+            </tr>
+            <tr>
+              <td><strong>MBL Enterobacterales</strong></td>
+              <td><span class="pill">Con ATM</span></td>
+              <td><span class="pill">No</span></td>
+              <td><span class="pill">No</span></td>
+              <td><span class="pill">No</span></td>
+              <td>CAZ-AVI + aztreonam o cefiderocol. Avibactam protege frente a serinas coproducidas, no inhibe la MBL.</td>
+            </tr>
+            <tr>
+              <td><strong>OXA de CRAB</strong></td>
+              <td><span class="pill">No clínico</span></td>
+              <td><span class="pill">No</span></td>
+              <td><span class="pill">No</span></td>
+              <td><span class="pill">Sí</span></td>
+              <td>Sulbactam-durlobactam + carbapenémico es el esquema preferente para CRAB.</td>
+            </tr>
+            <tr>
+              <td><strong>MBL Pseudomonas</strong></td>
+              <td><span class="pill">No fiable</span></td>
+              <td><span class="pill">No</span></td>
+              <td><span class="pill">No</span></td>
+              <td><span class="pill">No</span></td>
+              <td>Cefiderocol es la opción preferida para DTR Pseudomonas con MBL.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="conducta">Conducta al recibir el cultivo</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Lo que tienes delante</th>
+              <th>Qué hacer</th>
+              <th>Por qué importa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cultivo positivo sin clínica compatible</td>
+              <td>No escalar antibiótico; revalorar muestra, foco y colonización.</td>
+              <td>Especialmente relevante en orina, vía aérea, heridas, CRAB y Stenotrophomonas.</td>
+            </tr>
+            <tr>
+              <td>Cistitis no complicada que mejora aunque el empírico era inactivo</td>
+              <td>No suele hacer falta repetir urocultivo, cambiar pauta ni prolongar tratamiento.</td>
+              <td>IDSA separa este escenario leve del resto de infecciones por AMR.</td>
+            </tr>
+            <tr>
+              <td>Infección no urinaria o ITU complicada con empírico inactivo</td>
+              <td>Cambiar a un antibiótico activo y contar la duración desde el inicio de terapia activa.</td>
+              <td>Evita “dar por cubiertos” días en los que el germen no estaba tratado.</td>
+            </tr>
+            <tr>
+              <td>CRE sin mecanismo informado</td>
+              <td>Pedir carbapenemasa y AST de nuevos beta-lactámicos; no elegir inhibidor a ciegas.</td>
+              <td>KPC, OXA-48-like y MBL requieren decisiones distintas.</td>
+            </tr>
+            <tr>
+              <td>Paciente estable con opción oral activa</td>
+              <td>Considerar paso a TMP-SMX o quinolona si sensible, foco controlado, estabilidad hemodinámica y absorción fiable.</td>
+              <td>Reduce exposición a carbapenémicos y vías centrales sin perder eficacia.</td>
+            </tr>
+            <tr>
+              <td>Shock, neutropenia, UCI o foco no controlado</td>
+              <td>Escalar de forma dirigida al mecanismo probable, obtener cultivos y avisar a Infecciosas/PROA.</td>
+              <td>La prioridad es tratamiento activo temprano y control de foco, no ahorrar espectro de entrada.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="errores">Errores que conviene evitar</h2>
+      <ul class="trap-list">
+        <li>Tratar colonización respiratoria por CRAB o Stenotrophomonas sin síndrome infeccioso.</li>
+        <li>Usar ceftriaxona para Enterobacter cloacae, Klebsiella aerogenes o Citrobacter freundii invasivos porque sale “S”.</li>
+        <li>Usar piperacilina-tazobactam o cefepime para BLEE extraurinaria aunque haya sensibilidad in vitro.</li>
+        <li>Olvidar pedir carbapenemasa ante CRE y elegir un inhibidor que no cubre OXA-48-like o MBL.</li>
+        <li>Añadir aminoglucósido, quinolona, tetraciclina o polimixina a un beta-lactámico activo en CRE o DTR Pseudomonas sin indicación clara.</li>
+        <li>Usar ceftazidima como tratamiento de Stenotrophomonas.</li>
+      </ul>
+
+      <section class="source-note" aria-labelledby="fuente">
+        <h2 id="fuente">Referencia usada</h2>
+        <p>Contenido elaborado a partir de: Tamma PD, Heil EL, Justo JA, Mathers AJ, Satlin MJ, Bonomo RA. <cite>IDSA 2024 Guidance on the Treatment of Antimicrobial Resistant Gram-Negative Infections</cite>. Clinical Infectious Diseases, 2024; ciae403. Publicada por IDSA el 12 de julio de 2024.</p>
+        <p><a href="https://www.idsociety.org/practice-guideline/amr-guidance/" rel="noopener">Página oficial IDSA AMR Guidance</a> · <a href="https://doi.org/10.1093/cid/ciae403" rel="noopener">DOI 10.1093/cid/ciae403</a></p>
+      </section>
+    </section>
+
+    <section class="content-panel related-panel">
+      <h2>Relacionados</h2>
+      <div class="related-grid">
+        <a href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html"><span>PROA</span><strong>Guía de antimicrobianos</strong></a>
+        <a href="perfusion-extendida-continua-de-betalactamicos.html"><span>PK/PD</span><strong>Perfusión extendida</strong></a>
+        <a href="sepsis-y-shock-septico.html"><span>Urgencias</span><strong>Sepsis y shock séptico</strong></a>
+        <a href="bacteriemia-y-candidemia.html"><span>Microbiología</span><strong>Bacteriemia y candidemia</strong></a>
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer class="footer">Infecciosas · Guía de supervivencia para el residente de MFyC</footer>
+<script src="../app.js"></script>
+</body>
+</html>
