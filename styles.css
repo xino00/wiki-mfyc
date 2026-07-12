@@ -837,6 +837,14 @@ h3 {
   color: var(--muted);
 }
 
+.result-count {
+  align-self: center;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 760;
+}
+
 .segmented {
   display: flex;
   flex-wrap: wrap;

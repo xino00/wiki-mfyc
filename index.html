@@ -80,8 +80,9 @@
         <span>Buscar módulo o problema</span>
         <input id="home-module-search" type="search" placeholder="sepsis, dolor torácico, asma, anemia, guardias..." data-filter-input>
       </label>
+      <p class="result-count" data-filter-results aria-live="polite"></p>
     </section>
-    <div id="home-module-empty" class="empty-state">No hay módulos que coincidan con la búsqueda.</div>
+    <div id="home-module-empty" class="empty-state" aria-live="polite">No hay módulos que coincidan con la búsqueda.</div>
     <div class="module-grid module-grid--dense">
       <a class="module-card module-card--primary" href="infecciosas/index.html">
         <span class="card-kicker">Guardia · consulta · planta</span>
