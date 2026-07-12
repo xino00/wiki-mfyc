@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Theme variables
+   ========================================================================== */
+
 :root {
   color-scheme: light;
   --paper: #f6f8f4;
@@ -76,6 +80,11 @@
   --shadow-strong: 0 24px 54px rgba(0, 0, 0, 0.42);
 }
 
+/* ==========================================================================
+   Layer: base
+   Element defaults, typography primitives and focus states.
+   ========================================================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -123,6 +132,11 @@ code {
   outline: 3px solid color-mix(in srgb, var(--accent) 58%, transparent);
   outline-offset: 3px;
 }
+
+/* ==========================================================================
+   Layer: layout
+   Global chrome, navigation shells and page containers.
+   ========================================================================== */
 
 .site-bar {
   position: sticky;
@@ -223,6 +237,11 @@ code {
   margin: 0 auto;
   padding: clamp(1.25rem, 3vw, 2.5rem) 0 4rem;
 }
+
+/* ==========================================================================
+   Layer: pages
+   Home/module landing sections and page-specific compositions.
+   ========================================================================== */
 
 .home-hero,
 .module-hero {
@@ -448,6 +467,11 @@ h3 {
 .organism-strip {
   max-width: 48rem;
 }
+
+/* ==========================================================================
+   Layer: components
+   Reusable links, panels, cards, controls, article blocks, tables and callouts.
+   ========================================================================== */
 
 .ghost-link {
   display: inline-flex;
@@ -819,6 +843,11 @@ h3 {
   gap: 0.35rem;
 }
 
+/* ==========================================================================
+   Layer: utilities
+   Small state helpers and cross-page utility classes.
+   ========================================================================== */
+
 .empty-state {
   display: none;
   margin: 1rem 0;
@@ -835,6 +864,11 @@ h3 {
 .hidden-by-search {
   display: none !important;
 }
+
+/* ==========================================================================
+   Layer: layout — article shell
+   Module rail, document grid, article frame and footer.
+   ========================================================================== */
 
 .breadcrumb {
   display: flex;
@@ -1762,6 +1796,10 @@ h3 {
   margin-bottom: 0;
 }
 
+/* --------------------------------------------------------------------------
+   Components: tables and matrices
+   -------------------------------------------------------------------------- */
+
 .table-wrap {
   width: 100%;
   margin: 1rem 0;
@@ -2034,6 +2072,10 @@ tr:last-child td {
   color: var(--muted);
 }
 
+/* --------------------------------------------------------------------------
+   Components: compact cards, microbiology grids and lists
+   -------------------------------------------------------------------------- */
+
 .quick-grid,
 .cards,
 .morph-grid {
@@ -2287,6 +2329,10 @@ tr:last-child td {
   color: var(--muted);
 }
 
+/* --------------------------------------------------------------------------
+   Components: callouts and related-content panels
+   -------------------------------------------------------------------------- */
+
 .callout {
   max-width: 86ch;
   margin: 1rem 0;
@@ -2408,6 +2454,11 @@ tr:last-child td {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+/* ==========================================================================
+   Responsive
+   Breakpoint overrides for tablet, mobile and reduced-motion preferences.
+   ========================================================================== */
 
 @media (max-width: 980px) {
   h1 {
