@@ -28,7 +28,10 @@
   document.querySelectorAll("[data-filter-scope]").forEach((scope) => {
     const targetSelector = scope.getAttribute("data-filter-target");
     const emptySelector = scope.getAttribute("data-empty-target");
-    const targets = Array.from(document.querySelectorAll(targetSelector));
+    const items = Array.from(document.querySelectorAll(targetSelector)).map((target) => ({
+      element: target,
+      normalizedSearch: normalizeText(target.getAttribute("data-search") || target.textContent),
+    }));
     const input = scope.querySelector("[data-filter-input]");
     const empty = emptySelector ? document.querySelector(emptySelector) : null;
     const filters = {};
@@ -37,14 +40,13 @@
       const query = normalizeText(input ? input.value.trim() : "");
       let visible = 0;
 
-      targets.forEach((target) => {
-        const haystack = normalizeText(target.getAttribute("data-search") || target.textContent);
-        const queryMatch = !query || haystack.includes(query);
+      items.forEach(({ element, normalizedSearch }) => {
+        const queryMatch = !query || normalizedSearch.includes(query);
         const buttonMatch = Object.entries(filters).every(([key, value]) => {
-          return value === "all" || target.getAttribute(`data-${key}`) === value;
+          return value === "all" || element.getAttribute(`data-${key}`) === value;
         });
         const show = queryMatch && buttonMatch;
-        target.hidden = !show;
+        element.hidden = !show;
         if (show) visible += 1;
       });
 
@@ -74,17 +76,19 @@
     const scope = scopeSelector ? document.querySelector(scopeSelector) : null;
     if (!scope) return;
 
-    const items = Array.from(scope.querySelectorAll("[data-filter]"));
+    const items = Array.from(scope.querySelectorAll("[data-filter]")).map((element) => ({
+      element,
+      normalizedSearch: normalizeText(element.getAttribute("data-filter") || element.textContent || ""),
+    }));
     const empty = scope.querySelector("[data-empty]");
 
     function applySimpleSearch() {
       const term = normalizeText(input.value.trim());
       let visible = 0;
 
-      items.forEach((item) => {
-        const haystack = normalizeText(item.getAttribute("data-filter") || item.textContent || "");
-        const match = !term || haystack.includes(term);
-        item.classList.toggle("hidden-by-search", !match);
+      items.forEach(({ element, normalizedSearch }) => {
+        const match = !term || normalizedSearch.includes(term);
+        element.classList.toggle("hidden-by-search", !match);
         if (match) visible += 1;
       });
 
