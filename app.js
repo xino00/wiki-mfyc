@@ -32,6 +32,17 @@
     const input = scope.querySelector("[data-filter-input]");
     const empty = emptySelector ? document.querySelector(emptySelector) : null;
     const filters = {};
+    const resultCounter = scope.querySelector("[data-filter-results]") || scope.querySelector("[data-result-count]");
+
+    function formatResultCount(visible, total) {
+      const itemLabel = total === 1 ? "resultado" : "resultados";
+      return `${visible} de ${total} ${itemLabel}`;
+    }
+
+    function updateResultCounter(visible) {
+      if (!resultCounter) return;
+      resultCounter.textContent = formatResultCount(visible, targets.length);
+    }
 
     function applyFilters() {
       const query = normalizeText(input ? input.value.trim() : "");
@@ -48,6 +59,7 @@
         if (show) visible += 1;
       });
 
+      updateResultCounter(visible);
       if (empty) empty.classList.toggle("is-visible", visible === 0);
     }
 
@@ -55,11 +67,14 @@
       const key = button.getAttribute("data-filter-key");
       const value = button.getAttribute("data-filter-value");
       if (!filters[key]) filters[key] = "all";
+      button.setAttribute("aria-pressed", String(button.classList.contains("is-active")));
 
       button.addEventListener("click", () => {
         filters[key] = value;
         scope.querySelectorAll(`[data-filter-key="${key}"]`).forEach((peer) => {
-          peer.classList.toggle("is-active", peer === button);
+          const isSelected = peer === button;
+          peer.classList.toggle("is-active", isSelected);
+          peer.setAttribute("aria-pressed", String(isSelected));
         });
         applyFilters();
       });
@@ -76,6 +91,17 @@
 
     const items = Array.from(scope.querySelectorAll("[data-filter]"));
     const empty = scope.querySelector("[data-empty]");
+    const resultCounter = scope.querySelector("[data-search-results]") || scope.querySelector("[data-result-count]");
+
+    function formatSearchResultCount(visible, total) {
+      const itemLabel = total === 1 ? "resultado" : "resultados";
+      return `${visible} de ${total} ${itemLabel}`;
+    }
+
+    function updateSearchResultCounter(visible) {
+      if (!resultCounter) return;
+      resultCounter.textContent = formatSearchResultCount(visible, items.length);
+    }
 
     function applySimpleSearch() {
       const term = normalizeText(input.value.trim());
@@ -88,6 +114,7 @@
         if (match) visible += 1;
       });
 
+      updateSearchResultCounter(visible);
       if (empty) empty.classList.toggle("is-visible", visible === 0);
     }
 
@@ -99,6 +126,7 @@
     if (event.key !== "/" || event.ctrlKey || event.metaKey || event.altKey) return;
     const active = document.activeElement;
     if (active && ["INPUT", "TEXTAREA", "SELECT"].includes(active.tagName)) return;
+    if (active && active.isContentEditable) return;
     const search = document.querySelector("[data-filter-input], input[data-search], textarea[data-search]");
     if (!search) return;
     event.preventDefault();
