@@ -1,8 +1,24 @@
 (function () {
   const root = document.documentElement;
   const themeKey = "guia-mfyc-theme";
-  const storedTheme = localStorage.getItem(themeKey);
   const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  function getStoredTheme() {
+    try {
+      return localStorage.getItem(themeKey);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function storeTheme(theme) {
+    try {
+      localStorage.setItem(themeKey, theme);
+    } catch (error) {
+      // Storage can be unavailable in private or restricted contexts.
+      // Keep the selected theme in the current DOM session instead.
+    }
+  }
 
   function normalizeText(value) {
     return (value || "").toLocaleLowerCase("es").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -10,14 +26,14 @@
 
   function setTheme(theme) {
     root.dataset.theme = theme;
-    localStorage.setItem(themeKey, theme);
+    storeTheme(theme);
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
       button.setAttribute("aria-label", theme === "dark" ? "Cambiar a modo claro" : "Cambiar a modo oscuro");
       button.textContent = theme === "dark" ? "Claro" : "Oscuro";
     });
   }
 
-  setTheme(storedTheme || (prefersDark ? "dark" : "light"));
+  setTheme(getStoredTheme() || (prefersDark ? "dark" : "light"));
 
   document.addEventListener("click", (event) => {
     const toggle = event.target.closest("[data-theme-toggle]");
