@@ -1,0 +1,3 @@
+import { NextResponse } from "next/server";
+import { prisma } from "@/lib/prisma";
+export async function GET(request: Request) { const q=new URL(request.url).searchParams.get("q")?.trim() ?? ""; if(q.length<2) return NextResponse.json({error:"La consulta debe tener al menos 2 caracteres"},{status:400}); const results=await prisma.topic.findMany({where:{revisions:{some:{status:"PUBLISHED"}},OR:[{title:{contains:q,mode:"insensitive"}},{summary:{contains:q,mode:"insensitive"}},{revisions:{some:{status:"PUBLISHED",content:{contains:q,mode:"insensitive"}}}}]},select:{id:true,slug:true,title:true,summary:true,specialty:{select:{name:true}}},take:30}); return NextResponse.json({results}); }

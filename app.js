@@ -60,7 +60,7 @@
 
     function updateResultCounter(visible) {
       if (!resultCounter) return;
-      resultCounter.textContent = formatResultCount(visible, targets.length);
+      resultCounter.textContent = formatResultCount(visible, items.length);
     }
 
     function applyFilters() {

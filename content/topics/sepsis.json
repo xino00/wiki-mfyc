@@ -1,0 +1,8 @@
+{
+  "title": "Sepsis: abordaje inicial",
+  "slug": "sepsis-abordaje-inicial",
+  "specialty": "Infecciosas",
+  "summary": "Evaluación y estabilización inicial del paciente con sospecha de sepsis.",
+  "reviewDueAt": "2027-07-30T00:00:00.000Z",
+  "references": [{ "title": "Surviving Sepsis Campaign", "url": "https://www.sccm.org/clinical-resources/surviving-sepsis-campaign-guidelines-2021" }]
+}

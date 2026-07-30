@@ -1,0 +1,107 @@
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+
+enum RevisionStatus { DRAFT REVIEW PUBLISHED RETIRED }
+enum RoleName { ADMIN EDITOR REVIEWER }
+
+model Specialty {
+  id String @id @default(cuid())
+  slug String @unique
+  name String
+  topics Topic[]
+}
+model Topic {
+  id String @id @default(cuid())
+  slug String @unique
+  title String
+  summary String?
+  specialtyId String
+  specialty Specialty @relation(fields: [specialtyId], references: [id])
+  revisions ContentRevision[]
+  favorites Favorite[]
+  notes Note[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model ContentRevision {
+  id String @id @default(cuid())
+  topicId String
+  topic Topic @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  version Int
+  content String
+  format String @default("mdx")
+  status RevisionStatus @default(DRAFT)
+  authorId String
+  author User @relation("Authored", fields: [authorId], references: [id])
+  approvedById String?
+  approvedBy User? @relation("Approved", fields: [approvedById], references: [id])
+  approvedAt DateTime?
+  reviewDueAt DateTime?
+  createdAt DateTime @default(now())
+  references Reference[]
+  auditEvents AuditEvent[]
+  @@unique([topicId, version])
+  @@index([status, createdAt])
+}
+model Reference {
+  id String @id @default(cuid())
+  revisionId String
+  revision ContentRevision @relation(fields: [revisionId], references: [id], onDelete: Cascade)
+  title String
+  url String?
+  citation String?
+}
+model User {
+  id String @id @default(cuid())
+  email String @unique
+  name String
+  passwordHash String
+  active Boolean @default(true)
+  roles UserRole[]
+  authored ContentRevision[] @relation("Authored")
+  approved ContentRevision[] @relation("Approved")
+  favorites Favorite[]
+  notes Note[]
+  auditEvents AuditEvent[]
+}
+model Role {
+  id String @id @default(cuid())
+  name RoleName @unique
+  users UserRole[]
+}
+model UserRole {
+  userId String
+  roleId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  @@id([userId, roleId])
+}
+model Favorite {
+  userId String
+  topicId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic Topic @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  @@id([userId, topicId])
+}
+model Note {
+  id String @id @default(cuid())
+  userId String
+  topicId String
+  body String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topic Topic @relation(fields: [topicId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model AuditEvent {
+  id String @id @default(cuid())
+  actorId String
+  actor User @relation(fields: [actorId], references: [id])
+  revisionId String?
+  revision ContentRevision? @relation(fields: [revisionId], references: [id])
+  action String
+  metadata Json?
+  createdAt DateTime @default(now())
+  @@index([createdAt])
+}
