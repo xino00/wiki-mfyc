@@ -21,8 +21,9 @@ Las notas de `Referencias/10_Patologias/` y `Referencias/30_Urgencias/` actúan 
 
 - `docs/`: sitio público de GitHub Pages
 - `docs/<modulo>/`: páginas clínicas publicadas
+- `docs/pagefind/`: índice Pagefind estático versionable
 - `Referencias/`: material fuente y notas de trabajo
-- `tools/`: validadores del sitio; no generan páginas clínicas
+- `tools/`: sincronización de chrome/metadatos y validadores del sitio; no generan páginas clínicas
 
 ## Criterios del proyecto
 
@@ -31,6 +32,18 @@ Las notas de `Referencias/10_Patologias/` y `Referencias/30_Urgencias/` actúan 
 - sin factorías de plantillas clínicas
 - contenido clínico consolidado por temas, no una página por cada nota
 - interfaz pensada para uso real: lectura rápida, tablas, callouts y navegación interna
+
+## Flujo de mantenimiento
+
+1. Editar el HTML clínico directamente en `docs/<modulo>/<pagina>.html`.
+2. Ejecutar `node tools/sync_chrome.js` si se añade o renombra una página, o si cambia la cabecera compartida/metadatos.
+3. Regenerar búsqueda tras cambios de páginas públicas:
+
+```bash
+npx pagefind --site docs
+```
+
+4. No editar ni minar `Referencias/50_Guardias/` como fuente clínica; las páginas de guardias son plantillas y checklists operativos.
 
 ## GitHub Pages
 
@@ -49,5 +62,6 @@ node --check docs/app.js
 node --check tools/check_search.js
 node --check tools/check_wiki.js
 node tools/check_search.js
+node tools/sync_chrome.js --check
 node tools/check_wiki.js
 ```

@@ -95,15 +95,115 @@
     applySimpleSearch();
   });
 
-  document.addEventListener("keydown", (event) => {
-    if (event.key !== "/" || event.ctrlKey || event.metaKey || event.altKey) return;
-    const active = document.activeElement;
-    if (active && ["INPUT", "TEXTAREA", "SELECT"].includes(active.tagName)) return;
-    const search = document.querySelector("[data-filter-input], input[data-search], textarea[data-search]");
-    if (!search) return;
-    event.preventDefault();
-    search.focus();
+  // --- Menú móvil (hamburguesa) ---
+  const siteBar = document.querySelector(".site-bar");
+  const navToggle = document.querySelector("[data-nav-toggle]");
+  if (siteBar && navToggle) {
+    function setNavOpen(open) {
+      siteBar.dataset.navOpen = open ? "true" : "false";
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      navToggle.setAttribute("aria-label", open ? "Cerrar menú de navegación" : "Abrir menú de navegación");
+    }
+    navToggle.addEventListener("click", () => {
+      setNavOpen(siteBar.dataset.navOpen !== "true");
+    });
+    // Cerrar el menú al elegir un destino
+    siteBar.querySelectorAll(".site-nav a").forEach((link) => {
+      link.addEventListener("click", () => setNavOpen(false));
+    });
+  }
+
+  // Cerrar el desplegable "Módulos" al hacer clic fuera
+  document.addEventListener("click", (event) => {
+    document.querySelectorAll(".nav-more[open]").forEach((details) => {
+      if (!details.contains(event.target)) details.removeAttribute("open");
+    });
   });
+
+  // --- Búsqueda global (Pagefind, carga perezosa) ---
+  const searchOpeners = document.querySelectorAll("[data-search-open]");
+  if (searchOpeners.length) {
+    const base = (siteBar && siteBar.dataset.base) || "";
+    const pagefindAssetPath = `${base}pagefind/`;
+    let modal = null;
+    let pagefindReady = null;
+
+    function buildModal() {
+      modal = document.createElement("div");
+      modal.className = "search-modal";
+      modal.setAttribute("role", "dialog");
+      modal.setAttribute("aria-modal", "true");
+      modal.setAttribute("aria-label", "Buscar en la guía");
+      modal.innerHTML =
+        '<div class="search-modal-panel">' +
+        '<div class="search-modal-head"><strong>Buscar en la guía</strong>' +
+        '<button class="search-modal-close" type="button" data-search-close aria-label="Cerrar búsqueda">✕</button></div>' +
+        '<div id="search-modal-ui"></div>' +
+        '<p class="search-modal-hint">Busca en las 107 fichas. Pulsa <kbd>Esc</kbd> para cerrar.</p>' +
+        "</div>";
+      document.body.appendChild(modal);
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal || event.target.closest("[data-search-close]")) closeModal();
+      });
+    }
+
+    function loadPagefind() {
+      if (pagefindReady) return pagefindReady;
+      pagefindReady = new Promise((resolve, reject) => {
+        const css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href = pagefindAssetPath + "pagefind-ui.css";
+        document.head.appendChild(css);
+        const script = document.createElement("script");
+        script.src = pagefindAssetPath + "pagefind-ui.js";
+        script.onload = () => {
+          /* global PagefindUI */
+          new PagefindUI({
+            element: "#search-modal-ui",
+            showImages: false,
+            showSubResults: true,
+            translations: {
+              placeholder: "Buscar síntoma, fármaco, síndrome…",
+              zero_results: "Sin resultados para «[SEARCH_TERM]»",
+            },
+          });
+          resolve();
+        };
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+      return pagefindReady;
+    }
+
+    function openModal() {
+      if (!modal) buildModal();
+      loadPagefind().then(() => {
+        const input = modal.querySelector("input");
+        if (input) input.focus();
+      });
+      modal.dataset.open = "true";
+      const input = modal.querySelector("input");
+      if (input) input.focus();
+    }
+
+    function closeModal() {
+      if (modal) modal.dataset.open = "false";
+    }
+
+    searchOpeners.forEach((btn) => btn.addEventListener("click", openModal));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && modal && modal.dataset.open === "true") closeModal();
+    });
+
+    // El atajo "/" abre la búsqueda global (antes enfocaba solo el filtro local)
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "/" || event.ctrlKey || event.metaKey || event.altKey) return;
+      const active = document.activeElement;
+      if (active && ["INPUT", "TEXTAREA", "SELECT"].includes(active.tagName)) return;
+      event.preventDefault();
+      openModal();
+    });
+  }
 
   const current = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".module-rail a").forEach((link) => {
