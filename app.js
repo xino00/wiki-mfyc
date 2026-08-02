@@ -186,7 +186,7 @@
         '<div class="search-modal-head"><strong>Buscar en la guía</strong>' +
         '<button class="search-modal-close" type="button" data-search-close aria-label="Cerrar búsqueda">✕</button></div>' +
         '<div id="search-modal-ui"></div>' +
-        '<p class="search-modal-hint">Busca en las 107 fichas. Pulsa <kbd>Esc</kbd> para cerrar.</p>' +
+        '<p class="search-modal-hint">Busca en toda la guía. Pulsa <kbd>Esc</kbd> para cerrar.</p>' +
         "</div>";
       document.body.appendChild(modal);
       modal.addEventListener("click", (event) => {

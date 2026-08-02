@@ -89,6 +89,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1625,6 +1629,80 @@ h3 {
 
 .highlight-grid {
   grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+}
+
+.clinical-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 0.85rem;
+  align-items: start;
+  margin: 1rem 0 1.25rem;
+}
+
+.clinical-photo-grid--single {
+  grid-template-columns: minmax(0, 42rem);
+}
+
+.clinical-photo-grid--atlas {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.clinical-photo {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--surface-soft) 58%, var(--surface));
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--surface) 88%, transparent);
+}
+
+.clinical-photo img {
+  display: block;
+  width: 100%;
+  height: clamp(14rem, 26vw, 22rem);
+  object-fit: contain;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface-soft) 82%, var(--surface));
+}
+
+.clinical-photo-grid--single .clinical-photo img {
+  height: auto;
+}
+
+.clinical-photo-grid--atlas .clinical-photo img {
+  height: 12rem;
+}
+
+.clinical-photo-grid--atlas .clinical-photo figcaption {
+  padding: 0.72rem 0.78rem 0.8rem;
+  font-size: 0.84rem;
+}
+
+.clinical-photo figcaption {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.8rem 0.9rem 0.9rem;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.clinical-photo figcaption strong {
+  color: var(--ink);
+  font-size: 0.98rem;
+}
+
+.clinical-photo figcaption p {
+  margin: 0;
+}
+
+.photo-credit {
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+.photo-credit a {
+  color: inherit;
 }
 
 .highlight-card,
