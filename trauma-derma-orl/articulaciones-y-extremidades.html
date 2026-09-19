@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -80,23 +83,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Trauma, Derma y ORL</a><span>/</span><span>Articulaciones y extremidades</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Trauma menor · extremidades</span>
       <h1>Articulaciones y extremidades</h1>
       <p class="lead">Una exploración corta pero bien dirigida evita dos errores: llamar contusión a una fractura oculta y convertir cualquier omalgia, gonalgia o dolor mecánico en una cascada de pruebas.</p>
-      <div class="status-row">
-        <span class="pill">Neurovascular</span>
-        <span class="pill">Escafoides</span>
-        <span class="pill">Ottawa</span>
-        <span class="pill">Rodilla</span>
-        <span class="pill">Tobillo</span>
-      </div>
-      <div class="signal-strip" aria-label="Tres cierres en articulaciones y extremidades">
-        <span data-tone="red"><strong>D</strong><em>Distal primero: pulso, relleno, sensibilidad y fuerza antes de tranquilizar.</em></span>
-        <span data-tone="amber"><strong>O</strong><em>Ottawa, tabaquera y Thompson evitan llamar esguince a una lesión oculta.</em></span>
-        <span data-tone="blue"><strong>R</strong><em>Retorno escrito: no apoyo, dolor progresivo, parestesias, frialdad o disnea.</em></span>
-      </div>
     </header>
 
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#primeros-5">Hacer la primera exploración</a>
+      <a href="#muneca-segura">Valorar muñeca tras caída</a>
+      <a href="#rodilla-exploracion">Explorar una rodilla</a>
+      <a href="#tobillo-dedos">Valorar tobillo y pie</a>
+      <a href="#miembro-superior">Explorar hombro, codo y mano</a>
+      <a href="#tratamiento">Preparar tratamiento y revisión</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de articulaciones y extremidades</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -113,8 +113,10 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
 
     <section class="article-content">
+      <ul><li>Distal primero: pulso, relleno, sensibilidad y fuerza antes de tranquilizar.</li><li>Ottawa, tabaquera y Thompson evitan llamar esguince a una lesión oculta.</li><li>Retorno escrito: no apoyo, dolor progresivo, parestesias, frialdad o disnea.</li></ul>
       <section class="clinical-lede" data-tone="amber" id="cribado">
         <div>
           <span class="section-kicker">Antes de etiquetar como contusión</span>
@@ -538,6 +540,13 @@
         </ul>
       </section>
 
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Continuar la valoración y documentarla</h2>
+      <a href="../hemato-reuma/monoartritis-y-gota.html">Monoartritis y gota</a>
+      <a href="columna-y-lumbalgia.html">Columna y lumbalgia</a>
+      <a href="heridas-y-suturas.html">Heridas y suturas</a>
+      <a href="../guardias/cot-y-trauma.html">Plantillas de COT y trauma</a>
     </section>
   </article>
 </main>

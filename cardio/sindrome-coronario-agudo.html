@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,48 +86,32 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>Síndrome coronario agudo</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Urgente</span>
       <h1>Síndrome coronario agudo</h1>
-      <p class="lead">Diagnóstico de puerta, ECG y troponina, reperfusión, antitrombóticos, complicaciones y prevención secundaria.</p>
-      <div class="status-row">
-        <span class="pill">ECG 10 min</span>
-        <span class="pill">Reperfusión</span>
-        <span class="pill">DAPT</span>
-        <span class="pill">Alta</span>
-      </div>
+      <p class="lead">ECG y troponina, reperfusión y antitrombóticos, complicaciones y preparación del alta.</p>
     </header>
-    <nav class="guide-toc" aria-label="Índice de la ficha">
-      <strong>En esta ficha</strong>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
       <div>
-        <a href="#puerta">Puerta</a>
-        <a href="#ecg">ECG</a>
+        <a href="#puerta">Valoración inicial</a>
+        <a href="#ecg">Interpretar ECG</a>
         <a href="#reperfusion">Reperfusión</a>
-        <a href="#farmacos">Fármacos</a>
-        <a href="#nste">SCASEST</a>
-        <a href="#complicaciones">Complicaciones</a>
-        <a href="#alta">Hospital/alta</a>
-        <a href="#trampas">Trampas</a>
+        <a href="#farmacos">Consultar fármacos</a>
+        <a href="#nste">Estratificar SCASEST</a>
+        <a href="#alta">Preparar el alta</a>
       </div>
     </nav>
+    <details class="reference-details">
+      <summary>Complicaciones y precauciones</summary>
+      <nav class="guide-toc" aria-label="Otros apartados">
+        <a href="#complicaciones">Complicaciones</a>
+        <a href="#trampas">Precauciones</a>
+      </nav>
+    </details>
+    <p class="guide-scope-link">Si necesitas orientar el síntoma y su diagnóstico diferencial, empieza por <a href="../urgencias/dolor-toracico.html">Dolor torácico: valoración inicial</a>.</p>
     <section class="article-content">
-
-<div class="clinical-lede" data-tone="red">
-  <div>
-    <span class="eyebrow">SCA</span>
-    <h2>Primero decide si hay un vaso que abrir ya</h2>
-  </div>
-  <p>El primer ECG separa dos mundos: IAMCEST o equivalente, que activa reperfusión inmediata, y SCASEST, que exige troponina dinámica, riesgo clínico y vigilancia estrecha. La troponina aislada no diagnostica SCA si no encaja con clínica, ECG o imagen.</p>
-</div>
-
-<div class="signal-strip" aria-label="Tres relojes iniciales en síndrome coronario agudo">
-  <span data-tone="red"><strong>V</strong><em>Vaso cerrado: ST persistente o equivalente activa reperfusión sin esperar troponina.</em></span>
-  <span data-tone="amber"><strong>R</strong><em>Riesgo NSTE: dolor recurrente, cambios dinámicos, GRACE o troponina mandan invasiva precoz.</em></span>
-  <span data-tone="blue"><strong>D</strong><em>Daño miocárdico no siempre es SCA: contexto y ECG evitan tratar la troponina aislada.</em></span>
-</div>
 
 <section class="practice-section" id="puerta">
   <div class="practice-section-head">
-    <span class="section-kicker">Entrada</span>
     <h2>Puerta de urgencias</h2>
     <p>En los primeros minutos no se busca cerrar todo el diagnóstico: se busca no perder el IAM que necesita red de infarto.</p>
   </div>
@@ -202,6 +189,11 @@
       <p>Parada recuperada con STEMI va a PPCI; sin STEMI y estable, la angiografía inmediata no aporta beneficio rutinario.</p>
     </article>
   </div>
+  <ul>
+    <li>Vaso cerrado: ST persistente o equivalente activa reperfusión sin esperar troponina.</li>
+    <li>Riesgo NSTE: dolor recurrente, cambios dinámicos, GRACE o troponina mandan invasiva precoz.</li>
+    <li>Daño miocárdico no siempre es SCA: contexto y ECG evitan tratar la troponina aislada.</li>
+  </ul>
 </section>
 
 <section class="practice-section" id="ecg">
@@ -210,6 +202,7 @@
     <h2>ECG que cambia la conducta</h2>
     <p>El SCA no se filtra solo por dolor y troponina. El patrón eléctrico manda cuando sugiere oclusión aguda.</p>
   </div>
+  <p>El primer ECG separa dos mundos: IAMCEST o equivalente, que activa reperfusión inmediata, y SCASEST, que exige troponina dinámica, riesgo clínico y vigilancia estrecha. La troponina aislada no diagnostica SCA si no encaja con clínica, ECG o imagen.</p>
 
   <div class="table-wrap compare-matrix">
     <table>
@@ -645,6 +638,12 @@
 
 
     </section>
+    <nav class="related-guides" aria-label="Guías complementarias">
+      <h2>Continuar la consulta</h2>
+      <a href="../urgencias/dolor-toracico.html">Dolor torácico: valoración inicial y otras causas</a>
+      <a href="riesgo-cardiovascular-y-dislipemia.html">Riesgo cardiovascular y dislipemia</a>
+      <a href="../guardias/boxes-urgencias.html#pase">Plantilla de pase de boxes</a>
+    </nav>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Cardiología · Guía de supervivencia para el residente de MFyC</footer>

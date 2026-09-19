@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -84,50 +87,34 @@
     </nav>
 
     <header class="article-header guide-header">
-      <span class="eyebrow">Consulta/seguimiento</span>
       <h1>Esclerosis múltiple y síncope neurológico</h1>
       <p class="lead">Cómo diferenciar brote de pseudobrote, cuándo tratar con metilprednisolona y cómo orientar una pérdida transitoria de conciencia.</p>
-      <div class="status-row">
-        <span class="pill">Brote EM</span>
-        <span class="pill">Pseudobrote</span>
-        <span class="pill">AQP4/MOG</span>
-        <span class="pill">Síncope</span>
-      </div>
     </header>
 
-    <nav class="guide-toc" aria-label="Índice de la ficha">
-      <strong>En esta ficha</strong>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
       <div>
-        <a href="#brote">Brote EM</a>
-        <a href="#diagnostico-em">Diagnóstico EM</a>
-        <a href="#tratamiento-em">Tratamiento EM</a>
-        <a href="#sincope">Síncope</a>
-        <a href="#riesgo">Riesgo</a>
-        <a href="#trampas">Trampas</a>
+        <a href="#brote">Distinguir brote y pseudobrote</a>
+        <a href="#sincope">Orientar pérdida de conciencia</a>
+        <a href="#riesgo">Estratificar síncope</a>
+        <a href="#diagnostico-em">Estudiar sospecha de EM</a>
+        <a href="#tratamiento-em">Tratar el brote</a>
+        <a href="#trampas">Revisar precauciones</a>
       </div>
     </nav>
 
     <section class="article-content">
-      <div class="clinical-lede" data-tone="blue">
-        <div>
-          <span class="eyebrow">Doble filtro</span>
-          <h2>No todo empeoramiento de EM es brote, y casi ningún síncope es “neurológico puro”</h2>
+      <section class="practice-section" id="brote">
+        <div class="practice-section-head">
+          <span class="section-kicker">Brote de EM</span>
+          <h2>Brote verdadero: síntoma objetivo ≥24 h sin fiebre ni infección</h2>
+          <p>El pseudobrote empeora síntomas antiguos por un factor sistémico y no necesita corticoides; necesita tratar el desencadenante.</p>
         </div>
-        <p>En EM primero descarta infección, fiebre, calor o estrés antes de dar corticoides. En síncope, ECG, historia y riesgo cardiogénico pesan más que pedir neuroimagen salvo focalidad, cefalea en trueno o datos de crisis.</p>
-      </div>
-
-      <div class="clinical-split" aria-label="Doble filtro de EM y síncope">
         <section class="content-panel">
           <h3>EM: antes de metilprednisolona</h3>
           <p>Confirma déficit objetivo de más de 24 h y descarta fiebre, ITU, calor, estrés, encefalopatía o patrón vascular. Si solo reaparecen síntomas antiguos con desencadenante, trata el desencadenante y reevalúa.</p>
         </section>
-        <section class="content-panel">
-          <h3>Síncope: antes de neuroimagen</h3>
-          <p>ECG, tira de ritmo, glucemia, ortostatismo, testigos y fármacos. Reserva el carril neurológico para focalidad persistente, cefalea en trueno, crisis probable o datos vertebrobasilares.</p>
-        </section>
-      </div>
-
-      <div class="timeline" aria-label="Doble carril inicial en EM y síncope">
+      <div class="timeline" aria-label="Valoración inicial del brote de EM">
         <article>
           <span>EM 1</span>
           <strong>¿Déficit nuevo y objetivo?</strong>
@@ -138,24 +125,8 @@
           <strong>¿Hay imitador o brote atípico?</strong>
           <p>Encefalopatía, convulsiones, inicio vascular, mielitis completa o neuritis óptica bilateral obligan a abrir diferencial antes de corticoides.</p>
         </article>
-        <article>
-          <span>PTC 1</span>
-          <strong>¿Fue síncope real?</strong>
-          <p>Inicio rápido, duración corta y recuperación completa sin focalidad. Si hay postcrítico largo, mordedura lateral o focalidad, cambia de carril.</p>
-        </article>
-        <article>
-          <span>PTC 2</span>
-          <strong>¿Hay riesgo cardiaco?</strong>
-          <p>ECG siempre. Esfuerzo, decúbito, palpitaciones bruscas, cardiopatía, PAS &lt;90 o ECG patológico mandan observación/ingreso.</p>
-        </article>
       </div>
-
-      <section class="practice-section" id="brote">
-        <div class="practice-section-head">
-          <span class="section-kicker">Brote de EM</span>
-          <h2>Brote verdadero: síntoma objetivo ≥24 h sin fiebre ni infección</h2>
-          <p>El pseudobrote empeora síntomas antiguos por un factor sistémico y no necesita corticoides; necesita tratar el desencadenante.</p>
-        </div>
+        <p>En EM primero descarta infección, fiebre, calor o estrés antes de dar corticoides.</p>
 
         <div class="decision-board">
           <article class="decision-node" data-tone="green">
@@ -324,6 +295,23 @@
           <h2>Síncope: recuperación completa sin focalidad posterior</h2>
           <p>El síncope neurológico puro es raro; si aparece déficit al recuperar, deja de ser síncope banal.</p>
         </div>
+        <section class="content-panel">
+          <h3>Síncope: antes de neuroimagen</h3>
+          <p>ECG, tira de ritmo, glucemia, ortostatismo, testigos y fármacos. Reserva el carril neurológico para focalidad persistente, cefalea en trueno, crisis probable o datos vertebrobasilares.</p>
+        </section>
+      <div class="timeline" aria-label="Valoración inicial del síncope">
+        <article>
+          <span>PTC 1</span>
+          <strong>¿Fue síncope real?</strong>
+          <p>Inicio rápido, duración corta y recuperación completa sin focalidad. Si hay postcrítico largo, mordedura lateral o focalidad, cambia de carril.</p>
+        </article>
+        <article>
+          <span>PTC 2</span>
+          <strong>¿Hay riesgo cardiaco?</strong>
+          <p>ECG siempre. Esfuerzo, decúbito, palpitaciones bruscas, cardiopatía, PAS &lt;90 o ECG patológico mandan observación/ingreso.</p>
+        </article>
+      </div>
+        <p>En síncope, ECG, historia y riesgo cardiogénico pesan más que pedir neuroimagen salvo focalidad, cefalea en trueno o datos de crisis.</p>
 
         <div class="table-wrap compare-matrix">
           <table>
@@ -476,6 +464,13 @@
         </ul>
       </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="infeccion-snc-y-mielopatias.html">Infección SNC y mielopatías</a>
+        <a href="crisis-y-neuromuscular.html">Crisis y neuromuscular urgente</a>
+        <a href="../cardio/aorta-valvulas-y-estructural.html#sincope">Síncope: valoración cardiovascular</a>
+        <a href="../cardio/fibrilacion-auricular-y-arritmias.html">Fibrilación auricular y arritmias</a>
+      </nav>
     </section>
   </article>
 </main>

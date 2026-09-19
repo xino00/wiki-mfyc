@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="module-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,115 +62,89 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="shell">
-  <section class="module-hero practical-hero">
-    <div>
-      <nav class="breadcrumb" aria-label="Migas de pan">
+    <header class="module-heading">
+    <nav class="breadcrumb" aria-label="Migas de pan">
         <a href="../index.html">Inicio</a><span>/</span><span>Neurología</span>
       </nav>
-      <span class="eyebrow">Déficit focal · cefalea · bajo nivel</span>
-      <h1>Neurología</h1>
-      <p class="lead">Decisiones prácticas para déficit focal, cefalea con alarma, bajo nivel, infección SNC, TCE, crisis, debilidad neuromuscular, vértigo, brote de EM y síncope.</p>
-    </div>
-    <aside class="action-panel" aria-label="Accesos rápidos">
-      <h2>Entrada rápida</h2>
-      <a href="ictus-y-hemorragia.html"><strong>Ictus</strong><span>Código, HSA, HIC, TVC</span></a>
-      <a href="cefaleas.html"><strong>Cefalea</strong><span>SNOOP10 y tratamiento</span></a>
-      <a href="coma-y-confusion.html"><strong>Bajo nivel</strong><span>Coma, delirium, tóxicos</span></a>
-      <a href="crisis-y-neuromuscular.html"><strong>Status</strong><span>Crisis y respiratorio</span></a>
-    </aside>
-  </section>
+    <h1>Neurología</h1>
+    <p class="lead">Decisiones prácticas para déficit focal, cefalea con alarma, bajo nivel, infección SNC, TCE, crisis, debilidad neuromuscular, vértigo, brote de EM y síncope.</p>
+  </header>
+  <nav class="context-nav module-sections" aria-label="Apartados del módulo"><a href="#vascular">Vascular</a><a href="#sindromes-urgentes">Síndromes urgentes</a><a href="#consulta-seguimiento">Consulta y seguimiento</a></nav>
 
   <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
     <label class="search-box" for="module-search">
-      <span>Buscar en Neurología</span>
+      <span>Filtrar títulos y temas</span>
       <input id="module-search" type="search" placeholder="ictus, HSA, aciclovir, HINTS, status, metilprednisolona..." data-filter-input>
     </label>
     <p class="result-count" data-filter-results aria-live="polite"></p>
   </section>
   <div id="module-empty" class="empty-state" aria-live="polite">No hay entradas que coincidan con la búsqueda.</div>
 
-  <section class="section-band" aria-labelledby="vascular">
+  <section class="section-band module-group" data-filter-group aria-labelledby="vascular">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Neurología</span>
         <h2 id="vascular">Vascular</h2>
       </div>
       <p>Ictus, hemorragias y trombosis venosa cerebral.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="ictus-y-hemorragia.html" data-category="Vascular" data-search="ictus codigo ictus acv ait nihss aspects fibrinolisis alteplasa tenecteplasa trombectomia hsa hemorragia subaracnoidea cefalea trueno nimodipino hemorragia intracerebral hic reversal anticoagulacion andexanet idarucizumab protamina vitamina k cpp trombosis venosa cerebral tvc heparina enoxaparina papiledema puerperio tres cierres tiempo deficit focal brusco despertar activa codigo imagen util hemorragia cefalea trueno anticoagulacion deterioro tc ta reversion venoso cefalea crisis papiledema puerperio ao abre tvc heparina">
-        <span class="card-kicker">Vascular</span>
         <h3>Ictus y hemorragia intracraneal</h3>
         <p>Código ictus, reperfusión, HSA, HIC, reversión de anticoagulación y trombosis venosa cerebral.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="sindromes-urgentes">
+  <section class="section-band module-group" data-filter-group aria-labelledby="sindromes-urgentes">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Neurología</span>
         <h2 id="sindromes-urgentes">Síndromes urgentes</h2>
       </div>
       <p>Bajo nivel, infección del SNC, trauma, crisis y neuromuscular.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="coma-y-confusion.html" data-category="Síndromes urgentes" data-search="coma bajo nivel conciencia gcs four delirium sindrome confusional agudo cam rass encefalopatia metabolica toxica hipoglucemia tiamina wernicke lactulosa rifaximina hiponatremia suero hipertonico naloxona flumazenilo eeg estado no convulsivo tres acciones ventila protege reflejos perdidos reversibles ya miosis hipoventilacion tc snc febril">
-        <span class="card-kicker">Síndromes urgentes</span>
         <h3>Coma, bajo nivel y síndrome confusional</h3>
         <p>Ruta de estabilización, causas reversibles, encefalopatías metabólico-tóxicas y delirium.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="infeccion-snc-y-mielopatias.html" data-category="Síndromes urgentes" data-search="meningitis encefalitis meningoencefalitis primera hora pl pendiente no frena antibiotico muestras no retrasen lcr puncion lumbar tc antes pl criterios gcs 12 focalidad crisis loe inmunosupresion ceftriaxona vancomicina ampicilina listeria dexametasona aciclovir herpes vhs conducta focalidad mielopatia mielopatias agudas mielitis transversa esfinteres nivel sensitivo rm medular compresion neurocirugia metilprednisolona plasmaferesis hipertension intracraneal htic cushing midriasis manitol suero hipertonico herniacion uci tres cierres atb aciclovir pl tc retrasan tratar antes confirmar rm medular nivel sensitivo deficit motor esfinteres descartan compresion pl segura focalidad crisis gcs bajo htic inmunosupresion tc previa">
-        <span class="card-kicker">Síndromes urgentes</span>
         <h3>Infección SNC y mielopatías</h3>
         <p>Meningitis, encefalitis, síndrome medular agudo e hipertensión intracraneal.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="tce.html" data-category="Síndromes urgentes" data-search="tce traumatismo craneoencefalico destino inicial tc observacion ingreso alta segura uci neurocirugia glasgow gcs ocular verbal motora ovm pupilas anisocoria decorticacion descerebracion canadian ct head rule anticoagulacion coagulopatia antiagregacion fractura base craneo nexus cervical hematoma epidural subdural contusion lesion axonal difusa pic manitol suero hipertonico raquimedular asia acompanante vigilancia 24 48 horas deterioro pupilas tres cierres gcs serie o v m pupilas tendencia pesan etiqueta antigua canadian nexus solo aplican anticoagulacion coagulopatia cuello no valorable salen regla secundario gcs 8 hipoxia hipotension anisocoria via aerea uci">
-        <span class="card-kicker">Síndromes urgentes</span>
         <h3>Traumatismo craneoencefálico</h3>
         <p>TCE leve-moderado y grave, TC, cervical, lesiones traumáticas, PIC y raquimedular.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="crisis-y-neuromuscular.html" data-category="Síndromes urgentes" data-search="status epileptico estado epileptico crisis convulsiva minuto 5 minuto 10 destino uci monitorizacion eeg continuo eenc confusion persistente benzodiacepinas midazolam diazepam clonazepam valproato levetiracetam fenitoina lacosamida eeg miastenia crisis miastenica piridostigmina igiv plasmaferesis guillain barre gbs fvc pim pem bulbar disfagia voz nasal secreciones tos debil disautonomia telemetria neuroleptico maligno snm hipertermia rabdomiolisis dantroleno bromocriptina tres cierres minuto 5 benzodiacepina minuto 10 carga antiepileptica completa respira numeros fvc pim pem sato2 normal no descarta fallo uci antes colapso bulbar disautonomia progreso rapido snm grave">
-        <span class="card-kicker">Síndromes urgentes</span>
         <h3>Crisis y neuromuscular urgente</h3>
         <p>Status epiléptico, crisis miasténica, Guillain-Barré y síndrome neuroléptico maligno.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="consulta-seguimiento">
+  <section class="section-band module-group" data-filter-group aria-labelledby="consulta-seguimiento">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Neurología</span>
         <h2 id="consulta-seguimiento">Consulta y seguimiento</h2>
       </div>
       <p>Cefalea, vértigo, EM y síncope.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="cefaleas.html" data-category="Consulta/seguimiento" data-search="cefalea snoop10 migraña migrana no primaria trueno focalidad bajo nivel fiebre papiledema acufeno pulsatil valsalva postural presion intracraneal lcr embarazo puerperio ojo doloroso horner perdida visual triptan sumatriptan rimegepante lasmiditan topiramato propranolol amitriptilina cgrp racimos cluster oxigeno verapamilo neuralgia trigemino carbamazepina arteritis temporal">
-        <span class="card-kicker">Consulta/seguimiento</span>
         <h3>Cefaleas</h3>
         <p>SNOOP10, migraña, racimos, tensional, neuralgias, embarazo, pediatría y alta segura.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card" href="mareo-y-vertigo.html" data-category="Consulta/seguimiento" data-search="mareo vertigo bifurcacion periferico central mixto fife continuum icvd barany titrate attest hints sva vppb dix hallpike epley semont neuritis vestibular meniere migraña vestibular mppp vestibulopatia bilateral nistagmo central periferico downbeat gaze evoked head impulse skew ataxia hipoacusia subita aica wernicke doble causa laberintitis seguimiento tres bifurcaciones centralidad mala marcha tiempo trigger dias continuos mixto solaparse">
-        <span class="card-kicker">Consulta/seguimiento</span>
         <h3>Mareo y vértigo</h3>
         <p>Cronología y desencadenantes, HINTS, VPPB, neuritis, Menière, migraña vestibular y MPPP.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card" href="esclerosis-multiple-y-sincope.html" data-category="Consulta/seguimiento" data-search="esclerosis multiple em doble filtro doble carril brote pseudobrote sda sindrome desmielinizante deficit nuevo objetivo 24 horas neuritis optica mielitis metilprednisolona plasmaferesis aqp4 mog mcdonald imitador encefalopatia convulsiones inicio vascular sincope presincope ptc perdida transitoria conciencia vasovagal ortostatico cardiogenico ecg siempre esfuerzo decubito palpitaciones pas 90 dolor toracico disnea dolor abdominal cefalea nueva traumatismo sin prodromo sangrado digestivo hipotension ecg patologico nuevo holter tilt focalidad neuroimagen crisis postcritico mordedura lateral">
-        <span class="card-kicker">Consulta/seguimiento</span>
         <h3>Esclerosis múltiple y síncope neurológico</h3>
         <p>Brote/pseudobrote de EM, metilprednisolona, AQP4/MOG y orientación del síncope.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>

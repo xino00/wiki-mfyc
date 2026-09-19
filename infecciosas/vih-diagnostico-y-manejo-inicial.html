@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>VIH — Diagnóstico y Manejo Inicial</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Infecciones sistémicas</span>
       <h1>VIH — Diagnóstico y Manejo Inicial</h1>
-      <p class="lead">VIH: diagnóstico, estadiaje por CD4, síndromes oportunistas (PJP), TAR de inicio y profilaxis de oportunistas.</p>
-      <div class="status-row">
-        <span class="pill">ELISA 4.ª gen</span>
-        <span class="pill">CD4 guía riesgo</span>
-        <span class="pill">PJP &lt;200</span>
-        <span class="pill">TAR precoz</span>
-      </div>
+      <p class="lead">Confirmación, primera visita, tratamiento y profilaxis de oportunistas.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#primera-visita">Organizar la primera visita</a><a href="#diagnostico">Confirmar y estadiar</a><a href="#pjp">Valorar neumonía por Pneumocystis</a><a href="#tar">Consultar TAR inicial</a><a href="#profilaxis">Revisar profilaxis</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>No perder el diagnóstico</strong>
@@ -159,10 +160,13 @@
       </article>
     </div>
 
+    <details class="reference-details" data-pagefind-ignore>
+    <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#primera-visita">Primera visita</a><a href="#diagnostico">Diagnóstico</a><a href="#cd4">CD4 y oportunistas</a><a href="#pjp">PJP</a><a href="#tar">TAR</a><a href="#profilaxis">Profilaxis</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -385,8 +389,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="profilaxis-postexposicion-biologica-ppe.html"><span>Otros cuadros</span><strong>Profilaxis Postexposición Biológica (PPE)</strong></a><a href="tuberculosis-tb.html"><span>Infecciones sistémicas</span><strong>Tuberculosis (TB)</strong></a><a href="hepatitis-virales-a-e.html"><span>Infecciones sistémicas</span><strong>Hepatitis Virales (A-E)</strong></a><a href="neutropenia-febril-nf.html"><span>Infecciones sistémicas</span><strong>Neutropenia Febril (NF)</strong></a></div>
 </section>
   </article>

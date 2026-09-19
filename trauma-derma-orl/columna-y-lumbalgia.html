@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -80,22 +83,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Trauma, Derma y ORL</a><span>/</span><span>Columna</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Columna · dolor osteomuscular</span>
       <h1>Columna: cervicalgia, lumbalgia y lumbociática</h1>
       <p class="lead">La clave es separar dolor mecánico manejable de radiculopatía, cola de caballo, infección, cáncer o fractura. La analgesia viene después de esa criba.</p>
-      <div class="status-row">
-        <span class="pill">Cola de caballo</span>
-        <span class="pill">Déficit progresivo</span>
-        <span class="pill">Fiebre/cáncer</span>
-        <span class="pill">Trauma/fragilidad</span>
-      </div>
-      <div class="signal-strip" aria-label="Tres cierres en dolor de columna">
-        <span data-tone="red"><strong>C</strong><em>Cola de caballo se pregunta directo: micción, incontinencia, periné y ano.</em></span>
-        <span data-tone="amber"><strong>D</strong><em>Déficit progresivo: marcha, talones, puntillas, primer dedo y reflejos.</em></span>
-        <span data-tone="blue"><strong>I</strong><em>Imagen si cambia manejo: alarma, trauma, fragilidad, cáncer, infección o mala evolución.</em></span>
-      </div>
     </header>
 
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#banderas-rojas">Buscar banderas rojas</a>
+      <a href="#lumbociatica">Explorar dolor radicular</a>
+      <a href="#tratamiento">Consultar tratamiento inicial</a>
+      <a href="#estenosis">Valorar claudicación al caminar</a>
+      <a href="#cervicalgia">Valorar cervicalgia</a>
+      <a href="#alta">Preparar el alta y las alarmas</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de dolor de columna</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -110,8 +111,10 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
 
     <section class="article-content">
+      <ul><li>Cola de caballo se pregunta directo: micción, incontinencia, periné y ano.</li><li>Déficit progresivo: marcha, talones, puntillas, primer dedo y reflejos.</li><li>Imagen si cambia manejo: alarma, trauma, fragilidad, cáncer, infección o mala evolución.</li></ul>
       <section class="clinical-lede" data-tone="red" id="banderas-rojas">
         <div>
           <span class="section-kicker">Primero descartar gravedad</span>
@@ -423,6 +426,12 @@
         </ul>
       </section>
 
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Completar la exploración</h2>
+      <a href="articulaciones-y-extremidades.html">Articulaciones y extremidades</a>
+      <a href="../dermatologia/psoriasis-dermatitis-seborreica.html">Psoriasis y afectación articular</a>
+      <a href="../guardias/cot-y-trauma.html">Plantillas de COT y trauma</a>
     </section>
   </article>
 </main>

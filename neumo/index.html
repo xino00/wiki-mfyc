@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="module-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,97 +62,77 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="shell">
-  <section class="module-hero practical-hero">
-    <div>
-      <nav class="breadcrumb" aria-label="Migas de pan">
+    <header class="module-heading">
+    <nav class="breadcrumb" aria-label="Migas de pan">
         <a href="../index.html">Inicio</a><span>/</span><span>Neumología</span>
       </nav>
-      <span class="eyebrow">Vía aérea · infección · insuficiencia respiratoria</span>
-      <h1>Neumología</h1>
-      <p class="lead">Fichas para decidir rápido: confirmar obstrucción, medir gravedad, tratar crisis respiratorias y separar infección banal de neumonía o fallo respiratorio.</p>
-    </div>
-    <aside class="action-panel" aria-label="Accesos rápidos">
-      <h2>Entrada rápida</h2>
-      <a href="asma.html"><strong>Asma</strong><span>PBD, control y crisis</span></a>
-      <a href="epoc.html"><strong>EPOC</strong><span>ABE, agudización y alta</span></a>
-      <a href="insuficiencia-respiratoria.html"><strong>IRA</strong><span>Gasometría, soporte y SDRA</span></a>
-      <a href="neumonia-y-bronquitis.html"><strong>NAC</strong><span>Radiografía, gravedad y antibiótico</span></a>
-    </aside>
-  </section>
+    <h1>Neumología</h1>
+    <p class="lead">Fichas para decidir rápido: confirmar obstrucción, medir gravedad, tratar crisis respiratorias y separar infección banal de neumonía o fallo respiratorio.</p>
+  </header>
+  <nav class="context-nav module-sections" aria-label="Apartados del módulo"><a href="#via-aerea">Vía aérea obstructiva</a><a href="#infeccion">Infección y vía aérea alta</a><a href="#gravedad">Gravedad respiratoria</a></nav>
 
   <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
     <label class="search-box" for="module-search">
-      <span>Buscar en Neumología</span>
+      <span>Filtrar títulos y temas</span>
       <input id="module-search" type="search" placeholder="asma, epoc, neumonia, hipercapnia..." data-filter-input>
     </label>
     <p class="result-count" data-filter-results aria-live="polite"></p>
   </section>
   <div id="module-empty" class="empty-state" aria-live="polite">No hay entradas que coincidan con la búsqueda.</div>
 
-  <section class="section-band" aria-labelledby="via-aerea">
+  <section class="section-band module-group" data-filter-group aria-labelledby="via-aerea">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Neumología</span>
         <h2 id="via-aerea">Vía aérea obstructiva</h2>
       </div>
       <p>Confirmar diagnóstico funcional, elegir dispositivo y evitar escaladas ciegas.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="asma.html" data-category="Vía aérea" data-search="asma hiperrespuesta bronquial hbr inflamacion cronica obstruccion variable t2 eosinofilica alergica no t2 obesidad tabaco pbd feno LIN PEF metacolina prick IgE inmunoterapia remision REMAS ACT ACQ GEMA crisis primera hora reevaluacion alta segura no alta saba solo plan escrito salbutamol ipratropio magnesio prednisona PaCO2 hipercapnia agotamiento torax silente bradicardia somnolencia MART SMART GCI LABA LAMA SABA montelukast AGNC biologicos inhaladores tecnica inhalatoria pMDI DPI BAI camara espaciadora TAI flujo inspiratorio exhalar dispositivo pediatria embarazo ACO ocupacional">
-        <span class="card-kicker">Vía aérea</span>
         <h3>Asma</h3>
         <p>Confirmación funcional, control, escalones, crisis, pediatría, AGNC y técnica inhalatoria.</p>
-        <span class="card-meta"><span class="pill">Consulta y urgencias</span></span>
       </a>
       <a class="note-card priority-card" href="epoc.html" data-category="Vía aérea" data-search="epoc GOLD 2026 puerta epoc baja actividad estabilidad espirometria LIN zscore ABE grupo E mMRC CAAT LABA LAMA ICS eosinofilos triple terapia ensifentrine roflumilast azitromicina dupilumab mepolizumab exacerbacion agudizacion primeros 60 minutos diagnostico alternativo Roma Anthonisen oxigeno controlado 88 92 retenedor co2 hipercapnia acidosis ph gasometria GNAF VMNI BiPAP tiraje respiracion paradojica encefalopatia hipercapnica neumonia neumotorax edema pulmonar isquemia arritmia antibiotico purulencia pseudomonas prednisona BAP65 DECAF TEV vitamina D alta rehabilitacion uci tres prioridades gasometria gravedad co2 oxigeno controlado antibiotico selectivo disnea aislada">
-        <span class="card-kicker">Vía aérea</span>
         <h3>EPOC</h3>
         <p>Diagnóstico, tratamiento inicial, ICS, agudización, soporte ventilatorio y alta segura.</p>
-        <span class="card-meta"><span class="pill">Seguimiento y urgencias</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="infeccion">
+  <section class="section-band module-group" data-filter-group aria-labelledby="infeccion">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Neumología</span>
         <h2 id="infeccion">Infección y vía aérea alta</h2>
       </div>
       <p>Separar cuadros autolimitados de los que precisan radiografía, antibiótico o ingreso.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="neumonia-y-bronquitis.html" data-category="Infección" data-search="neumonia nac curb65 fine psi bronquitis broncoespasmo irva tos aguda fiebre hipoxemia sato2 gasometria radiografia torax consolidacion condensacion crepitantes dolor pleuritico antibiotico amoxicilina clavulanico azitromicina levofloxacino ceftriaxona cefotaxima sibilancias no antibiotico fragilidad tolerancia oral expectoracion coloreada guardias plantilla no protocolo reevaluacion alarma asma epoc alta segura observacion ingreso apoyo domiciliario pruebas pendientes hemocultivos antigenuria virus respiratorios 48 72 horas neumologia 4 6 semanas tres preguntas oxigeno trabajo respiratorio condensacion focalidad bronquitis simple sobra">
-        <span class="card-kicker">Infección</span>
         <h3>Neumonía, bronquitis y broncoespasmo</h3>
         <p>NAC, bronquitis aguda, broncoespasmo en IRVA, red flags y tratamiento práctico.</p>
-        <span class="card-meta"><span class="pill">Diferencial de tos</span></span>
       </a>
       <a class="note-card" href="rinitis-y-rinosinusitis.html" data-category="Infección" data-search="rinitis alergica rinoconjuntivitis prurito rinorrea estornudos obstruccion nasal conjuntivitis asma rinosinusitis aguda sinusitis purulencia no mejora 7 dias fiebre 39 dolor facial intenso diplopia edema ocular hiperestesia infraorbitaria complicacion orbitaria intracraneal amoxicilina amoxicilina clavulanico azitromicina levofloxacino proa poliposis anosmia gcin corticoide intranasal tecnica spray antihistaminico azelastina fluticasona mometasona bilastina oximetazolina prednisona montelukast polenes PALINOCAM ARIA GEMA ICAR POLINA EREA biologicos rinitis medicamentosa embarazo epistaxis unilateral tres cierres via aerea alta rescate pitos sueño pared lateral inspiracion suave obstruccion fija">
-        <span class="card-kicker">Vía aérea alta</span>
         <h3>Rinitis alérgica y rinosinusitis</h3>
         <p>Diagnóstico clínico, técnica de spray nasal, manejo de brote grave y poliposis.</p>
-        <span class="card-meta"><span class="pill">AP y urgencias</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="gravedad">
+  <section class="section-band module-group" data-filter-group aria-labelledby="gravedad">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Neumología</span>
         <h2 id="gravedad">Gravedad respiratoria</h2>
       </div>
       <p>Gasometría, gradiente A-a, shunt y ventilación protectora.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="insuficiencia-respiratoria.html" data-category="Gravedad" data-search="insuficiencia respiratoria ira decisiones previas hipoxemia hipercapnia gasometria ph gradiente alveolo arterial spo2 glasgow via aerea secreciones vomitos shock oxigeno convencional escala soporte alto flujo gnaf vni cpap bipap fracaso vni fracaso vmni fracaso gnaf reevaluacion 30 60 minutos gasometria control no protege via aerea sdra distres ards berlin pafi peep shunt baby lung neumonia aspiracion sepsis pancreatitis trali intubacion iot uci volumen corriente plateau driving pressure prono ecmo spo2 88 92 retenedor co2 trabajo respiratorio claudicacion fio2 ventilacion protectora ph 7 25 pH 7,25 bradipnea agotamiento eap hipercapnico tres decisiones iniciales airway primero uci iot mecanismo presion positiva">
-        <span class="card-kicker">Gravedad</span>
         <h3>Insuficiencia respiratoria y SDRA</h3>
         <p>Lectura gasométrica, elección de soporte, criterios de SDRA y ventilación protectora.</p>
-        <span class="card-meta"><span class="pill">Urgencias y UCI</span></span>
       </a>
     </div>
   </section>

@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,16 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>Pericardio y miocardio</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Estructural</span>
       <h1>Pericardio y miocardio</h1>
       <p class="lead">Dolor torácico inflamatorio, derrame, taponamiento, miocarditis, SIMP y constricción sin perder las decisiones urgentes.</p>
-      <div class="status-row">
-        <span class="pill">SIMP</span>
-        <span class="pill">Derrame</span>
-        <span class="pill">Taponamiento</span>
-        <span class="pill">RMC/BEM</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#puerta">Decidir prioridad</a>
+      <a href="#pericarditis">Valorar pericarditis</a>
+      <a href="#derrame">Valorar un derrame</a>
+      <a href="#taponamiento">Reconocer taponamiento</a>
+      <a href="#miocarditis">Sospecha de miocarditis</a>
+      <a href="#seguimiento">Planificar seguimiento</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -108,15 +115,8 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
-
-<div class="clinical-lede" data-tone="amber">
-  <div>
-    <span class="eyebrow">SIMP</span>
-    <h2>El mismo dolor puede ser pericardio, miocardio o una urgencia de drenaje</h2>
-  </div>
-  <p>El eje práctico es localizar el predominio: pericarditis si manda el dolor pleurítico/postural; miocarditis si mandan troponina, disfunción ventricular o arritmias; taponamiento si el derrame compromete el llenado. La conducta cambia mucho más por estabilidad, eco y troponina que por el nombre de la etiqueta.</p>
-</div>
 
 <section class="practice-section" id="puerta">
   <div class="practice-section-head">
@@ -124,6 +124,8 @@
     <h2>Cuatro salidas antes de poner el diagnóstico bonito</h2>
     <p>La etiqueta pericarditis/miocarditis llega después. Primero hay que decidir si el paciente va por SCA, drenaje, ingreso para miocarditis o manejo ambulatorio.</p>
   </div>
+  <p><strong>El mismo dolor puede ser pericardio, miocardio o una urgencia de drenaje</strong></p>
+  <p>El eje práctico es localizar el predominio: pericarditis si manda el dolor pleurítico/postural; miocarditis si mandan troponina, disfunción ventricular o arritmias; taponamiento si el derrame compromete el llenado. La conducta cambia mucho más por estabilidad, eco y troponina que por el nombre de la etiqueta.</p>
 
   <div class="signal-strip" aria-label="Decisiones que no esperan en puerta">
     <span data-tone="red"><strong>1</strong><em>SCA: ECG focal o dolor coronario no se fuerza como pericarditis.</em></span>
@@ -882,6 +884,13 @@
 </section>
 
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="../urgencias/dolor-toracico.html">Dolor torácico: valoración inicial</a>
+        <a href="sindrome-coronario-agudo.html">Síndrome coronario agudo</a>
+        <a href="insuficiencia-cardiaca.html">Insuficiencia cardiaca</a>
+        <a href="aorta-valvulas-y-estructural.html">Aorta, válvulas y cardiopatía estructural</a>
+      </nav>
     </section>
   </article>
 </main>

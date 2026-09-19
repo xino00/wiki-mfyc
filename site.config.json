@@ -1,0 +1,26 @@
+{
+  "name": "Guía de supervivencia para el residente de MFyC",
+  "url": "https://xino00.github.io/wiki-mfyc/",
+  "quickLinks": [
+    { "href": "index.html", "label": "Inicio" },
+    { "href": "index.html#consulta", "label": "Consulta" },
+    { "href": "urgencias/index.html", "label": "Urgencias" },
+    { "href": "index.html#tratamientos", "label": "Tratamientos" },
+    { "href": "index.html#tecnicas", "label": "Plantillas" }
+  ],
+  "modules": [
+    { "href": "urgencias/index.html", "label": "Urgencias" },
+    { "href": "cardio/index.html", "label": "Cardiología" },
+    { "href": "neuro/index.html", "label": "Neurología" },
+    { "href": "infecciosas/index.html", "label": "Infecciosas" },
+    { "href": "digestivo/index.html", "label": "Digestivo" },
+    { "href": "neumo/index.html", "label": "Neumología" },
+    { "href": "nefro-uro/index.html", "label": "Nefro-Urología" },
+    { "href": "endocrino/index.html", "label": "Endocrino" },
+    { "href": "hemato-reuma/index.html", "label": "Hemato-Reuma" },
+    { "href": "dermatologia/index.html", "label": "Dermatología" },
+    { "href": "trauma-derma-orl/index.html", "label": "Trauma y ORL" },
+    { "href": "psiquiatria/index.html", "label": "Psiquiatría" },
+    { "href": "guardias/index.html", "label": "Guardias" }
+  ]
+}

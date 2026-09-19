@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,16 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Urgencias</a><span>/</span><span>Shock</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Tiempo-dependiente</span>
       <h1>Shock</h1>
       <p class="lead">Reconocimiento inicial, fenotipos, soporte y destino.</p>
-      <div class="status-row">
-        <span class="pill">Hipoperfusión</span>
-        <span class="pill">Lactato</span>
-        <span class="pill">POCUS</span>
-        <span class="pill">UCI</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#confirmar">Reconocer hipoperfusión</a>
+      <a href="#primeros-minutos">Primeros quince minutos</a>
+      <a href="#fenotipo">Distinguir el tipo de shock</a>
+      <a href="#pocus">Orientar con POCUS</a>
+      <a href="#farmacos">Consultar fármacos</a>
+      <a href="#causa">Tratar la causa y decidir destino</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -105,10 +112,10 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
-<div class="clinical-lede" data-tone="red">
-  <p class="section-kicker">Idea operativa</p>
-  <h2>Shock es hipoperfusión, no solo una cifra de tensión</h2>
+<div>
+  <p><strong>Shock es hipoperfusión, no solo una cifra de tensión</strong></p>
   <p>Si piel, riñón o cerebro fallan, empieza soporte mientras buscas la causa. No esperes a tener el diagnóstico perfecto para monitorizar, canalizar, medir lactato y pedir ayuda.</p>
 </div>
 
@@ -438,6 +445,13 @@
   </div>
 </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="../infecciosas/sepsis-y-shock-septico.html">Sepsis y shock séptico</a>
+        <a href="anafilaxia.html">Anafilaxia</a>
+        <a href="../cardio/sindrome-coronario-agudo.html">Síndrome coronario agudo</a>
+        <a href="../cardio/tep-y-tvp.html">TEP y TVP</a>
+      </nav>
     </section>
   </article>
 </main>

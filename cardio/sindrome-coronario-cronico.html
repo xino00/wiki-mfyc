@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,16 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>Síndrome coronario crónico</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Crónico</span>
       <h1>Síndrome coronario crónico</h1>
       <p class="lead">Clínica, probabilidad pretest, pruebas diagnósticas, ANOCA/INOCA, tratamiento médico y revascularización.</p>
-      <div class="status-row">
-        <span class="pill">PPT</span>
-        <span class="pill">Angio-TC</span>
-        <span class="pill">ANOCA/INOCA</span>
-        <span class="pill">LDL &lt;55</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#entrada">Separar estable de agudo</a>
+      <a href="#ppt">Estimar probabilidad</a>
+      <a href="#diagnostico">Elegir prueba</a>
+      <a href="#tratamiento">Revisar tratamiento</a>
+      <a href="#anoca-inoca">Angina sin obstrucción</a>
+      <a href="#revascularizacion">Valorar revascularización</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -106,21 +113,8 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
-
-<div class="clinical-lede" data-tone="green">
-  <div>
-    <span class="eyebrow">SCC</span>
-    <h2>Angina estable no siempre significa estenosis fija</h2>
-  </div>
-  <p>El síndrome coronario crónico incluye EAC obstructiva, vasoespasmo, disfunción microvascular, fase estable tras SCA/ICP/CABG, insuficiencia cardiaca isquémica y hallazgos incidentales. La pregunta útil es: ¿esto es agudo?, ¿cuánta probabilidad hay de obstrucción?, ¿qué prueba cambia conducta?</p>
-</div>
-
-<div class="signal-strip" aria-label="Tres filtros en síndrome coronario crónico">
-  <span data-tone="red"><strong>A</strong><em>Agudo primero: reposo prolongado, cambio de umbral o ECG/troponina mandan vía SCA.</em></span>
-  <span data-tone="blue"><strong>P</strong><em>Probabilidad: PPT y calcio deciden si no estudiar, angio-TC o imagen funcional.</em></span>
-  <span data-tone="green"><strong>M</strong><em>Microvascular: coronarias no obstructivas no cierran el caso si la angina persiste.</em></span>
-</div>
 
 <section class="practice-section" id="entrada">
   <div class="practice-section-head">
@@ -128,6 +122,13 @@
     <h2>Primero separa estable de inestable</h2>
     <p>Un SCC mal triado puede esconder un SCA; un SCC sobreestudiado puede generar falsos positivos.</p>
   </div>
+  <p><strong>Angina estable no siempre significa estenosis fija</strong></p>
+  <p>El síndrome coronario crónico incluye EAC obstructiva, vasoespasmo, disfunción microvascular, fase estable tras SCA/ICP/CABG, insuficiencia cardiaca isquémica y hallazgos incidentales. La pregunta útil es: ¿esto es agudo?, ¿cuánta probabilidad hay de obstrucción?, ¿qué prueba cambia conducta?</p>
+  <ul>
+    <li>Agudo primero: reposo prolongado, cambio de umbral o ECG/troponina mandan vía SCA.</li>
+    <li>Probabilidad: PPT y calcio deciden si no estudiar, angio-TC o imagen funcional.</li>
+    <li>Microvascular: coronarias no obstructivas no cierran el caso si la angina persiste.</li>
+  </ul>
 
   <div class="highlight-grid">
     <article class="highlight-card" data-tone="red">
@@ -609,6 +610,12 @@
 </section>
 
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="sindrome-coronario-agudo.html">Síndrome coronario agudo</a>
+        <a href="riesgo-cardiovascular-y-dislipemia.html">Riesgo cardiovascular y dislipemia</a>
+        <a href="insuficiencia-cardiaca.html">Insuficiencia cardiaca</a>
+      </nav>
     </section>
   </article>
 </main>

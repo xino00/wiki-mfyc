@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -93,7 +96,19 @@
         <span class="pill">Gasometría</span>
       </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#peligro">Reconocer peligro inmediato</a>
+      <a href="#sodio">Consultar alteraciones del sodio</a>
+      <a href="#potasio">Consultar alteraciones del potasio</a>
+      <a href="#reposicion">Revisar dosis y reposición</a>
+      <a href="#reevaluacion">Planificar la reevaluación</a>
+      <a href="#gasometria">Interpretar la gasometría</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha"><strong>En esta ficha</strong><div><a href="#peligro">Peligro inmediato</a><a href="#preanalitica">Preanalítica</a><a href="#sodio">Sodio</a><a href="#potasio">Potasio</a><a href="#reposicion">Reposición</a><a href="#reevaluacion">Reevaluación</a><a href="#gasometria">Gasometría</a><a href="#patrones">Patrones</a><a href="#calcio-magnesio">Ca/Mg</a><a href="#trampas">Trampas</a></div></nav>
+    </details>
     <section class="article-content">
       
 <div class="clinical-lede" data-tone="green">
@@ -372,6 +387,12 @@
 </section>
 
     </section>
+    <nav class="related-guides" aria-label="Guías relacionadas">
+      <h2>Guías relacionadas</h2>
+      <a href="../nefro-uro/fracaso-renal-agudo.html">Fracaso renal agudo</a>
+      <a href="soporte-vital-y-exploracion.html">Soporte vital y exploración dirigida</a>
+      <a href="shock.html">Shock</a>
+    </nav>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Urgencias · Guía de supervivencia para el residente de MFyC</footer>

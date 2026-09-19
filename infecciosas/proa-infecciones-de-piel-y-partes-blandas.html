@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,29 +108,19 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>PROA - Infecciones de Piel y Partes Blandas</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Síndromes ambulatorios</span>
       <h1>PROA - Infecciones de Piel y Partes Blandas</h1>
-      <p class="lead">Guía rápida para decidir muestra, drenaje y antibiótico en impétigo, erisipela, celulitis, abscesos, mordeduras y heridas con exposición ambiental.</p>
-      <div class="status-row">
-        <span class="pill">Clínica primero</span>
-        <span class="pill">Absceso: drenaje</span>
-        <span class="pill">SARM si riesgo</span>
-        <span class="pill">Mordeduras: profilaxis selectiva</span>
-      </div>
+      <p class="lead">Muestras, drenaje y antibióticos en infección cutánea, abscesos y mordeduras.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#algoritmo">Clasificar la lesión</a><a href="#muestras">Elegir muestra</a><a href="#superficiales">Tratar impétigo y erisipela</a><a href="#celulitis-absceso">Tratar celulitis o absceso</a><a href="#mordeduras-heridas">Valorar mordedura o herida</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Muestras con cabeza</strong>
       <p>El diagnóstico suele ser clínico. Evita frotis superficial con torunda por baja rentabilidad; si necesitas microbiología, busca pus por aspirado o muestra profunda.</p>
     </section>
-
-    <div class="clinical-lede" data-tone="green">
-      <div>
-        <span class="eyebrow">Piel y partes blandas</span>
-        <h2>La inspección decide más que una torunda</h2>
-      </div>
-      <p>Separa lesión superficial, celulitis no purulenta, absceso drenables y heridas con exposición especial. Esa clasificación decide muestra, drenaje, cobertura SARM, profilaxis de mordedura y necesidad de reevaluación.</p>
-    </div>
 
     <div class="signal-strip" aria-label="Tres puertas antes de pautar en piel y partes blandas">
       <span data-tone="red"><strong>P</strong><em>Pus o fluctuación: drenaje primero; antibiótico solo si criterios.</em></span>
@@ -158,10 +151,13 @@
       </article>
     </section>
 
+    <details class="reference-details" data-pagefind-ignore>
+    <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#algoritmo">Algoritmo</a><a href="#muestras">Muestras</a><a href="#superficiales">Superficiales</a><a href="#celulitis-absceso">Celulitis y absceso</a><a href="#mordeduras-heridas">Mordeduras y heridas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -374,8 +370,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html"><span>PROA y antimicrobianos</span><strong>PROA - Guía de Antimicrobianos y Síndromes Infecciosos</strong></a><a href="proa-infecciones-gastrointestinales.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones Gastrointestinales</strong></a><a href="proa-infecciones-respiratorias.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones Respiratorias</strong></a></div>
 </section>
   </article>

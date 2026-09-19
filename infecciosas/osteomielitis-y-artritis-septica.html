@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Osteomielitis y Artritis Séptica</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Otros cuadros</span>
       <h1>Osteomielitis y Artritis Séptica</h1>
-      <p class="lead">Infección osteoarticular con dos reglas distintas: osteomielitis exige microbiología antes del antibiótico; artritis séptica exige artrocentesis y tratamiento urgente.</p>
-      <div class="status-row">
-        <span class="pill">Cultivos primero</span>
-        <span class="pill">RM si OM vertebral</span>
-        <span class="pill">Artrocentesis urgente</span>
-        <span class="pill">Prótesis = cirugía</span>
-      </div>
+      <p class="lead">Muestras, tratamiento y control del foco en infección ósea, articular y protésica.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#mapa">Decidir muestra y momento del antibiótico</a><a href="#osteomielitis">Consultar osteomielitis</a><a href="#pie">Valorar pie diabético</a><a href="#artritis">Actuar en artritis séptica</a><a href="#protesis">Valorar prótesis infectada</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Antibiótico no siempre va primero</strong>
@@ -127,10 +128,13 @@
       <span data-tone="amber"><strong>P</strong><em>Prótesis o material = biofilm: muestras profundas y cirugía, no solo receta.</em></span>
     </div>
 
+    <details class="reference-details" data-pagefind-ignore>
+    <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#mapa">Mapa de muestras</a><a href="#inicio">Primeros pasos</a><a href="#osteomielitis">Osteomielitis</a><a href="#pie">Pie diabético</a><a href="#artritis">Artritis nativa</a><a href="#protesis">Prótesis</a><a href="#trampas">Trampas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -417,8 +421,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="bacteriemia-y-candidemia.html"><span>Infecciones sistémicas</span><strong>Bacteriemia y Candidemia</strong></a><a href="proa-betalactamicos-cefalosporinas-y-carbapenemicos.html"><span>PROA y antimicrobianos</span><strong>PROA - Betalactámicos, Cefalosporinas y Carbapenémicos</strong></a><a href="covid-19.html"><span>Otros cuadros</span><strong>COVID-19</strong></a></div>
 </section>
   </article>

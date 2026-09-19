@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Sepsis - Abordaje Inicial (SSC 2026)</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Sepsis</span>
       <h1>Sepsis - Abordaje Inicial (SSC 2026)</h1>
-      <p class="lead">Ficha de puerta para sospechar sepsis, medir disfunción orgánica, decidir el reloj del antibiótico, iniciar reanimación y avisar a UCI cuando el paciente ya no puede esperar.</p>
-      <div class="status-row">
-        <span class="pill">Sospecha clínica</span>
-        <span class="pill">Bundle 1 h</span>
-        <span class="pill">SOFA y NEWS</span>
-        <span class="pill">Control de foco</span>
-      </div>
+      <p class="lead">Reconocimiento, primeras medidas, control del foco y criterios de aviso a UCI.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#bundle">Iniciar las primeras medidas</a><a href="#sofa">Consultar SOFA</a><a href="#foco">Elegir tratamiento por foco</a><a href="#uci">Valorar aviso a UCI</a><a href="#reconocer">Revisar probabilidad y gravedad</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Regla de puerta</strong>
@@ -151,10 +152,13 @@
     </div>
     
 
+<details class="reference-details" data-pagefind-ignore>
+<summary>Todos los apartados</summary>
 <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#reconocer">Reconocer</a><a href="#cribado">Cribado</a><a href="#sofa">SOFA</a><a href="#bundle">Bundle</a><a href="#biomarcadores">Biomarcadores</a><a href="#foco">Foco</a><a href="#uci">UCI</a><a href="#trampas">Trampas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -460,8 +464,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="sepsis-hemodinamica-y-reanimacion-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Hemodinámica y Reanimación (SSC 2026)</strong></a><a href="sepsis-antiinfecciosos-y-soporte-vital-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Antiinfecciosos y Soporte Vital (SSC 2026)</strong></a><a href="sepsis-cuidados-post-uci-y-objetivos-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Cuidados Post-UCI y Objetivos (SSC 2026)</strong></a></div>
 </section>
   </article>

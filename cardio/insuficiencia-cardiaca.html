@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,16 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>Insuficiencia cardiaca</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Urgente</span>
       <h1>Insuficiencia cardiaca</h1>
       <p class="lead">IC aguda y crónica: diagnóstico, perfiles hemodinámicos, diuréticos, riñón y tratamiento modificador.</p>
-      <div class="status-row">
-        <span class="pill">Húmedo/frío</span>
-        <span class="pill">Diurético</span>
-        <span class="pill">Cardiorrenal</span>
-        <span class="pill">4 pilares</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#puerta">Valorar descompensación</a>
+      <a href="#perfil">Congestión y perfusión</a>
+      <a href="#tratamiento-agudo">Tratamiento inicial</a>
+      <a href="#diuretico-rinon">Reevaluar diurético y riñón</a>
+      <a href="#cronica">Revisar tratamiento crónico</a>
+      <a href="#destino">Preparar destino y seguimiento</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -107,14 +114,17 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
 
-<div class="clinical-lede" data-tone="blue">
-  <p class="section-kicker">Idea operativa</p>
-  <h2>En IC aguda, la pregunta no es "cuánta furosemida", sino si está húmedo, frío o ambas</h2>
+<section class="practice-section" id="puerta">
+  <div class="practice-section-head">
+    <span class="section-kicker">Primer minuto</span>
+    <h2>Confirmar gravedad, congestión y desencadenante</h2>
+    <p>La IC aguda puede ser de novo o una descompensación. No cierres el diagnóstico sin buscar CHAMP: SCA, hipertensión, arritmia, causa mecánica o TEP.</p>
+  </div>
+  <p><strong>En IC aguda, la pregunta no es "cuánta furosemida", sino si está húmedo, frío o ambas</strong></p>
   <p>La mayoría llegan congestivos y perfundidos: oxígeno si lo necesitan, VMNI si claudican, diurético IV y reevaluación precoz. Si aparece hipoperfusión, hipotensión o shock, el manejo cambia de descongestión rutinaria a soporte hemodinámico y UCI.</p>
-</div>
-
 <div class="signal-strip" aria-label="Tres mandos iniciales en insuficiencia cardiaca">
   <span data-tone="blue"><strong>C</strong><em>Congestión: si está húmedo y perfundido, descongestiona y mide respuesta.</em></span>
   <span data-tone="red"><strong>P</strong><em>Perfusión: frío, hipotenso u oligúrico cambia a soporte y UCI precoz.</em></span>
@@ -130,12 +140,6 @@
   <span>Alta: peso, potasio, renal, diurético y seguimiento.</span>
 </div>
 
-<section class="practice-section" id="puerta">
-  <div class="practice-section-head">
-    <span class="section-kicker">Primer minuto</span>
-    <h2>Confirmar gravedad, congestión y desencadenante</h2>
-    <p>La IC aguda puede ser de novo o una descompensación. No cierres el diagnóstico sin buscar CHAMP: SCA, hipertensión, arritmia, causa mecánica o TEP.</p>
-  </div>
   <div class="highlight-grid">
     <article class="highlight-card" data-tone="red">
       <strong>Alarma inmediata</strong>
@@ -621,6 +625,13 @@
   </ul>
 </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="../urgencias/disnea-aguda.html">Disnea aguda</a>
+        <a href="../urgencias/shock.html">Shock</a>
+        <a href="fibrilacion-auricular-y-arritmias.html">Fibrilación auricular y arritmias</a>
+        <a href="../neumo/insuficiencia-respiratoria.html">Insuficiencia respiratoria y soporte</a>
+      </nav>
     </section>
   </article>
 </main>

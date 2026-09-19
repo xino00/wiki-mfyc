@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="module-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,86 +62,69 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="shell">
-  <section class="module-hero practical-hero">
-    <div>
-      <nav class="breadcrumb" aria-label="Migas de pan">
+    <header class="module-heading">
+    <nav class="breadcrumb" aria-label="Migas de pan">
         <a href="../index.html">Inicio</a><span>/</span><span>Guardias</span>
       </nav>
-      <span class="eyebrow">Plantillas · planta · COT · pediatría</span>
-      <h1>Guardias</h1>
-      <p class="lead">Biblioteca operativa de guardia: modelos de evolución, informes, curas, COT, trauma y documentación pediátrica. No usa Guardias como fuente clínica.</p>
-    </div>
-    <aside class="action-panel" aria-label="Accesos rápidos">
-      <h2>Entrada rápida</h2>
-      <a href="boxes-urgencias.html"><strong>Boxes</strong><span>Plantillas</span></a><a href="planta.html"><strong>Planta</strong><span>Evolución y alta</span></a><a href="cot-y-trauma.html"><strong>COT</strong><span>Modelos</span></a><a href="pediatria.html"><strong>Pediatría</strong><span>Documentación</span></a>
-    </aside>
-  </section>
+    <h1>Guardias</h1>
+    <p class="lead">Modelos para documentar valoración, evolución, curas, ingreso y alta. Completa los campos según la atención realizada.</p>
+  </header>
+  <nav class="context-nav module-sections" aria-label="Apartados del módulo"><a href="#urgencias">Urgencias</a><a href="#planta">Planta</a><a href="#cot-y-pediatria">COT y pediatría</a></nav>
   <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
     <label class="search-box" for="module-search">
-      <span>Buscar en Guardias</span>
+      <span>Filtrar títulos y temas</span>
       <input id="module-search" type="search" placeholder="buscar plantilla, informe, evolución..." data-filter-input>
     </label>
     <p class="result-count" data-filter-results aria-live="polite"></p>
   </section>
   <div id="module-empty" class="empty-state" aria-live="polite">No hay entradas que coincidan con la búsqueda.</div>
-  <section class="section-band" aria-labelledby="urgencias">
+  <section class="section-band module-group" data-filter-group aria-labelledby="urgencias">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Guardias</span>
         <h2 id="urgencias">Urgencias</h2>
       </div>
       <p>Plantillas de boxes, policlínicas, curas y exploración.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="boxes-urgencias.html" data-category="Urgencias" data-search="Boxes y plantillas rápidas Plantillas de boxes, evolución y policlínicas. Urgencias plantilla modelo evolución informe guardia">
-        <span class="card-kicker">Urgencias</span>
         <h3>Boxes y plantillas rápidas</h3>
         <p>Plantillas de boxes, evolución y policlínicas.</p>
-        <span class="card-meta"><span class="pill">Plantilla</span></span>
       </a><a class="note-card" href="curas-y-exploracion.html" data-category="Urgencias" data-search="Curas trauma menor exploración movidas curas absceso hernia epistaxis patologia anal cuerpo extraño ORL heridas procedimientos plantilla guardia">
-        <span class="card-kicker">Urgencias</span>
         <h3>Curas, trauma menor y exploración</h3>
         <p>Exploración, curas y traumatología menor.</p>
-        <span class="card-meta"><span class="pill">Plantilla</span></span>
       </a>
     </div>
-  </section><section class="section-band" aria-labelledby="planta">
+  </section><section class="section-band module-group" data-filter-group aria-labelledby="planta">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Guardias</span>
         <h2 id="planta">Planta</h2>
       </div>
       <p>Evolutivo, ingreso e informe de alta.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="planta.html" data-category="Planta" data-search="Planta evolución ingreso alta evolutivo nota informe guardia planta plantilla modelo">
-        <span class="card-kicker">Planta</span>
         <h3>Planta: evolución, ingreso y alta</h3>
         <p>Evolutivo de planta, nota de ingreso, informe de alta y guardia de planta.</p>
-        <span class="card-meta"><span class="pill">Plantilla</span></span>
       </a>
     </div>
-  </section><section class="section-band" aria-labelledby="cot-y-pediatria">
+  </section><section class="section-band module-group" data-filter-group aria-labelledby="cot-y-pediatria">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Guardias</span>
         <h2 id="cot-y-pediatria">COT y pediatría</h2>
       </div>
-      <p>Plantillas COT y documentación pediátrica sin contenido clínico calculado.</p>
+      <p>Plantillas de COT y documentación pediátrica.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="cot-y-trauma.html" data-category="COT y pediatría" data-search="COT trauma SuperCOT ingreso preoperatorio exploración inmovilización evolutivo pase radiografia Gilula escafoides muñeca codo tobillo yeso cadera plantilla guardia">
-        <span class="card-kicker">COT y pediatría</span>
         <h3>COT y trauma</h3>
         <p>Ingreso, preoperatorio, exploración, inmovilización, evolutivo y pase.</p>
-        <span class="card-meta"><span class="pill">Plantilla</span></span>
       </a><a class="note-card priority-card" href="pediatria.html" data-category="COT y pediatría" data-search="Pediatría guardia tratamientos plantilla valoración alta reevaluación comunicación alarmas fiebre respiratorio digestivo piel ORL TCE crisis febril dosis no copiar">
-        <span class="card-kicker">COT y pediatría</span>
         <h3>Pediatría de guardia</h3>
         <p>Plantillas de valoración, alta, reevaluación y comunicación.</p>
-        <span class="card-meta"><span class="pill">Plantilla</span></span>
       </a>
     </div>
   </section>

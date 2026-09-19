@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Tuberculosis (TB)</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Infecciones sistémicas</span>
       <h1>Tuberculosis (TB)</h1>
-      <p class="lead">Tuberculosis: cribado de ITL, diagnóstico de TB activa, pauta estándar 2HRZE/4HR, aislamiento y tratamiento de ITL.</p>
-      <div class="status-row">
-        <span class="pill">Aislamiento</span>
-        <span class="pill">Baciloscopia x3</span>
-        <span class="pill">2HRZE/4HR</span>
-        <span class="pill">EDO/contactos</span>
-      </div>
+      <p class="lead">Diagnóstico, aislamiento y tratamiento de tuberculosis activa e infección latente.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#sospecha">Actuar ante la sospecha</a><a href="#diagnostico">Solicitar microbiología</a><a href="#tratamiento">Consultar pauta de TB activa</a><a href="#itl">Consultar tratamiento de ITL</a><a href="#aislamiento">Organizar aislamiento y contactos</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Si sospechas TB, aísla primero</strong>
@@ -159,10 +160,13 @@
       </article>
     </section>
 
+<details class="reference-details" data-pagefind-ignore>
+<summary>Todos los apartados</summary>
 <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#destino">Destino</a><a href="#sospecha">Sospecha</a><a href="#itl-activa">ITL vs activa</a><a href="#diagnostico">Diagnóstico</a><a href="#tratamiento">Tratamiento</a><a href="#itl">ITL</a><a href="#aislamiento">Aislamiento</a><a href="#trampas">Trampas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -441,8 +445,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="vih-diagnostico-y-manejo-inicial.html"><span>Infecciones sistémicas</span><strong>VIH — Diagnóstico y Manejo Inicial</strong></a><a href="profilaxis-postexposicion-biologica-ppe.html"><span>Otros cuadros</span><strong>Profilaxis Postexposición Biológica (PPE)</strong></a><a href="bacteriemia-y-candidemia.html"><span>Infecciones sistémicas</span><strong>Bacteriemia y Candidemia</strong></a></div>
 </section>
   </article>

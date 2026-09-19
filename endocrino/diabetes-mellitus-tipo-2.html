@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -76,62 +79,42 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Endocrino</a><span>/</span><span>Diabetes mellitus tipo 2</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Crónico</span>
       <h1>Diabetes mellitus tipo 2</h1>
-      <p class="lead">Guía de consulta para diagnosticar, estratificar y tratar DM2 con enfoque cardiovascular, renal y metabólico.</p>
-      <div class="status-row">
-        <span class="pill">Diagnóstico</span>
-        <span class="pill">CKM</span>
-        <span class="pill">Cardiorrenal</span>
-        <span class="pill">Seguimiento</span>
-      </div>
+      <p class="lead">Primera visita, revisión del tratamiento y controles de seguimiento en consulta.</p>
     </header>
-    <nav class="guide-toc" aria-label="Índice de la ficha">
-      <strong>En esta ficha</strong>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
       <div>
-        <a href="#puerta">Puerta</a>
-        <a href="#diagnostico">Diagnóstico</a>
-        <a href="#cribado">Cribado</a>
-        <a href="#evaluacion">Evaluación inicial</a>
-        <a href="#objetivos">Objetivos</a>
-        <a href="#tratamiento">Tratamiento</a>
-        <a href="#seguimiento">Seguimiento</a>
+        <a href="#primera-visita">Primera visita</a>
+        <a href="#revision">Revisar tratamiento</a>
+        <a href="#seguimiento">Controles de seguimiento</a>
         <a href="#complicaciones">Complicaciones</a>
       </div>
     </nav>
     <section class="article-content">
-      <div class="clinical-lede" data-tone="blue">
-        <div>
-          <span class="eyebrow">DM2 en primaria</span>
-          <h2>Primero define el riesgo; después eliges fármaco</h2>
-        </div>
-        <p>Metformina sigue siendo base si no hay ECV, IC ni ERC. Si hay fenotipo cardiorrenal, iSGLT2, GLP-1 RA o finerenona se indican por órgano diana aunque la HbA1c esté cerca de objetivo.</p>
-      </div>
-
-      <div class="signal-strip" aria-label="Tres decisiones iniciales en diabetes tipo 2">
-        <span data-tone="red"><strong>D</strong><em>Descompensación: cetosis, hiperosmolaridad, vómitos o bajo nivel no son consulta rutinaria.</em></span>
-        <span data-tone="amber"><strong>R</strong><em>Riñón y corazón dirigen: TFGe, CACO, IC y ECV cambian el primer fármaco útil.</em></span>
-        <span data-tone="blue"><strong>S</strong><em>Seguridad: hipoglucemia, fragilidad y pérdida de peso mandan tanto como la HbA1c.</em></span>
-      </div>
-
-      <div class="clinical-split" aria-label="Primera visita y revisión de DM2">
-        <section class="content-panel">
-          <h3>Primera visita que no se puede saltar</h3>
+        <section class="practice-section" id="primera-visita">
+          <h2>Primera visita</h2>
+          <div class="callout warning">
+            <p>Descompensación: cetosis, hiperosmolaridad, vómitos o bajo nivel no son consulta rutinaria.</p>
+          </div>
           <ul>
             <li>Confirmar diagnóstico con venosa/HbA1c válida y no con capilar aislada.</li>
             <li>Buscar ECV, IC, ERC, obesidad, fragilidad, hipoglucemias, cetosis y síntomas catabólicos.</li>
             <li>Pedir TFGe y CACO desde el inicio: sin riñón medido, el algoritmo CKM queda cojo.</li>
           </ul>
+          <p>Consultar <a href="#diagnostico">criterios diagnósticos</a>, <a href="#evaluacion">evaluación inicial</a> y <a href="#cribado">cribado</a>.</p>
         </section>
-        <section class="content-panel">
-          <h3>Revisión que cambia tratamiento</h3>
+        <section class="practice-section" id="revision">
+          <h2>Revisar el tratamiento</h2>
           <ul>
             <li>Si ECV/IC/ERC aparece después, cambia el eje terapéutico aunque la HbA1c esté razonable.</li>
             <li>Si hay caídas, hipoglucemias o fragilidad, desintensificar puede ser mejor medicina que añadir fármacos.</li>
             <li>Antes de escalar por HbA1c, revisar adherencia, técnica, coste, interacciones y enfermedad intercurrente.</li>
+            <li>Riñón y corazón dirigen: TFGe, CACO, IC y ECV cambian el primer fármaco útil.</li>
+            <li>Seguridad: hipoglucemia, fragilidad y pérdida de peso mandan tanto como la HbA1c.</li>
           </ul>
+          <p>Consultar <a href="#objetivos">objetivos individuales</a>, <a href="#puerta">decisiones por fenotipo</a> y <a href="#tratamiento">clases de tratamiento y precauciones</a>.</p>
         </section>
-      </div>
 
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -299,6 +282,7 @@
           <h2>Algoritmo por fenotipo, no por inercia</h2>
           <p>Antes de subir escalón, pregunta si el paciente tiene ECV, IC, ERC, obesidad dominante, síntomas o cetosis.</p>
         </div>
+        <p>Metformina sigue siendo base si no hay ECV, IC ni ERC. Si hay fenotipo cardiorrenal, iSGLT2, GLP-1 RA o finerenona se indican por órgano diana aunque la HbA1c esté cerca de objetivo.</p>
         <div class="decision-board">
           <article class="decision-node" data-tone="red">
             <span>1</span>
@@ -389,6 +373,12 @@
       </section>
 
     </section>
+    <nav class="related-guides" aria-label="Guías complementarias">
+      <h2>Continuar la consulta</h2>
+      <a href="crisis-hiperglucemicas.html">Crisis hiperglucémicas</a>
+      <a href="obesidad-ckm.html">Obesidad y CKM</a>
+      <a href="../cardio/riesgo-cardiovascular-y-dislipemia.html">Riesgo cardiovascular y dislipemia</a>
+    </nav>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Endocrino · Guía de supervivencia para el residente de MFyC</footer>

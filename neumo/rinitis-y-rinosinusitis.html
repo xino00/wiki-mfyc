@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -80,17 +83,21 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Neumología</a><span>/</span><span>Rinitis alérgica y rinosinusitis</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Vía aérea alta</span>
       <h1>Rinitis alérgica y rinosinusitis</h1>
-      <p class="lead">La rinitis mal controlada empeora el asma. El tratamiento útil no es solo antihistamínico oral: la técnica del corticoide intranasal decide buena parte del resultado.</p>
-      <div class="status-row">
-        <span class="pill">Prurito</span>
-        <span class="pill">Asma asociada</span>
-        <span class="pill">Técnica spray</span>
-        <span class="pill">Poliposis</span>
-      </div>
+      <p class="lead">Diagnóstico, tratamiento y técnica nasal; rinosinusitis aguda, poliposis y signos de alarma.</p>
     </header>
 
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#diagnostico">Reconocer rinitis</a>
+      <a href="#alarma">Revisar alarmas</a>
+      <a href="#aguda">Valorar rinosinusitis aguda</a>
+      <a href="#tratamiento">Elegir tratamiento</a>
+      <a href="#spray">Enseñar técnica nasal</a>
+      <a href="#poliposis">Valorar poliposis</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -107,21 +114,17 @@
       </div>
     </nav>
 
+    </details>
     <section class="article-content">
-      <div class="clinical-lede" data-tone="green">
-        <div>
-          <span class="eyebrow">Una vía aérea</span>
-          <h2>Si hay rinitis, pregunta por asma; si hay asma, busca rinitis</h2>
+      <section class="practice-section" id="diagnostico">
+        <div class="practice-section-head">
+          <span class="section-kicker">Clínica</span>
+          <h2>Reconocer rinitis alérgica</h2>
+          <p>Rinitis: al menos 2 síntomas durante 2 días consecutivos y más de 1 hora al día.</p>
         </div>
+        <p><strong>Si hay rinitis, pregunta por asma; si hay asma, busca rinitis</strong></p>
         <p>Rinoconjuntivitis y asma se retroalimentan. En consulta, no dejes la rinitis como problema menor si el paciente usa rescate, duerme mal o tiene síntomas estacionales intensos.</p>
-      </div>
-
-      <div class="signal-strip" aria-label="Tres cierres en vía aérea alta">
-        <span data-tone="green"><strong>A</strong><em>Asma y rinitis van juntas: rescate, pitos y sueño deben preguntarse siempre.</em></span>
-        <span data-tone="amber"><strong>T</strong><em>Técnica del spray: pared lateral, inspiración suave y fecha de inicio antes de temporada.</em></span>
-        <span data-tone="red"><strong>O</strong><em>Orbita o unilateralidad: diplopía, edema ocular, epistaxis o obstrucción fija no son alergia.</em></span>
-      </div>
-
+        <p>Asma y rinitis van juntas: rescate, pitos y sueño deben preguntarse siempre.</p>
       <div class="decision-board">
         <article class="decision-node" data-tone="green">
           <span>Cuadro típico</span>
@@ -145,12 +148,6 @@
         </article>
       </div>
 
-      <section class="practice-section" id="diagnostico">
-        <div class="practice-section-head">
-          <span class="section-kicker">Clínica</span>
-          <h2>Reconocer rinitis alérgica</h2>
-          <p>Rinitis: al menos 2 síntomas durante 2 días consecutivos y más de 1 hora al día.</p>
-        </div>
         <div class="highlight-grid">
           <article class="highlight-card" data-tone="blue"><span>Nasal</span><strong>Rinorrea acuosa, estornudos, prurito, obstrucción</strong><p>El prurito nasal/palatino orienta mucho a alergia.</p></article>
           <article class="highlight-card" data-tone="green"><span>Ocular</span><strong>Prurito ocular, lagrimeo, hiperemia</strong><p>La entidad práctica suele ser rinoconjuntivitis.</p></article>
@@ -174,6 +171,7 @@
           <h2>Datos que no son "solo alergia"</h2>
           <p>Estos hallazgos deben abrir diferencial ORL o sistémico.</p>
         </div>
+        <p><strong>Orbita o unilateralidad: diplopía, edema ocular, epistaxis o obstrucción fija no son alergia.</strong></p>
         <div class="decision-board">
           <article class="decision-node" data-tone="red"><span>Unilateral</span><strong>Rinorrea unilateral, purulenta u obstrucción fija</strong><p>Sinusitis bacteriana, cuerpo extraño, pólipo o tumor.</p></article>
           <article class="decision-node" data-tone="red"><span>Sangrado</span><strong>Epistaxis persistente</strong><p>Descartar lesión local, granulomatosis con poliangeítis o neoplasia.</p></article>
@@ -278,6 +276,7 @@
           <h2>Elegir fármaco según síntoma dominante</h2>
           <p>El corticoide intranasal es la pieza central cuando hay congestión o síntomas moderados-graves.</p>
         </div>
+        <p>La rinitis mal controlada empeora el asma. El tratamiento útil no es solo antihistamínico oral: la técnica del corticoide intranasal decide buena parte del resultado.</p>
         <div class="table-wrap compare-matrix">
           <table>
             <thead><tr><th>Situación</th><th>Plan inicial</th><th>Si no controla</th></tr></thead>
@@ -303,6 +302,7 @@
           <h2>Spray nasal que sí llega donde debe</h2>
           <p>Si el paciente lo dirige al tabique o inspira fuerte, el tratamiento fracasa aunque la receta sea correcta.</p>
         </div>
+        <p>Técnica del spray: pared lateral, inspiración suave y fecha de inicio antes de temporada.</p>
         <div class="action-stack">
           <article><strong>Antes</strong><p>Lavado con suero salino 10-15 min antes. Cabeza recta o mentón ligeramente bajado.</p></article>
           <article><strong>Dirección</strong><p>Boquilla lejos del tabique, hacia la pared lateral o la oreja del mismo lado.</p></article>
@@ -388,6 +388,12 @@
         </ul>
       </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="asma.html">Asma</a>
+        <a href="../trauma-derma-orl/orl-frecuente.html">ORL frecuente</a>
+        <a href="neumonia-y-bronquitis.html">Tos infecciosa y bronquitis</a>
+      </nav>
     </section>
   </article>
 </main>

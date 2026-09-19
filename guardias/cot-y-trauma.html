@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -79,32 +82,28 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Guardias</a><span>/</span><span>COT y trauma</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Plantillas de guardia</span>
       <h1>COT y trauma</h1>
       <p class="lead">Estructuras de nota para COT: ingreso, preoperatorio, exploración osteoarticular, inmovilización, radiografía, evolutivo y pase.</p>
-      <div class="status-row">
-        <span class="pill">Ingreso</span>
-        <span class="pill">Preoperatorio</span>
-        <span class="pill">Exploración</span>
-        <span class="pill">SuperCOT</span>
-        <span class="pill">Pase</span>
-      </div>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore><strong>Ir directamente a</strong><div><a href="#ingreso">Documentar ingreso COT</a><a href="#preoperatorio">Revisar el preoperatorio</a><a href="#exploracion">Escribir la exploración</a><a href="#inmovilizacion">Documentar inmovilización</a><a href="#evolutivos">Escribir una incidencia</a><a href="#pase">Preparar el pase</a></div></nav>
 
     <section class="warning-panel compact" aria-label="Aviso de uso">
       <strong>Plantillas COT, no fuente clínica</strong>
       <p>Esta página no guarda pautas de fracturas ni medicación. Sirve para escribir de forma ordenada y remitir la decisión clínica a fuentes autorizadas.</p>
     </section>
 
+    <details class="reference-details" data-pagefind-ignore><summary>Todos los apartados de documentación COT</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div><a href="#ingreso">Ingreso</a><a href="#preoperatorio">Preoperatorio</a><a href="#exploracion">Exploración</a><a href="#radiografia">Radiografía</a><a href="#supercot">SuperCOT</a><a href="#inmovilizacion">Inmovilización</a><a href="#evolutivos">Evolutivos</a><a href="#pase">Pase</a></div>
-    </nav>
+    </nav></details>
 
     <section class="article-content">
       <h2 id="ingreso">Ingreso COT</h2>
       <p>La nota de ingreso debe separar problema traumático, situación basal y pendientes. Evita mezclar la plantilla con pautas no verificadas.</p>
-      <pre><code>INGRESO COT
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-ingreso-cot">Copiar ingreso COT</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-ingreso-cot"><code>INGRESO COT
 Fecha/hora: ___
 Motivo de ingreso: ___
 Servicio responsable: ___
@@ -164,7 +163,8 @@ Plan:
           </tbody>
         </table>
       </div>
-      <pre><code>CHECKLIST PREOPERATORIO COT
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-preoperatorio-cot">Copiar checklist preoperatorio</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-preoperatorio-cot"><code>CHECKLIST PREOPERATORIO COT
 Procedimiento previsto:
 Lateralidad:
 Prioridad:
@@ -195,7 +195,8 @@ Incidencias:
         <div><strong>Piel</strong><span>Íntegra, herida, hematoma, flictena, exposición o compromiso.</span></div>
         <div><strong>Distal</strong><span>Sensibilidad, motricidad, perfusión y pulsos si procede.</span></div>
       </div>
-      <pre><code>EXPLORACIÓN COT
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-exploracion-cot">Copiar exploración COT</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-exploracion-cot"><code>EXPLORACIÓN COT
 Zona/lateralidad: ___
 Mecanismo: ___
 Tiempo de evolución: ___
@@ -244,7 +245,8 @@ Plan:
           </tbody>
         </table>
       </div>
-      <pre><code>LECTURA DE IMAGEN
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-imagen-cot">Copiar lectura de imagen</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-imagen-cot"><code>LECTURA DE IMAGEN
 Zona/lateralidad:
 Proyecciones:
 Calidad suficiente: sí / no
@@ -310,7 +312,8 @@ Conducta:
 
       <h2 id="inmovilizacion">Inmovilización y yeso</h2>
       <p>Documenta qué se inmoviliza, posición, estado distal antes/después y qué señales se explican al alta.</p>
-      <pre><code>INMOVILIZACIÓN
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-inmovilizacion-cot">Copiar inmovilización</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-inmovilizacion-cot"><code>INMOVILIZACIÓN
 Zona/lateralidad:
 Indicación:
 Tipo de inmovilización:
@@ -345,7 +348,8 @@ Indicaciones explicadas:
       <div class="clinical-split">
         <section class="content-panel">
           <h3>Evolutivo de planta</h3>
-          <pre><code>EVOLUTIVO COT
+          <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-evolutivo-cot">Copiar evolutivo COT</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+          <pre id="plantilla-evolutivo-cot"><code>EVOLUTIVO COT
 Fecha:
 Diagnóstico:
 Día de ingreso / día postoperatorio:
@@ -370,7 +374,8 @@ Plan:
         </section>
         <section class="content-panel">
           <h3>Incidencia de planta</h3>
-          <pre><code>INCIDENCIA COT
+          <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-incidencia-cot">Copiar incidencia COT</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+          <pre id="plantilla-incidencia-cot"><code>INCIDENCIA COT
 Hora:
 Avisan por:
 
@@ -393,7 +398,8 @@ Plan:
       </div>
 
       <h2 id="pase">Pase COT</h2>
-      <pre><code>PASE COT
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-pase-cot">Copiar pase COT</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-pase-cot"><code>PASE COT
 Fecha/hora: ___
 
 Pendientes generales:
@@ -418,6 +424,7 @@ Pacientes:
    Si ocurre ___:
    Avisar a:</code></pre>
     </section>
+    <section class="related-guides" aria-label="Continuar"><h2>Continuar</h2><a href="planta.html">Evolutivo e ingreso de planta</a><a href="curas-y-exploracion.html">Documentar heridas y curas</a><a href="../trauma-derma-orl/articulaciones-y-extremidades.html">Guía de articulaciones y extremidades</a></section>
   </article>
 </main>
 

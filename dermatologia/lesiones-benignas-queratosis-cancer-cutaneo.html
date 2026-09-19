@@ -17,7 +17,8 @@
   <!-- shared-meta:end -->
   <link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -28,12 +29,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -59,23 +60,30 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice de Dermatología"><a class="rail-home" href="index.html">Índice de Dermatología</a><strong>Método</strong><a href="exploracion-lesiones-elementales.html">Exploración y lesiones elementales</a><strong>Consulta</strong><a href="urticaria-angioedema-prurito.html">Urticaria, angioedema y prurito</a><a href="acne-rosacea.html">Acné y rosácea</a><a href="dermatitis-atopica-eczemas.html">Dermatitis atópica y eczemas</a><a href="alopecias-unas-patologia-oral.html">Alopecias, uñas y boca</a><a class="is-active" href="lesiones-benignas-queratosis-cancer-cutaneo.html">Lesiones y cáncer cutáneo</a><a href="psoriasis-dermatitis-seborreica.html">Psoriasis y seborreica</a><strong>Patrones</strong><a href="../trauma-derma-orl/dermatologia-urgente.html">Ampollas y toxicodermias</a><a href="infecciones-cutaneas-virosis-its.html">Infecciones, virosis e ITS</a><a href="manifestaciones-sistemicas-fotodermatosis.html">Piel sistémica y luz</a></aside>
   <article class="article">
     <nav class="breadcrumb" aria-label="Migas de pan"><a href="../index.html">Inicio</a><span>/</span><a href="index.html">Dermatología</a><span>/</span><span>Lesiones benignas, queratosis actínicas y cáncer cutáneo</span></nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Dermatología · lesión focal</span>
       <h1>Lesiones benignas, queratosis actínicas y cáncer cutáneo</h1>
       <p class="lead">La consulta no termina al decidir que una lesión es “sospechosa”. Hay que reconocer qué patrón sugiere, palpar su profundidad, elegir una biopsia que conserve la información pronóstica y asignarle el circuito adecuado sin convertir el cáncer cutáneo en una emergencia hospitalaria.</p>
-      <div class="status-row"><span class="pill">Comparar</span><span class="pill">Palpar</span><span class="pill">Dermatoscopia</span><span class="pill">Histología</span><span class="pill">Riesgo</span></div>
-      <div class="signal-strip" aria-label="Tres ejes ante una lesión focal">
-        <span data-tone="green"><strong>B</strong><em>Benigna típica y estable: reconocer, explicar y evitar procedimientos innecesarios.</em></span>
-        <span data-tone="amber"><strong>K</strong><em>Queratinocítica persistente: distinguir queratosis actínica, CBC y CEC.</em></span>
-        <span data-tone="red"><strong>M</strong><em>Melanocítica diferente o cambiante: dermatoscopia y circuito diagnóstico rápido.</em></span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#mirar">Explorar una lesión focal</a>
+      <a href="#melanoma">Reconocer sospecha de melanoma</a>
+      <a href="#biopsia">Elegir la biopsia</a>
+      <a href="#actinicas">Valorar queratosis actínicas</a>
+      <a href="#no-melanoma">Distinguir CBC y CEC</a>
+      <a href="#circuito">Priorizar derivación y seguimiento</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de lesiones y cáncer cutáneo</summary>
     <nav class="guide-toc" aria-label="Índice de la guía"><strong>En esta guía</strong><div><a href="#mirar">Exploración</a><a href="#benignas">Benignas</a><a href="#actinicas">Queratosis actínica</a><a href="#cbc">CBC</a><a href="#cec">CEC</a><a href="#melanoma">Melanoma</a><a href="#biopsia">Biopsia</a><a href="#circuito">Circuito y seguimiento</a></div></nav>
+    </details>
     <section class="article-content">
+      <ul><li>Benigna típica y estable: reconocer, explicar y evitar procedimientos innecesarios.</li><li>Queratinocítica persistente: distinguir queratosis actínica, CBC y CEC.</li><li>Melanocítica diferente o cambiante: dermatoscopia y circuito diagnóstico rápido.</li></ul>
       <section class="clinical-lede" data-tone="green" id="mirar">
         <div><span class="section-kicker">Consulta de lesión</span><h2>Compara con el propio paciente antes de comparar con un atlas</h2></div>
         <p>El “patito feo” —una lesión diferente a las demás del mismo paciente— y la evolución documentada suelen aportar más que un adjetivo aislado. La inspección decide qué miras; la palpación descubre induración, fijación y profundidad.</p>
@@ -261,6 +269,12 @@
           <li><em>Actualización Dermatología 2025 - Recopilación</em>, capítulos 6, 7 y 13. Fuente secundaria y procedencia de las fotografías clínicas.</li>
         </ol>
       </section>
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Completar la exploración y el registro</h2>
+      <a href="exploracion-lesiones-elementales.html">Exploración y lesiones elementales</a>
+      <a href="alopecias-unas-patologia-oral.html">Alopecias, uñas y patología oral</a>
+      <a href="manifestaciones-sistemicas-fotodermatosis.html">Manifestaciones sistémicas y fotodermatosis</a>
     </section>
   </article>
 </main>

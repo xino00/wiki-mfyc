@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,21 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>Aorta, válvulas y cardiopatía estructural</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Estructural</span>
       <h1>Aorta, válvulas y cardiopatía estructural</h1>
       <p class="lead">Dolor torácico no coronario, soplos, síncope de riesgo, disnea de VD, fiebre con válvula o dispositivo y enfermedad vascular periférica.</p>
-      <div class="status-row">
-        <span class="pill">Aorta/EAP</span>
-        <span class="pill">Válvulas</span>
-        <span class="pill">Endocarditis</span>
-        <span class="pill">Síncope</span>
-        <span class="pill">Congénitas: limitado</span>
-      </div>
     </header>
-    <section class="warning-panel compact" aria-label="Alcance de cardiopatías congénitas">
-      <strong>Alcance editorial</strong>
-      <p>El bloque de cardiopatías congénitas del adulto se mantiene como orientación de reconocimiento y derivación porque la nota fuente está marcada como provisional. No debe usarse para cerrar manejo de defectos complejos, embarazo, HP posreparación o cirugía mayor sin centro experto.</p>
-    </section>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#entrada">Reconocer gravedad</a>
+      <a href="#aorta">Valorar aorta y arterias</a>
+      <a href="#valvulas">Valorar un soplo</a>
+      <a href="#htp-congenitas">Hipertensión pulmonar</a>
+      <a href="#endocarditis">Sospecha de endocarditis</a>
+      <a href="#sincope">Estratificar síncope</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -111,15 +113,8 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
-
-<div class="clinical-lede" data-tone="blue">
-  <div>
-    <span class="eyebrow">Estructural</span>
-    <h2>Muchos “dolores torácicos raros” son vasos, válvulas o músculo</h2>
-  </div>
-  <p>Esta ficha prioriza lo que cambia conducta: síndrome aórtico que no debe antiagregarse, valvulopatía sintomática que necesita intervención, miocardiopatía arritmogénica, hipertensión pulmonar con fallo derecho, endocarditis que exige hemocultivos antes del antibiótico y síncope con ECG o historia de alto riesgo.</p>
-</div>
 
 <section class="practice-section" id="entrada">
   <div class="practice-section-head">
@@ -127,6 +122,8 @@
     <h2>Seis patrones que no conviene mandar a casa</h2>
     <p>Si aparece alguno, el problema deja de ser una “revisión de soplo” y pasa a circuito urgente o preferente.</p>
   </div>
+  <p><strong>Muchos “dolores torácicos raros” son vasos, válvulas o músculo</strong></p>
+  <p>Esta ficha prioriza lo que cambia conducta: síndrome aórtico que no debe antiagregarse, valvulopatía sintomática que necesita intervención, miocardiopatía arritmogénica, hipertensión pulmonar con fallo derecho, endocarditis que exige hemocultivos antes del antibiótico y síncope con ECG o historia de alto riesgo.</p>
 
   <div class="quick-rules" aria-label="Ruta transversal de cardiopatía estructural">
     <div>
@@ -553,8 +550,9 @@
   </div>
 
   <div class="callout warning">
-    <span class="callout-title">Congénitas del adulto: cobertura limitada con las fuentes actuales</span>
-    <p>Con las notas autorizadas disponibles, lo más accionable es reconocer valvulopatía pulmonar congénita, shunts con HP y Eisenmenger. Defectos complejos, embarazo, HP posreparación o cirugía mayor requieren centro de referencia en cardiopatías congénitas e hipertensión pulmonar.</p>
+    <span class="callout-title">Congénitas del adulto: reconocimiento y derivación</span>
+    <p>Este bloque se limita al reconocimiento de valvulopatía pulmonar congénita, shunts con HP y Eisenmenger. Defectos complejos, embarazo, HP posreparación o cirugía mayor requieren centro de referencia en cardiopatías congénitas e hipertensión pulmonar.</p>
+    <p>No debe usarse para cerrar manejo de defectos complejos, embarazo, HP posreparación o cirugía mayor sin centro experto.</p>
   </div>
 
   <div class="table-wrap compare-matrix">
@@ -843,6 +841,13 @@
 </section>
 
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="../urgencias/dolor-toracico.html">Dolor torácico: valoración inicial</a>
+        <a href="pericardio-y-miocardio.html">Pericardio y miocardio</a>
+        <a href="insuficiencia-cardiaca.html">Insuficiencia cardiaca</a>
+        <a href="../neuro/esclerosis-multiple-y-sincope.html#sincope">Síncope: diagnóstico diferencial</a>
+      </nav>
     </section>
   </article>
 </main>

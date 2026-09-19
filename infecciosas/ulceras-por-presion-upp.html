@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Úlceras por Presión (UPP)</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Otros cuadros</span>
       <h1>Úlceras por Presión (UPP)</h1>
-      <p class="lead">Guía práctica para prevenir, estadificar y curar UPP, con criterio claro para infección local frente a antibiótico sistémico.</p>
-      <div class="status-row">
-        <span class="pill">Prevención</span>
-        <span class="pill">Estadio I-IV</span>
-        <span class="pill">Cura húmeda</span>
-        <span class="pill">ATB solo si celulitis/sistémica</span>
-      </div>
+      <p class="lead">Valoración, estadificación, cura, desbridamiento y signos de infección.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#plan">Organizar primera valoración</a><a href="#estadios">Identificar estadio</a><a href="#cura">Elegir cura y apósito</a><a href="#desbridamiento">Consultar desbridamiento</a><a href="#infeccion">Valorar infección</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>La cura empieza antes del apósito</strong>
@@ -127,10 +128,13 @@
       <span data-tone="blue"><strong>N</strong><em>Nutrición y dolor: sin analgesia y soporte nutricional, la cura fracasa.</em></span>
     </div>
 
+    <details class="reference-details" data-pagefind-ignore>
+    <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#mirada">Mirada inicial</a><a href="#plan">Plan</a><a href="#estadios">Estadios</a><a href="#cura">Cura</a><a href="#desbridamiento">Desbridamiento</a><a href="#infeccion">Infección</a><a href="#trampas">Trampas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -389,8 +393,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="proa-infecciones-de-piel-y-partes-blandas.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones de Piel y Partes Blandas</strong></a><a href="osteomielitis-y-artritis-septica.html"><span>Otros cuadros</span><strong>Osteomielitis y Artritis Séptica</strong></a><a href="covid-19.html"><span>Otros cuadros</span><strong>COVID-19</strong></a></div>
 </section>
   </article>

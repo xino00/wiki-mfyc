@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="module-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,115 +62,89 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="shell">
-  <section class="module-hero practical-hero">
-    <div>
-      <nav class="breadcrumb" aria-label="Migas de pan">
+    <header class="module-heading">
+    <nav class="breadcrumb" aria-label="Migas de pan">
         <a href="../index.html">Inicio</a><span>/</span><span>Digestivo</span>
       </nav>
-      <span class="eyebrow">Dolor abdominal · sangrado · hepatobiliar</span>
-      <h1>Digestivo</h1>
-      <p class="lead">Entrada rápida para problemas digestivos frecuentes en urgencias, consulta y seguimiento: qué no perder, qué pedir y cuándo derivar.</p>
-    </div>
-    <aside class="action-panel" aria-label="Accesos rápidos">
-      <h2>Entrada rápida</h2>
-      <a href="dolor-abdominal.html"><strong>Dolor abdominal</strong><span>Shock, peritonismo, imagen</span></a>
-      <a href="hemorragia-digestiva.html"><strong>HDA/HDB</strong><span>Riesgo, endoscopia, antitrombóticos</span></a>
-      <a href="patologia-biliar.html"><strong>Biliar</strong><span>Cólico, colecistitis, colangitis</span></a>
-      <a href="cirrosis-y-hepatopatia.html"><strong>Cirrosis</strong><span>Ascitis, PBE, MASLD</span></a>
-    </aside>
-  </section>
+    <h1>Digestivo</h1>
+    <p class="lead">Entrada rápida para problemas digestivos frecuentes en urgencias, consulta y seguimiento: qué no perder, qué pedir y cuándo derivar.</p>
+  </header>
+  <nav class="context-nav module-sections" aria-label="Apartados del módulo"><a href="#urgente">Urgente</a><a href="#seguimiento">Seguimiento</a><a href="#proctologia">Proctología y cirugía menor</a></nav>
 
   <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
     <label class="search-box" for="module-search">
-      <span>Buscar en Digestivo</span>
+      <span>Filtrar títulos y temas</span>
       <input id="module-search" type="search" placeholder="dolor, HDA, colangitis, PBE, FIB-4, EII, fisura..." data-filter-input>
     </label>
     <p class="result-count" data-filter-results aria-live="polite"></p>
   </section>
   <div id="module-empty" class="empty-state" aria-live="polite">No hay entradas que coincidan con la búsqueda.</div>
 
-  <section class="section-band" aria-labelledby="urgente">
+  <section class="section-band module-group" data-filter-group aria-labelledby="urgente">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Digestivo</span>
         <h2 id="urgente">Urgente</h2>
       </div>
       <p>Dolor, sangrado, biliar, pancreatitis y obstrucción.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="dolor-abdominal.html" data-category="Urgente" data-search="dolor abdominal abdomen agudo red flags shock peritonismo defensa involuntaria isquemia mesenterica aneurisma aaa ectopico beta hcg embarazo ecg epigastralgia lactato lipasa tc contraste angio tc ecografia POCUS hernias Murphy McBurney Rovsing Carnett analgesia precoz no protocolo farmacologico obstruccion perforacion apendicitis colecistitis diverticulitis observacion seriacion alta tolerancia oral cirugia gine urologia uci tres llamadas antes etiquetar reanimacion aorta sangrado trauma peritoneo isquemia gine corazon">
-        <span class="card-kicker">Urgente</span>
         <h3>Dolor abdominal</h3>
         <p>Triaje de abdomen agudo, anamnesis dirigida, pruebas útiles, analgesia y destino.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="hemorragia-digestiva.html" data-category="Urgente" data-search="hemorragia digestiva decisiones criticas perfusion antes hb inicial hda hdb hematemesis melenas rectorragia masiva transito rapido urea alta indice shock fc tas glasgow blatchford gbs 0 1 forrest oakland autolimitado varices portal cirrosis baveno tips terlipresina octreotido ceftriaxona desde sospecha transfusion restrictiva anticoagulacion antiagregantes reversores tranexamico angio tc">
-        <span class="card-kicker">Urgente</span>
         <h3>Hemorragia digestiva</h3>
         <p>HDA, HDB, sangrado portal, escalas, transfusión, endoscopia y antitrombóticos.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="patologia-biliar.html" data-category="Urgente" data-search="colico biliar puerta biliar cuatro cajones dolor hcd murphy fiebre colecistitis cirugia colecistectomia colecistostomia coledocolitiasis colangitis sepsis biliar shock confusion soporte sepsis grado iii charcot reynolds tokio tg18 cpre endoscopia radiologia intervencionista drenaje obstruccion infectada coluria acolia fistula bilioenterica ceftriaxona piperacilina tazobactam meropenem metronidazol tres carriles dolor solo no antibiotico automatico vesicula infectada ingreso colédoco infectado ingreso pasivo">
-        <span class="card-kicker">Urgente</span>
         <h3>Patología biliar</h3>
         <p>Cólico biliar, colecistitis, coledocolitiasis y colangitis con antibiótico y drenaje.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="pancreatitis-y-obstruccion.html" data-category="Urgente" data-search="pancreatitis aguda soporte dos noes llamada digestivo cirugia no antibiotico profilactico antibiotico con motivo lipasa amilasa bisap atlanta eco biliar ringer reevaluacion 6 12 24 horas diuresis hematocrito creatinina electrolitos sobrecarga oxigeno derrame pleural distrés sirs fallo organico lactato necrosis infectada colangitis cpre primeras 72 horas shock septico obstruccion intestinal intestino riesgo isquemia estrangulacion dolor continuo peritonismo acidosis metabolica tc contraste realce mural punto transicion asa cerrada neumatosis gas porta liquido libre sng neostigmina ogilvie ciego volvulo hernia adherencias tres errores evitar pancreatitis grave infeccion fluidos objetivo respiracion dolor fijo llamada">
-        <span class="card-kicker">Urgente</span>
         <h3>Pancreatitis y obstrucción</h3>
         <p>Diagnóstico, gravedad, soporte inicial, antibiótico solo cuando toca y signos de cirugía.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="seguimiento">
+  <section class="section-band module-group" data-filter-group aria-labelledby="seguimiento">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Digestivo</span>
         <h2 id="seguimiento">Seguimiento</h2>
       </div>
       <p>Hepatopatía, EII, reflujo y diarrea aguda.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="cirrosis-y-hepatopatia.html" data-category="Seguimiento" data-search="cirrosis circuito cirrotico descompensacion primeros 10 minutos ascitis paracentesis pinchar antes etiquetar liquido ascitico cultivo bioquimica hemograma perfil renal hepatico coagulacion orina ecografia hemoperitoneo pbe pbs runyon gasa albumina ceftriaxona piperacilina tazobactam meropenem norfloxacino peritonitis secundaria runyon positivo tc urgente cirugia anaerobios hepatorrenal proteger rinon aine ieca ara ii hemorragia digestiva masld mash fib4 vcte elastografia elf fibrosis estatinas hipertransaminasemia got gpt fa ggt bilirrubina tp hepatocelular colestasico mixto tres cierres pinchar deterioro pmn fiebre secundaria foco proceso agudo">
-        <span class="card-kicker">Seguimiento</span>
         <h3>Cirrosis y hepatopatía metabólica</h3>
         <p>Ascitis, PBE/PBS, profilaxis, MASLD, FIB-4 e hipertransaminasemia.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card" href="eii.html" data-category="Seguimiento" data-search="enfermedad inflamatoria intestinal eii semaforo seguridad colitis ulcerosa grave crohn complicado brote grave diarrea sangre megacolon truelove mayo jalan prednisona enoxaparina calprotectina clostridio difficile cmv coprocultivo parasitos heces pendientes responsable resultado absceso drenaje estenosis obstruccion tromboprofilaxis pjp corticorresistencia ingreso alta vigilada circuito eii reevaluacion 24 72 horas tolerancia oral distension dolor continuo fiebre volver loperamida antidiarreicos opiaceos aine tc antes inmunosupresion fiebre 39 cirugia perforacion hemorragia masiva tres cierres infeccion toxicidad revisar 24 72 subir inmunosupresion">
-        <span class="card-kicker">Seguimiento</span>
         <h3>Enfermedad inflamatoria intestinal</h3>
         <p>Brote de colitis ulcerosa, Crohn complicado, ingreso, corticoide y qué evitar.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card" href="rge-y-gea.html" data-category="Seguimiento" data-search="rge reflujo gastroesofagico doble puerta alta segura primaria observacion ingreso pirosis epigastralgia perfil vascular ecg disfagia odinofagia anemia perdida peso ibp prueba terapeutica no pauta guardias gastroenteritis aguda gea hidratacion diarrea deshidratacion oliguria diuresis mareo sincope hipotension tolerancia oral comprobada sro sorbos sales rehidratacion sangre moco fiebre 39 dolor peor vomitos incoercibles coprocultivo toxina pcr resultado pendiente responsable clostridio difficile clostridioides suspender antibiotico causal anti h2 antiperistalticos probioticos test cura parasitos muestras seriadas entamoeba viajero inmunodepresion hsh vih brote manipulador alimentos duracion 7 dias tres filtros corazon ecg bebe orina tolera antibiotico selectivo sepsis">
-        <span class="card-kicker">Seguimiento</span>
         <h3>RGE y gastroenteritis</h3>
         <p>Pirosis sin alarma, GEA, rehidratación, pruebas y antibiótico empírico selectivo.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="proctologia">
+  <section class="section-band module-group" data-filter-group aria-labelledby="proctologia">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Digestivo</span>
         <h2 id="proctologia">Proctología y cirugía menor</h2>
       </div>
       <p>Problemas frecuentes que se resuelven con buena exploración y criterios claros de derivación.</p>
     </div>
     <div class="card-grid">
       <a class="note-card" href="proctologia-y-cirugia-menor.html" data-category="Proctología" data-search="hemorroides fisura anal tres limites cuatro puertas destino rectorragia hematoquecia alarma anemia melenas cambio ritmo perdida peso cancer colorrectal ccr colonoscopia anuscopia trombosis prolapso reduccion baños asiento fibra estrenimiento fecaloma tacto rectal obstruccion vomitos distension rha metalicos tc fisioenema gastrografin movicol absceso drenaje fluctua perianal profundo zona segura ecografia celulitis sirs sarm antibiotico selectivo no automatico cirugia general">
-        <span class="card-kicker">Proctología</span>
         <h3>Proctología y drenaje</h3>
         <p>Hemorroides, fisura anal, estreñimiento agudo y absceso cutáneo con límites de drenaje.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>

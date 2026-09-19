@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page guide-pilot">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,39 +86,28 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Urgencias</a><span>/</span><span>Dolor torácico</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Tiempo-dependiente</span>
       <h1>Dolor torácico</h1>
-      <p class="lead">Descartar causas letales, ECG/troponina, SCA, TEP, aorta y taponamiento.</p>
-      <div class="status-row">
-        <span class="pill">ECG &lt;10 min</span>
-        <span class="pill">Inestabilidad</span>
-        <span class="pill">6 letales</span>
-        <span class="pill">No fibrinolizar aorta</span>
-      </div>
+      <p class="lead">Valoración inicial: causas letales, exploración, pruebas y tratamiento según la sospecha.</p>
     </header>
-    <nav class="guide-toc" aria-label="Índice de la ficha"><strong>En esta ficha</strong><div><a href="#primeros-minutos">Primeros minutos</a><a href="#historia-exploracion">Historia y exploración</a><a href="#avisar">Avisar ya</a><a href="#seis-letales">Seis letales</a><a href="#procedimientos">Circuitos críticos</a><a href="#pruebas-escalas">Pruebas y escalas</a><a href="#perfiles-clinicos">Perfiles clínicos</a><a href="#tratamiento-inicial">Tratamiento inicial</a><a href="#trampas">Trampas</a></div></nav>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <div>
+        <a href="#primeros-minutos">Primeros minutos</a>
+        <a href="#avisar">Cuándo avisar</a>
+        <a href="#seis-letales">Orientar la causa</a>
+        <a href="#pruebas-escalas">Elegir pruebas</a>
+        <a href="#tratamiento-inicial">Tratamiento inicial</a>
+        <a href="#trampas">Antes de cerrar</a>
+      </div>
+    </nav>
+    <p class="guide-scope-link">Para el manejo específico del SCA, continúa en <a href="../cardio/sindrome-coronario-agudo.html">Síndrome coronario agudo</a>.</p>
     <section class="article-content">
-      
-<div class="clinical-lede" data-tone="red">
-  <div>
-    <span class="eyebrow">Dolor torácico en puerta</span>
-    <h2>Primero decide si puede esperar</h2>
-  </div>
-  <p>El objetivo inicial no es poner apellido al dolor: es descartar SCA, TEP, síndrome aórtico, taponamiento, neumotórax a tensión y rotura esofágica. Si hay inestabilidad, ECG de alto riesgo o clínica aórtica, se avisa antes de completar la historia.</p>
-</div>
-
-<div class="signal-strip" aria-label="Tres cierres antes de etiquetar un dolor torácico">
-  <span data-tone="red"><strong>E</strong><em>ECG en 10 min: si hay ST o equivalente, el vaso manda.</em></span>
-  <span data-tone="amber"><strong>A</strong><em>Aorta, TEP, taponamiento y neumotórax no se descartan con Rx normal.</em></span>
-  <span data-tone="blue"><strong>T</strong><em>Troponina aislada no cierra el caso: manda el delta y el contexto.</em></span>
-</div>
 
 <section class="practice-section" id="primeros-minutos">
   <div class="practice-section-head">
-    <span class="section-kicker">Guía práctica</span>
     <h2>Primeros 10 minutos</h2>
-    <p>Bloque de triaje para no perder tiempo con diagnósticos cómodos.</p>
   </div>
+  <p>El objetivo inicial no es poner apellido al dolor: es descartar SCA, TEP, síndrome aórtico, taponamiento, neumotórax a tensión y rotura esofágica. Si hay inestabilidad, ECG de alto riesgo o clínica aórtica, se avisa antes de completar la historia.</p>
   <div class="highlight-grid"><article class="highlight-card" data-tone="red">
     <span>ECG</span>
     <strong>&lt; 10 min</strong>
@@ -143,6 +135,11 @@
     <article><span>10</span><strong>Ruta elegida</strong><p>SCA, aorta, TEP, taponamiento, neumotórax, Boerhaave o dolor estable en observación.</p></article>
     <article><span>+</span><strong>Repetir</strong><p>Si persiste clínica, repetir ECG y troponina seriada; una foto inicial normal no cierra el caso.</p></article>
   </div>
+  <ul>
+    <li>ECG en 10 min: si hay ST o equivalente, el vaso manda.</li>
+    <li>Aorta, TEP, taponamiento y neumotórax no se descartan con Rx normal.</li>
+    <li>Troponina aislada no cierra el caso: manda el delta y el contexto.</li>
+  </ul>
 </section>
 
 <section class="practice-section" id="historia-exploracion">
@@ -246,20 +243,20 @@
 <article class="decision-node" data-tone="red">
     <span>Neumotórax a tensión</span>
     <strong>Clínico, no radiológico</strong>
-    <p>Disnea extrema, hipofonesis unilateral, timpanismo, desviación traqueal. No esperar Rx; activar procedimiento por equipo entrenado. Técnica no publicada aquí por falta de fuente local autorizada.</p>
+    <p>Disnea extrema, hipofonesis unilateral, timpanismo, desviación traqueal. No esperar Rx; activar procedimiento por equipo entrenado. Esta ficha no incluye la técnica de descompresión; consultar el protocolo del centro.</p>
   </article>
 <article class="decision-node" data-tone="amber">
     <span>Boerhaave</span>
     <strong>Vómitos + enfisema</strong>
-    <p>Dolor tras vómito o instrumentación, Hamman/neumomediastino. Dieta absoluta, soporte, antibiótico amplio y cirugía urgente; pauta concreta no publicada sin protocolo autorizado.</p>
+    <p>Dolor tras vómito o instrumentación, Hamman/neumomediastino. Dieta absoluta, soporte, antibiótico amplio y cirugía urgente; esta ficha no incluye una pauta antibiótica concreta.</p>
   </article></div>
 </section>
 
 <section class="practice-section" id="procedimientos">
   <div class="practice-section-head">
     <span class="section-kicker">Circuitos críticos</span>
-    <h2>Dos huecos deliberados: procedimiento y cirugía</h2>
-    <p>La fuente MUST marca neumotórax a tensión y Boerhaave como huecos específicos. Esta ficha solo publica reconocimiento y activación; no convierte conocimiento no verificado en técnica o pauta.</p>
+    <h2>Activar el circuito de procedimiento o cirugía</h2>
+    <p>En neumotórax a tensión y Boerhaave, esta ficha cubre reconocimiento y activación. La técnica de descompresión y la pauta antibiótica concreta deben consultarse en el protocolo del centro.</p>
   </div>
   <div class="clinical-split">
     <article>
@@ -270,11 +267,11 @@
     <article>
       <span class="section-kicker">Boerhaave</span>
       <h3>No tratar como reflujo o ansiedad</h3>
-      <p>Dolor torácico tras vómitos o instrumentación con enfisema, Hamman, neumomediastino o derrame izquierdo requiere dieta absoluta, vía, analgesia, antibiótico amplio y aviso quirúrgico. La pauta antimicrobiana concreta queda pendiente de protocolo autorizado.</p>
+      <p>Dolor torácico tras vómitos o instrumentación con enfisema, Hamman, neumomediastino o derrame izquierdo requiere dieta absoluta, vía, analgesia, antibiótico amplio y aviso quirúrgico. Consultar la pauta antimicrobiana concreta en el protocolo del centro.</p>
     </article>
   </div>
   <div class="quick-rules">
-    <strong>No publicar sin fuente</strong>
+    <strong>Alcance de esta ficha</strong>
     <span>sin técnica de descompresión</span>
     <span>sin pauta antibiótica cerrada</span>
     <span>activar adjunto/UCI/cirugía</span>
@@ -378,7 +375,7 @@
     <article><strong>Síndrome aórtico</strong><p>No AAS, no anticoagulación, no fibrinólisis. Analgesia, betabloqueo IV antes de vasodilatador, angio-TC de aorta y UCI/cirugía cardiovascular según tipo.</p></article>
     <article><strong>TEP de alta probabilidad</strong><p>Oxígeno si SaO2 baja, fluidos con cautela, anticoagulación si no hay contraindicación y angio-TC. Si shock, avisar UCI/PERT y valorar reperfusión.</p></article>
     <article><strong>Pericarditis sin taponamiento</strong><p>AINE a dosis de ataque + colchicina desde el primer día si encaja y no hay contraindicaciones. ETT si sospecha derrame, miopericarditis o inestabilidad.</p></article>
-    <article><strong>Taponamiento / neumotórax a tensión / Boerhaave</strong><p>Son circuitos de procedimiento o cirugía. No esperar a una Rx para neumotórax a tensión. En Boerhaave: dieta absoluta, antibiótico amplio y cirugía; técnica y pauta concreta no se publican aquí sin protocolo autorizado.</p></article>
+    <article><strong>Taponamiento / neumotórax a tensión / Boerhaave</strong><p>Son circuitos de procedimiento o cirugía. No esperar a una Rx para neumotórax a tensión. En Boerhaave: dieta absoluta, antibiótico amplio y cirugía; consultar técnica y pauta concreta en el protocolo del centro.</p></article>
   </div>
 
 </section>
@@ -399,6 +396,13 @@
 </section>
 
     </section>
+    <nav class="related-guides" aria-label="Guías complementarias">
+      <h2>Continuar la consulta</h2>
+      <a href="../cardio/sindrome-coronario-agudo.html">SCA: reperfusión y antitrombóticos</a>
+      <a href="../cardio/tep-y-tvp.html">TEP y TVP</a>
+      <a href="../cardio/aorta-valvulas-y-estructural.html">Aorta, válvulas y cardiopatía estructural</a>
+      <a href="../guardias/boxes-urgencias.html#valoracion">Plantilla de valoración en boxes</a>
+    </nav>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Urgencias · Guía de supervivencia para el residente de MFyC</footer>

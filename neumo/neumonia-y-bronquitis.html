@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -80,17 +83,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Neumología</a><span>/</span><span>Neumonía, bronquitis y broncoespasmo</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Infección respiratoria</span>
       <h1>Neumonía, bronquitis y broncoespasmo</h1>
-      <p class="lead">Tres preguntas: ¿hay condensación o hipoxemia?, ¿necesita ingreso?, ¿hay indicación real de antibiótico o solo tratamiento sintomático?</p>
-      <div class="status-row">
-        <span class="pill">SatO2</span>
-        <span class="pill">Rx tórax</span>
-        <span class="pill">CURB-65/PSI</span>
-        <span class="pill">No ATB si bronquitis simple</span>
-      </div>
+      <p class="lead">Valoración de tos infecciosa, destino, tratamiento y seguimiento.</p>
     </header>
 
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#diferencial">Valorar la tos aguda</a>
+      <a href="#destino">Decidir destino</a>
+      <a href="#antibiotico-nac">Antibiótico en neumonía</a>
+      <a href="#broncoespasmo">Valorar sibilancias</a>
+      <a href="#seguimiento">Preparar seguimiento</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -105,27 +111,22 @@
       </div>
     </nav>
 
+    </details>
     <section class="article-content">
-      <div class="clinical-lede" data-tone="amber">
-        <div>
-          <span class="eyebrow">Tos aguda</span>
-          <h2>No toda tos con fiebre es neumonía</h2>
-        </div>
-        <p>La radiografía y la saturación cambian el caso. En bronquitis aguda sin datos de consolidación ni insuficiencia respiratoria, el antibiótico suele sobrar.</p>
-      </div>
-
-      <div class="signal-strip" aria-label="Tres preguntas en tos infecciosa aguda">
-        <span data-tone="red"><strong>O</strong><em>Oxígeno: SatO2 baja, confusión o trabajo respiratorio cambian destino.</em></span>
-        <span data-tone="amber"><strong>C</strong><em>Condensación: focalidad, dolor pleurítico o Rx con infiltrado activan NAC.</em></span>
-        <span data-tone="green"><strong>B</strong><em>Bronquitis simple: sin hipoxemia ni consolidación, antibiótico suele sobrar.</em></span>
-      </div>
-
       <section class="practice-section" id="diferencial">
         <div class="practice-section-head">
           <span class="section-kicker">Triaje</span>
           <h2>Diferencial rápido de tos infecciosa</h2>
           <p>Busca red flags antes de decidir si es manejo ambulatorio simple.</p>
         </div>
+        <p>Tres preguntas: ¿hay condensación o hipoxemia?, ¿necesita ingreso?, ¿hay indicación real de antibiótico o solo tratamiento sintomático?</p>
+        <p><strong>No toda tos con fiebre es neumonía</strong></p>
+        <p>La radiografía y la saturación cambian el caso. En bronquitis aguda sin datos de consolidación ni insuficiencia respiratoria, el antibiótico suele sobrar.</p>
+        <ul>
+          <li>Oxígeno: SatO2 baja, confusión o trabajo respiratorio cambian destino.</li>
+          <li>Condensación: focalidad, dolor pleurítico o Rx con infiltrado activan NAC.</li>
+          <li>Bronquitis simple: sin hipoxemia ni consolidación, antibiótico suele sobrar.</li>
+        </ul>
         <div class="action-stack">
           <article><strong>1. Mide oxígeno</strong><p>SatO2 baja o disnea de reposo cambia la ruta: gasometría si SatO2 &lt;94 %, descartar neumonía y valorar ingreso.</p></article>
           <article><strong>2. Busca condensación</strong><p>Fiebre, taquipnea, dolor pleurítico, crepitantes focales o peor estado general justifican Rx de tórax.</p></article>
@@ -146,7 +147,7 @@
           <article class="decision-node" data-tone="amber">
             <span>Broncoespasmo IRVA</span>
             <strong>Sibilancias tras catarro, sin asma/EPOC conocido</strong>
-            <p>No lo conviertas en protocolo de inhaladores desde Guardias: mide gravedad, descarta neumonía y cita si se repite.</p>
+            <p>Mide gravedad, descarta neumonía y cita si se repite. Esta ficha no incluye una pauta de inhaladores para el broncoespasmo aislado.</p>
           </article>
           <article class="decision-node" data-tone="red">
             <span>Alarma</span>
@@ -280,7 +281,7 @@
           <p>La tos de bronquitis puede durar más que la fiebre. Lo importante no es cortar la tos a cualquier precio, sino volver si aparece disnea, dolor torácico, hemoptisis, fiebre persistente o empeoramiento progresivo.</p>
         </div>
         <div class="quick-rules">
-          <article><span>1</span><strong>No publicar dosis desde plantilla</strong><p>La fuente clínica curada sostiene el diagnóstico y la no indicación rutinaria de antibiótico; las dosis sintomáticas de Guardias no se usan como protocolo.</p></article>
+          <article><span>1</span><strong>Alcance del tratamiento sintomático</strong><p>Esta ficha aborda el diagnóstico y la no indicación rutinaria de antibiótico; no incluye dosis de tratamiento sintomático para la bronquitis simple.</p></article>
           <article><span>2</span><strong>Expectativa realista</strong><p>La tos puede persistir semanas. Explica qué evolución es esperable y qué cambios obligan a revalorar.</p></article>
           <article><span>3</span><strong>Si hay pitos</strong><p>Trátalo como dato de exploración y respuesta clínica: si recurre o se acompaña de hipoxemia, sale de “bronquitis simple”.</p></article>
         </div>
@@ -296,7 +297,7 @@
           <article class="decision-node" data-tone="green">
             <span>Leve</span>
             <strong>Sibilancias sin disnea de reposo ni hipoxemia</strong>
-            <p>Documenta SatO2, trabajo respiratorio y respuesta. Si se pauta rescate inhalado, debe venir de una pauta clínica verificada, no de esta plantilla.</p>
+            <p>Documenta SatO2, trabajo respiratorio y respuesta. Esta ficha no incluye una pauta de rescate inhalado para este escenario.</p>
           </article>
           <article class="decision-node" data-tone="amber">
             <span>Recurrente</span>
@@ -310,8 +311,8 @@
           </article>
         </div>
         <div class="callout warning">
-          <span class="callout-title">Guardias no decide inhaladores</span>
-          <p>La nota de broncoespasmo en IRVA procede de una plantilla de Guardias y no se usa como fuente clínica. No se publican dosis de SABA ni pautas LABA/CI-SMART desde esa plantilla. Si hay recurrencia, antecedentes o gravedad, reconduce a las fichas de asma/EPOC.</p>
+          <span class="callout-title">Pautas de inhaladores no incluidas</span>
+          <p>Esta ficha no incluye dosis de SABA ni pautas LABA/CI-SMART para el broncoespasmo aislado en IRVA. Si hay recurrencia, antecedentes o gravedad, reconduce a las fichas de asma/EPOC.</p>
         </div>
         <div class="clinical-split">
           <article>
@@ -367,6 +368,12 @@
         </ul>
       </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="asma.html">Asma: diagnóstico y crisis</a>
+        <a href="epoc.html">EPOC: agudización y seguimiento</a>
+        <a href="insuficiencia-respiratoria.html">Insuficiencia respiratoria</a>
+      </nav>
     </section>
   </article>
 </main>

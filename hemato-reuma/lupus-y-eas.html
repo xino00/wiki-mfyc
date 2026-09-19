@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -79,16 +82,19 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Hemato-Reuma</a><span>/</span><span>LES y EAS</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Reumatología</span>
       <h1>LES y enfermedades autoinmunes sistémicas</h1>
       <p class="lead">Sospechar EAS por órgano diana, pedir autoanticuerpos con intención y reconocer brotes con amenaza vital.</p>
-      <div class="status-row">
-        <span class="pill">Sedimento</span>
-        <span class="pill">ANA con clínica</span>
-        <span class="pill">Complemento</span>
-        <span class="pill">Nefritis</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#primeros-minutos">Valorar amenaza de órgano</a>
+      <a href="#sospecha">Orientar por patrón clínico</a>
+      <a href="#anticuerpos">Elegir autoanticuerpos</a>
+      <a href="#tratamiento">Consultar tratamiento del LES</a>
+      <a href="#nefritis">Valorar afectación renal</a>
+      <a href="#embarazo">Revisar planificación del embarazo</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de autoinmunidad sistémica</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -105,6 +111,7 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
       <div class="clinical-lede" data-tone="amber">
         <div>
@@ -443,6 +450,13 @@
         </ul>
       </section>
 
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Explorar otras manifestaciones</h2>
+      <a href="vasculitis.html">Vasculitis</a>
+      <a href="../dermatologia/manifestaciones-sistemicas-fotodermatosis.html">Manifestaciones sistémicas en la piel</a>
+      <a href="../nefro-uro/fracaso-renal-agudo.html">Fracaso renal agudo</a>
+      <a href="citopenias-y-hemofagocitico.html">Citopenias y síndrome hemofagocítico</a>
     </section>
   </article>
 </main>

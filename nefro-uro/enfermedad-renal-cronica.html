@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -78,17 +81,16 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Nefro-Urología</a><span>/</span><span>Enfermedad renal crónica</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Nefrología</span>
       <h1>Enfermedad renal crónica</h1>
-      <p class="lead">No basta mirar la creatinina: confirma persistencia, clasifica por causa-filtrado-albuminuria y protege riñón y corazón desde el primer contacto.</p>
-      <div class="status-row">
-        <span class="pill">CGA</span>
-        <span class="pill">UACR/CAC</span>
-        <span class="pill">iSGLT2</span>
-        <span class="pill">Finerenona</span>
-      </div>
+      <p class="lead">Confirmación, riesgo, nefroprotección y seguimiento de la ERC.</p>
     </header>
 
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#diagnostico">Confirmar y clasificar</a><a href="#riesgo">Valorar derivación</a><a href="#nefroproteccion">Revisar tratamiento</a><a href="#enfermedad-aguda">Revisar enfermedad intercurrente</a><a href="#seguimiento">Organizar seguimiento</a></div>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -102,6 +104,7 @@
         <a href="#seguimiento">Seguimiento</a>
       </div>
     </nav>
+    </details>
 
     <section class="article-content">
       <div class="clinical-lede" data-tone="blue">
@@ -383,6 +386,12 @@
       </section>
 
     </section>
+    <nav class="related-guides" aria-label="Continuar la consulta">
+      <h2>Continuar la consulta</h2>
+      <a href="fracaso-renal-agudo.html">Fracaso renal agudo</a>
+      <a href="../endocrino/diabetes-mellitus-tipo-2.html">Diabetes tipo 2</a>
+      <a href="../cardio/riesgo-cardiovascular-y-dislipemia.html">Riesgo cardiovascular y dislipemia</a>
+    </nav>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Nefro-Urología · Guía de supervivencia para el residente de MFyC</footer>

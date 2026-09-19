@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>PROA - Infecciones de Transmisión Sexual (ITS)</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Síndromes ambulatorios</span>
       <h1>PROA - Infecciones de Transmisión Sexual (ITS)</h1>
-      <p class="lead">Manejo sindrómico de ITS: tratar gonococo y clamidia cuando toca, no olvidar cribado serológico, pensar en LGV en proctitis grave y distinguir dolor escrotal ITS frente a urinario.</p>
-      <div class="status-row">
-        <span class="pill">VIH/VHB/VHC/sífilis</span>
-        <span class="pill">Ceftriaxona + doxiciclina</span>
-        <span class="pill">LGV: 21 días</span>
-        <span class="pill">Sífilis por estadio</span>
-      </div>
+      <p class="lead">Cribado y tratamiento por síndrome: exudado, dolor, lesiones genitales y vulvovaginitis.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#cribado">Completar cribado inicial</a><a href="#secrecion-dolor">Tratar secreción o dolor</a><a href="#lesiones-genitales">Valorar lesiones genitales</a><a href="#sifilis-vaginitis">Consultar sífilis y vulvovaginitis</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Oportunidad diagnóstica</strong>
@@ -136,10 +137,13 @@
       <span>Siempre: VIH, VHB, VHC y sífilis.</span>
     </div>
 
+    <details class="reference-details" data-pagefind-ignore>
+    <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#mapa">Mapa sindrómico</a><a href="#cribado">Cribado</a><a href="#secrecion-dolor">Secreción y dolor</a><a href="#lesiones-genitales">Lesiones genitales</a><a href="#sifilis-vaginitis">Sífilis y vulvovaginitis</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -380,8 +384,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="proa-infecciones-gastrointestinales.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones Gastrointestinales</strong></a><a href="proa-infecciones-respiratorias.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones Respiratorias</strong></a><a href="proa-infecciones-de-piel-y-partes-blandas.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones de Piel y Partes Blandas</strong></a></div>
 </section>
   </article>

@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -84,27 +87,17 @@
     </nav>
 
     <header class="article-header guide-header">
-      <span class="eyebrow">Seguimiento</span>
       <h1>RGE y gastroenteritis</h1>
       <p class="lead">Pirosis y diarrea aguda son frecuentes; la clave es identificar alarma, no sobremedicalizar y tratar bien la hidratación.</p>
-      <div class="status-row">
-        <span class="pill">RGE sin alarma</span>
-        <span class="pill">GEA</span>
-        <span class="pill">SRO</span>
-        <span class="pill">Coprocultivo selectivo</span>
-      </div>
     </header>
 
-    <nav class="guide-toc" aria-label="Índice de la ficha">
-      <strong>En esta ficha</strong>
-      <div>
-        <a href="#puerta">Puerta</a>
-        <a href="#rge">RGE</a>
-        <a href="#gea">GEA</a>
-        <a href="#antibiotico">Antibiótico</a>
-        <a href="#alta">Alta</a>
-        <a href="#trampas">Trampas</a>
-      </div>
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#puerta">Separar alarma de cuadro simple</a>
+      <a href="#rge">Valorar pirosis y reflujo</a>
+      <a href="#gea">Valorar diarrea e hidratación</a>
+      <a href="#antibiotico">Revisar indicación de antibiótico</a>
+      <a href="#alta">Comprobar tolerancia y preparar alta</a>
+      <a href="#trampas">Revisar errores frecuentes</a>
     </nav>
 
     <section class="article-content">
@@ -498,6 +491,13 @@
         </ul>
       </section>
 
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Ampliar la valoración</h2>
+      <a href="dolor-abdominal.html">Dolor abdominal</a>
+      <a href="eii.html">Enfermedad inflamatoria intestinal</a>
+      <a href="hemorragia-digestiva.html">Hemorragia digestiva</a>
+      <a href="../urgencias/dolor-toracico.html">Dolor torácico</a>
     </section>
   </article>
 </main>

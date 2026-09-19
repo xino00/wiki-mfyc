@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,16 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Urgencias</a><span>/</span><span>Disnea aguda</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Tiempo-dependiente</span>
       <h1>Disnea aguda</h1>
       <p class="lead">Evaluación urgente, gravedad respiratoria y perfiles clínicos principales.</p>
-      <div class="status-row">
-        <span class="pill">Trabajo respiratorio</span>
-        <span class="pill">Gasometría</span>
-        <span class="pill">VMNI</span>
-        <span class="pill">TEP</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#gravedad">Reconocer gravedad</a>
+      <a href="#soporte">Elegir soporte respiratorio</a>
+      <a href="#orientacion">Orientar la causa</a>
+      <a href="#pruebas">Elegir pruebas</a>
+      <a href="#tratamiento">Tratamiento inicial</a>
+      <a href="#salida">Reevaluar y decidir destino</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -105,12 +112,12 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
 
-<div class="clinical-lede" data-tone="blue">
+<div>
   <div>
-    <span class="eyebrow">Disnea en puerta</span>
-    <h2>Primero decide si el paciente se está agotando</h2>
+    <p><strong>Primero decide si el paciente se está agotando</strong></p>
   </div>
   <p>La disnea aguda no se empieza etiquetando como ansiedad, bronquitis o insuficiencia cardiaca. Se empieza comprobando vía aérea, oxigenación, ventilación, trabajo respiratorio y perfusión. Si el paciente claudica, la prioridad es soporte y ayuda; el diagnóstico fino viene después.</p>
 </div>
@@ -398,6 +405,13 @@
 </section>
 
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="../neumo/insuficiencia-respiratoria.html">Insuficiencia respiratoria y soporte</a>
+        <a href="../cardio/insuficiencia-cardiaca.html">Insuficiencia cardiaca</a>
+        <a href="../cardio/tep-y-tvp.html">TEP y TVP</a>
+        <a href="../neumo/epoc.html#agudizacion">Agudización de EPOC</a>
+      </nav>
     </section>
   </article>
 </main>

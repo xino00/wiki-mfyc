@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,16 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>Hipertensión arterial</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Crónico</span>
       <h1>Hipertensión arterial</h1>
       <p class="lead">HTA: medición, confirmación AMPA/MAPA, riesgo, tratamiento, secundaria, resistente y crisis hipertensiva.</p>
-      <div class="status-row">
-        <span class="pill">AMPA/MAPA</span>
-        <span class="pill">Riesgo</span>
-        <span class="pill">Resistente</span>
-        <span class="pill">Crisis</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#puerta">Buscar daño agudo</a>
+      <a href="#medicion">Medir y confirmar</a>
+      <a href="#estudio">Primera evaluación</a>
+      <a href="#tratamiento">Ajustar tratamiento</a>
+      <a href="#resistente">Valorar resistencia</a>
+      <a href="#crisis">Atender una crisis</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -108,14 +115,17 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
 
-<div class="clinical-lede" data-tone="amber">
-  <p class="section-kicker">Idea operativa</p>
-  <h2>Una cifra aislada no diagnostica HTA; el daño de órgano sí cambia la urgencia</h2>
+<section class="practice-section" id="puerta">
+  <div class="practice-section-head">
+    <span class="section-kicker">Primera decisión</span>
+    <h2>Antes de tratar una cifra, busca órgano diana</h2>
+    <p>Dolor torácico, disnea, focalidad neurológica, confusión, embarazo, deterioro renal, hematuria/proteinuria, papiledema o síndrome aórtico cambian el circuito.</p>
+  </div>
+  <p><strong>Una cifra aislada no diagnostica HTA; el daño de órgano sí cambia la urgencia</strong></p>
   <p>En consulta, confirma con técnica correcta y AMPA/MAPA antes de etiquetar. En urgencias, separa emergencia hipertensiva con daño agudo de órgano de presión mal controlada sin daño: el primer grupo necesita tratamiento IV y monitorización; el segundo, calma, repetición, ajuste oral y seguimiento.</p>
-</div>
-
 <div class="clinical-split" aria-label="HTA en consulta frente a urgencias">
   <section class="content-panel">
     <h3>Consulta: confirmar antes de etiquetar</h3>
@@ -135,12 +145,6 @@
   </section>
 </div>
 
-<section class="practice-section" id="puerta">
-  <div class="practice-section-head">
-    <span class="section-kicker">Primera decisión</span>
-    <h2>Antes de tratar una cifra, busca órgano diana</h2>
-    <p>Dolor torácico, disnea, focalidad neurológica, confusión, embarazo, deterioro renal, hematuria/proteinuria, papiledema o síndrome aórtico cambian el circuito.</p>
-  </div>
   <div class="decision-board">
     <article class="decision-node" data-tone="red">
       <span>Daño agudo</span>
@@ -693,6 +697,12 @@
   </ul>
 </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="riesgo-cardiovascular-y-dislipemia.html">Riesgo cardiovascular y dislipemia</a>
+        <a href="insuficiencia-cardiaca.html">Insuficiencia cardiaca</a>
+        <a href="../endocrino/diabetes-mellitus-tipo-2.html">Diabetes mellitus tipo 2</a>
+      </nav>
     </section>
   </article>
 </main>

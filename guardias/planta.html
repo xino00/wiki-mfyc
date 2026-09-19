@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -79,26 +82,19 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Guardias</a><span>/</span><span>Planta: evolución, ingreso y alta</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Plantillas de guardia</span>
       <h1>Planta: evolución, ingreso y alta</h1>
       <p class="lead">Modelos para documentar pases de planta con estructura estable, sin convertir una guardia real en contenido publicado.</p>
-      <div class="status-row">
-        <span class="pill">Evolutivo</span>
-        <span class="pill">Ingreso</span>
-        <span class="pill">Alta</span>
-        <span class="pill">Pase</span>
-      </div>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#evolutivo">Escribir el evolutivo</a><a href="#ingreso">Documentar el ingreso</a><a href="#alta">Preparar el alta</a><a href="#pase">Preparar el pase</a><a href="#checklist">Revisar la nota</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso de uso">
       <strong>Plantillas, no casos</strong>
       <p>Esta página no contiene datos de pacientes ni guardias fechadas. Sirve para copiar una estructura y adaptarla al contexto real de la historia clínica.</p>
     </section>
-
-    <nav class="guide-toc" aria-label="Índice de la ficha">
-      <strong>En esta ficha</strong>
-      <div><a href="#evolutivo">Evolutivo</a><a href="#ingreso">Ingreso</a><a href="#alta">Alta</a><a href="#pase">Pase</a><a href="#checklist">Checklist</a></div>
-    </nav>
 
     <section class="article-content">
       <h2 id="evolutivo">Evolutivo diario</h2>
@@ -109,7 +105,8 @@
         <div><strong>Evita</strong><span>Copiar exploración completa si no aporta.</span></div>
         <div><strong>Cierra</strong><span>Plan concreto y criterio de aviso.</span></div>
       </div>
-      <pre><code>[SERVICIO] HOSPITALIZACIÓN - Equipo Dr./Dra. ___
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-evolutivo" aria-describedby="evolutivo">Copiar evolutivo</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-evolutivo"><code>[SERVICIO] HOSPITALIZACIÓN - Equipo Dr./Dra. ___
 Fecha/hora: ___
 
 Resumen:
@@ -156,7 +153,8 @@ Plan:
           <p>El resumen, antecedentes y situación basal deben poder copiarse a los evolutivos posteriores sin reescribirlos desde cero.</p>
         </section>
       </div>
-      <pre><code>NOTA DE INGRESO - [SERVICIO]
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-ingreso" aria-describedby="ingreso">Copiar nota de ingreso</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-ingreso"><code>NOTA DE INGRESO - [SERVICIO]
 Fecha/hora: ___
 
 Motivo de ingreso:
@@ -204,7 +202,8 @@ Plan inicial:
 
       <h2 id="alta">Informe de alta</h2>
       <p>El alta no es un resumen cronológico infinito: debe cerrar el motivo de ingreso y justificar que el paciente puede continuar fuera del hospital.</p>
-      <pre><code>INFORME DE ALTA - [SERVICIO]
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-alta" aria-describedby="alta">Copiar informe de alta</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-alta"><code>INFORME DE ALTA - [SERVICIO]
 Fecha de alta: ___
 
 Resumen del ingreso:
@@ -244,7 +243,8 @@ Plan y seguimiento:
           </tbody>
         </table>
       </div>
-      <pre><code>PASE DE GUARDIA - Planta
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-pase" aria-describedby="pase">Copiar pase de planta</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-pase"><code>PASE DE GUARDIA - Planta
 Fecha: ___
 
 Pendientes globales:
@@ -272,6 +272,7 @@ Notas para el siguiente turno:
         <div><strong>Alta justificada</strong><span>Explica qué permite el alta, no solo que está estable.</span></div>
       </div>
     </section>
+    <section class="related-guides" aria-label="Continuar la documentación"><h2>Continuar la documentación</h2><a href="boxes-urgencias.html">Valoración y reevaluación en boxes</a><a href="curas-y-exploracion.html">Documentar exploración y curas</a><a href="cot-y-trauma.html">Plantillas de COT y trauma</a></section>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Guardias · Plantillas operativas</footer>

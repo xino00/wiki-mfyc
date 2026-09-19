@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice de Dermatología">
@@ -73,20 +76,21 @@
   <article class="article">
     <nav class="breadcrumb" aria-label="Migas de pan"><a href="../index.html">Inicio</a><span>/</span><a href="index.html">Dermatología</a><span>/</span><span>Urticaria, angioedema y prurito</span></nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Dermatología · consulta frecuente</span>
       <h1>Urticaria, angioedema y prurito</h1>
       <p class="lead">El habón se diagnostica por su comportamiento: aparece, pica y desaparece sin dejar rastro. La duración de cada lesión, la presencia de angioedema y si existe o no una lesión primaria separan la mayoría de los escenarios.</p>
-      <div class="status-row"><span class="pill">Habón &lt;24 h</span><span class="pill">Aguda o crónica</span><span class="pill">Histamina o bradicinina</span><span class="pill">Prurito con o sin lesión</span></div>
-      <div class="signal-strip" aria-label="Tres preguntas iniciales ante urticaria, angioedema o prurito">
-        <span data-tone="green"><strong>24</strong><em>¿Cada lesión individual desaparece por completo antes de 24 horas?</em></span>
-        <span data-tone="amber"><strong>A</strong><em>¿Hay angioedema, y aparece con habones o de forma aislada?</em></span>
-        <span data-tone="red"><strong>S</strong><em>¿Hay síntomas sistémicos que hagan pensar en anafilaxia?</em></span>
-      </div>
     </header>
 
-    <nav class="guide-toc" aria-label="Índice de la guía"><strong>En esta guía</strong><div><a href="#reloj">El reloj del habón</a><a href="#estudio">Estudio</a><a href="#tratamiento">Tratamiento</a><a href="#angioedema">Angioedema</a><a href="#prurito">Prurito</a><a href="#derivacion">Derivación</a></div></nav>
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#reloj">Confirmar el comportamiento del habón</a>
+      <a href="#angioedema">Valorar angioedema</a>
+      <a href="#tratamiento">Consultar tratamiento de urticaria</a>
+      <a href="#estudio">Elegir un estudio dirigido</a>
+      <a href="#prurito">Estudiar prurito sin lesión primaria</a>
+      <a href="#derivacion">Priorizar la derivación</a>
+    </nav>
 
     <section class="article-content">
+      <ul><li>¿Cada lesión individual desaparece por completo antes de 24 horas?</li><li>¿Hay angioedema, y aparece con habones o de forma aislada?</li><li>¿Hay síntomas sistémicos que hagan pensar en anafilaxia?</li></ul>
       <section class="clinical-lede" data-tone="green" id="reloj"><div><span class="section-kicker">La prueba más útil</span><h2>Marca una lesión y deja que el tiempo haga parte del diagnóstico</h2></div><p>Un brote puede durar días, pero cada habón verdadero migra y se resuelve en menos de 24 horas, sin descamación, púrpura ni pigmentación residual. Fotografiar y rodear una lesión dudosa permite comprobarlo.</p></section>
 
       <div class="dose-strip" aria-label="Umbrales temporales que ordenan la urticaria">
@@ -134,6 +138,13 @@
       </section>
 
       <section class="practice-section" id="fuentes"><div class="practice-section-head"><span class="section-kicker">Fuentes clínicas</span><h2>Referencias utilizadas</h2></div><ol><li>EAACI/GA²LEN/EuroGuiDerm/APAAACI. <a class="xref" href="https://eaaci.org/guidelines-position-papers/the-international-eaaci-ga%C2%B2len-euroguiderm-apaaaci-guideline-for-the-definition-classification-diagnosis-and-management-of-urticaria/">Guía internacional de urticaria</a>.</li><li><em>Manual de Diagnóstico y Terapéutica Médica, Hospital Universitario 12 de Octubre</em>, capítulo de patología dermatológica; síntesis local en «Urticaria aguda».</li><li><em>Actualización Dermatología 2025 - Recopilación</em>, capítulo 2. Fuente secundaria y procedencia de las fotografías.</li></ol></section>
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Continuar la valoración cutánea</h2>
+      <a href="exploracion-lesiones-elementales.html">Exploración y lesiones elementales</a>
+      <a href="dermatitis-atopica-eczemas.html">Dermatitis atópica y eczemas</a>
+      <a href="infecciones-cutaneas-virosis-its.html">Infecciones cutáneas, virosis e ITS</a>
+      <a href="../trauma-derma-orl/dermatologia-urgente.html">Dermatología urgente</a>
     </section>
   </article>
 </main>

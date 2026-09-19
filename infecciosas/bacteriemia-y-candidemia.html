@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Bacteriemia y Candidemia</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Infecciones sistémicas</span>
       <h1>Bacteriemia y Candidemia</h1>
-      <p class="lead">Bacteriemia (concepto) y candidemia: factores de riesgo, Candida Score, equinocandinas, retirada de catéter y duración.</p>
-      <div class="status-row">
-        <span class="pill">Fiebre persistente</span>
-        <span class="pill">Candida Score</span>
-        <span class="pill">Equinocandina</span>
-        <span class="pill">Retirar CVC</span>
-      </div>
+      <p class="lead">Del hemocultivo positivo a la búsqueda de foco, el tratamiento y el seguimiento.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#aviso">Actuar ante el hemocultivo</a><a href="#diagnostico">Valorar candidemia</a><a href="#tratamiento">Consultar tratamiento y duración</a><a href="#especiales">Revisar catéter y complicaciones</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Fiebre que no cede en crítico</strong>
@@ -127,10 +128,13 @@
       <span data-tone="amber"><strong>E</strong><em>Equinocandina de entrada si crítico, azol previo, glabrata/parapsilosis o especie pendiente.</em></span>
     </div>
 
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#aviso">Aviso</a><a href="#flujo">Flujo inicial</a><a href="#bacteriemia">Bacteriemia</a><a href="#sospecha">Sospecha</a><a href="#diagnostico">Diagnóstico</a><a href="#tratamiento">Tratamiento</a><a href="#especiales">Especiales</a></div>
 </nav>
+    </details>
     <section class="article-content">
       <section class="practice-section" id="aviso">
         <div class="practice-section-head">
@@ -353,8 +357,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="sepsis-antiinfecciosos-y-soporte-vital-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Antiinfecciosos y Soporte Vital (SSC 2026)</strong></a><a href="sepsis-abordaje-inicial-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Abordaje Inicial (SSC 2026)</strong></a><a href="infecciones-nosocomiales.html"><span>Infecciones sistémicas</span><strong>Infecciones Nosocomiales</strong></a><a href="neutropenia-febril-nf.html"><span>Infecciones sistémicas</span><strong>Neutropenia Febril (NF)</strong></a></div>
 </section>
   </article>

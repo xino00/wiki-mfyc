@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="module-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,79 +62,62 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="shell">
-  <section class="module-hero practical-hero">
-    <div>
-      <nav class="breadcrumb" aria-label="Migas de pan">
+    <header class="module-heading">
+    <nav class="breadcrumb" aria-label="Migas de pan">
         <a href="../index.html">Inicio</a><span>/</span><span>Trauma y ORL</span>
       </nav>
-      <span class="eyebrow">Trauma menor · curas · ORL</span>
-      <h1>Trauma y ORL</h1>
-      <p class="lead">Problemas frecuentes de consulta rápida: cerrar heridas, descartar fractura o complicación y reconocer cuadros ORL que necesitan otro nivel.</p>
-    </div>
-    <aside class="action-panel" aria-label="Accesos rápidos">
-      <h2>Entrada rápida</h2>
-      <a href="heridas-y-suturas.html"><strong>Heridas</strong><span>Limpieza, cierre y curas</span></a>
-      <a href="columna-y-lumbalgia.html"><strong>Columna</strong><span>Lumbalgia, ciática y cervicalgia</span></a>
-      <a href="articulaciones-y-extremidades.html"><strong>Extremidades</strong><span>Maniobras, Ottawa e inmovilización</span></a>
-      <a href="orl-frecuente.html"><strong>ORL</strong><span>Otalgia, faringitis, epistaxis</span></a>
-    </aside>
-  </section>
+    <h1>Trauma y ORL</h1>
+    <p class="lead">Problemas frecuentes de consulta rápida: cerrar heridas, descartar fractura o complicación y reconocer cuadros ORL que necesitan otro nivel.</p>
+  </header>
+  <nav class="context-nav module-sections" aria-label="Apartados del módulo"><a href="#trauma-menor">Curas, columna y extremidades</a><a href="#orl">Infección, sangrado y dolor facial</a></nav>
 
   <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
     <label class="search-box" for="module-search">
-      <span>Buscar en Trauma y ORL</span>
+      <span>Filtrar títulos y temas</span>
       <input id="module-search" type="search" placeholder="lumbociática, epistaxis, hombro, tobillo..." data-filter-input>
     </label>
     <p class="result-count" data-filter-results aria-live="polite"></p>
   </section>
   <div id="module-empty" class="empty-state" aria-live="polite">No hay entradas que coincidan con la búsqueda.</div>
 
-  <section class="section-band" aria-labelledby="trauma-menor">
+  <section class="section-band module-group" data-filter-group aria-labelledby="trauma-menor">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Trauma menor</span>
         <h2 id="trauma-menor">Curas, columna y extremidades</h2>
       </div>
       <p>Para decidir si basta manejo ambulatorio o hay que inmovilizar, pedir imagen, derivar o vigilar más de cerca.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="heridas-y-suturas.html" data-category="Trauma menor" data-search="heridas suturas limpieza cierre grapas steri strips curas analgesia retirada puntos sin tiempos trauma general tetanos vacuna inmunoglobulina mordedura cuerpo extraño tendones cierre diferido absceso funcion distal sensibilidad perfusion fuerza lavar mirar planos retorno fiebre eritema supuracion">
-        <span class="card-kicker">Curas</span>
         <h3>Heridas y suturas</h3>
         <p>Evaluación de profundidad, elección del cierre, curas, retirada según evolución y señales de alarma.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="columna-y-lumbalgia.html" data-category="Trauma menor" data-search="cervicalgia lumbalgia lumbociatica ciatica exploracion rapida columna preguntas obligadas cola caballo silla montar esfinteres perine retencion incontinencia dificultad miccion hipoestesia anal deficit progresivo debilidad caida pie babinski via larga estenosis lumbar claudicacion neurogena Lasègue Bragard talones puntillas marcha funcional primer dedo dorso pie borde lateral pie alta segura volver hoy dolor nocturno fiebre cancer trauma fragilidad osteoporosis anticoagulacion reevaluacion 4 6 semanas no imagen gabapentinoides corticoides benzodiacepinas reflejos imagen cambia manejo infeccion mala evolucion">
-        <span class="card-kicker">Columna</span>
         <h3>Columna: cervicalgia, lumbalgia y lumbociática</h3>
         <p>Banderas rojas, exploración neurológica rápida, niveles radiculares y tratamiento inicial.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="articulaciones-y-extremidades.html" data-category="Trauma menor" data-search="hombro omalgia manguito supraespinoso impingement jobe apley brazo cruzado codo muñeca tabaquera escafoides tuberculo telescopaje estiloides tinel phalen radio distal cadera rodilla Lachman cajon Thessaly menisco LCA tobillo Ottawa Thompson Aquiles sindesmosis antepie marcha calzado desgaste windlass fascitis plantar mulder morton fractura estres metatarsiano tibial posterior cupula astragalina dedo pie fractura costal tendinitis esguince neurovascular distal cuatro pasos pulso pedio faja aine erc retorno relleno capilar sensibilidad fuerza dolor progresivo parestesias frialdad no apoyo disnea lesion oculta">
-        <span class="card-kicker">Extremidades</span>
         <h3>Articulaciones y extremidades</h3>
         <p>Maniobras clave, Ottawa, Aquiles, sindesmosis, criterios de alarma, inmovilización funcional y seguimiento.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="orl">
+  <section class="section-band module-group" data-filter-group aria-labelledby="orl">
     <div class="section-head">
       <div>
-        <span class="section-kicker">ORL</span>
         <h2 id="orl">Infección, sangrado y dolor facial</h2>
       </div>
       <p>Tratamiento sintomático, antibiótico cuando toca y signos para ORL, maxilofacial u oftalmología.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="orl-frecuente.html" data-category="ORL" data-search="faringoamigdalitis centor rinosinusitis sinusitis otitis externa otitis media laringitis epistaxis anticoagulacion DTM bruxismo odontalgia flemon dental foco odontogeno trismus sialorrea diplopia mastoides parálisis facial checklist no protocolo antibiotico diferido tres alarmas via aerea estridor disfagia progresiva orbita edema ocular sangrado persistente tension control real sangrado">
-        <span class="card-kicker">ORL</span>
         <h3>ORL frecuente</h3>
         <p>Faringitis, sinusitis, otitis, laringitis, epistaxis, ATM y flemón dental.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>

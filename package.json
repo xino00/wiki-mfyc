@@ -1,0 +1,26 @@
+{
+  "name": "wiki-mfyc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio clínico estático de la Guía de supervivencia para el residente de MFyC",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build:search": "node tools/build_search.js",
+    "check:syntax": "node --check app.js && node --check guide-catalog.js && node --check tools/build_search.js && node --check tools/build_search.test.js && node --check tools/pagefind_artifacts.js && node --check tools/check_pagefind.js && node --check tools/check_catalog.js && node --check tools/site_links.js && node --check tools/check_search.js && node --check tools/check_wiki.js && node --check tools/sync_chrome.js && node --check tools/user_study.js && node --check tools/user_study.test.js",
+    "check:site": "node tools/check_wiki.js",
+    "check:catalog": "node tools/check_catalog.js",
+    "check:chrome": "node tools/sync_chrome.js --check",
+    "check:pagefind": "node tools/check_pagefind.js",
+    "check:build": "node tools/build_search.test.js",
+    "check:search": "node tools/check_search.js",
+    "check:study": "node --test tools/user_study.test.js",
+    "check": "npm run check:syntax && npm run check:site && npm run check:catalog && npm run check:chrome && npm run check:build && npm run check:pagefind && npm run check:study && npm run check:search",
+    "test": "npm run check:search"
+  },
+  "devDependencies": {
+    "pagefind": "1.5.2",
+    "playwright": "1.62.1"
+  }
+}

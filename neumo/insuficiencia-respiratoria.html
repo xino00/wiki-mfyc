@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -80,17 +83,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Neumología</a><span>/</span><span>Insuficiencia respiratoria y SDRA</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Gravedad</span>
       <h1>Insuficiencia respiratoria y SDRA</h1>
-      <p class="lead">Usa la gasometría para decidir si falla el intercambio, la ventilación o ambos; después elige oxígeno, alto flujo, VNI o vía aérea avanzada según mecanismo y gravedad, con especial cuidado ante síndrome de distrés respiratorio agudo.</p>
-      <div class="status-row">
-        <span class="pill">Vía aérea</span>
-        <span class="pill">PaO2/PaCO2</span>
-        <span class="pill">SpO2 objetivo</span>
-        <span class="pill">PAFI</span>
-      </div>
+      <p class="lead">Valoración inicial, lectura de gasometría y elección de soporte respiratorio. Incluye SDRA.</p>
     </header>
 
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#abc">Primeros minutos</a>
+      <a href="#gasometria">Interpretar gasometría</a>
+      <a href="#soporte">Elegir soporte</a>
+      <a href="#reevaluacion">Reevaluar respuesta</a>
+      <a href="#ventilacion">Ventilación en SDRA</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -105,15 +111,16 @@
       </div>
     </nav>
 
+    </details>
     <section class="article-content">
-      <div class="clinical-lede" data-tone="red">
-        <div>
-          <span class="eyebrow">Prioridad</span>
-          <h2>Primero protege vía aérea, luego interpreta</h2>
+      <section class="practice-section" id="abc">
+        <div class="practice-section-head">
+          <span class="section-kicker">Primeros minutos</span>
+          <h2>Decide soporte antes de entretenerte con la fórmula</h2>
+          <p>La gasometría explica el mecanismo, pero la cama te dice si el paciente necesita oxígeno, presión positiva o vía aérea avanzada ya.</p>
         </div>
+        <p><strong>Primero protege vía aérea, luego interpreta</strong></p>
         <p>La lectura gasométrica no debe retrasar ABC: secreciones, Glasgow bajo, incapacidad para proteger vía aérea o agotamiento respiratorio cambian el manejo antes que cualquier fórmula.</p>
-      </div>
-
       <div class="signal-strip" aria-label="Tres decisiones iniciales en insuficiencia respiratoria">
         <span data-tone="red"><strong>A</strong><em>Airway primero: secreciones, vómitos, Glasgow bajo o agotamiento mandan UCI/IOT.</em></span>
         <span data-tone="blue"><strong>G</strong><em>Gasometría decide mecanismo: hipoxemia, hipercapnia y pH guían el soporte.</em></span>
@@ -139,35 +146,6 @@
         </article>
       </div>
 
-      <div class="timeline" aria-label="Escalada práctica del soporte respiratorio">
-        <article>
-          <span>1</span>
-          <strong>Oxígeno convencional</strong>
-          <p>Si corrige rápido y baja el trabajo respiratorio. Objetivo 94-98 %, o 88-92 % si riesgo de retención de CO2.</p>
-        </article>
-        <article>
-          <span>2</span>
-          <strong>GNAF</strong>
-          <p>Hipoxemia pura con necesidad creciente o trabajo respiratorio, mientras tratas la causa y vigilas respuesta.</p>
-        </article>
-        <article>
-          <span>3</span>
-          <strong>VNI / CPAP</strong>
-          <p>EAP o EPOC con acidosis si coopera y protege vía aérea. No usar como sala de espera si fracasa.</p>
-        </article>
-        <article>
-          <span>4</span>
-          <strong>IOT / UCI</strong>
-          <p>Glasgow bajo, shock, vómitos, secreciones no manejables, fracaso de VNI o shunt/SDRA con hipoxemia refractaria.</p>
-        </article>
-      </div>
-
-      <section class="practice-section" id="abc">
-        <div class="practice-section-head">
-          <span class="section-kicker">Primeros minutos</span>
-          <h2>Decide soporte antes de entretenerte con la fórmula</h2>
-          <p>La gasometría explica el mecanismo, pero la cama te dice si el paciente necesita oxígeno, presión positiva o vía aérea avanzada ya.</p>
-        </div>
         <div class="decision-board">
           <article class="decision-node" data-tone="red">
             <span>A</span>
@@ -198,6 +176,7 @@
           <h2>Clasificar el fallo respiratorio</h2>
           <p>La insuficiencia respiratoria se define por PaO2 &lt;60 mmHg y/o PaCO2 &gt;45 mmHg respirando aire ambiente a nivel del mar.</p>
         </div>
+        <p>Usa la gasometría para decidir si falla el intercambio, la ventilación o ambos; después elige oxígeno, alto flujo, VNI o vía aérea avanzada según mecanismo y gravedad, con especial cuidado ante síndrome de distrés respiratorio agudo.</p>
         <div class="highlight-grid">
           <article class="highlight-card" data-tone="blue">
             <span>Tipo I</span>
@@ -265,6 +244,29 @@
           <h2>Elegir soporte respiratorio</h2>
           <p>Mientras tratas la causa: antibiótico, diurético, broncodilatador, anticoagulación o lo que corresponda.</p>
         </div>
+      <div class="timeline" aria-label="Escalada práctica del soporte respiratorio">
+        <article>
+          <span>1</span>
+          <strong>Oxígeno convencional</strong>
+          <p>Si corrige rápido y baja el trabajo respiratorio. Objetivo 94-98 %, o 88-92 % si riesgo de retención de CO2.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <strong>GNAF</strong>
+          <p>Hipoxemia pura con necesidad creciente o trabajo respiratorio, mientras tratas la causa y vigilas respuesta.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <strong>VNI / CPAP</strong>
+          <p>EAP o EPOC con acidosis si coopera y protege vía aérea. No usar como sala de espera si fracasa.</p>
+        </article>
+        <article>
+          <span>4</span>
+          <strong>IOT / UCI</strong>
+          <p>Glasgow bajo, shock, vómitos, secreciones no manejables, fracaso de VNI o shunt/SDRA con hipoxemia refractaria.</p>
+        </article>
+      </div>
+
         <div class="table-wrap compare-matrix">
           <table>
             <thead><tr><th>Situación</th><th>Objetivo</th><th>Soporte inicial</th></tr></thead>
@@ -416,6 +418,13 @@
         </ul>
       </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="../urgencias/disnea-aguda.html">Disnea aguda: valoración inicial</a>
+        <a href="epoc.html#agudizacion">Agudización de EPOC</a>
+        <a href="asma.html#crisis">Crisis asmática</a>
+        <a href="../cardio/insuficiencia-cardiaca.html">Insuficiencia cardiaca</a>
+      </nav>
     </section>
   </article>
 </main>

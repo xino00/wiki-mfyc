@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -79,16 +82,18 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Hemato-Reuma</a><span>/</span><span>Monoartritis y gota</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Reumatología</span>
       <h1>Monoartritis y gota</h1>
       <p class="lead">La prioridad es no perder una artritis séptica. La gota se diagnostica con cristales cuando se puede y se trata según perfil renal, digestivo y cardiovascular.</p>
-      <div class="status-row">
-        <span class="pill">Artrocentesis</span>
-        <span class="pill">Séptica</span>
-        <span class="pill">Gota</span>
-        <span class="pill">Seguimiento</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#entrada">Valorar una articulación caliente</a>
+      <a href="#artrocentesis">Preparar la artrocentesis</a>
+      <a href="#resultado">Interpretar el líquido</a>
+      <a href="#tratamiento">Elegir tratamiento de la crisis</a>
+      <a href="#alta">Organizar el seguimiento</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de monoartritis y gota</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -102,6 +107,7 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
       <div class="clinical-lede" data-tone="red">
         <div>
@@ -451,6 +457,12 @@
         </ul>
       </section>
 
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Completar la valoración articular</h2>
+      <a href="../trauma-derma-orl/articulaciones-y-extremidades.html">Articulaciones y extremidades</a>
+      <a href="lupus-y-eas.html">LES y enfermedades autoinmunes sistémicas</a>
+      <a href="../nefro-uro/enfermedad-renal-cronica.html">Enfermedad renal crónica</a>
     </section>
   </article>
 </main>

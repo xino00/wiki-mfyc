@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,21 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>TEP y TVP</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Urgente</span>
       <h1>TEP y TVP</h1>
       <p class="lead">Sospecha, estratificación, diagnóstico y manejo inicial de enfermedad tromboembólica venosa.</p>
-      <div class="status-row">
-        <span class="pill">Pretest</span>
-        <span class="pill">VD</span>
-        <span class="pill">Angio-TC</span>
-        <span class="pill">TEP: anticoagulación</span>
-        <span class="pill">TVP: no-alta</span>
-      </div>
     </header>
-    <section class="warning-panel compact" aria-label="Alcance de la ficha">
-      <strong>Alcance editorial</strong>
-      <p>TEP incluye manejo inicial y anticoagulación de puerta según la nota local autorizada. TVP se limita a sospecha, diagnóstico y criterios de no-alta: la fuente disponible procede de Guardias, no cuenta como fuente clínica y está incompleta para anticoagulación, ACOD/AVK y duración.</p>
-    </section>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#puerta">Valorar estabilidad</a>
+      <a href="#diagnostico-tep">Estudiar sospecha de TEP</a>
+      <a href="#riesgo">Estratificar riesgo</a>
+      <a href="#tratamiento-tep">Tratamiento inicial del TEP</a>
+      <a href="#tvp">Estudiar sospecha de TVP</a>
+      <a href="#destino">Decidir destino</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -110,19 +112,16 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
-<div class="clinical-lede" data-tone="red">
-  <p class="section-kicker">Idea operativa</p>
-  <h2>En TEP, primero decide si el paciente aguanta el circuito diagnóstico</h2>
-  <p>Si hay shock o hipotensión persistente, no es el paciente para empezar por dímero-D. Monitor, eco a pie de cama si disponible, soporte cauteloso, heparina no fraccionada si procede procedimiento y equipo senior desde el minuto cero.</p>
-</div>
-
 <section class="practice-section" id="puerta">
   <div class="practice-section-head">
     <span class="section-kicker">Primer vistazo</span>
     <h2>La sospecha útil nace de clínica + riesgo + estabilidad</h2>
     <p>Disnea súbita, dolor pleurítico, síncope, hemoptisis o signos de TVP solo significan algo si los cruzas con constantes, factores de riesgo y probabilidad pretest.</p>
   </div>
+  <p><strong>En TEP, primero decide si el paciente aguanta el circuito diagnóstico</strong></p>
+  <p>Si hay shock o hipotensión persistente, no es el paciente para empezar por dímero-D. Monitor, eco a pie de cama si disponible, soporte cauteloso, heparina no fraccionada si procede procedimiento y equipo senior desde el minuto cero.</p>
   <div class="highlight-grid">
     <article class="highlight-card" data-tone="red">
       <strong>Alto riesgo inmediato</strong>
@@ -397,8 +396,12 @@
   <div class="practice-section-head">
     <span class="section-kicker">TVP</span>
     <h2>La pierna manda probabilidad, no diagnóstico por sí sola</h2>
-    <p>Dolor y edema unilateral son frecuentes, pero la confirmación exige probabilidad pretest, dímero-D cuando procede y eco-doppler. La fuente local de TVP es una plantilla incompleta de Guardias: no se usa como fuente clínica ni como pauta terapéutica.</p>
+    <p>Dolor y edema unilateral son frecuentes, pero la confirmación exige probabilidad pretest, dímero-D cuando procede y eco-doppler.</p>
   </div>
+  <section class="warning-panel compact" aria-label="Alcance del apartado de TVP">
+    <strong>TVP: sospecha, diagnóstico y criterios de no-alta</strong>
+    <p>El apartado de TEP incluye manejo inicial y anticoagulación de puerta. El de TVP no incluye una pauta terapéutica de anticoagulación, ACOD/AVK ni duración.</p>
+  </section>
   <div class="decision-board">
     <article class="decision-node" data-tone="red">
       <span>Ingreso</span>
@@ -456,8 +459,8 @@
     <span data-tone="green"><strong>3</strong><em>Plan validado: fármaco, duración y seguimiento deben venir de fuente autorizada.</em></span>
   </div>
   <div class="callout warning">
-    <span class="callout-title">No convertir una plantilla en tratamiento</span>
-    <p>La nota local de TVP procede de material de Guardias y declara incompleta la sección de anticoagulación, ACOD/AVK y duración. No se usa como fuente clínica; antes de pautar anticoagulación o cerrar un alta, usa una fuente autorizada o el protocolo vigente del centro.</p>
+    <span class="callout-title">Plan terapéutico de TVP no incluido</span>
+    <p>Este apartado no incluye la elección de anticoagulante, ACOD/AVK ni duración. Antes de pautar anticoagulación o cerrar un alta, usa una fuente autorizada o el protocolo vigente del centro.</p>
   </div>
 </section>
 
@@ -509,6 +512,13 @@
   </ul>
 </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="../urgencias/disnea-aguda.html">Disnea aguda</a>
+        <a href="../urgencias/dolor-toracico.html">Dolor torácico</a>
+        <a href="../urgencias/shock.html">Shock</a>
+        <a href="aorta-valvulas-y-estructural.html#htp-congenitas">Hipertensión pulmonar</a>
+      </nav>
     </section>
   </article>
 </main>

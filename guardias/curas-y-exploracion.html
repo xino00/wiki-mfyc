@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -79,27 +82,22 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Guardias</a><span>/</span><span>Curas, trauma menor y exploración</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Plantillas de guardia</span>
       <h1>Curas, trauma menor y exploración</h1>
       <p class="lead">Modelos para escribir notas de exploración, heridas, curas y pequeños procedimientos sin convertir Guardias en una fuente clínica.</p>
-      <div class="status-row">
-        <span class="pill">Exploración</span>
-        <span class="pill">Heridas</span>
-        <span class="pill">Movidas</span>
-        <span class="pill">Procedimientos</span>
-        <span class="pill">Alta</span>
-      </div>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore><strong>Ir directamente a</strong><div><a href="#exploracion">Escribir la exploración</a><a href="#heridas">Documentar una cura</a><a href="#trauma-menor">Redactar una nota local</a><a href="#procedimientos">Registrar el procedimiento</a><a href="#alta">Preparar el alta</a><a href="#seguridad">Comprobar la nota</a></div></nav>
 
     <section class="warning-panel compact" aria-label="Aviso de uso">
       <strong>Plantillas, no contenido clínico</strong>
       <p>La utilidad de esta página es dejar una nota limpia y completa. Las indicaciones clínicas se verifican en guías autorizadas o en el módulo correspondiente de la wiki.</p>
     </section>
 
+    <details class="reference-details" data-pagefind-ignore><summary>Todos los apartados de documentación</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div><a href="#exploracion">Exploración</a><a href="#heridas">Heridas</a><a href="#trauma-menor">Trauma menor</a><a href="#movidas-curas">Movidas de curas</a><a href="#procedimientos">Procedimientos</a><a href="#alta">Alta</a><a href="#seguridad">Seguridad</a></div>
-    </nav>
+    </nav></details>
 
     <section class="article-content">
       <h2 id="exploracion">Exploración dirigida</h2>
@@ -110,7 +108,8 @@
         <div><strong>Estado distal</strong><span>Pulsos, relleno, temperatura, sensibilidad y motricidad si hay extremidad implicada.</span></div>
         <div><strong>Piel</strong><span>Integridad, herida, hematoma, edema, signos locales y cuerpo extraño visible.</span></div>
       </div>
-      <pre><code>EXPLORACIÓN DIRIGIDA
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-exploracion">Copiar exploración dirigida</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-exploracion"><code>EXPLORACIÓN DIRIGIDA
 Fecha/hora: ___
 Motivo: ___
 Zona y lateralidad: ___
@@ -164,7 +163,8 @@ Plan:
           </tbody>
         </table>
       </div>
-      <pre><code>HERIDA / CURA
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-herida">Copiar nota de herida</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-herida"><code>HERIDA / CURA
 Fecha/hora: ___
 Localización y lateralidad: ___
 Tiempo de evolución: ___
@@ -203,7 +203,8 @@ Plan:
       <div class="clinical-split">
         <section class="content-panel">
           <h3>Nota corta de extremidad</h3>
-          <pre><code>TRAUMA MENOR - EXTREMIDAD
+          <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-trauma-menor">Copiar trauma menor</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+          <pre id="plantilla-trauma-menor"><code>TRAUMA MENOR - EXTREMIDAD
 Zona/lateralidad:
 Mecanismo:
 Tiempo de evolución:
@@ -221,7 +222,8 @@ Plan y revisión:</code></pre>
         </section>
         <section class="content-panel">
           <h3>Nota corta ORL/piel</h3>
-          <pre><code>EXPLORACIÓN LOCAL - ORL / PIEL
+          <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-orl-piel">Copiar exploración ORL y piel</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+          <pre id="plantilla-orl-piel"><code>EXPLORACIÓN LOCAL - ORL / PIEL
 Motivo:
 Tiempo de evolución:
 Síntomas asociados:
@@ -280,7 +282,8 @@ Plan y alarma:</code></pre>
 
       <h2 id="procedimientos">Procedimientos simples</h2>
       <p>Cada procedimiento debe tener indicación, consentimiento verbal si consta, técnica resumida, tolerancia y plan de revisión.</p>
-      <pre><code>PROCEDIMIENTO
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-procedimiento">Copiar procedimiento</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-procedimiento"><code>PROCEDIMIENTO
 Procedimiento: ___
 Indicación: ___
 Alternativas o espera comentadas: ___
@@ -313,7 +316,8 @@ Plan:
         <div><strong>Cuidados</strong><span>Indicaciones concretas según fuente clínica autorizada.</span></div>
         <div><strong>Reconsulta</strong><span>Signos de alarma escritos de forma observable.</span></div>
       </div>
-      <pre><code>ALTA - CURA / EXPLORACIÓN
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-alta-cura">Copiar alta tras cura</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-alta-cura"><code>ALTA - CURA / EXPLORACIÓN
 
 Consulta por:
 [Motivo y tiempo de evolución.]
@@ -347,6 +351,7 @@ Plan:
         <li>Revisión y signos de alarma escritos con lenguaje entendible para el paciente.</li>
       </ul>
     </section>
+    <section class="related-guides" aria-label="Continuar"><h2>Continuar</h2><a href="boxes-urgencias.html">Plantillas de valoración y alta</a><a href="cot-y-trauma.html">Documentación osteoarticular</a><a href="../trauma-derma-orl/heridas-y-suturas.html">Guía de heridas y suturas</a></section>
   </article>
 </main>
 

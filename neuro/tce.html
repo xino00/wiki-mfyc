@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -84,17 +87,21 @@
     </nav>
 
     <header class="article-header guide-header">
-      <span class="eyebrow">Trauma neurológico</span>
       <h1>Traumatismo craneoencefálico</h1>
       <p class="lead">TCE leve-moderado y grave: a quién hacer TC, cómo vigilar, qué lesión buscar y cómo evitar daño secundario.</p>
-      <div class="status-row">
-        <span class="pill">TC</span>
-        <span class="pill">Cervical</span>
-        <span class="pill">PIC</span>
-        <span class="pill">Raquimedular</span>
-      </div>
     </header>
 
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#entrada">Primera valoración</a>
+      <a href="#tc">Decidir TC craneal</a>
+      <a href="#cervical">Valorar columna cervical</a>
+      <a href="#grave">Atender TCE grave</a>
+      <a href="#pic">Controlar presión intracraneal</a>
+      <a href="#alta">Preparar alta y vigilancia</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -110,11 +117,17 @@
       </div>
     </nav>
 
+    </details>
     <section class="article-content">
-      <div class="clinical-lede" data-tone="amber">
+      <section class="practice-section" id="entrada">
+        <div class="practice-section-head">
+          <span class="section-kicker">Clasificación</span>
+          <h2>Primera vuelta: GCS, focalidad, anticoagulación, cervical y mecanismo</h2>
+          <p>Repite la exploración: un TCE que deteriora cambia de categoría.</p>
+        </div>
+      <div>
         <div>
-          <span class="eyebrow">Trauma</span>
-          <h2>El TCE no se decide por el chichón: se decide por GCS, anticoagulación, mecanismo y evolución</h2>
+          <p><strong>El TCE no se decide por el chichón: se decide por GCS, anticoagulación, mecanismo y evolución</strong></p>
         </div>
         <p>En el leve-moderado la clave es no sobrepasar ni infrapedir TC. En el grave, la prioridad es evitar lesión secundaria: hipoxia, hipotensión, hipercapnia, fiebre, hipoglucemia/hiperglucemia y herniación.</p>
       </div>
@@ -144,12 +157,6 @@
         </section>
       </div>
 
-      <section class="practice-section" id="entrada">
-        <div class="practice-section-head">
-          <span class="section-kicker">Clasificación</span>
-          <h2>Primera vuelta: GCS, focalidad, anticoagulación, cervical y mecanismo</h2>
-          <p>Repite la exploración: un TCE que deteriora cambia de categoría.</p>
-        </div>
 
         <div class="highlight-grid">
           <article class="highlight-card" data-tone="green">
@@ -551,6 +558,13 @@
         </ul>
       </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="coma-y-confusion.html">Coma y bajo nivel de conciencia</a>
+        <a href="../urgencias/soporte-vital-y-exploracion.html">Soporte vital y exploración</a>
+        <a href="crisis-y-neuromuscular.html">Crisis y neuromuscular urgente</a>
+        <a href="cefaleas.html">Cefaleas</a>
+      </nav>
     </section>
   </article>
 </main>

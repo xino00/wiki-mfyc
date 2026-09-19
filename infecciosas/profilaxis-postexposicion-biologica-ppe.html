@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Profilaxis Postexposición Biológica (PPE)</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Otros cuadros</span>
       <h1>Profilaxis Postexposición Biológica (PPE)</h1>
       <p class="lead">Manejo del accidente biológico (pinchazo/salpicadura): PPE de VHB, VHC y VIH. Ventana &lt;72 h.</p>
-      <div class="status-row">
-        <span class="pill">&lt;72 h VIH</span>
-        <span class="pill">IGHB/VHB</span>
-        <span class="pill">VHC seguimiento</span>
-        <span class="pill">28 días</span>
-      </div>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#primeros-auxilios">Actuar tras la exposición</a><a href="#serologias">Solicitar serologías</a><a href="#vih">Decidir PPE de VIH</a><a href="#vhb">Consultar vacuna e IGHB</a><a href="#vhc">Revisar exposición a VHC</a><a href="#seguimiento">Organizar seguimiento</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>La ventana corre</strong>
@@ -127,10 +128,13 @@
       <span data-tone="blue"><strong>C</strong><em>VHC: no hay profilaxis eficaz; lo crítico es basal, ARN temprano y cierre serológico.</em></span>
     </div>
 
+    <details class="reference-details" data-pagefind-ignore>
+    <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#mapa-virus">Mapa vírico</a><a href="#primeros-auxilios">Primeros auxilios</a><a href="#serologias">Serologías</a><a href="#vhb">VHB</a><a href="#vhc">VHC</a><a href="#vih">VIH</a><a href="#seguimiento">Seguimiento</a><a href="#trampas">Trampas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -414,8 +418,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="hepatitis-virales-a-e.html"><span>Infecciones sistémicas</span><strong>Hepatitis Virales (A-E)</strong></a><a href="vih-diagnostico-y-manejo-inicial.html"><span>Infecciones sistémicas</span><strong>VIH — Diagnóstico y Manejo Inicial</strong></a><a href="proa-infecciones-de-transmision-sexual-its.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones de Transmisión Sexual (ITS)</strong></a></div>
 </section>
   </article>

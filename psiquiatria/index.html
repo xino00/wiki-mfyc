@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="module-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,78 +62,62 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="shell">
-  <section class="module-hero practical-hero">
-    <div>
-      <nav class="breadcrumb" aria-label="Migas de pan">
+    <header class="module-heading">
+    <nav class="breadcrumb" aria-label="Migas de pan">
         <a href="../index.html">Inicio</a><span>/</span><span>Psiquiatría</span>
       </nav>
-      <span class="eyebrow">Urgencias · salud mental · seguridad</span>
-      <h1>Psiquiatría</h1>
-      <p class="lead">Guía de primera respuesta: seguridad, organicidad, riesgo suicida, contención, abstinencia, crisis de ansiedad, psicosis y depresión.</p>
-    </div>
-    <aside class="action-panel" aria-label="Accesos rápidos">
-      <h2>Entrada rápida</h2>
-      <a href="agitacion-y-crisis.html"><strong>Agitación</strong><span>Desescalada y medicación</span></a>
-      <a href="riesgo-autolitico.html"><strong>Riesgo suicida</strong><span>Valoración y circuito</span></a>
-      <a href="psicosis-y-esquizofrenia.html"><strong>Psicosis</strong><span>Organicidad y derivación</span></a>
-    </aside>
-  </section>
+    <h1>Psiquiatría</h1>
+    <p class="lead">Guía de primera respuesta: seguridad, organicidad, riesgo suicida, contención, abstinencia, crisis de ansiedad, psicosis y depresión.</p>
+  </header>
+  <nav class="context-nav module-sections" aria-label="Apartados del módulo"><a href="#urgente">Urgente</a><a href="#seguimiento">Diagnóstico y continuidad</a></nav>
 
   <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
     <label class="search-box" for="module-search">
-      <span>Buscar en Psiquiatría</span>
+      <span>Filtrar títulos y temas</span>
       <input id="module-search" type="search" placeholder="agitación, CIWA, autolítico, depresión..." data-filter-input>
     </label>
     <p class="result-count" data-filter-results aria-live="polite"></p>
   </section>
   <div id="module-empty" class="empty-state" aria-live="polite">No hay entradas que coincidan con la búsqueda.</div>
 
-  <section class="section-band" aria-labelledby="urgente">
+  <section class="section-band module-group" data-filter-group aria-labelledby="urgente">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Psiquiatría</span>
         <h2 id="urgente">Urgente</h2>
       </div>
       <p>Lo primero es seguridad y descartar causa médica o tóxica.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="agitacion-y-crisis.html" data-category="Urgente" data-search="agitacion crisis ansiedad abstinencia alcohol delirium tremens CIWA RASS 4AT CAM QTc tiamina wernicke glucemia hipoglucemia hipoxia delirium benzodiazepinas antipsicoticos contencion verbal mecanica seguridad organicidad acatisia cuerpos lewy intoxicacion estimulantes reevaluacion post sedacion despertable sobresedacion via aerea monitorizacion retirada contencion mecanica registro tres cierres seguridad entorno salida equipo objetos fuera antes acercarte organicidad glucemia constantes conciencia toxicos abstinencia antes etiquetar calmar no dormir via oral puede rass qtc contencion ultimo recurso">
-        <span class="card-kicker">Urgente</span>
         <h3>Agitación y crisis</h3>
         <p>Desescalada, organicidad, benzodiazepinas, antipsicóticos, CIWA y delirium tremens.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="riesgo-autolitico.html" data-category="Urgente" data-search="riesgo suicida regla alta no negociables seguridad intento autolitico ideacion autolitica planes medios letales control retirada plan seguridad informe cita proxima acompanante fiable supervision critica fiabilidad apoyo salud mental psiquiatria bajo moderado alto derivacion urgente intento previo depresion sustancias psicosis intoxicacion impulsividad no dejar solo antidepresivos urgencias retorno explicito tres cierres intento previo ideacion activa pesan mas calma aparente medios plan letalidad fiabilidad relato comprueban uno uno alta solo no ideacion activa medios controlados acompanante cita proxima">
-        <span class="card-kicker">Urgente</span>
         <h3>Riesgo autolítico</h3>
         <p>Definiciones, factores de riesgo, exploración de ideas suicidas y circuito de derivación.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="seguimiento">
+  <section class="section-band module-group" data-filter-group aria-labelledby="seguimiento">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Psiquiatría</span>
         <h2 id="seguimiento">Diagnóstico y continuidad</h2>
       </div>
       <p>Depresión, ansiedad y psicosis con foco en qué debe resolverse hoy y qué requiere seguimiento.</p>
     </div>
     <div class="card-grid">
       <a class="note-card" href="trastornos-afectivos-y-ansiedad.html" data-category="Seguimiento" data-search="depresion trastorno depresivo mayor ansiedad panico crisis panico TAG TOC TEPT antidepresivos ISRS riesgo autolitico suicida ideacion organicidad bipolar mania hipomania ECG SatO2 glucemia TSH lorazepam benzodiacepinas contraindicaciones miastenia SAHS seguimiento 1 semana 2 semanas retirada discontinuacion dependencia mantenimiento tres cierres riesgo primero suicidio mania psicosis autocuidado imposible cambian destino organicidad toxicos edad atipica ecg constantes sintomas fisicos antes panico seguimiento no iniciar mantenimiento sin responsable revisar bipolaridad retirada">
-        <span class="card-kicker">Seguimiento</span>
         <h3>Depresión y trastornos de ansiedad</h3>
         <p>Cribado clínico, organicidad, gravedad, antidepresivos y clasificación de ansiedad.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
       <a class="note-card priority-card" href="psicosis-y-esquizofrenia.html" data-category="Seguimiento" data-search="psicosis aguda esquizofrenia triaje medico toxico seguridad brote psicotico delirios alucinaciones pensamiento desorganizado conciencia clara conciencia alterada no psicosis primaria delirium organicidad fluctuacion desorientacion fiebre hipoxia hipoglucemia focalidad crisis inicio tardio visuales olfatorias toxicos sustancias abstinencia alcohol benzodiazepinas episodio afectivo mania depresion TC EEG antipsicoticos primer episodio riesgo heteroagresividad autocuidado soporte tres cierres conciencia alterada fiebre focalidad crisis no psicosis primaria toxicos retirada farmacos nuevos explican delirios cambian manejo riesgo autocuidado deciden destino primer episodio necesita psiquiatria">
-        <span class="card-kicker">Seguimiento</span>
         <h3>Psicosis aguda y esquizofrenia</h3>
         <p>Psicosis como síndrome, causas orgánicas, pruebas iniciales y derivación.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>

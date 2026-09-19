@@ -4,22 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mareo y vértigo · Guía de supervivencia para el residente de MFyC</title>
-  <meta name="description" content="Síntesis urgente, banderas rojas, guías/evidencia y orientación periférico/central en mareo y vértigo.">
+  <meta name="description" content="Valoración inicial de mareo y vértigo: alarmas, patrón temporal, exploración, tratamiento y destino.">
   <!-- shared-meta:start -->
   <link rel="canonical" href="https://xino00.github.io/wiki-mfyc/urgencias/mareo-y-vertigo.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Guía de supervivencia para el residente de MFyC">
   <meta property="og:title" content="Mareo y vértigo · Guía de supervivencia para el residente de MFyC">
-  <meta property="og:description" content="Síntesis urgente, banderas rojas, guías/evidencia y orientación periférico/central en mareo y vértigo.">
+  <meta property="og:description" content="Valoración inicial de mareo y vértigo: alarmas, patrón temporal, exploración, tratamiento y destino.">
   <meta property="og:url" content="https://xino00.github.io/wiki-mfyc/urgencias/mareo-y-vertigo.html">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mareo y vértigo · Guía de supervivencia para el residente de MFyC">
-  <meta name="twitter:description" content="Síntesis urgente, banderas rojas, guías/evidencia y orientación periférico/central en mareo y vértigo.">
+  <meta name="twitter:description" content="Valoración inicial de mareo y vértigo: alarmas, patrón temporal, exploración, tratamiento y destino.">
   <!-- shared-meta:end -->
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page guide-pilot">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,58 +86,30 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Urgencias</a><span>/</span><span>Mareo y vértigo</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">MUST</span>
       <h1>Mareo y vértigo</h1>
-      <p class="lead">Síntesis urgente, banderas rojas, guías/evidencia y orientación periférico/central.</p>
-      <div class="status-row">
-        <span class="pill">TiTrATE</span>
-        <span class="pill">HINTS+</span>
-        <span class="pill">AICA</span>
-        <span class="pill">VPPB sin fármacos</span>
-      </div>
+      <p class="lead">Valoración inicial: alarmas, patrón temporal, exploración, tratamiento y destino.</p>
     </header>
-    <nav class="guide-toc" aria-label="Índice de la ficha">
-      <strong>En esta ficha</strong>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
       <div>
-        <a href="#alarma">Avisar ya</a>
-        <a href="#titrat">TiTrATE</a>
-        <a href="#exploracion">Exploración</a>
-        <a href="#hints">HINTS</a>
-        <a href="#evidencia">Evidencia</a>
-        <a href="#tratamiento">Tratamiento</a>
-        <a href="#fármacos">Fármacos</a>
-        <a href="#destino">Destino</a>
-        <a href="#trampas">Trampas</a>
+        <a href="#alarma">Valorar alarmas</a>
+        <a href="#titrat">Clasificar el patrón</a>
+        <a href="#exploracion">Explorar</a>
+        <a href="#tratamiento">Tratar según patrón</a>
+        <a href="#fármacos">Consultar fármacos</a>
+        <a href="#destino">Decidir destino</a>
+        <a href="#trampas">Antes de cerrar</a>
       </div>
     </nav>
+    <p class="guide-scope-link">Para ampliar la exploración y el diagnóstico diferencial, consulta <a href="../neuro/mareo-y-vertigo.html">Mareo y vértigo: exploración neurológica</a>.</p>
     <section class="article-content">
-<div class="clinical-lede" data-tone="red">
-  <p class="section-kicker">Primero seguridad</p>
-  <h2>No etiquetes oído antes de descartar cerebelo</h2>
-  <p>El paciente describe mal el mareo. Decide por cronología, desencadenantes, marcha y exploración ocular. En vértigo agudo continuo, el error peligroso es mandar a casa un ictus de fosa posterior.</p>
-</div>
-
-<div class="signal-strip" aria-label="Tres cierres antes de sedar un mareo">
-  <span data-tone="red"><strong>A</strong><em>Ataxia o focalidad: si no se sienta, no camina o tiene signos de tronco, vía ictus.</em></span>
-  <span data-tone="amber"><strong>H</strong><em>HINTS solo en AVS continuo con nistagmo espontáneo; fuera de ahí da falsa seguridad.</em></span>
-  <span data-tone="blue"><strong>O</strong><em>Oído agudo: hipoacusia súbita con vértigo continuo puede ser AICA, no oído banal.</em></span>
-</div>
-
-<div class="quick-rules" aria-label="Antes de sedar un mareo">
-  <strong>Antes de sedar</strong>
-  <span>Glucemia, constantes y ECG si parece presíncope.</span>
-  <span>Ver marcha o sedestación: la ataxia troncal manda.</span>
-  <span>Nistagmo en primaria y miradas laterales antes de antiemético sedante.</span>
-  <span>HINTS solo si AVS continuo con nistagmo espontáneo.</span>
-  <span>Hipoacusia súbita + AVS: pensar AICA, no “oído” simple.</span>
-</div>
 
 <section class="practice-section" id="alarma">
   <div class="practice-section-head">
-    <span class="section-kicker">Mirada rápida</span>
     <h2>Avisar ya al adjunto o activar vía ictus</h2>
     <p>Toma constantes, glucemia capilar y mira la marcha antes de sentarte a escribir.</p>
   </div>
+  <p>El paciente describe mal el mareo. Decide por cronología, desencadenantes, marcha y exploración ocular. En vértigo agudo continuo, el error peligroso es mandar a casa un ictus de fosa posterior.</p>
   <div class="highlight-grid">
     <article class="highlight-card" data-tone="red">
       <strong>Focalidad neurológica</strong>
@@ -161,6 +136,10 @@
       <p>FA, HTA, diabetes, tabaquismo, ictus/AIT previo o primer episodio persistente en &gt;60 años.</p>
     </article>
   </div>
+  <ul>
+    <li>Ataxia o focalidad: si no se sienta, no camina o tiene signos de tronco, vía ictus.</li>
+    <li>Oído agudo: hipoacusia súbita con vértigo continuo puede ser AICA, no oído banal.</li>
+  </ul>
 </section>
 
 <section class="practice-section" id="titrat">
@@ -225,6 +204,14 @@
     <h2>Exploración en 2 minutos</h2>
     <p>La marcha y los ojos pesan más que una TC normal.</p>
   </div>
+  <h3>Antes de sedar</h3>
+  <ul>
+    <li>Glucemia, constantes y ECG si parece presíncope.</li>
+    <li>Ver marcha o sedestación: la ataxia troncal manda.</li>
+    <li>Nistagmo en primaria y miradas laterales antes de antiemético sedante.</li>
+    <li>HINTS solo si AVS continuo con nistagmo espontáneo.</li>
+    <li>Hipoacusia súbita + AVS: pensar AICA, no “oído” simple.</li>
+  </ul>
   <div class="timeline">
     <article>
       <span>0</span>
@@ -250,6 +237,7 @@
       <span>4</span>
       <strong>HINTS</strong>
       <p>Solo en AVS continuo con nistagmo espontáneo y explorador entrenado. No sirve en VPPB ni si no hay nistagmo.</p>
+      <p><a href="#hints">Consultar interpretación de HINTS</a>.</p>
     </article>
   </div>
 </section>
@@ -259,6 +247,9 @@
     <span class="section-kicker">AVS con nistagmo</span>
     <h2>HINTS se interpreta al revés de lo intuitivo</h2>
     <p>En el vértigo agudo continuo, algunos hallazgos "normales" son los que apuntan al tronco/cerebelo.</p>
+  </div>
+  <div class="callout warning">
+    <p>HINTS solo en AVS continuo con nistagmo espontáneo; fuera de ahí da falsa seguridad.</p>
   </div>
   <div class="table-wrap compare-matrix">
     <table>
@@ -304,7 +295,7 @@
   <div class="practice-section-head">
     <span class="section-kicker">Guías y rendimiento</span>
     <h2>La evidencia útil en boxes cabe en tres decisiones</h2>
-    <p>La nota complementaria de guías no cambia el flujo: refuerza cuándo confiar en la exploración y cuándo no tranquilizarse por una imagen precoz.</p>
+    <p>Rendimiento de la exploración y límites de la imagen precoz.</p>
   </div>
   <div class="action-stack">
     <article>
@@ -514,6 +505,12 @@
 </section>
 
     </section>
+    <nav class="related-guides" aria-label="Guías complementarias">
+      <h2>Continuar la consulta</h2>
+      <a href="../neuro/mareo-y-vertigo.html">Mareo y vértigo: exploración neurológica</a>
+      <a href="../neuro/ictus-y-hemorragia.html">Ictus y hemorragia intracraneal</a>
+      <a href="../guardias/boxes-urgencias.html#valoracion">Plantilla de valoración en boxes</a>
+    </nav>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Urgencias · Guía de supervivencia para el residente de MFyC</footer>

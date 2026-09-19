@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice de Dermatología">
@@ -85,41 +88,56 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Dermatología</a><span>/</span><span>Exploración y lesiones elementales</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Dermatología · método de exploración</span>
       <h1>Exploración y lesiones elementales</h1>
-      <p class="lead">Antes de buscar un diagnóstico, construye una descripción que otro clínico pueda imaginar: lesión primaria, distribución, evolución y los pocos hallazgos que cambian la prioridad.</p>
-      <div class="status-row">
-        <span class="pill">Anamnesis</span>
-        <span class="pill">Morfología</span>
-        <span class="pill">Distribución</span>
-        <span class="pill">Pruebas dirigidas</span>
-      </div>
-      <div class="signal-strip" aria-label="Tres verbos para explorar la piel">
-        <span data-tone="blue"><strong>V</strong><em>Ver toda la distribución, no solo la lesión que señala el paciente.</em></span>
-        <span data-tone="amber"><strong>T</strong><em>Tocar: superficie, temperatura, consistencia, movilidad y dolor.</em></span>
-        <span data-tone="green"><strong>M</strong><em>Medir el diámetro mayor y registrar la evolución en el tiempo.</em></span>
-      </div>
+      <p class="lead">Describe la lesión, compara su morfología y prepara el registro de la exploración.</p>
     </header>
 
-    <nav class="guide-toc" aria-label="Índice de la ficha">
-      <strong>En esta ficha</strong>
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
       <div>
-        <a href="#puerta">Anamnesis</a>
-        <a href="#frase">Frase clínica</a>
-        <a href="#lesiones">Lesiones</a>
-        <a href="#distribucion">Distribución</a>
-        <a href="#color">Color y palpación</a>
-        <a href="#pruebas">Pruebas</a>
-        <a href="#registro">Registro</a>
+        <a href="#frase">Describir una lesión</a>
+        <a href="#lesiones">Comparar lesiones</a>
+        <a href="#pruebas">Elegir una prueba</a>
+        <a href="#registro">Registrar la evolución</a>
       </div>
     </nav>
 
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Completar la exploración</summary>
+      <nav class="guide-toc" aria-label="Otros apartados">
+        <div><a href="#puerta">Anamnesis y exploración</a><a href="#distribucion">Distribución</a><a href="#color">Color y palpación</a><a href="#fuentes">Referencias</a></div>
+      </nav>
+    </details>
+
     <section class="article-content">
+      <section class="clinical-lede" data-tone="green" id="frase">
+        <div>
+          <span class="section-kicker">La frase dermatológica</span>
+          <h2>Describe antes de etiquetar</h2>
+        </div>
+        <p>Empieza por la lesión primaria predominante y añade lo que la modifica. “Rash” no permite comparar, consultar ni comprobar si el cuadro progresa.</p>
+      </section>
+
+      <div class="quick-rules" aria-label="Secuencia para describir una lesión">
+        <strong>Orden útil</strong>
+        <span>Localización</span><span>Número</span><span>Lesión primaria</span><span>Tamaño</span><span>Color</span><span>Borde</span><span>Superficie</span><span>Distribución</span><span>Palpación</span>
+      </div>
+
+      <div class="callout info">
+        <span class="callout-title">Ejemplo reproducible</span>
+        <p>“En tronco y raíces de miembros, múltiples máculo-pápulas eritematosas de 3–8 mm, simétricas y confluentes, de bordes poco definidos, sin ampollas ni erosiones; mucosas respetadas y piel no dolorosa”. Después añade cronología, fármacos y estado general.</p>
+      </div>
+
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
           <span class="section-kicker">Antes de mirar de cerca</span>
           <h2>La cronología y el contexto reducen el diagnóstico diferencial</h2>
           <p>Una lesión aislada de su historia se parece a demasiadas cosas. Fecha, velocidad, síntomas, exposiciones y medicación convierten la morfología en una hipótesis útil.</p>
+        </div>
+        <div class="signal-strip" aria-label="Tres verbos para explorar la piel">
+          <span data-tone="blue"><strong>V</strong><em>Ver toda la distribución, no solo la lesión que señala el paciente.</em></span>
+          <span data-tone="amber"><strong>T</strong><em>Tocar: superficie, temperatura, consistencia, movilidad y dolor.</em></span>
+          <span data-tone="green"><strong>M</strong><em>Medir el diámetro mayor y registrar la evolución en el tiempo.</em></span>
         </div>
         <div class="action-stack">
           <article><strong>1. Inicio y evolución</strong><p>Cuándo apareció la primera lesión, dónde empezó, cómo se extendió y qué aspecto tenía antes de rascarse, romperse o tratarse.</p></article>
@@ -148,24 +166,6 @@
           </div>
         </div>
       </section>
-
-      <section class="clinical-lede" data-tone="green" id="frase">
-        <div>
-          <span class="section-kicker">La frase dermatológica</span>
-          <h2>Describe antes de etiquetar</h2>
-        </div>
-        <p>Empieza por la lesión primaria predominante y añade lo que la modifica. “Rash” no permite comparar, consultar ni comprobar si el cuadro progresa.</p>
-      </section>
-
-      <div class="quick-rules" aria-label="Secuencia para describir una lesión">
-        <strong>Orden útil</strong>
-        <span>Localización</span><span>Número</span><span>Lesión primaria</span><span>Tamaño</span><span>Color</span><span>Borde</span><span>Superficie</span><span>Distribución</span><span>Palpación</span>
-      </div>
-
-      <div class="callout info">
-        <span class="callout-title">Ejemplo reproducible</span>
-        <p>“En tronco y raíces de miembros, múltiples máculo-pápulas eritematosas de 3–8 mm, simétricas y confluentes, de bordes poco definidos, sin ampollas ni erosiones; mucosas respetadas y piel no dolorosa”. Después añade cronología, fármacos y estado general.</p>
-      </div>
 
       <section class="practice-section" id="lesiones">
         <div class="practice-section-head">
@@ -375,7 +375,7 @@
         <div class="practice-section-head">
           <span class="section-kicker">Fuentes clínicas</span>
           <h2>Referencias utilizadas</h2>
-          <p>La recopilación local define la cobertura; el manual de la British Association of Dermatologists contrasta el método de exploración y el vocabulario.</p>
+          <p>Referencias para el método de exploración, el vocabulario y las imágenes.</p>
         </div>
         <ol>
           <li>British Association of Dermatologists. <a class="xref" href="https://cdn.bad.org.uk/uploads/2024/04/15113327/Derm_Handbook_3rd-Edition-_Nov_2020.pdf">Dermatology: handbook for medical students &amp; junior doctors, 3rd edition</a>. Apartados “Essential clinical skills” y “Communicating examination findings”.</li>
@@ -383,6 +383,12 @@
         </ol>
       </section>
     </section>
+    <nav class="related-guides" aria-label="Continuar la consulta">
+      <h2>Continuar la consulta</h2>
+      <a href="../trauma-derma-orl/dermatologia-urgente.html">Ampollas y toxicodermias</a>
+      <a href="lesiones-benignas-queratosis-cancer-cutaneo.html">Lesiones y cáncer cutáneo</a>
+      <a href="index.html">Dermatología</a>
+    </nav>
   </article>
 </main>
 

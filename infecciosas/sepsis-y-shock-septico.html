@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,15 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Sepsis y Shock Séptico</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Sepsis</span>
       <h1>Sepsis y Shock Séptico</h1>
-      <p class="lead">Puerta de entrada a la sepsis en urgencias: reconocer disfunción orgánica, activar el paquete inicial, decidir si hay shock y saltar a la ficha que resuelve el siguiente problema.</p>
-      <div class="status-row">
-        <span class="pill">Tiempo-dependiente</span>
-        <span class="pill">Lactato y foco</span>
-        <span class="pill">Shock = vasopresor precoz</span>
-      </div>
+      <p class="lead">Reconocimiento, primeros 60 minutos, shock, destino y reevaluación.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#primeros-60">Iniciar los primeros 60 minutos</a><a href="#shock">Actuar ante shock</a><a href="#destino">Decidir destino</a><a href="#serie">Continuar manejo por problema</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Idea operativa</strong>
@@ -127,10 +129,13 @@
     </div>
     
 
+<details class="reference-details" data-pagefind-ignore>
+<summary>Todos los apartados</summary>
 <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#definicion">Definición útil</a><a href="#diagrama">Diagrama</a><a href="#decisiones">Decisiones</a><a href="#lectura">Lectura clínica</a><a href="#primeros-60">Primeros 60 min</a><a href="#shock">Shock séptico</a><a href="#destino">Destino</a><a href="#serie">Serie sepsis</a></div>
 </nav>
+</details>
     <section class="article-content">
       <h2 id="definicion">Definición útil en urgencias</h2>
       <p>Sepsis es infección sospechada o confirmada con disfunción orgánica potencialmente mortal por respuesta desregulada del huésped. En la puerta, tradúcelo a una pregunta: ¿este paciente infectado está perfundiendo mal, respirando peor, confundido, oligúrico, hipotenso o con lactato elevado?</p>
@@ -395,8 +400,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="sepsis-abordaje-inicial-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Abordaje Inicial (SSC 2026)</strong></a><a href="sepsis-hemodinamica-y-reanimacion-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Hemodinámica y Reanimación (SSC 2026)</strong></a><a href="sepsis-antiinfecciosos-y-soporte-vital-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Antiinfecciosos y Soporte Vital (SSC 2026)</strong></a><a href="sepsis-cuidados-post-uci-y-objetivos-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Cuidados Post-UCI y Objetivos (SSC 2026)</strong></a></div>
 </section>
   </article>

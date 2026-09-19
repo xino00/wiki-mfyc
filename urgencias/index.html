@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="module-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,112 +62,88 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="shell">
-  <section class="module-hero practical-hero">
-    <div>
-      <nav class="breadcrumb" aria-label="Migas de pan">
+    <header class="module-heading">
+    <nav class="breadcrumb" aria-label="Migas de pan">
         <a href="../index.html">Inicio</a><span>/</span><span>Urgencias</span>
       </nav>
-      <span class="eyebrow">Puerta · triaje · boxes</span>
-      <h1>Urgencias</h1>
-      <p class="lead">Problemas tiempo-dependientes, síndromes MUST, soporte vital y alteraciones iónicas para decidir rápido en la puerta.</p>
-    </div>
-    <aside class="action-panel" aria-label="Accesos rápidos">
-      <h2>Entrada rápida</h2>
-      <a href="dolor-toracico.html"><strong>Dolor torácico</strong><span>Acceso rápido</span></a><a href="disnea-aguda.html"><strong>Disnea aguda</strong><span>Acceso rápido</span></a><a href="shock.html"><strong>Shock</strong><span>Acceso rápido</span></a><a href="trastornos-ionicos-y-acido-base.html"><strong>Iónico y ácido-base</strong><span>Acceso rápido</span></a>
-    </aside>
-  </section>
+    <h1>Urgencias</h1>
+    <p class="lead">Problemas tiempo-dependientes, síndromes MUST, soporte vital y alteraciones iónicas para decidir rápido en la puerta.</p>
+  </header>
+  <nav class="context-nav module-sections" aria-label="Apartados del módulo"><a href="#tiempo-dependiente">Tiempo-dependiente</a><a href="#must">MUST</a><a href="#ionico-acido-base">Iónico / ácido-base</a><a href="#exploracion-y-soporte">Exploración y soporte</a></nav>
   <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
     <label class="search-box" for="module-search">
-      <span>Buscar en Urgencias</span>
+      <span>Filtrar títulos y temas</span>
       <input id="module-search" type="search" placeholder="buscar por problema, tratamiento, escala..." data-filter-input>
     </label>
     <p class="result-count" data-filter-results aria-live="polite"></p>
   </section>
   <div id="module-empty" class="empty-state" aria-live="polite">No hay entradas que coincidan con la búsqueda.</div>
-  <section class="section-band" aria-labelledby="tiempo-dependiente">
+  <section class="section-band module-group" data-filter-group aria-labelledby="tiempo-dependiente">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Urgencias</span>
         <h2 id="tiempo-dependiente">Tiempo-dependiente</h2>
       </div>
       <p>Cuadros donde importa reconocer gravedad y avisar pronto.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="dolor-toracico.html" data-category="Tiempo-dependiente" data-search="Dolor torácico ECG 10 minutos troponina delta HEART GRACE TIMI Wells Geneva PERC ADD-RS Sgarbossa SCA IAM BCRI marcapasos TEP síndrome aórtico aorta disección taponamiento neumotórax tensión Boerhaave rotura esofágica inestabilidad shock V7 V9 V3R V4R nitroglicerina labetalol enoxaparina alto riesgo procedimiento cirugía hueco fuente autorizada tres cierres etiquetar dolor toracico st equivalente vaso manda rx normal no descarta delta contexto">
-        <span class="card-kicker">Tiempo-dependiente</span>
         <h3>Dolor torácico</h3>
         <p>Descartar causas letales, ECG/troponina, SCA, TEP, aorta y taponamiento.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a><a class="note-card priority-card" href="disnea-aguda.html" data-category="Tiempo-dependiente" data-search="Disnea aguda claudicacion respiratoria gravedad respiratoria agotamiento trabajo respiratorio SpO2 tiraje cianosis estridor torax silente bradipnea shock hipercapnia hipercapnia acidotica PaO2 gasometria radiografia torax ecografia POCUS NT-proBNP troponina dimero-D oxigenoterapia reservorio GNAF VMNI CPAP BiPAP intubacion iot edema agudo pulmon EAP asma EPOC neumonia TEP anafilaxia neumotorax CO carboxiHb destino observacion uci alta segura monitorizacion salida segura reevaluacion 30 60 minutos pH PaCO2 soporte creciente ansiedad diagnostico exclusion tres mandos ventilacion primero saturacion ph co2 lactato metabolismo broncoespasmo grave sepsis">
-        <span class="card-kicker">Tiempo-dependiente</span>
         <h3>Disnea aguda</h3>
         <p>Evaluación urgente, gravedad respiratoria y perfiles clínicos principales.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a><a class="note-card priority-card" href="shock.html" data-category="Tiempo-dependiente" data-search="Shock hipoperfusion hipotension circuito critico TAM TAS lactato relleno capilar oliguria confusion piel fria moteada hipovolemico cardiogenico obstructivo distributivo septico anafilactico hemorragico POCUS FAST ecocardiografia VCI lineas B gasometria fluidoterapia cristaloides noradrenalina noradrenalina precoz dobutamina hidrocortisona adrenalina IM vasopresina SCAI UCI TEP taponamiento neumotorax sepsis control foco hemocomponentes no todo hipotenso litros pulmon lleno pvy alta causa reversible tres mandos perfusion piel cerebro riñon fenotipo vd dilatado drenaje descompresion">
-        <span class="card-kicker">Tiempo-dependiente</span>
         <h3>Shock</h3>
         <p>Reconocimiento inicial, fenotipos, soporte y destino.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a><a class="note-card priority-card" href="anafilaxia.html" data-category="Tiempo-dependiente" data-search="Anafilaxia reacción alérgica tres reglas inmediatas adrenalina IM primero sin contraindicaciones muslo no sustituir antihistaminico corticoide 0,3 0,5 mg anafiláctico posicion segura no sentar no poner de pie urticaria angioedema broncoespasmo estridor hipoxemia hipotensión síncope síntomas gastrointestinales alimentos fármacos AINE betalactámicos contraste picadura látex himenopteros anisakis frutos secos marisco pescado cofactores ejercicio infección menstruación triptasa GALAXIA WAO glucagón betabloqueantes salbutamol dexclorfeniramina metilprednisolona hidrocortisona adrenalina nebulizada perfusión IV refractaria autoinyector alergología observación bifásica plan escrito Kounis embarazo AEMPS tarjeta amarilla evitacion alergeno gadolinio">
-        <span class="card-kicker">Tiempo-dependiente</span>
         <h3>Anafilaxia</h3>
         <p>Diagnóstico clínico y tratamiento inicial en adultos.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
-  </section><section class="section-band" aria-labelledby="must">
+  </section><section class="section-band module-group" data-filter-group aria-labelledby="must">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Urgencias</span>
         <h2 id="must">MUST</h2>
       </div>
       <p>Síntesis por motivo de consulta frecuente.</p>
     </div>
     <div class="card-grid">
       <a class="note-card" href="mareo-y-vertigo.html" data-category="MUST" data-search="Mareo vértigo antes de sedar guias evidencia GRACE-3 TiTrATE ATTEST INFARCT HINTS AVS síndrome vestibular agudo VPPB Dix-Hallpike Epley Semont Lempert Gufoni neuritis vestibular ictus fosa posterior cerebeloso AICA hipoacusia súbita ataxia troncal nistagmo vertical torsional skew head impulse normal RM difusión TC baja sensibilidad Wernicke migraña vestibular Ménière AIT vertebrobasilar ortostatismo glucemia constantes ecg marcha sedestacion antiemetico sedante ondansetrón sulpirida dimenhidrinato metoclopramida diazepam lorazepam betahistina rehabilitación vestibular tres cierres ataxia focalidad via ictus hints falsa seguridad oido agudo">
-        <span class="card-kicker">MUST</span>
         <h3>Mareo y vértigo</h3>
         <p>Síntesis urgente, banderas rojas y orientación periférico/central.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a><a class="note-card" href="must-sindromes.html" data-category="MUST" data-search="MUST síndromes frecuentes dato cambia circuito triaje dolor abdominal fuera de escala abdomen agudo peritonitis isquemia mesentérica ectópico síncope esfuerzo decúbito BAV Brugada QT cefalea trueno HSA meningitis arteritis temporal glaucoma fiebre sin foco no fuo hipotermia purpura meningismo inmunodeprimido sepsis neutropenia foco drenable ictus LKW glucemia estatus epiléptico Guillain Barre compresión medular delirium 4AT CAM agitación haloperidol tiamina tres usos seguros banderas rojas shock focalidad abdomen quirurgico alto riesgo tiempo util hsa meningitis ectopico red flags salida segura plan reevaluacion">
-        <span class="card-kicker">MUST</span>
         <h3>MUST: síndromes frecuentes</h3>
         <p>Triaje práctico de dolor abdominal, síncope, cefalea, fiebre/sepsis, déficit neurológico, delirium y agitación.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
-  </section><section class="section-band" aria-labelledby="ionico-acido-base">
+  </section><section class="section-band module-group" data-filter-group aria-labelledby="ionico-acido-base">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Urgencias</span>
         <h2 id="ionico-acido-base">Iónico / ácido-base</h2>
       </div>
       <p>Alteraciones analíticas habituales de guardia.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="trastornos-ionicos-y-acido-base.html" data-category="Iónico / ácido-base" data-search="Trastornos ionicos acido-base hiponatremia hipernatremia osmolaridad plasmatica urinaria sodio urinario potasio hiperpotasemia hipopotasemia pseudohiperpotasemia hemolisis ECG gluconato calcico insulina glucosa salino hipertonico KCl magnesio torsades calcio gasometria pH bicarbonato anion gap Winter delta ratio GOLDMARK cloro urinario desmielinizacion reevaluacion glucemias horarias hipoglucemia sobrecorreccion ionograma diuresis diálisis dialisis calcio repetir 5 minutos sodio 24 horas tres mandos seguridad ionica electricidad monitor velocidad cerebro mixto CO2 HCO3">
-        <span class="card-kicker">Iónico / ácido-base</span>
         <h3>Trastornos iónicos y ácido-base</h3>
         <p>Hiponatremia, natremia, potasio, calcio, magnesio y lectura sistemática de gasometría.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
-  </section><section class="section-band" aria-labelledby="exploracion-y-soporte">
+  </section><section class="section-band module-group" data-filter-group aria-labelledby="exploracion-y-soporte">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Urgencias</span>
         <h2 id="exploracion-y-soporte">Exploración y soporte</h2>
       </div>
       <p>Exploración dirigida y maniobras operativas.</p>
     </div>
     <div class="card-grid">
       <a class="note-card" href="soporte-vital-y-exploracion.html" data-category="Exploración y soporte" data-search="Soporte vital puerta rapida SVA RCP PCR parada cardiorrespiratoria compresiones 100 120 FV TV sin pulso descarga adrenalina amiodarona AESP asistolia roles 4H 4T hipoxia hipovolemia hiperpotasemia neumotórax taponamiento toxinas trombosis RCE postparada abcde ecg presion causa pausas peligrosas rodilla alta energia Lachman cajón pivot shift varo valgo McMurray Apley Thessaly derrame neurovascular antes despues reduccion inmovilizacion tobillo Ottawa sindesmosis talar tilt Thompson Aquiles quinto metatarsiano Windlass Mulder pedio tibial posterior tres reglas rcp calidad pausa menos 10 segundos compresor 2 min ritmo desfibrilable no desfibrilable adrenalina trauma reduccion">
-        <span class="card-kicker">Exploración y soporte</span>
         <h3>Soporte vital y exploración dirigida</h3>
         <p>PCR avanzada y exploración de rodilla, tobillo y antepié.</p>
-        <span class="card-meta"><span class="pill">Guía práctica</span></span>
       </a>
     </div>
   </section>

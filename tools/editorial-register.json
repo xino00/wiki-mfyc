@@ -1,0 +1,1339 @@
+{
+  "schema": 1,
+  "scope": "Mantenimiento de las 103 guías y plantillas. Las referencias se observan en el HTML publicado; este registro no acredita revisión clínica ni consulta de los originales. pendiente_identificar señala que falta vincular fuentes autorizadas, sin afirmar su ausencia en el contenido.",
+  "records": [
+    {
+      "id": "dolor-toracico",
+      "href": "urgencias/dolor-toracico.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "mencion_incompleta",
+      "sourcesObserved": [
+        {
+          "title": "MUST: mención en el texto, sin identificación de documento ni edición",
+          "htmlLocation": "urgencias/dolor-toracico.html"
+        }
+      ],
+      "nextReview": "Asignar responsable y vincular los apartados, tablas y pautas a documentos autorizados identificados."
+    },
+    {
+      "id": "sindrome-coronario-agudo",
+      "href": "cardio/sindrome-coronario-agudo.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "sin_identificar_en_html",
+      "sourcesObserved": [],
+      "nextReview": "Identificar la fuente autorizada de cada tabla y pauta antes de una nueva revisión clínica."
+    },
+    {
+      "id": "diabetes-tipo-2",
+      "href": "endocrino/diabetes-mellitus-tipo-2.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "sin_identificar_en_html",
+      "sourcesObserved": [],
+      "nextReview": "Identificar documentos y ediciones autorizadas para objetivos, tratamientos y seguimiento."
+    },
+    {
+      "id": "mareo-urgencias",
+      "href": "urgencias/mareo-y-vertigo.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "sin_identificar_en_html",
+      "sourcesObserved": [],
+      "nextReview": "Asignar revisión conjunta con la ficha de exploración neurológica e identificar las fuentes autorizadas."
+    },
+    {
+      "id": "mareo-consulta",
+      "href": "neuro/mareo-y-vertigo.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "sin_identificar_en_html",
+      "sourcesObserved": [],
+      "nextReview": "Identificar originales de exploración y maniobras; revisar conjuntamente con la entrada de urgencias."
+    },
+    {
+      "id": "betalactamicos",
+      "href": "infecciosas/proa-betalactamicos-cefalosporinas-y-carbapenemicos.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "sin_identificar_en_html",
+      "sourcesObserved": [],
+      "nextReview": "La procedencia publicada de la tabla de dosis remite a la propia ficha; falta relacionarla con los originales autorizados. Verificar matriz y dosis fila a fila en esa revisión."
+    },
+    {
+      "id": "exploracion-cutanea",
+      "href": "dermatologia/exploracion-lesiones-elementales.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "British Association of Dermatologists. Dermatology: handbook for medical students & junior doctors, 3rd edition",
+          "url": "https://cdn.bad.org.uk/uploads/2024/04/15113327/Derm_Handbook_3rd-Edition-_Nov_2020.pdf",
+          "htmlLocation": "dermatologia/exploracion-lesiones-elementales.html#fuentes",
+          "sections": [
+            "Essential clinical skills",
+            "Communicating examination findings"
+          ]
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/exploracion-lesiones-elementales.html#fuentes",
+          "sections": [
+            "capítulo 1: “Lesiones en dermatología clínica”"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable y comprobar los originales citados; la presencia de bibliografía no equivale a revisión realizada durante el piloto."
+    },
+    {
+      "id": "plantilla-boxes",
+      "href": "guardias/boxes-urgencias.html",
+      "owner": null,
+      "clinicalReview": "no_aplica_plantilla",
+      "lastClinicalReview": null,
+      "sourceStatus": "no_aplica_plantilla",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable de documentación y comprobar copia, campos y adaptación al circuito. No usar la plantilla como fuente de pautas clínicas."
+    },
+    {
+      "id": "aorta-valvulas-y-estructural",
+      "href": "cardio/aorta-valvulas-y-estructural.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "fibrilacion-auricular-y-arritmias",
+      "href": "cardio/fibrilacion-auricular-y-arritmias.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "hipertension-arterial",
+      "href": "cardio/hipertension-arterial.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "insuficiencia-cardiaca",
+      "href": "cardio/insuficiencia-cardiaca.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "pericardio-y-miocardio",
+      "href": "cardio/pericardio-y-miocardio.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "riesgo-cardiovascular-y-dislipemia",
+      "href": "cardio/riesgo-cardiovascular-y-dislipemia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "sindrome-coronario-cronico",
+      "href": "cardio/sindrome-coronario-cronico.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "tep-y-tvp",
+      "href": "cardio/tep-y-tvp.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "acne-rosacea",
+      "href": "dermatologia/acne-rosacea.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "NICE. Acne vulgaris: management (NG198)",
+          "url": "https://www.nice.org.uk/guidance/ng198/chapter/Recommendations",
+          "htmlLocation": "dermatologia/acne-rosacea.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists. Guidelines for the management of people with rosacea 2021",
+          "url": "https://academic.oup.com/bjd/article/185/4/725/6599936",
+          "htmlLocation": "dermatologia/acne-rosacea.html#fuentes"
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/acne-rosacea.html#fuentes",
+          "sections": [
+            "capítulo 3"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "alopecias-unas-patologia-oral",
+      "href": "dermatologia/alopecias-unas-patologia-oral.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "British Association of Dermatologists. Información clínica sobre alopecia areata",
+          "url": "https://www.bad.org.uk/pils/alopecia-areata/",
+          "htmlLocation": "dermatologia/alopecias-unas-patologia-oral.html#fuentes"
+        },
+        {
+          "title": "NICE. Suspected cancer: recognition and referral — oral cancer",
+          "url": "https://www.nice.org.uk/guidance/ng12/chapter/Recommendations-organised-by-site-of-cancer#oral-cancer",
+          "htmlLocation": "dermatologia/alopecias-unas-patologia-oral.html#fuentes"
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/alopecias-unas-patologia-oral.html#fuentes",
+          "sections": [
+            "capítulos 5 y 9"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "dermatitis-atopica-eczemas",
+      "href": "dermatologia/dermatitis-atopica-eczemas.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "EuroGuiDerm. Living guideline for atopic eczema",
+          "url": "https://www.guidelines.edf.one/guidelines/atopic-ezcema",
+          "htmlLocation": "dermatologia/dermatitis-atopica-eczemas.html#fuentes"
+        },
+        {
+          "title": "NICE. Secondary bacterial infection of eczema: antimicrobial prescribing (NG190)",
+          "url": "https://www.nice.org.uk/guidance/ng190",
+          "htmlLocation": "dermatologia/dermatitis-atopica-eczemas.html#fuentes"
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/dermatitis-atopica-eczemas.html#fuentes",
+          "sections": [
+            "capítulo 4"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "infecciones-cutaneas-virosis-its",
+      "href": "dermatologia/infecciones-cutaneas-virosis-its.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "Ministerio de Sanidad y SEIMC. Documento de consenso sobre diagnóstico y tratamiento de las infecciones de transmisión sexual en adultos, niños y adolescentes",
+          "url": "https://www.sanidad.gob.es/areas/DCVIHT/ITS/docs/DC_manejo_ITS_20260415.pdf",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "NICE. Impetigo: antimicrobial prescribing (NG153)",
+          "url": "https://www.nice.org.uk/guidance/ng153/chapter/Recommendations",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "NICE. Cellulitis and erysipelas: antimicrobial prescribing (NG141)",
+          "url": "https://www.nice.org.uk/guidance/ng141/chapter/Recommendations",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "AEMPS CIMA. Ficha técnica de valaciclovir 1.000 mg",
+          "url": "https://cima.aemps.es/cima/dochtml/ft/74717/FichaTecnica_74717.html",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "AEMPS CIMA. fichas técnicas de permetrina 5 %",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists. Tinea capitis",
+          "url": "https://www.bad.org.uk/pils/tinea-capitis",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists. Fungal nail infections",
+          "url": "https://www.bad.org.uk/pils/fungal-nail-infections",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "CDC. Sexually Transmitted Infections Treatment Guidelines",
+          "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "Manual de Diagnóstico y Terapéutica Médica, Hospital Universitario 12 de Octubre",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes"
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/infecciones-cutaneas-virosis-its.html#fuentes",
+          "sections": [
+            "capítulos 15 y 16"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "lesiones-benignas-queratosis-cancer-cutaneo",
+      "href": "dermatologia/lesiones-benignas-queratosis-cancer-cutaneo.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "NICE. Suspected cancer: recognition and referral — skin cancers",
+          "url": "https://www.nice.org.uk/guidance/ng12/chapter/recommendations-organised-by-site-of-cancer#skin-cancers",
+          "htmlLocation": "dermatologia/lesiones-benignas-queratosis-cancer-cutaneo.html#fuentes"
+        },
+        {
+          "title": "NICE. Melanoma: assessment and management",
+          "url": "https://www.nice.org.uk/guidance/ng14/chapter/recommendations",
+          "htmlLocation": "dermatologia/lesiones-benignas-queratosis-cancer-cutaneo.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists. Guidelines for the management of adults with basal cell carcinoma 2021",
+          "url": "https://academic.oup.com/bjd/article/185/5/899/6599942",
+          "htmlLocation": "dermatologia/lesiones-benignas-queratosis-cancer-cutaneo.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists. Guidelines for the management of people with cutaneous squamous cell carcinoma 2020",
+          "url": "https://academic.oup.com/bjd/article/184/3/401/6702204",
+          "htmlLocation": "dermatologia/lesiones-benignas-queratosis-cancer-cutaneo.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists. Guidelines for the care of patients with actinic keratosis 2017",
+          "url": "https://academic.oup.com/bjd/article/176/1/20/6644307",
+          "htmlLocation": "dermatologia/lesiones-benignas-queratosis-cancer-cutaneo.html#fuentes"
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/lesiones-benignas-queratosis-cancer-cutaneo.html#fuentes",
+          "sections": [
+            "capítulos 6, 7 y 13"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "manifestaciones-sistemicas-fotodermatosis",
+      "href": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "European Dermatology Forum/EADV. S2k Guideline on Diagnosis and Monitoring in Cutaneous Lupus Erythematosus",
+          "url": "https://www.guidelines.edf.one/uploads/attachments/cl2630w7y00b6lajngkz6kjum-cle-diagnosis-monitoring-2016-gl.pdf",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "International Myositis Assessment and Clinical Studies Group. International Guideline for IIM-Associated Cancer Screening",
+          "url": "https://www.nature.com/articles/s41584-023-01045-w",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "British Society for Rheumatology. Guideline for management of idiopathic inflammatory myopathy",
+          "url": "https://www.rheumatology.org.uk/news/details/BSR-launches-new-myositis-guideline",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "International Porphyria Network. Porphyria Cutanea Tarda: professional consensus",
+          "url": "https://ipnet.org/porphyria-cutanea-tarda-pct-2/",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists/British Photodermatology Group. Polymorphic light eruption",
+          "url": "https://www.bad.org.uk/pils/polymorphic-light-eruption",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists/British Photodermatology Group. Solar urticaria",
+          "url": "https://www.bad.org.uk/pils/solar-urticaria",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists/British Photodermatology Group. Sun Protection Fact Sheet",
+          "url": "https://www.skinhealthinfo.org.uk/sun-awareness/the-sunscreen-fact-sheet/",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "KDIGO. Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease",
+          "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "Manual de Diagnóstico y Terapéutica Médica, Hospital Universitario 12 de Octubre",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes"
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/manifestaciones-sistemicas-fotodermatosis.html#fuentes",
+          "sections": [
+            "capítulos 12 y 17"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "psoriasis-dermatitis-seborreica",
+      "href": "dermatologia/psoriasis-dermatitis-seborreica.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "NICE. Psoriasis: assessment and management (CG153)",
+          "url": "https://www.nice.org.uk/guidance/cg153/chapter/recommendations",
+          "htmlLocation": "dermatologia/psoriasis-dermatitis-seborreica.html#fuentes"
+        },
+        {
+          "title": "American Academy of Dermatology. AAD–NPF psoriasis clinical guideline",
+          "url": "https://www.aad.org/member/clinical-quality/guidelines/psoriasis",
+          "htmlLocation": "dermatologia/psoriasis-dermatitis-seborreica.html#fuentes"
+        },
+        {
+          "title": "EuroGuiDerm. Guideline for the systemic treatment of psoriasis vulgaris",
+          "url": "https://www.guidelines.edf.one/guidelines/psoriasis-guideline",
+          "htmlLocation": "dermatologia/psoriasis-dermatitis-seborreica.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists. Seborrhoeic dermatitis",
+          "url": "https://www.bad.org.uk/pils/seborrhoeic-dermatitis",
+          "htmlLocation": "dermatologia/psoriasis-dermatitis-seborreica.html#fuentes"
+        },
+        {
+          "title": "NHS. How and when to use ketoconazole",
+          "url": "https://www.nhs.uk/medicines/ketoconazole/how-and-when-to-use-ketoconazole/",
+          "htmlLocation": "dermatologia/psoriasis-dermatitis-seborreica.html#fuentes"
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/psoriasis-dermatitis-seborreica.html#fuentes",
+          "sections": [
+            "capítulo 10"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "urticaria-angioedema-prurito",
+      "href": "dermatologia/urticaria-angioedema-prurito.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "EAACI/GA²LEN/EuroGuiDerm/APAAACI. Guía internacional de urticaria",
+          "url": "https://eaaci.org/guidelines-position-papers/the-international-eaaci-ga%C2%B2len-euroguiderm-apaaaci-guideline-for-the-definition-classification-diagnosis-and-management-of-urticaria/",
+          "htmlLocation": "dermatologia/urticaria-angioedema-prurito.html#fuentes"
+        },
+        {
+          "title": "Manual de Diagnóstico y Terapéutica Médica, Hospital Universitario 12 de Octubre",
+          "htmlLocation": "dermatologia/urticaria-angioedema-prurito.html#fuentes",
+          "sections": [
+            "capítulo de patología dermatológica"
+          ]
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "dermatologia/urticaria-angioedema-prurito.html#fuentes",
+          "sections": [
+            "capítulo 2"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "cirrosis-y-hepatopatia",
+      "href": "digestivo/cirrosis-y-hepatopatia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "dolor-abdominal",
+      "href": "digestivo/dolor-abdominal.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "eii",
+      "href": "digestivo/eii.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "hemorragia-digestiva",
+      "href": "digestivo/hemorragia-digestiva.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "pancreatitis-y-obstruccion",
+      "href": "digestivo/pancreatitis-y-obstruccion.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "patologia-biliar",
+      "href": "digestivo/patologia-biliar.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proctologia-y-cirugia-menor",
+      "href": "digestivo/proctologia-y-cirugia-menor.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "rge-y-gea",
+      "href": "digestivo/rge-y-gea.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "crisis-hiperglucemicas",
+      "href": "endocrino/crisis-hiperglucemicas.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "obesidad-ckm",
+      "href": "endocrino/obesidad-ckm.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "cot-y-trauma",
+      "href": "guardias/cot-y-trauma.html",
+      "owner": null,
+      "clinicalReview": "no_aplica_plantilla",
+      "lastClinicalReview": null,
+      "sourceStatus": "no_aplica_plantilla",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable de documentación y comprobar copia, campos y adaptación al circuito."
+    },
+    {
+      "id": "curas-y-exploracion",
+      "href": "guardias/curas-y-exploracion.html",
+      "owner": null,
+      "clinicalReview": "no_aplica_plantilla",
+      "lastClinicalReview": null,
+      "sourceStatus": "no_aplica_plantilla",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable de documentación y comprobar copia, campos y adaptación al circuito."
+    },
+    {
+      "id": "pediatria",
+      "href": "guardias/pediatria.html",
+      "owner": null,
+      "clinicalReview": "no_aplica_plantilla",
+      "lastClinicalReview": null,
+      "sourceStatus": "no_aplica_plantilla",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable de documentación y comprobar copia, campos y adaptación al circuito."
+    },
+    {
+      "id": "planta",
+      "href": "guardias/planta.html",
+      "owner": null,
+      "clinicalReview": "no_aplica_plantilla",
+      "lastClinicalReview": null,
+      "sourceStatus": "no_aplica_plantilla",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable de documentación y comprobar copia, campos y adaptación al circuito."
+    },
+    {
+      "id": "anemia",
+      "href": "hemato-reuma/anemia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "citopenias-y-hemofagocitico",
+      "href": "hemato-reuma/citopenias-y-hemofagocitico.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "lupus-y-eas",
+      "href": "hemato-reuma/lupus-y-eas.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "monoartritis-y-gota",
+      "href": "hemato-reuma/monoartritis-y-gota.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "sarcoidosis",
+      "href": "hemato-reuma/sarcoidosis.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "vasculitis",
+      "href": "hemato-reuma/vasculitis.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "bacteriemia-y-candidemia",
+      "href": "infecciosas/bacteriemia-y-candidemia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "covid-19",
+      "href": "infecciosas/covid-19.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "enfermedades-del-viajero-aproximacion-practica",
+      "href": "infecciosas/enfermedades-del-viajero-aproximacion-practica.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "gramnegativos-resistentes-idsa-2024-estudio-interactivo",
+      "href": "infecciosas/gramnegativos-resistentes-idsa-2024-estudio-interactivo.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "gripe-sindrome-gripal",
+      "href": "infecciosas/gripe-sindrome-gripal.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "hepatitis-virales-a-e",
+      "href": "infecciosas/hepatitis-virales-a-e.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "infecciones-intraabdominales-iia",
+      "href": "infecciosas/infecciones-intraabdominales-iia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "infecciones-nosocomiales",
+      "href": "infecciosas/infecciones-nosocomiales.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "neutropenia-febril-nf",
+      "href": "infecciosas/neutropenia-febril-nf.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "osteomielitis-y-artritis-septica",
+      "href": "infecciosas/osteomielitis-y-artritis-septica.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "perfusion-extendida-continua-de-betalactamicos",
+      "href": "infecciosas/perfusion-extendida-continua-de-betalactamicos.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proa-guia-de-antimicrobianos-y-sindromes-infecciosos",
+      "href": "infecciosas/proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proa-infecciones-de-piel-y-partes-blandas",
+      "href": "infecciosas/proa-infecciones-de-piel-y-partes-blandas.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proa-infecciones-de-transmision-sexual-its",
+      "href": "infecciosas/proa-infecciones-de-transmision-sexual-its.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proa-infecciones-del-tracto-urinario-itu",
+      "href": "infecciosas/proa-infecciones-del-tracto-urinario-itu.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proa-infecciones-gastrointestinales",
+      "href": "infecciosas/proa-infecciones-gastrointestinales.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proa-infecciones-respiratorias",
+      "href": "infecciosas/proa-infecciones-respiratorias.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proa-otros-antimicrobianos-aminoglucosidos-glucopeptidos-y-miscelanea",
+      "href": "infecciosas/proa-otros-antimicrobianos-aminoglucosidos-glucopeptidos-y-miscelanea.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "proa-quinolonas-macrolidos-y-relacionados",
+      "href": "infecciosas/proa-quinolonas-macrolidos-y-relacionados.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "profilaxis-postexposicion-biologica-ppe",
+      "href": "infecciosas/profilaxis-postexposicion-biologica-ppe.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "sepsis-abordaje-inicial-ssc-2026",
+      "href": "infecciosas/sepsis-abordaje-inicial-ssc-2026.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "sepsis-antiinfecciosos-y-soporte-vital-ssc-2026",
+      "href": "infecciosas/sepsis-antiinfecciosos-y-soporte-vital-ssc-2026.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "sepsis-cuidados-post-uci-y-objetivos-ssc-2026",
+      "href": "infecciosas/sepsis-cuidados-post-uci-y-objetivos-ssc-2026.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "sepsis-hemodinamica-y-reanimacion-ssc-2026",
+      "href": "infecciosas/sepsis-hemodinamica-y-reanimacion-ssc-2026.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "sepsis-y-shock-septico",
+      "href": "infecciosas/sepsis-y-shock-septico.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "tuberculosis-tb",
+      "href": "infecciosas/tuberculosis-tb.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "ulceras-por-presion-upp",
+      "href": "infecciosas/ulceras-por-presion-upp.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "vih-diagnostico-y-manejo-inicial",
+      "href": "infecciosas/vih-diagnostico-y-manejo-inicial.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "enfermedad-renal-cronica",
+      "href": "nefro-uro/enfermedad-renal-cronica.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "fracaso-renal-agudo",
+      "href": "nefro-uro/fracaso-renal-agudo.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "itu-pielonefritis-y-prostatitis",
+      "href": "nefro-uro/itu-pielonefritis-y-prostatitis.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "urologia-urgente",
+      "href": "nefro-uro/urologia-urgente.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "asma",
+      "href": "neumo/asma.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "epoc",
+      "href": "neumo/epoc.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "insuficiencia-respiratoria",
+      "href": "neumo/insuficiencia-respiratoria.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "neumonia-y-bronquitis",
+      "href": "neumo/neumonia-y-bronquitis.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "rinitis-y-rinosinusitis",
+      "href": "neumo/rinitis-y-rinosinusitis.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "cefaleas",
+      "href": "neuro/cefaleas.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "coma-y-confusion",
+      "href": "neuro/coma-y-confusion.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "crisis-y-neuromuscular",
+      "href": "neuro/crisis-y-neuromuscular.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "esclerosis-multiple-y-sincope",
+      "href": "neuro/esclerosis-multiple-y-sincope.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "ictus-y-hemorragia",
+      "href": "neuro/ictus-y-hemorragia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "infeccion-snc-y-mielopatias",
+      "href": "neuro/infeccion-snc-y-mielopatias.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "tce",
+      "href": "neuro/tce.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "agitacion-y-crisis",
+      "href": "psiquiatria/agitacion-y-crisis.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "psicosis-y-esquizofrenia",
+      "href": "psiquiatria/psicosis-y-esquizofrenia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "riesgo-autolitico",
+      "href": "psiquiatria/riesgo-autolitico.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "trastornos-afectivos-y-ansiedad",
+      "href": "psiquiatria/trastornos-afectivos-y-ansiedad.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "articulaciones-y-extremidades",
+      "href": "trauma-derma-orl/articulaciones-y-extremidades.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "columna-y-lumbalgia",
+      "href": "trauma-derma-orl/columna-y-lumbalgia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "dermatologia-urgente",
+      "href": "trauma-derma-orl/dermatologia-urgente.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "European Academy of Dermatology and Venereology. Updated S2K guideline for bullous pemphigoid",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/jdv.18220",
+          "htmlLocation": "trauma-derma-orl/dermatologia-urgente.html#fuentes"
+        },
+        {
+          "title": "European Academy of Dermatology and Venereology. Updated S2K guideline for pemphigus vulgaris and foliaceus",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/jdv.16752",
+          "htmlLocation": "trauma-derma-orl/dermatologia-urgente.html#fuentes"
+        },
+        {
+          "title": "European guideline. S2K diagnosis and treatment of mucous membrane pemphigoid",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1111/ddg.14905",
+          "htmlLocation": "trauma-derma-orl/dermatologia-urgente.html#fuentes"
+        },
+        {
+          "title": "British Association of Dermatologists. UK guidelines for the management of Stevens–Johnson syndrome/toxic epidermal necrolysis in adults: summary",
+          "url": "https://cdn.bad.org.uk/uploads/2021/12/29200149/SJS-TEN-summary-of-treatment-2-pages.pdf",
+          "htmlLocation": "trauma-derma-orl/dermatologia-urgente.html#fuentes"
+        },
+        {
+          "title": "Brüggen MC et al. Management of Adult Patients With DRESS: A Delphi-Based International Consensus",
+          "url": "https://jamanetwork.com/journals/jamadermatology/fullarticle/2812063",
+          "htmlLocation": "trauma-derma-orl/dermatologia-urgente.html#fuentes"
+        },
+        {
+          "title": "Agencia Española de Medicamentos y Productos Sanitarios. Notificación de sospechas de reacciones adversas: Tarjeta Amarilla",
+          "url": "https://www.notificaram.es/",
+          "htmlLocation": "trauma-derma-orl/dermatologia-urgente.html#fuentes"
+        },
+        {
+          "title": "Actualización Dermatología 2025 - Recopilación",
+          "htmlLocation": "trauma-derma-orl/dermatologia-urgente.html#fuentes",
+          "sections": [
+            "capítulos 11 y 14"
+          ]
+        }
+      ],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "heridas-y-suturas",
+      "href": "trauma-derma-orl/heridas-y-suturas.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "orl-frecuente",
+      "href": "trauma-derma-orl/orl-frecuente.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "anafilaxia",
+      "href": "urgencias/anafilaxia.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "disnea-aguda",
+      "href": "urgencias/disnea-aguda.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "must-sindromes",
+      "href": "urgencias/must-sindromes.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "shock",
+      "href": "urgencias/shock.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "soporte-vital-y-exploracion",
+      "href": "urgencias/soporte-vital-y-exploracion.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    },
+    {
+      "id": "trastornos-ionicos-y-acido-base",
+      "href": "urgencias/trastornos-ionicos-y-acido-base.html",
+      "owner": null,
+      "clinicalReview": "pendiente_asignar",
+      "lastClinicalReview": null,
+      "sourceStatus": "pendiente_identificar",
+      "sourcesObserved": [],
+      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+    }
+  ]
+}

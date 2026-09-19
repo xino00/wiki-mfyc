@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,16 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>Fibrilación auricular y arritmias</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Urgente</span>
       <h1>Fibrilación auricular y arritmias</h1>
       <p class="lead">FA, taquiarritmias, bradiarritmias, cardioversión, control de frecuencia y anticoagulación.</p>
-      <div class="status-row">
-        <span class="pill">Inestable</span>
-        <span class="pill">FA</span>
-        <span class="pill">QRS ancho</span>
-        <span class="pill">Anticoagulación</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#puerta">Valorar estabilidad</a>
+      <a href="#fa">Controlar frecuencia en FA</a>
+      <a href="#cardioversion">Decidir cardioversión</a>
+      <a href="#anticoagulacion">Revisar anticoagulación</a>
+      <a href="#taquicardias">Taquicardia con pulso</a>
+      <a href="#bradicardias">Bradicardia sintomática</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -106,13 +113,16 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
-<div class="clinical-lede" data-tone="red">
-  <p class="section-kicker">Primera decisión</p>
-  <h2>El ritmo importa menos que saber si el paciente está inestable</h2>
+<section class="practice-section" id="puerta">
+  <div class="practice-section-head">
+    <span class="section-kicker">Entrada común</span>
+    <h2>ABCDE, monitor y una pregunta: ¿pulsa y perfunde?</h2>
+    <p>No empieces por nombrar la arritmia. Empieza por decidir si tolera esperar al diagnóstico fino.</p>
+  </div>
+  <p><strong>El ritmo importa menos que saber si el paciente está inestable</strong></p>
   <p>Hipotensión, shock, síncope, edema agudo de pulmón, dolor isquémico o deterioro de conciencia convierten una arritmia en un problema eléctrico urgente. Si está inestable, sincroniza y cardioverte; si no tiene pulso, desfibrila y entra en parada.</p>
-</div>
-
 <div class="quick-rules" aria-label="Pantalla rápida de arritmias">
   <strong>Pantalla eléctrica</strong>
   <span>Sin pulso: desfibrilar y algoritmo de parada.</span>
@@ -128,12 +138,6 @@
   <span data-tone="green"><strong>3</strong><em>FA &gt;24 h o incierta: no cardiovertir sin anticoagulación/ETE salvo inestabilidad.</em></span>
 </div>
 
-<section class="practice-section" id="puerta">
-  <div class="practice-section-head">
-    <span class="section-kicker">Entrada común</span>
-    <h2>ABCDE, monitor y una pregunta: ¿pulsa y perfunde?</h2>
-    <p>No empieces por nombrar la arritmia. Empieza por decidir si tolera esperar al diagnóstico fino.</p>
-  </div>
   <div class="highlight-grid">
     <article class="highlight-card" data-tone="red">
       <strong>Inestable</strong>
@@ -528,6 +532,12 @@
   </ul>
 </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="../urgencias/soporte-vital-y-exploracion.html">Soporte vital</a>
+        <a href="../urgencias/trastornos-ionicos-y-acido-base.html">Trastornos iónicos y ácido-base</a>
+        <a href="insuficiencia-cardiaca.html">Insuficiencia cardiaca</a>
+      </nav>
     </section>
   </article>
 </main>

@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -86,33 +89,19 @@
     </nav>
 
     <header class="article-header guide-header">
-      <span class="eyebrow">PROA · multirresistentes</span>
       <h1>Gramnegativos resistentes</h1>
-      <p class="lead">Ficha de guardia para pasar de “cultivo con BLEE, AmpC, CRE, Pseudomonas DTR, CRAB o Stenotrophomonas” a una decisión razonada: infección real, foco, antibiograma, mecanismo y control de foco.</p>
-      <div class="signal-strip organism-strip" aria-label="Orden de decisión en gramnegativos resistentes">
-        <span data-tone="red"><strong>I</strong><em>Infección real</em></span>
-        <span data-tone="amber"><strong>A</strong><em>AST y mecanismo</em></span>
-        <span data-tone="green"><strong>F</strong><em>Foco y control</em></span>
-      </div>
-      <div class="status-row">
-        <span class="pill">Micro primero</span>
-        <span class="pill">Foco antes que lista</span>
-        <span class="pill">Reevaluar al antibiograma</span>
-      </div>
+      <p class="lead">Interpretación del cultivo y tratamiento por foco, antibiograma y mecanismo de resistencia.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#conducta">Actuar al recibir el cultivo</a><a href="#enterobacterales">Consultar BLEE, AmpC y CRE</a><a href="#pseudomonas">Consultar Pseudomonas DTR</a><a href="#crab">Consultar CRAB</a><a href="#steno">Consultar Stenotrophomonas</a><a href="#matriz">Comparar inhibidores</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Antes de escalar</strong>
       <p>Estas recomendaciones asumen germen identificado y sensibilidad in vitro conocida. En shock, neutropenia, UCI o foco no controlado, avisa a Infecciosas/PROA y ajusta a disponibilidad local, función renal y toxicidad.</p>
     </section>
-
-    <div class="clinical-lede" data-tone="amber">
-      <div>
-        <span class="eyebrow">Resistencia no equivale a tratamiento</span>
-        <h2>El antibiograma solo decide después de resolver tres preguntas clínicas</h2>
-      </div>
-      <p>Primero confirma si el aislado representa infección real; después separa foco urinario bajo de infección invasiva; por último pide el mecanismo que cambia el inhibidor. Esa secuencia evita tanto infratratar un shock como gastar carbapenémicos o combinaciones nuevas en colonización.</p>
-    </div>
 
     <div class="quick-rules" aria-label="Reglas de seguridad en gramnegativos resistentes">
       <strong>MDR en 5 cortes</strong>
@@ -146,6 +135,8 @@
       </article>
     </section>
 
+    <details class="reference-details" data-pagefind-ignore>
+    <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -161,6 +152,7 @@
         <a href="#errores">Errores</a>
       </div>
     </nav>
+    </details>
 
     <section class="article-content">
       <section class="practice-section" id="puerta">
@@ -593,8 +585,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-      <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+      <h2>Continuar la consulta</h2>
       <div class="related-grid">
         <a href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html"><span>PROA</span><strong>Guía de antimicrobianos</strong></a>
         <a href="perfusion-extendida-continua-de-betalactamicos.html"><span>PK/PD</span><strong>Perfusión extendida</strong></a>

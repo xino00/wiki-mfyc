@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -91,6 +94,15 @@
       </div>
     </header>
 
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#alarma">Buscar señales de alarma</a>
+      <a href="#garganta-nariz">Consultar garganta y nariz</a>
+      <a href="#otologia">Valorar la otalgia</a>
+      <a href="#epistaxis">Atender una epistaxis</a>
+      <a href="#atm-dental">Valorar ATM y foco dental</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de ORL frecuente</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -103,6 +115,7 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
 
     <section class="article-content">
       <section class="clinical-lede" data-tone="red" id="alarma">
@@ -357,6 +370,12 @@
         </ul>
       </section>
 
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Completar la consulta de ORL</h2>
+      <a href="../infecciosas/proa-infecciones-respiratorias.html">Infecciones respiratorias</a>
+      <a href="../dermatologia/alopecias-unas-patologia-oral.html">Patología oral</a>
+      <a href="../guardias/curas-y-exploracion.html">Plantillas de curas y exploración</a>
     </section>
   </article>
 </main>

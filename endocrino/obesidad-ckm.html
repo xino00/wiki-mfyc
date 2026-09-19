@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -76,16 +79,19 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Endocrino</a><span>/</span><span>Obesidad y CKM</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Crónico</span>
       <h1>Obesidad y CKM</h1>
       <p class="lead">Manejo del peso como enfermedad crónica dentro del síndrome cardiovascular-renal-metabólico.</p>
-      <div class="status-row">
-        <span class="pill">IMC + cintura</span>
-        <span class="pill">CKM 1-4</span>
-        <span class="pill">GLP-1/GIP</span>
-        <span class="pill">MBS</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#evaluacion">Evaluar adiposidad</a>
+      <a href="#escalada">Elegir siguiente paso</a>
+      <a href="#inicio-farmaco">Antes de iniciar fármaco</a>
+      <a href="#cirugia">Valorar cirugía</a>
+      <a href="#seguimiento">Revisar respuesta</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -101,27 +107,17 @@
         <a href="#seguimiento">Seguimiento</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
-      <div class="clinical-lede" data-tone="green">
-        <div>
-          <span class="eyebrow">CKM estadio 1</span>
-          <h2>El IMC solo no basta: mide cintura y decide escalada</h2>
-        </div>
-        <p>La obesidad se maneja como enfermedad crónica. La reganancia tras suspender fármacos o después de cirugía no es fracaso moral: suele indicar necesidad de mantenimiento, reintensificación o cambio de herramienta.</p>
-      </div>
-
-      <div class="signal-strip" aria-label="Tres decisiones en obesidad y CKM">
-        <span data-tone="blue"><strong>M</strong><em>Medir bien: IMC, cintura, TA, glucemia, riñón y fenotipo CKM.</em></span>
-        <span data-tone="green"><strong>E</strong><em>Escalar herramienta: estilo de vida, GLP-1/GIP si IMC >=27 y MBS si encaja.</em></span>
-        <span data-tone="red"><strong>D</strong><em>Daño CV: en ASCVD evita naltrexona/bupropión y fentermina.</em></span>
-      </div>
-
       <section class="practice-section" id="evaluacion">
         <div class="practice-section-head">
           <span class="section-kicker">Evaluación</span>
           <h2>Definir adiposidad y riesgo CKM</h2>
           <p>La guía CKM sitúa sobrepeso, obesidad, obesidad abdominal y prediabetes en estadio 1 cuando aún no hay otros factores metabólicos, ERC ni ECV.</p>
         </div>
+        <p><strong>El IMC solo no basta: mide cintura y decide escalada</strong></p>
+        <p>Medir bien: IMC, cintura, TA, glucemia, riñón y fenotipo CKM.</p>
+        <p>CKM 1-4.</p>
         <div class="table-wrap compare-matrix">
           <table>
             <thead><tr><th>Medida</th><th>Umbral habitual</th><th>Ajuste en ascendencia asiática</th><th>Uso en consulta</th></tr></thead>
@@ -166,6 +162,7 @@
       </section>
 
       <section class="practice-section" id="escalada">
+        <p>Escalar herramienta: estilo de vida, GLP-1/GIP si IMC >=27 y MBS si encaja.</p>
         <div class="practice-section-head">
           <span class="section-kicker">Algoritmo práctico</span>
           <h2>Escalada multimodal sin esperar al "fracaso"</h2>
@@ -211,6 +208,7 @@
       </section>
 
       <section class="practice-section" id="farmacos">
+        <p><strong>Daño CV: en ASCVD evita naltrexona/bupropión y fentermina.</strong></p>
         <div class="practice-section-head">
           <span class="section-kicker">Farmacoterapia</span>
           <h2>Escalar si el riesgo o la respuesta lo justifican</h2>
@@ -362,6 +360,7 @@
       </section>
 
       <section class="practice-section" id="seguimiento">
+        <p>La obesidad se maneja como enfermedad crónica. La reganancia tras suspender fármacos o después de cirugía no es fracaso moral: suele indicar necesidad de mantenimiento, reintensificación o cambio de herramienta.</p>
         <div class="practice-section-head">
           <span class="section-kicker">Seguimiento</span>
           <h2>Detectar hiporespuesta sin llamar fracaso a todo</h2>
@@ -375,6 +374,12 @@
         </ul>
       </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="diabetes-mellitus-tipo-2.html">Diabetes mellitus tipo 2</a>
+        <a href="../cardio/riesgo-cardiovascular-y-dislipemia.html">Riesgo cardiovascular y dislipemia</a>
+        <a href="../cardio/insuficiencia-cardiaca.html">Insuficiencia cardiaca</a>
+      </nav>
     </section>
   </article>
 </main>

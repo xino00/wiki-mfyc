@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Sepsis - Hemodinámica y Reanimación (SSC 2026)</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Sepsis</span>
       <h1>Sepsis - Hemodinámica y Reanimación (SSC 2026)</h1>
-      <p class="lead">Ficha para reanimar sin ir a ciegas: fluidos iniciales, respuesta dinámica, noradrenalina precoz, escalado de vasopresores e inicio de retirada de fluidos cuando la fase aguda ha pasado.</p>
-      <div class="status-row">
-        <span class="pill">30 mL/kg inicial</span>
-        <span class="pill">Balanceados</span>
-        <span class="pill">Noradrenalina precoz</span>
-        <span class="pill">TRC + lactato</span>
-      </div>
+      <p class="lead">Fluidos, respuesta dinámica, vasopresores y retirada de volumen tras estabilización.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#fluidos">Elegir fluido y volumen inicial</a><a href="#respuesta">Reevaluar respuesta</a><a href="#vasopresores">Consultar dosis de vasoactivos</a><a href="#monitorizacion">Definir monitorización</a><a href="#retirada">Valorar retirada de fluidos</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Regla de seguridad</strong>
@@ -160,10 +161,13 @@
     </div>
     
 
+<details class="reference-details" data-pagefind-ignore>
+<summary>Todos los apartados</summary>
 <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#circuito">Circuito</a><a href="#fluidos">Fluidos</a><a href="#respuesta">Respuesta</a><a href="#vasopresores">Vasopresores</a><a href="#monitorizacion">Monitorización</a><a href="#retirada">Retirada</a><a href="#trampas">Trampas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -435,8 +439,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="sepsis-abordaje-inicial-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Abordaje Inicial (SSC 2026)</strong></a><a href="sepsis-antiinfecciosos-y-soporte-vital-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Antiinfecciosos y Soporte Vital (SSC 2026)</strong></a><a href="sepsis-cuidados-post-uci-y-objetivos-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Cuidados Post-UCI y Objetivos (SSC 2026)</strong></a></div>
 </section>
   </article>

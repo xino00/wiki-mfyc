@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -78,17 +81,13 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Psiquiatría</a><span>/</span><span>Agitación y crisis</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Urgente · seguridad</span>
       <h1>Agitación, crisis de ansiedad y abstinencia</h1>
       <p class="lead">Antes de medicar, protege el entorno, descarta organicidad y decide si quieres calmar, tratar abstinencia o contener una urgencia psiquiátrica.</p>
-      <div class="status-row">
-        <span class="pill">Seguridad</span>
-        <span class="pill">Glucemia</span>
-        <span class="pill">QTc</span>
-        <span class="pill">CIWA</span>
-      </div>
     </header>
 
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore><strong>Ir directamente a</strong><div><a href="#puerta">Asegurar la primera valoración</a><a href="#farmacos-agitacion">Consultar fármacos y precauciones</a><a href="#reevaluacion">Reevaluar tras medicar</a><a href="#ansiedad">Valorar una crisis de ansiedad</a><a href="#abstinencia">Valorar abstinencia alcohólica</a><a href="#dt">Consultar delirium tremens</a></div></nav>
+
+    <details class="reference-details" data-pagefind-ignore><summary>Todos los apartados de agitación y crisis</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -102,7 +101,7 @@
         <a href="#dt">Delirium tremens</a>
         <a href="#trampas">Trampas</a>
       </div>
-    </nav>
+    </nav></details>
 
     <section class="article-content">
       <section class="warning-panel compact" aria-label="Regla de seguridad en agitación">
@@ -412,6 +411,7 @@
       </section>
 
     </section>
+    <section class="related-guides" aria-label="Continuar la valoración"><h2>Continuar la valoración</h2><a href="riesgo-autolitico.html">Explorar riesgo autolítico</a><a href="psicosis-y-esquizofrenia.html">Valorar psicosis aguda</a><a href="../neuro/coma-y-confusion.html">Confusión y alteración de conciencia</a><a href="trastornos-afectivos-y-ansiedad.html">Depresión y seguimiento de ansiedad</a></section>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Psiquiatría · Guía de supervivencia para el residente de MFyC</footer>

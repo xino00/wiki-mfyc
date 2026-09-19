@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="module-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,79 +62,62 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="shell">
-  <section class="module-hero practical-hero">
-    <div>
-      <nav class="breadcrumb" aria-label="Migas de pan">
+    <header class="module-heading">
+    <nav class="breadcrumb" aria-label="Migas de pan">
         <a href="../index.html">Inicio</a><span>/</span><span>Nefro-Urología</span>
       </nav>
-      <span class="eyebrow">Riñón · infección urinaria · urología urgente</span>
-      <h1>Nefro-Urología</h1>
-      <p class="lead">Del filtrado crónico al globo vesical: estratificación renal, rescate del FRA, ITU con criterio y urgencias urológicas con rutas claras de alarma.</p>
-    </div>
-    <aside class="action-panel" aria-label="Accesos rápidos">
-      <h2>Entrada rápida</h2>
-      <a href="fracaso-renal-agudo.html"><strong>FRA</strong><span>Postrenal, volemia, AEIOU</span></a>
-      <a href="itu-pielonefritis-y-prostatitis.html"><strong>ITU</strong><span>Cistitis, PNA, prostatitis</span></a>
-      <a href="urologia-urgente.html"><strong>Urología</strong><span>Cólico, RAO, hematuria</span></a>
-      <a href="enfermedad-renal-cronica.html"><strong>ERC</strong><span>CGA y nefroprotección</span></a>
-    </aside>
-  </section>
+    <h1>Nefro-Urología</h1>
+    <p class="lead">Del filtrado crónico al globo vesical: estratificación renal, rescate del FRA, ITU con criterio y urgencias urológicas con rutas claras de alarma.</p>
+  </header>
+  <nav class="context-nav module-sections" aria-label="Apartados del módulo"><a href="#nefrologia">Nefrología</a><a href="#urologia">Urología urgente</a></nav>
 
   <section class="tool-strip" data-filter-scope data-filter-target=".note-card" data-empty-target="#module-empty">
     <label class="search-box" for="module-search">
-      <span>Buscar en Nefro-Urología</span>
+      <span>Filtrar títulos y temas</span>
       <input id="module-search" type="search" placeholder="erc, fra, itu, colico, hematuria..." data-filter-input>
     </label>
     <p class="result-count" data-filter-results aria-live="polite"></p>
   </section>
   <div id="module-empty" class="empty-state" aria-live="polite">No hay entradas que coincidan con la búsqueda.</div>
 
-  <section class="section-band" aria-labelledby="nefrologia">
+  <section class="section-band module-group" data-filter-group aria-labelledby="nefrologia">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Nefro-Urología</span>
         <h2 id="nefrologia">Nefrología</h2>
       </div>
       <p>Estratificación de riesgo, daño agudo y manejo de ITU.</p>
     </div>
     <div class="card-grid">
       <a class="note-card" href="enfermedad-renal-cronica.html" data-category="Nefrología" data-search="enfermedad renal cronica erc kdigo cga heatmap seguimiento CKD-EPI cistatina albuminuria UACR CACO CAC A2 A3 filtrado G3a G3b G4 AKI on CKD nefroproteccion farmacos modificadores isglt2 empagliflozina dapagliflozina ieca ara ras finerenona armns glp1 semaglutida hiperpotasemia patiromer zirconio dieta sodio proteina anemia AEE estatina PAS 120 vacunas plan crisis enfermedad aguda sick day vomitos diarrea sepsis cirugia ayuno contraste metformina diureticos reinicio oliguria anuria disnea potasio bicarbonato tres decisiones consulta renal confirmar cronicidad riesgo real mapa G A caida anual hematuria pilares pausar">
-        <span class="card-kicker">Nefrología</span>
         <h3>Enfermedad renal crónica</h3>
         <p>Diagnóstico CGA, derivación, nefroprotección, dieta, comorbilidad cardiovascular y anemia.</p>
-        <span class="card-meta"><span class="pill">Consulta</span></span>
       </a>
       <a class="note-card priority-card" href="fracaso-renal-agudo.html" data-category="Nefrología" data-search="fracaso renal agudo fra aki no negociables oliguria ml kg hora kdigo estadio postrenal obstruccion eco vejiga rinon globo hidronefrosis hbp litiasis monorreno prerrenal congestion cardiorrenal nta nia glomerular vascular rabdomiolisis nephrocheck fena feurea sedimento activo diuresis furosemida dialisis trs aeiou nefrologia uci primeros 30 potasio ecg acidosis nefrotoxicos cristaloide balanceado diureticos suero reflejo tres bifurcaciones desobstruir volemia seco congestivo criterio absoluto aviso precoz">
-        <span class="card-kicker">Nefrología</span>
         <h3>Fracaso renal agudo</h3>
         <p>Confirmar, descartar obstrucción, diferenciar prerrenal/NTA y decidir cuándo dializar.</p>
-        <span class="card-meta"><span class="pill">Urgencias</span></span>
       </a>
       <a class="note-card priority-card" href="itu-pielonefritis-y-prostatitis.html" data-category="Nefrología" data-search="itu cistitis triaje compuertas sintomas piuria nitritos esterasa urocultivo no tratar asintomatica no antibiotico delirium bacteriuria embarazo sonda bolsa recambio muestra correcta dispositivo obstruccion foco escalada mala evolucion blee recurrente pielonefritis parenquima renal fiebre flanco vomitos prostatitis varon febril no masaje ceftriaxona fosfomicina nitrofurantoina farmacos vesicales quinolonas cotrimoxazol resistencia sensibilidad local saprophyticus klebsiella absceso intrarrenal perinefrico enfisematosa no respuesta">
-        <span class="card-kicker">Infección urinaria</span>
         <h3>ITU, pielonefritis y prostatitis</h3>
         <p>Cistitis simple/complicada, situaciones especiales, PNA y prostatitis bacteriana aguda.</p>
-        <span class="card-meta"><span class="pill">PROA local</span></span>
       </a>
     </div>
   </section>
 
-  <section class="section-band" aria-labelledby="urologia">
+  <section class="section-band module-group" data-filter-group aria-labelledby="urologia">
     <div class="section-head">
       <div>
-        <span class="section-kicker">Nefro-Urología</span>
         <h2 id="urologia">Urología urgente</h2>
       </div>
       <p>Cólico renal, retención, hematuria y escroto agudo.</p>
     </div>
     <div class="card-grid">
       <a class="note-card priority-card" href="urologia-urgente.html" data-category="Urología" data-search="urologia urgente tres alarmas no se va sin resolver colico renoureteral fiebre escalofrios sepsis obstruccion infectada hidronefrosis tamsulosina analgesia dexketoprofeno metamizol retencion aguda orina rao globo sonda tres vias hematuria coagulos globo coagulos anticoagulacion anemizacion escroto brusco torsion exploracion dudosa doppler prehn orquiepididimitis proa its ceftriaxona doxiciclina cefixima primeros 10 anuria monorreno deterioro renal sondaje traumatico falsa via no calibres no pinzado no tiempos alta segura plantilla no protocolo">
-        <span class="card-kicker">Urología</span>
         <h3>Urología urgente</h3>
         <p>Cólico renoureteral, RAO, hematuria, escroto agudo y orquiepididimitis con primeras decisiones y alarmas.</p>
-        <span class="card-meta"><span class="pill">Urgencias</span></span>
       </a>
     </div>
   </section>

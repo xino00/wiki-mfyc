@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -79,16 +82,19 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Hemato-Reuma</a><span>/</span><span>Vasculitis</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Reumatología</span>
       <h1>Vasculitis</h1>
       <p class="lead">ACG con riesgo visual, orientación de grandes vasos y vasculitis ANCA con amenaza renal y pulmonar.</p>
-      <div class="status-row">
-        <span class="pill">ACG visual</span>
-        <span class="pill">ANCA</span>
-        <span class="pill">Pulmón-riñón</span>
-        <span class="pill">Anti-MBG</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#puerta">Reconocer amenaza de órgano</a>
+      <a href="#estudio-inicial">Elegir pruebas iniciales</a>
+      <a href="#acg">Valorar sospecha de ACG</a>
+      <a href="#pulmon-rinon">Valorar síndrome pulmón-riñón</a>
+      <a href="#tratamiento">Consultar tratamiento</a>
+      <a href="#seguimiento">Vigilar recaída y toxicidad</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de vasculitis</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -102,6 +108,7 @@
         <a href="#seguimiento">Seguimiento</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
       <div class="clinical-lede" data-tone="red">
         <div>
@@ -373,6 +380,12 @@
         </ul>
       </section>
 
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Completar el estudio por órgano</h2>
+      <a href="lupus-y-eas.html">LES y enfermedades autoinmunes sistémicas</a>
+      <a href="../nefro-uro/fracaso-renal-agudo.html">Fracaso renal agudo</a>
+      <a href="../dermatologia/manifestaciones-sistemicas-fotodermatosis.html">Manifestaciones sistémicas en la piel</a>
     </section>
   </article>
 </main>

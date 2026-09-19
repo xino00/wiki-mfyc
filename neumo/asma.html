@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -80,17 +83,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Neumología</a><span>/</span><span>Asma</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Vía aérea</span>
       <h1>Asma</h1>
-      <p class="lead">La secuencia útil es siempre la misma: confirmar variabilidad, medir control, revisar técnica/adherencia y tratar la crisis sin retrasar corticoide sistémico cuando toca.</p>
-      <div class="status-row">
-        <span class="pill">PBD/FENO</span>
-        <span class="pill">ACT/ACQ</span>
-        <span class="pill">MART</span>
-        <span class="pill">Crisis</span>
-      </div>
+      <p class="lead">Diagnóstico, revisión del control, tratamiento de mantenimiento y crisis asmática.</p>
     </header>
 
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#confirmar">Confirmar el diagnóstico</a>
+      <a href="#control">Revisar control</a>
+      <a href="#escalones">Ajustar mantenimiento</a>
+      <a href="#crisis">Atender una crisis</a>
+      <a href="#inhaladores">Comprobar inhaladores</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -109,63 +115,8 @@
       </div>
     </nav>
 
+    </details>
     <section class="article-content">
-      <div class="clinical-lede" data-tone="blue">
-        <div>
-          <span class="eyebrow">Idea operativa</span>
-          <h2>No subas escalón sin mirar tres cosas</h2>
-        </div>
-        <p>Antes de intensificar: diagnóstico funcional objetivo, técnica inhalatoria observada y adherencia real. La mala técnica y el diagnóstico erróneo explican buena parte del supuesto asma no controlada.</p>
-      </div>
-
-      <section class="practice-section" id="base-asma">
-        <div class="practice-section-head">
-          <span class="section-kicker">Qué estás tratando</span>
-          <h2>Asma no es solo broncoespasmo: es inflamación con obstrucción variable</h2>
-          <p>La definición práctica junta tres piezas: inflamación crónica de vía aérea, hiperrespuesta bronquial y limitación variable del flujo, espontáneamente reversible o reversible con tratamiento.</p>
-        </div>
-        <div class="decision-board" aria-label="Mapa clínico de definición y fenotipo de asma">
-          <article class="decision-node" data-tone="blue">
-            <span>HRB</span>
-            <strong>Hiperrespuesta bronquial</strong>
-            <p>La vía aérea responde de forma exagerada a ejercicio, alérgenos, irritantes, infecciones o cambios ambientales.</p>
-          </article>
-          <article class="decision-node" data-tone="green">
-            <span>Variable</span>
-            <strong>Obstrucción que cambia</strong>
-            <p>Explica síntomas por episodios, noches/madrugada, normalidad entre crisis y reversibilidad en pruebas funcionales.</p>
-          </article>
-          <article class="decision-node" data-tone="amber">
-            <span>T2</span>
-            <strong>Alérgica/eosinofílica</strong>
-            <p>Alarminas epiteliales activan Th2/ILC2; IL-4 favorece IgE, IL-5 eosinofilia e IL-13 moco, HRB y remodelado.</p>
-          </article>
-          <article class="decision-node" data-tone="red">
-            <span>No T2</span>
-            <strong>Neutrofílica o paucigranulocítica</strong>
-            <p>Más frecuente con tabaco, obesidad o inicio tardío; suele responder peor a glucocorticoides inhalados.</p>
-          </article>
-        </div>
-        <div class="clinical-split">
-          <div class="content-panel">
-            <h3>Factores que hacen plausible el diagnóstico</h3>
-            <ul>
-              <li>Atopia, rinitis, dermatitis atópica, eosinofilia o sensibilización alérgica.</li>
-              <li>Exposición a ácaros, pólenes, epitelios animales, mohos, cucaracha o irritantes laborales.</li>
-              <li>Tabaquismo activo/pasivo, obesidad, contaminación, bajo peso al nacer o sibilancias virales en infancia.</li>
-            </ul>
-          </div>
-          <div class="content-panel">
-            <h3>Qué cambia en consulta</h3>
-            <ul>
-              <li>Un fenotipo T2 aumenta la expectativa de respuesta a GCI y orienta estudio alérgico o biológicos si es grave.</li>
-              <li>Un perfil no T2 obliga a buscar obesidad, tabaco, exposición irritante, EPOC solapado y diagnósticos alternativos.</li>
-              <li>El broncoespasmo aislado en una IRVA no convierte al paciente en asmático sin variabilidad demostrada.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       <section class="practice-section" id="confirmar">
         <div class="practice-section-head">
           <span class="section-kicker">Diagnóstico</span>
@@ -212,6 +163,7 @@
           <h2>Control actual y riesgo futuro</h2>
           <p>Cada revisión debe medir síntomas de 4 semanas y riesgo de crisis, no solo preguntar "¿mejor?".</p>
         </div>
+        <p>La secuencia útil es siempre la misma: confirmar variabilidad, medir control, revisar técnica/adherencia y tratar la crisis sin retrasar corticoide sistémico cuando toca.</p>
         <div class="table-wrap compare-matrix">
           <table>
             <thead><tr><th>Pregunta</th><th>Corte práctico</th><th>Qué cambia</th></tr></thead>
@@ -273,6 +225,8 @@
           <h2>Escalones de mantenimiento</h2>
           <p>El SABA aislado no es un plan de asma: todo paciente necesita componente antiinflamatorio.</p>
         </div>
+        <p><strong>No subas escalón sin mirar tres cosas</strong></p>
+        <p>Antes de intensificar: diagnóstico funcional objetivo, técnica inhalatoria observada y adherencia real. La mala técnica y el diagnóstico erróneo explican buena parte del supuesto asma no controlada.</p>
         <div class="table-wrap compare-matrix">
           <table>
             <thead><tr><th>Escalón</th><th>Mantenimiento preferido</th><th>Rescate y matices</th></tr></thead>
@@ -487,6 +441,60 @@
         </div>
       </section>
 
+      <section class="practice-section" id="base-asma">
+        <div class="practice-section-head">
+          <span class="section-kicker">Qué estás tratando</span>
+          <h2>Asma no es solo broncoespasmo: es inflamación con obstrucción variable</h2>
+          <p>La definición práctica junta tres piezas: inflamación crónica de vía aérea, hiperrespuesta bronquial y limitación variable del flujo, espontáneamente reversible o reversible con tratamiento.</p>
+        </div>
+        <div class="decision-board" aria-label="Mapa clínico de definición y fenotipo de asma">
+          <article class="decision-node" data-tone="blue">
+            <span>HRB</span>
+            <strong>Hiperrespuesta bronquial</strong>
+            <p>La vía aérea responde de forma exagerada a ejercicio, alérgenos, irritantes, infecciones o cambios ambientales.</p>
+          </article>
+          <article class="decision-node" data-tone="green">
+            <span>Variable</span>
+            <strong>Obstrucción que cambia</strong>
+            <p>Explica síntomas por episodios, noches/madrugada, normalidad entre crisis y reversibilidad en pruebas funcionales.</p>
+          </article>
+          <article class="decision-node" data-tone="amber">
+            <span>T2</span>
+            <strong>Alérgica/eosinofílica</strong>
+            <p>Alarminas epiteliales activan Th2/ILC2; IL-4 favorece IgE, IL-5 eosinofilia e IL-13 moco, HRB y remodelado.</p>
+          </article>
+          <article class="decision-node" data-tone="red">
+            <span>No T2</span>
+            <strong>Neutrofílica o paucigranulocítica</strong>
+            <p>Más frecuente con tabaco, obesidad o inicio tardío; suele responder peor a glucocorticoides inhalados.</p>
+          </article>
+        </div>
+        <div class="clinical-split">
+          <div class="content-panel">
+            <h3>Factores que hacen plausible el diagnóstico</h3>
+            <ul>
+              <li>Atopia, rinitis, dermatitis atópica, eosinofilia o sensibilización alérgica.</li>
+              <li>Exposición a ácaros, pólenes, epitelios animales, mohos, cucaracha o irritantes laborales.</li>
+              <li>Tabaquismo activo/pasivo, obesidad, contaminación, bajo peso al nacer o sibilancias virales en infancia.</li>
+            </ul>
+          </div>
+          <div class="content-panel">
+            <h3>Qué cambia en consulta</h3>
+            <ul>
+              <li>Un fenotipo T2 aumenta la expectativa de respuesta a GCI y orienta estudio alérgico o biológicos si es grave.</li>
+              <li>Un perfil no T2 obliga a buscar obesidad, tabaco, exposición irritante, EPOC solapado y diagnósticos alternativos.</li>
+              <li>El broncoespasmo aislado en una IRVA no convierte al paciente en asmático sin variabilidad demostrada.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="rinitis-y-rinosinusitis.html">Rinitis alérgica y rinosinusitis</a>
+        <a href="epoc.html">EPOC</a>
+        <a href="insuficiencia-respiratoria.html">Insuficiencia respiratoria y soporte</a>
+      </nav>
     </section>
   </article>
 </main>

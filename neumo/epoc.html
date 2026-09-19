@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -80,17 +83,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Neumología</a><span>/</span><span>EPOC</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Vía aérea</span>
       <h1>EPOC</h1>
-      <p class="lead">Diagnóstico por espirometría, tratamiento por síntomas/exacerbaciones y manejo de la agudización con oxígeno objetivo, broncodilatadores, corticoide corto y antibiótico solo si toca.</p>
-      <div class="status-row">
-        <span class="pill">GOLD ABE</span>
-        <span class="pill">SpO2 88-92 %</span>
-        <span class="pill">VMNI</span>
-        <span class="pill">Anthonisen</span>
-      </div>
+      <p class="lead">Diagnóstico y seguimiento en consulta; valoración y tratamiento de la agudización.</p>
     </header>
 
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#diagnostico">Confirmar y clasificar</a>
+      <a href="#cronico">Revisar mantenimiento</a>
+      <a href="#agudizacion">Atender una agudización</a>
+      <a href="#antibiotico">Decidir antibiótico</a>
+      <a href="#ingreso-alta">Decidir ingreso o alta</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -107,41 +113,16 @@
       </div>
     </nav>
 
+    </details>
     <section class="article-content">
-      <div class="clinical-lede" data-tone="blue">
-        <div>
-          <span class="eyebrow">EPOC en una línea</span>
-          <h2>No trates el FEV1: trata síntomas y riesgo de exacerbación</h2>
-        </div>
-        <p>La espirometría confirma y gradúa limitación, pero el tratamiento inicial se decide por disnea y exacerbaciones. Una sola exacerbación moderada o grave en el último año ya pesa mucho.</p>
-      </div>
-
-      <section class="warning-panel compact" aria-label="Regla de seguridad en EPOC agudizado">
-        <strong>En la agudización, oxígeno controlado y gasometría si hay duda</strong>
-        <p>Objetivo SpO2 88-92 % si riesgo de retención de CO2. Somnolencia, confusión, tiraje, silencio auscultatorio, pH bajo o PaCO2 alta desplazan el caso hacia VMNI, ingreso o UCI.</p>
-      </section>
-
-      <div class="signal-strip" aria-label="Tres prioridades en EPOC agudizado">
-        <span data-tone="red"><strong>G</strong><em>Gasometría si gravedad: somnolencia, tiraje, hipoxemia o sospecha de CO2.</em></span>
-        <span data-tone="amber"><strong>O</strong><em>Oxígeno controlado: 88-92 % si retentor o riesgo de hipercapnia.</em></span>
-        <span data-tone="blue"><strong>A</strong><em>Antibiótico selectivo: purulencia, Anthonisen o ventilación; no por disnea aislada.</em></span>
-      </div>
-
-      <div class="quick-rules" aria-label="Puerta rápida EPOC">
-        <strong>Puerta EPOC</strong>
-        <span>Consulta: síntomas + exacerbaciones, no solo FEV1.</span>
-        <span>ICS: eosinófilos y exacerbaciones mandan.</span>
-        <span>Agudización: SatO2 88-92 % si retentor.</span>
-        <span>pH &lt;7,35 + CO2 alta: VMNI.</span>
-        <span>Antibiótico: purulencia o ventilación.</span>
-      </div>
-
       <section class="practice-section" id="diagnostico">
         <div class="practice-section-head">
           <span class="section-kicker">Consulta</span>
           <h2>Diagnóstico y estratificación</h2>
           <p>Sospecha en fumador/exfumador o exposición relevante con disnea, tos crónica o expectoración; confirma siempre con espirometría posbroncodilatador.</p>
         </div>
+        <p><strong>No trates el FEV1: trata síntomas y riesgo de exacerbación</strong></p>
+        <p>La espirometría confirma y gradúa limitación, pero el tratamiento inicial se decide por disnea y exacerbaciones. Una sola exacerbación moderada o grave en el último año ya pesa mucho.</p>
         <div class="highlight-grid">
           <article class="highlight-card" data-tone="blue">
             <span>Confirmación</span>
@@ -206,6 +187,7 @@
           <h2>Tratamiento inicial y seguimiento</h2>
           <p>El primer paso se decide por ABE; después ajustas por rasgo tratable predominante: disnea o exacerbaciones.</p>
         </div>
+        <p>Diagnóstico por espirometría, tratamiento por síntomas/exacerbaciones y manejo de la agudización con oxígeno objetivo, broncodilatadores, corticoide corto y antibiótico solo si toca.</p>
         <div class="table-wrap compare-matrix">
           <table>
             <thead><tr><th>Situación</th><th>Inicio razonable</th><th>Si persiste problema</th></tr></thead>
@@ -283,6 +265,26 @@
           <h2>Exacerbación de EPOC</h2>
           <p>Empeoramiento agudo de disnea, tos o esputo en días, con necesidad de cambiar tratamiento.</p>
         </div>
+      <section class="warning-panel compact" aria-label="Regla de seguridad en EPOC agudizado">
+        <strong>En la agudización, oxígeno controlado y gasometría si hay duda</strong>
+        <p>Objetivo SpO2 88-92 % si riesgo de retención de CO2. Somnolencia, confusión, tiraje, silencio auscultatorio, pH bajo o PaCO2 alta desplazan el caso hacia VMNI, ingreso o UCI.</p>
+      </section>
+
+      <div class="signal-strip" aria-label="Tres prioridades en EPOC agudizado">
+        <span data-tone="red"><strong>G</strong><em>Gasometría si gravedad: somnolencia, tiraje, hipoxemia o sospecha de CO2.</em></span>
+        <span data-tone="amber"><strong>O</strong><em>Oxígeno controlado: 88-92 % si retentor o riesgo de hipercapnia.</em></span>
+        <span data-tone="blue"><strong>A</strong><em>Antibiótico selectivo: purulencia, Anthonisen o ventilación; no por disnea aislada.</em></span>
+      </div>
+
+      <div class="quick-rules" aria-label="Puerta rápida EPOC">
+        <strong>Puerta EPOC</strong>
+        <span>Consulta: síntomas + exacerbaciones, no solo FEV1.</span>
+        <span>ICS: eosinófilos y exacerbaciones mandan.</span>
+        <span>Agudización: SatO2 88-92 % si retentor.</span>
+        <span>pH &lt;7,35 + CO2 alta: VMNI.</span>
+        <span>Antibiótico: purulencia o ventilación.</span>
+      </div>
+
         <div class="timeline" id="primeros-minutos" aria-label="Primeros 60 minutos de la agudización de EPOC">
           <article>
             <span>0 min</span>
@@ -408,6 +410,12 @@
         </div>
       </section>
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="asma.html#inhaladores">Técnica de inhaladores</a>
+        <a href="insuficiencia-respiratoria.html">Insuficiencia respiratoria y soporte</a>
+        <a href="neumonia-y-bronquitis.html">Neumonía y bronquitis</a>
+      </nav>
     </section>
   </article>
 </main>

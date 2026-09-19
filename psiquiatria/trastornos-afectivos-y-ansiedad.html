@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -78,16 +81,11 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Psiquiatría</a><span>/</span><span>Depresión y ansiedad</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Seguimiento · cribado</span>
       <h1>Depresión y trastornos de ansiedad</h1>
       <p class="lead">Buscar activamente síntomas, descartar organicidad, graduar gravedad y no perder el riesgo autolítico detrás de una queja somática o de una crisis de ansiedad.</p>
-      <div class="status-row">
-        <span class="pill">Organicidad</span>
-        <span class="pill">Gravedad</span>
-        <span class="pill">Riesgo</span>
-        <span class="pill">Seguimiento</span>
-      </div>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore><strong>Ir directamente a</strong><div><a href="#puerta">Valorar seguridad</a><a href="#organicidad">Buscar causas secundarias</a><a href="#gravedad">Valorar derivación</a><a href="#antidepresivos">Consultar antidepresivos</a><a href="#seguimiento">Organizar el seguimiento</a><a href="#crisis-ansiedad">Valorar una crisis aguda</a></div></nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Antes del diagnóstico, seguridad</strong>
@@ -100,6 +98,7 @@
       <span data-tone="amber"><strong>S</strong><em>Seguimiento: no iniciar mantenimiento sin responsable; revisar bipolaridad y retirada.</em></span>
     </div>
 
+    <details class="reference-details" data-pagefind-ignore><summary>Todos los apartados de depresión y ansiedad</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -113,7 +112,7 @@
         <a href="#ansiedad">Ansiedad</a>
         <a href="#trampas">Trampas</a>
       </div>
-    </nav>
+    </nav></details>
 
     <section class="article-content">
       <section class="practice-section" id="puerta">
@@ -465,6 +464,7 @@
       </section>
 
     </section>
+    <section class="related-guides" aria-label="Continuar la valoración"><h2>Continuar la valoración</h2><a href="riesgo-autolitico.html">Entrevista y plan de seguridad</a><a href="agitacion-y-crisis.html">Agitación, crisis y abstinencia</a><a href="psicosis-y-esquizofrenia.html">Síntomas psicóticos</a></section>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Psiquiatría · Guía de supervivencia para el residente de MFyC</footer>

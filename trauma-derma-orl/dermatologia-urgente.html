@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice de Dermatología">
@@ -101,6 +104,16 @@
       </div>
     </header>
 
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#enfoque">Describir el patrón</a>
+      <a href="#toxicodermias">Revisar cronología farmacológica</a>
+      <a href="#ampollas">Comparar enfermedades ampollares</a>
+      <a href="#biopsia">Preparar el estudio por biopsia</a>
+      <a href="#no-esperar">Reconocer cuándo no esperar</a>
+      <a href="#seguimiento">Organizar el seguimiento</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de ampollas y toxicodermias</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -112,8 +125,11 @@
         <a href="#dress">DRESS</a>
         <a href="#ssj-net">SSJ/NET</a>
         <a href="#seguimiento">Seguimiento</a>
+        <a href="#no-esperar">Cuándo no esperar</a>
+        <a href="#fuentes">Referencias</a>
       </div>
     </nav>
+    </details>
 
     <section class="article-content">
       <section class="practice-section" id="enfoque">
@@ -497,6 +513,12 @@
           <li><em>Actualización Dermatología 2025 - Recopilación</em>, capítulos 11 y 14. Material local proporcionado; utilizado como fuente secundaria y procedencia de las fotografías clínicas.</li>
         </ol>
       </section>
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Completar el diagnóstico dermatológico</h2>
+      <a href="../dermatologia/exploracion-lesiones-elementales.html">Exploración y lesiones elementales</a>
+      <a href="../dermatologia/infecciones-cutaneas-virosis-its.html">Infecciones cutáneas, virosis e ITS</a>
+      <a href="../dermatologia/urticaria-angioedema-prurito.html">Urticaria, angioedema y prurito</a>
     </section>
   </article>
 </main>

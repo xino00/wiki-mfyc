@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -83,16 +86,20 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Cardiología</a><span>/</span><span>Riesgo cardiovascular y dislipemia</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Crónico</span>
       <h1>Riesgo cardiovascular y dislipemia</h1>
       <p class="lead">Cribado lipídico, cálculo de riesgo, objetivos terapéuticos, fármacos, triglicéridos, Lp(a), SAMS y enfoque CKM.</p>
-      <div class="status-row">
-        <span class="pill">LDL</span>
-        <span class="pill">Riesgo CV</span>
-        <span class="pill">TG/Lp(a)</span>
-        <span class="pill">SAMS</span>
-      </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#entrada">Primera valoración</a>
+      <a href="#riesgo">Calcular riesgo</a>
+      <a href="#objetivos">Fijar objetivo lipídico</a>
+      <a href="#tratamiento">Ajustar tratamiento</a>
+      <a href="#sams">Valorar síntomas musculares</a>
+      <a href="#seguimiento">Revisar respuesta</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -107,21 +114,8 @@
         <a href="#seguimiento">Seguimiento</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
-
-<div class="clinical-lede" data-tone="green">
-  <div>
-    <span class="eyebrow">Dislipemia</span>
-    <h2>No trates una cifra: clasifica riesgo y pon una diana</h2>
-  </div>
-  <p>El LDL-C sigue siendo el eje, pero la decisión real depende de si el paciente tiene ASCVD, LDL-C ≥190 mg/dL, diabetes, hipertrigliceridemia, Lp(a) elevada, CKM o aterosclerosis subclínica. Primero categoría, luego objetivo, después escalado.</p>
-</div>
-
-<div class="signal-strip" aria-label="Tres cierres antes de tratar riesgo cardiovascular y dislipemia">
-  <span data-tone="red"><strong>A</strong><em>Alto riesgo automático: ASCVD, LDL ≥190, diabetes/CKM o CAC alto no esperan a la calculadora.</em></span>
-  <span data-tone="blue"><strong>D</strong><em>Diana explícita: LDL, no-HDL y ApoB deciden si basta estatina o hay que escalar.</em></span>
-  <span data-tone="amber"><strong>R</strong><em>Riesgo residual: TG, Lp(a) y SAMS se manejan sin abandonar el tratamiento.</em></span>
-</div>
 
 <section class="practice-section" id="entrada">
   <div class="practice-section-head">
@@ -129,6 +123,13 @@
     <h2>Cuatro preguntas antes de abrir la calculadora</h2>
     <p>Hay escenarios donde calcular riesgo aporta poco porque el tratamiento ya está indicado.</p>
   </div>
+  <p><strong>No trates una cifra: clasifica riesgo y pon una diana</strong></p>
+  <p>El LDL-C sigue siendo el eje, pero la decisión real depende de si el paciente tiene ASCVD, LDL-C ≥190 mg/dL, diabetes, hipertrigliceridemia, Lp(a) elevada, CKM o aterosclerosis subclínica. Primero categoría, luego objetivo, después escalado.</p>
+  <ul>
+    <li>Alto riesgo automático: ASCVD, LDL ≥190, diabetes/CKM o CAC alto no esperan a la calculadora.</li>
+    <li>Diana explícita: LDL, no-HDL y ApoB deciden si basta estatina o hay que escalar.</li>
+    <li>Riesgo residual: TG, Lp(a) y SAMS se manejan sin abandonar el tratamiento.</li>
+  </ul>
 
   <div class="decision-board">
     <article class="decision-node" data-tone="red">
@@ -735,6 +736,13 @@
 </section>
 
 
+      <nav class="related-guides" aria-label="Guías relacionadas">
+        <h2>Guías relacionadas</h2>
+        <a href="hipertension-arterial.html">Hipertensión arterial</a>
+        <a href="../endocrino/diabetes-mellitus-tipo-2.html">Diabetes mellitus tipo 2</a>
+        <a href="../endocrino/obesidad-ckm.html">Obesidad y CKM</a>
+        <a href="sindrome-coronario-cronico.html">Síndrome coronario crónico</a>
+      </nav>
     </section>
   </article>
 </main>

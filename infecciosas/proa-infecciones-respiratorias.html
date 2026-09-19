@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,16 +108,14 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>PROA - Infecciones Respiratorias</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Síndromes ambulatorios</span>
       <h1>PROA - Infecciones Respiratorias</h1>
-      <p class="lead">Antibiótico respiratorio sin automatismos: Centor y test rápido en faringitis, actitud expectante en OMA, criterios de gravedad en sinusitis, bronquitis casi nunca, EPOC por Anthonisen y NAC estratificada por riesgo.</p>
-      <div class="status-row">
-        <span class="pill">Centor</span>
-        <span class="pill">OMA expectante</span>
-        <span class="pill">Bronquitis: excepcional</span>
-        <span class="pill">NAC: PSI/CURB-65</span>
-      </div>
+      <p class="lead">Indicación y pautas de antibióticos en vías altas, bronquitis, EPOC y neumonía.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#cribado-antibiotico">Decidir si necesita antibiótico</a><a href="#vias-altas">Consultar faringitis, otitis y sinusitis</a><a href="#vias-bajas">Consultar bronquitis y EPOC</a><a href="#nac">Tratar neumonía ambulatoria</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Primera decisión PROA</strong>
@@ -150,10 +151,13 @@
       </article>
     </div>
 
+<details class="reference-details" data-pagefind-ignore>
+<summary>Todos los apartados</summary>
 <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#mapa-respiratorio">Mapa respiratorio</a><a href="#cribado-antibiotico">Antibiótico sí/no</a><a href="#vias-altas">Vías altas</a><a href="#vias-bajas">Bronquitis y EPOC</a><a href="#nac">NAC</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -378,8 +382,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html"><span>PROA y antimicrobianos</span><strong>PROA - Guía de Antimicrobianos y Síndromes Infecciosos</strong></a><a href="proa-infecciones-gastrointestinales.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones Gastrointestinales</strong></a><a href="proa-infecciones-de-piel-y-partes-blandas.html"><span>Síndromes ambulatorios</span><strong>PROA - Infecciones de Piel y Partes Blandas</strong></a></div>
 </section>
   </article>

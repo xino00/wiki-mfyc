@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,30 +108,35 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Betalactámicos y mapa bacteriano</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">PROA y antimicrobianos</span>
       <h1>Betalactámicos y mapa bacteriano</h1>
-      <p class="lead">Espectro real, huecos de cobertura y dosis: primero qué cubre cada familia, después qué bacterias se escapan y al final cómo ajustar la pauta.</p>
-      <div class="status-row">
-        <span class="pill">90 s</span>
-        <span class="pill">Espectro</span>
-        <span class="pill">Huecos</span>
-        <span class="pill">Dosis</span>
-      </div>
+      <p class="lead">Consulta espectro, huecos de cobertura, fármacos, patógenos y dosis.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div>
+        <a href="#matriz-cobertura">Comparar espectro</a>
+        <a href="#farmacos-espectro">Buscar fármaco</a>
+        <a href="#mapa-bacteriano">Buscar patógeno</a>
+        <a href="#dosis-ajuste-renal">Consultar dosis y ajuste renal</a>
+      </div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Uso clínico</strong>
-      <p>Guía de apuntes para uso personal. La prescripción debe ajustarse al protocolo vigente del centro y al contexto clínico del paciente.</p>
+      <p>La prescripción debe ajustarse al protocolo vigente del centro y al contexto clínico del paciente.</p>
     </section>
 
-<nav class="guide-toc" aria-label="Índice de la ficha">
-  <strong>En esta ficha</strong>
-  <div><a href="#lectura-90">Lectura 90 s</a><a href="#puerta">Puerta</a><a href="#algoritmo-eleccion">Algoritmo</a><a href="#clasificacion-betalactamicos">Clasificación</a><a href="#reglas-rapidas">Reglas rápidas</a><a href="#matriz-cobertura">Matriz de cobertura</a><a href="#farmacos-espectro">Fármacos por espectro</a><a href="#mapa-bacteriano">Mapa bacteriano</a><a href="#resistencia-intrinseca">Huecos intrínsecos</a><a href="#dosis-ajuste-renal">Dosis y ajuste renal</a></div>
-</nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Otros apartados de la referencia</summary>
+      <nav class="guide-toc" aria-label="Otros apartados">
+        <div><a href="#lectura-90">Antes de prescribir</a><a href="#puerta">Cerrar huecos de cobertura</a><a href="#algoritmo-eleccion">Algoritmo de elección</a><a href="#clasificacion-betalactamicos">Clasificación</a><a href="#reglas-rapidas">Reglas rápidas</a><a href="#resistencia-intrinseca">Resistencia intrínseca</a></div>
+      </nav>
+    </details>
     <section class="article-content">
       <section class="practice-section" id="lectura-90">
         <div class="practice-section-head">
-          <span class="section-kicker">Lectura en 90 segundos</span>
+          <span class="section-kicker">Antes de prescribir</span>
           <h2>Elige por hueco clínico, no por “más amplio”</h2>
           <p>Antes de bajar a la tabla de dosis, obliga al antibiótico a pasar por cinco filtros. Si uno queda abierto, no está elegido.</p>
         </div>
@@ -747,11 +755,12 @@
 
       <h2 id="farmacos-espectro">Fármacos por espectro</h2>
       <p>Tarjetas pensadas para lectura rápida por problema de cobertura. El buscador filtra por fármaco, patógeno o hueco.</p>
-      <div class="tool-strip beta-tool">
+      <div class="tool-strip beta-tool" data-filter-scope data-filter-target="#drug-list [data-filter]" data-empty-target="#drug-empty">
         <label class="search-box" for="drug-search">
           <span>Buscar fármaco o hueco</span>
-          <input id="drug-search" type="search" data-search="#drug-list" placeholder="cefepime, anaerobios, Enterococcus, BLEE...">
+          <input id="drug-search" type="search" data-filter-input placeholder="cefepime, anaerobios, Enterococcus, BLEE...">
         </label>
+        <p class="result-count" data-filter-results aria-live="polite"></p>
       </div>
       <section id="drug-list" class="cards">
         <article class="card drug-card" data-filter="penicilina g v estreptococos neumococo treponema listeria enterococcus faecalis anaerobios orales enterobacterias estafilococos pseudomonas">
@@ -829,16 +838,17 @@
           <p><strong>Reglas clave:</strong> KPC: meropenem-vaborbactam, ceftazidima-avibactam o imipenem-relebactam. OXA-48-like: ceftazidima-avibactam. MBL: ceftazidima-avibactam + aztreonam, aztreonam-avibactam, cefiderocol o cefepime-zidebactam según disponibilidad, foco y sensibilidad.</p>
           <ul><li><strong>Pseudomonas DTR:</strong> ceftolozano-tazobactam, ceftazidima-avibactam, imipenem-relebactam, cefiderocol o cefepime-zidebactam según foco y sensibilidad.</li><li><strong>Siempre:</strong> Infecciosas/Farmacia y antibiograma completo.</li></ul>
         </article>
-        <div class="empty-state" data-empty aria-live="polite">No hay tarjetas que coincidan con la búsqueda.</div>
+        <div id="drug-empty" class="empty-state" aria-live="polite">No hay tarjetas que coincidan con la búsqueda.</div>
       </section>
 
       <h2 id="mapa-bacteriano">Mapa bacteriano y huecos de cobertura</h2>
       <p>Primero morfología y foco; después pregunta si hay Pseudomonas, anaerobios, Enterococcus/Listeria, SARM, BLEE/AmpC o carbapenemasa. Esa secuencia evita la mayoría de errores de cobertura.</p>
-      <div class="tool-strip beta-tool">
+      <div class="tool-strip beta-tool" data-filter-scope data-filter-target="#taxonomy [data-filter]" data-empty-target="#pathogen-empty">
         <label class="search-box" for="pathogen-search">
           <span>Buscar patógeno o síndrome</span>
-          <input id="pathogen-search" type="search" data-search="#taxonomy" placeholder="S. aureus, Listeria, Pseudomonas, anaerobios...">
+          <input id="pathogen-search" type="search" data-filter-input placeholder="S. aureus, Listeria, Pseudomonas, anaerobios...">
         </label>
+        <p class="result-count" data-filter-results aria-live="polite"></p>
       </div>
       <section class="morph-grid" aria-label="Árbol morfológico Gram">
         <article class="morph-card positive">
@@ -960,7 +970,7 @@
             <dl><dt>Primero</dt><dd>Antibiótico precoz si sepsis probable o shock; cobertura dirigida por foco probable y factores de riesgo MDR.</dd><dt>Huecos</dt><dd>Cubrir SARM, anaerobios, Candida o MDR solo si el riesgo individual/foco lo justifica; en alto riesgo sí se cubre. Desescalar en cuanto haya datos.</dd></dl>
           </article>
         </div>
-        <div class="empty-state" data-empty aria-live="polite">No hay patógenos que coincidan con la búsqueda.</div>
+        <div id="pathogen-empty" class="empty-state" aria-live="polite">No hay patógenos que coincidan con la búsqueda.</div>
       </section>
 
       <h2 id="resistencia-intrinseca">Resistencia intrínseca que cambia decisiones</h2>
@@ -1012,7 +1022,7 @@
       </section>
 
       <h2 id="dosis-ajuste-renal">Dosis y ajuste renal</h2>
-      <p>La tabla de dosis procede de la ficha ya publicada. Mantener ajuste a función renal, diálisis/TRRC, foco, gravedad, CMI, alergias y protocolo local.</p>
+      <p>Mantener ajuste a función renal, diálisis/TRRC, foco, gravedad, CMI, alergias y protocolo local.</p>
       <div class="dose-strip" aria-label="Cómo leer la tabla de dosis">
         <article class="dose-item">
           <span>1. Carga</span>
@@ -1237,13 +1247,13 @@
 <aside class="callout info"><strong class="callout-title">Enlaces</strong><p>Volver al Índice Principal de Síndromes: <a href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html">PROA - Guía de Antimicrobianos y Síndromes Infecciosos</a></p></aside>
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html"><span>PROA</span><strong>Guía de antimicrobianos</strong></a><a href="perfusion-extendida-continua-de-betalactamicos.html"><span>PK/PD</span><strong>Perfusión extendida de beta-lactámicos</strong></a><a href="gramnegativos-resistentes-idsa-2024-estudio-interactivo.html"><span>MDR</span><strong>Gramnegativos resistentes</strong></a><a href="proa-otros-antimicrobianos-aminoglucosidos-glucopeptidos-y-miscelanea.html"><span>PROA</span><strong>Otros antimicrobianos</strong></a></div>
 </section>
   </article>
 </main>
-<footer class="footer" data-pagefind-ignore>Contenido integrado en la guía de Infecciosas. Confirmar siempre con antibiograma, foco, función renal, alergias y disponibilidad hospitalaria.</footer>
+<footer class="footer" data-pagefind-ignore>Infecciosas · Confirmar siempre con antibiograma, foco, función renal, alergias y disponibilidad hospitalaria.</footer>
 <script src="../app.js"></script>
 </body>
 </html>

@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,29 +108,19 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>PROA - Otros Antimicrobianos (Aminoglucósidos, Glucopéptidos y Miscelánea)</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">PROA y antimicrobianos</span>
       <h1>PROA - Otros Antimicrobianos (Aminoglucósidos, Glucopéptidos y Miscelánea)</h1>
-      <p class="lead">Fármacos con margen estrecho o uso muy condicionado: aminoglucósidos, vancomicina/teicoplanina, daptomicina, dalbavancina y miscelánea de alto impacto clínico.</p>
-      <div class="status-row">
-        <span class="pill">Niveles</span>
-        <span class="pill">Nefro/ototoxicidad</span>
-        <span class="pill">CK con daptomicina</span>
-        <span class="pill">Colistina: rescate</span>
-      </div>
+      <p class="lead">Dosis, ajuste y vigilancia de aminoglucósidos, glucopéptidos y otros antimicrobianos.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#aminoglucosidos">Consultar aminoglucósidos</a><a href="#grampositivos">Consultar vancomicina y alternativas IV</a><a href="#miscelanea">Buscar otros antimicrobianos</a><a href="#niveles">Planificar niveles</a><a href="#vigilancia">Revisar vigilancia y toxicidad</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Monitorizar no es opcional</strong>
       <p>Con aminoglucósidos, vancomicina, teicoplanina, daptomicina o colistina, la pauta inicial solo es la mitad de la decisión: niveles, función renal, toxicidad y foco mandan.</p>
     </section>
-
-    <div class="clinical-lede" data-tone="blue">
-      <div>
-        <span class="eyebrow">Fármacos de margen estrecho</span>
-        <h2>La pregunta no es solo “cuánto dar”, sino qué daño tienes que prevenir</h2>
-      </div>
-      <p>Aminoglucósidos, glucopéptidos, daptomicina, fosfomicina IV, colistina y tigeciclina obligan a prescribir con plan de vigilancia: niveles cuando proceda, riñón, CK, sodio, foco compatible y fecha de reevaluación.</p>
-    </div>
 
     <div class="signal-strip" aria-label="Tres cierres en antimicrobianos de margen estrecho">
       <span data-tone="amber"><strong>N</strong><em>Niveles, FG y diálisis se deciden antes de dejar una pauta larga.</em></span>
@@ -158,10 +151,13 @@
       </article>
     </section>
 
+    <details class="reference-details" data-pagefind-ignore>
+    <summary>Todos los apartados</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#mapa-uso">Mapa de uso</a><a href="#vigilancia">Vigilancia</a><a href="#niveles">Niveles</a><a href="#aminoglucosidos">Aminoglucósidos</a><a href="#grampositivos">Grampositivos IV</a><a href="#miscelanea">Miscelánea</a><a href="#trampas">Trampas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -490,8 +486,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html"><span>PROA y antimicrobianos</span><strong>PROA - Guía de Antimicrobianos y Síndromes Infecciosos</strong></a><a href="proa-betalactamicos-cefalosporinas-y-carbapenemicos.html"><span>PROA y antimicrobianos</span><strong>PROA - Betalactámicos, Cefalosporinas y Carbapenémicos</strong></a><a href="proa-quinolonas-macrolidos-y-relacionados.html"><span>PROA y antimicrobianos</span><strong>PROA - Quinolonas, Macrólidos y Relacionados</strong></a></div>
 </section>
   </article>

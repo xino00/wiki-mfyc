@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -93,6 +96,17 @@
         <span class="pill">Ottawa</span>
       </div>
     </header>
+    <nav class="task-nav" aria-label="Ir directamente a">
+      <strong>Ir directamente a</strong>
+      <a href="#sva">Revisar soporte vital avanzado</a>
+      <a href="#roles">Organizar roles</a>
+      <a href="#causas">Buscar causas reversibles</a>
+      <a href="#rce">Tras recuperar pulso</a>
+      <a href="#rodilla">Explorar rodilla</a>
+      <a href="#tobillo">Explorar tobillo y antepié</a>
+    </nav>
+    <details class="reference-details">
+      <summary>Índice completo</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -105,6 +119,7 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
     <section class="article-content">
 <div class="clinical-lede" data-tone="red">
   <p class="section-kicker">Dos contextos, una regla</p>
@@ -542,6 +557,12 @@
 </section>
 
     </section>
+    <nav class="related-guides" aria-label="Guías relacionadas">
+      <h2>Guías relacionadas</h2>
+      <a href="shock.html">Shock</a>
+      <a href="trastornos-ionicos-y-acido-base.html">Trastornos iónicos y ácido-base</a>
+      <a href="../trauma-derma-orl/articulaciones-y-extremidades.html">Articulaciones y extremidades</a>
+    </nav>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Urgencias · Guía de supervivencia para el residente de MFyC</footer>

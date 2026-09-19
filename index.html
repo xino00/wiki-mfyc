@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- shared-header:start -->
 <header class="site-bar" data-base="" data-pagefind-ignore>
   <a class="brand" href="index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="index.html">Inicio</a>
+    <a href="index.html#consulta">Consulta</a>
     <a href="urgencias/index.html">Urgencias</a>
-    <a href="cardio/index.html">Cardio</a>
-    <a href="infecciosas/index.html">Infecciosas</a>
-    <a href="guardias/index.html">Guardias</a>
+    <a href="index.html#tratamientos">Tratamientos</a>
+    <a href="index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="urgencias/index.html">Urgencias</a>
         <a href="cardio/index.html">Cardiología</a>
@@ -61,150 +62,97 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="guide-catalog.js"></script>
+<!-- shared-header:end -->
 
-<main class="shell">
-  <section class="home-hero practical-hero">
-    <div class="hero-copy">
-      <span class="eyebrow">MFyC · guardias · consulta · planta</span>
-      <h1>Guía de supervivencia para el residente de MFyC</h1>
-      <p class="lead">Wiki de apuntes clínicos para decidir rápido: qué pedir, cuándo derivar, cómo iniciar tratamiento y qué revisar antes del alta.</p>
-      <div class="hero-actions">
-        <a class="open-tool" href="urgencias/index.html">Entrar en Urgencias</a>
-        <a class="ghost-link" href="cardio/sindrome-coronario-agudo.html">SCA y dolor torácico</a>
-        <a class="ghost-link" href="guardias/boxes-urgencias.html">Boxes de guardia</a>
+<main class="shell home-workspace">
+  <section class="home-intro" aria-labelledby="home-title">
+    <h1 id="home-title">Guía de supervivencia para el residente de MFyC</h1>
+    <p>Apuntes para la consulta, las urgencias y el trabajo en planta.</p>
+    <form class="home-query" role="search" data-global-search-form data-pagefind-ignore>
+      <label for="home-query">¿Qué necesitas consultar?</label>
+      <div class="query-control">
+        <input id="home-query" type="search" data-global-search-input placeholder="Diabetes, mareo, cefepime…" autocomplete="off">
+        <button type="submit" aria-label="Buscar en toda la guía">Buscar</button>
       </div>
-      <div class="home-decision-map" aria-label="Mapa clínico de entrada a la guía">
-        <article data-tone="red">
-          <span>1</span>
-          <strong>Puerta</strong>
-          <p>Constantes, glucemia, ECG, SatO2 y pregunta de seguridad.</p>
-        </article>
-        <article data-tone="amber">
-          <span>2</span>
-          <strong>Síndrome</strong>
-          <p>Dolor torácico, disnea, fiebre, abdomen, déficit o bajo nivel.</p>
-        </article>
-        <article data-tone="blue">
-          <span>3</span>
-          <strong>Ruta</strong>
-          <p>Prueba crítica, tratamiento inicial, interconsulta y destino.</p>
-        </article>
-        <article data-tone="green">
-          <span>4</span>
-          <strong>Cierre</strong>
-          <p>Reevaluación, alarmas, seguimiento y plantilla de informe.</p>
-        </article>
-      </div>
-    </div>
-    <aside class="action-panel" aria-label="Uso recomendado">
-      <h2>Entrada rápida</h2>
-      <a href="urgencias/dolor-toracico.html"><strong>Dolor torácico</strong><span>descartar causas letales, ECG, troponina y destino</span></a>
-      <a href="cardio/fibrilacion-auricular-y-arritmias.html"><strong>FA y arritmias</strong><span>frecuencia, ritmo y anticoagulación</span></a>
-      <a href="neumo/asma.html"><strong>Asma / EPOC</strong><span>crisis, broncodilatadores y criterios de gravedad</span></a>
-      <a href="infecciosas/sepsis-y-shock-septico.html"><strong>Sepsis</strong><span>gravedad, cultivos, antibiótico y fluidos</span></a>
-    </aside>
+      <p class="query-help">Busca un problema, un fármaco o una técnica. Atajo de teclado: <kbd>/</kbd></p>
+    </form>
+    <nav class="context-nav" aria-label="Dónde estás trabajando">
+      <a href="#consulta">Consulta</a>
+      <a href="#urgencias">Urgencias</a>
+      <a href="#planta">Planta</a>
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#tecnicas">Técnicas y plantillas</a>
+    </nav>
   </section>
 
-  <section class="section-band" data-filter-scope data-filter-target=".module-card" data-empty-target="#home-module-empty">
-    <div class="section-head">
-      <div>
-        <span class="section-kicker">Módulos publicados</span>
-        <h2>Trabajo clínico real</h2>
-      </div>
-      <p>La navegación agrupa problemas de guardia y consulta, no carpetas del vault.</p>
-    </div>
-    <section class="tool-strip home-module-search" aria-label="Buscar módulos publicados">
-      <label class="search-box" for="home-module-search">
-        <span>Buscar módulo o problema</span>
-        <input id="home-module-search" type="search" placeholder="sepsis, dolor torácico, asma, piel, anemia, guardias..." data-filter-input>
-      </label>
-      <p class="result-count" data-filter-results aria-live="polite"></p>
+  <div class="workspace-sections">
+    <section class="task-group" id="consulta" aria-labelledby="consulta-title">
+      <h2 id="consulta-title">En consulta</h2>
+      <ul class="task-list">
+        <li><a href="endocrino/diabetes-mellitus-tipo-2.html"><strong>Revisar una diabetes tipo 2</strong><span>Primera visita, tratamiento y seguimiento</span></a></li>
+        <li><a href="cardio/riesgo-cardiovascular-y-dislipemia.html"><strong>Valorar el riesgo cardiovascular</strong><span>Riesgo, prevención y dislipemia</span></a></li>
+        <li><a href="dermatologia/exploracion-lesiones-elementales.html"><strong>Describir una lesión cutánea</strong><span>Exploración, imágenes y diagnóstico diferencial</span></a></li>
+      </ul>
     </section>
-    <div id="home-module-empty" class="empty-state" aria-live="polite">No hay módulos que coincidan con la búsqueda.</div>
-    <div class="module-grid module-grid--dense">
-      <a class="module-card module-card--primary" href="infecciosas/index.html">
-        <span class="card-kicker">Guardia · consulta · planta</span>
-        <h3>Infecciosas</h3>
-        <p>Sepsis, antibioterapia, infecciones frecuentes, PROA y multirresistentes.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="urgencias/index.html">
-        <span class="card-kicker">Puerta · triaje · boxes</span>
-        <h3>Urgencias</h3>
-        <p>Problemas tiempo-dependientes, síndromes MUST, soporte vital y alteraciones iónicas para decidir rápido en la puerta.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="cardio/index.html">
-        <span class="card-kicker">Riesgo CV · urgencias · seguimiento</span>
-        <h3>Cardiología</h3>
-        <p>HTA, riesgo cardiovascular, SCA, insuficiencia cardiaca, FA, tromboembolismo, pericardio y aorta.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="neuro/index.html">
-        <span class="card-kicker">Déficit focal · cefalea · bajo nivel</span>
-        <h3>Neurología</h3>
-        <p>Ictus, hemorragias, meningitis/encefalitis, cefaleas, vértigo, coma, crisis y enfermedades neuromusculares urgentes.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="digestivo/index.html">
-        <span class="card-kicker">Dolor abdominal · sangrado · hepatobiliar</span>
-        <h3>Digestivo</h3>
-        <p>Dolor abdominal, hemorragia digestiva, patología biliar, pancreatitis, EII, cirrosis y patología anal.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="neumo/index.html">
-        <span class="card-kicker">Disnea · vía aérea · infección</span>
-        <h3>Neumología</h3>
-        <p>Asma, EPOC, insuficiencia respiratoria, neumonía, bronquitis, rinitis y SDRA.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="nefro-uro/index.html">
-        <span class="card-kicker">Riñón · ITU · urología urgente</span>
-        <h3>Nefro-Urología</h3>
-        <p>ERC, FRA, ITU, pielonefritis, prostatitis, cólico renal, RAO, hematuria y escroto agudo.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="endocrino/index.html">
-        <span class="card-kicker">Diabetes · obesidad · crisis hiperglucémicas</span>
-        <h3>Endocrino</h3>
-        <p>DM2, obesidad, hiperglucemia simple, CAD y SHH.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="hemato-reuma/index.html">
-        <span class="card-kicker">Citopenias · artritis · autoinmunidad</span>
-        <h3>Hemato-Reuma</h3>
-        <p>Anemias, pancitopenia, síndrome hemofagocítico, monoartritis, gota, LES, vasculitis y EAS.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="dermatologia/index.html">
-        <span class="card-kicker">Morfología · consulta · urgencias</span>
-        <h3>Dermatología</h3>
-        <p>Exploración cutánea, lesiones elementales, toxicodermias, ampollas y piel que no puede esperar.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="trauma-derma-orl/index.html">
-        <span class="card-kicker">Curas · trauma menor · ORL</span>
-        <h3>Trauma y ORL</h3>
-        <p>Trauma menor, dolor osteomuscular, heridas y suturas, exploración de extremidades y ORL frecuente.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="psiquiatria/index.html">
-        <span class="card-kicker">Agitación · ansiedad · riesgo autolítico</span>
-        <h3>Psiquiatría</h3>
-        <p>Agitación psicomotriz, crisis de ansiedad, TDM, psicosis, abstinencia alcohólica e intento autolítico.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-<a class="module-card module-card--primary" href="guardias/index.html">
-        <span class="card-kicker">Plantillas · planta · COT · pediatría</span>
-        <h3>Guardias</h3>
-        <p>Material operativo para guardias: plantillas de evolución, informes, curas, COT y pediatría.</p>
-        <span class="card-meta"><span class="pill">Publicado</span></span>
-      </a>
-    </div>
+    <section class="task-group" id="urgencias" aria-labelledby="urgencias-title">
+      <h2 id="urgencias-title">En urgencias</h2>
+      <ul class="task-list">
+        <li><a href="urgencias/dolor-toracico.html"><strong>Valorar un dolor torácico</strong><span>Primeros minutos, diagnóstico y destino</span></a></li>
+        <li><a href="urgencias/mareo-y-vertigo.html"><strong>Orientar un mareo</strong><span>Valoración inicial y exploración dirigida</span></a></li>
+        <li><a href="urgencias/disnea-aguda.html"><strong>Valorar una disnea aguda</strong><span>Gravedad, pruebas y manejo inicial</span></a></li>
+        <li><a href="infecciosas/sepsis-y-shock-septico.html"><strong>Consultar sepsis y shock séptico</strong><span>Evaluación y tratamiento</span></a></li>
+      </ul>
+    </section>
+    <section class="task-group" id="tratamientos" aria-labelledby="tratamientos-title">
+      <h2 id="tratamientos-title">Consultar un tratamiento</h2>
+      <ul class="task-list">
+        <li><a href="infecciosas/proa-betalactamicos-cefalosporinas-y-carbapenemicos.html#matriz-cobertura"><strong>Comparar betalactámicos</strong><span>Matriz de espectro, fármacos y microorganismos</span></a></li>
+        <li><a href="cardio/sindrome-coronario-agudo.html"><strong>Consultar el manejo del SCA</strong><span>Síndrome coronario agudo</span></a></li>
+        <li><a href="infecciosas/index.html"><strong>Buscar otros antimicrobianos</strong><span>Biblioteca de infecciosas y PROA</span></a></li>
+      </ul>
+    </section>
+    <section class="task-group" id="tecnicas" aria-labelledby="tecnicas-title">
+      <h2 id="tecnicas-title">Explorar y documentar</h2>
+      <ul class="task-list">
+        <li><a href="dermatologia/exploracion-lesiones-elementales.html#lesiones"><strong>Comparar lesiones elementales</strong><span>Atlas de morfología cutánea</span></a></li>
+        <li><a href="guardias/boxes-urgencias.html"><strong>Copiar una plantilla de box</strong><span>Valoración, observación, alta y pase</span></a></li>
+        <li><a href="trauma-derma-orl/heridas-y-suturas.html"><strong>Consultar heridas y suturas</strong><span>Exploración, cierre y curas</span></a></li>
+      </ul>
+    </section>
+    <section class="task-group task-group-wide" id="planta" aria-labelledby="planta-title">
+      <h2 id="planta-title">En planta</h2>
+      <ul class="task-list task-list-inline">
+        <li><a href="guardias/planta.html"><strong>Preparar la evolución y el pase</strong><span>Plantillas para organizar la información</span></a></li>
+        <li><a href="guardias/curas-y-exploracion.html"><strong>Documentar una cura o exploración</strong><span>Plantillas de registro</span></a></li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="library-section" id="biblioteca" aria-labelledby="library-title">
+    <h2 id="library-title">Biblioteca por especialidad</h2>
+    <nav class="library-grid" aria-label="Todos los módulos">
+      <a href="urgencias/index.html">Urgencias</a>
+      <a href="cardio/index.html">Cardiología</a>
+      <a href="neuro/index.html">Neurología</a>
+      <a href="infecciosas/index.html">Infecciosas</a>
+      <a href="digestivo/index.html">Digestivo</a>
+      <a href="neumo/index.html">Neumología</a>
+      <a href="nefro-uro/index.html">Nefro-Urología</a>
+      <a href="endocrino/index.html">Endocrino</a>
+      <a href="hemato-reuma/index.html">Hemato-Reuma</a>
+      <a href="dermatologia/index.html">Dermatología</a>
+      <a href="trauma-derma-orl/index.html">Trauma y ORL</a>
+      <a href="psiquiatria/index.html">Psiquiatría</a>
+      <a href="guardias/index.html">Plantillas de guardia</a>
+    </nav>
   </section>
 </main>
 
-<footer class="footer" data-pagefind-ignore>Sitio estático en <code>docs/</code>. Contenido orientado a práctica clínica; ajustar siempre al protocolo vigente del centro.</footer>
+<footer class="footer" data-pagefind-ignore>
+  <span>Guía de supervivencia para el residente de MFyC</span>
+  <a href="https://github.com/xino00/wiki-mfyc/issues/new">Sugerir una corrección</a>
+</footer>
 
 <script src="app.js"></script>
 </body>

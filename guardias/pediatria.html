@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -79,27 +82,22 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Guardias</a><span>/</span><span>Pediatría de guardia</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Plantillas de guardia</span>
       <h1>Pediatría de guardia</h1>
       <p class="lead">Plantillas de documentación pediátrica. No calcula medicación ni sustituye fuentes clínicas validadas.</p>
-      <div class="status-row">
-        <span class="pill">Valoración</span>
-        <span class="pill">Alta</span>
-        <span class="pill">Alarmas</span>
-        <span class="pill">Evolución</span>
-        <span class="pill">Seguridad</span>
-      </div>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore><strong>Ir directamente a</strong><div><a href="#valoracion">Escribir la valoración</a><a href="#alta">Preparar el alta</a><a href="#evolucion">Documentar reevaluación</a><a href="#comunicacion">Registrar la información familiar</a><a href="#seguridad">Revisar la nota</a></div></nav>
 
     <section class="warning-panel compact" aria-label="Aviso de uso">
       <strong>Solo estructura documental</strong>
       <p>Este módulo usa Guardias como biblioteca de plantillas. Las indicaciones clínicas pediátricas no se publican aquí porque deben verificarse en fuentes autorizadas.</p>
     </section>
 
+    <details class="reference-details" data-pagefind-ignore><summary>Todos los apartados de documentación pediátrica</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div><a href="#valoracion">Valoración</a><a href="#alta">Alta</a><a href="#altas-frecuentes">Altas frecuentes</a><a href="#no-copiar">No copiar dosis</a><a href="#evolucion">Evolución</a><a href="#comunicacion">Comunicación</a><a href="#seguridad">Seguridad</a></div>
-    </nav>
+    </nav></details>
 
     <section class="article-content">
       <h2 id="valoracion">Plantilla de valoración pediátrica</h2>
@@ -109,7 +107,8 @@
         <div><strong>Contexto</strong><span>Edad, peso, antecedentes, alergias, calendario vacunal, medicación y entorno.</span></div>
         <div><strong>Plan</strong><span>Diagnóstico de trabajo, medidas indicadas, observación, reevaluación y destino.</span></div>
       </div>
-      <pre><code>VALORACIÓN PEDIÁTRICA - Guardia
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-valoracion-pediatrica">Copiar valoración pediátrica</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-valoracion-pediatrica"><code>VALORACIÓN PEDIÁTRICA - Guardia
 Fecha/hora: ___
 Acompañante: ___
 Edad: ___  Peso: ___ kg  Alergias/RAM: ___
@@ -171,7 +170,8 @@ Plan:
           </ul>
         </section>
       </div>
-      <pre><code>INFORME DE ALTA - Pediatría de guardia
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-alta-pediatrica">Copiar alta pediátrica</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-alta-pediatrica"><code>INFORME DE ALTA - Pediatría de guardia
 
 Paciente de ___ años que consulta por [motivo]. Tras valoración clínica y [pruebas si procede], el cuadro es compatible con [diagnóstico/síndrome].
 
@@ -253,7 +253,8 @@ Reconsultar si:
           </tbody>
         </table>
       </div>
-      <pre><code>REEVALUACIÓN PEDIÁTRICA
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-reevaluacion-pediatrica">Copiar reevaluación pediátrica</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-reevaluacion-pediatrica"><code>REEVALUACIÓN PEDIÁTRICA
 Hora: ___
 
 Desde la valoración inicial:
@@ -279,7 +280,8 @@ Decisión:
         <div><strong>Confirmar</strong><span>Preguntar si han entendido cuándo volver.</span></div>
         <div><strong>Registrar</strong><span>Dejar escrito que se explican signos de alarma y seguimiento.</span></div>
       </div>
-      <pre><code>Se explica a la familia:
+      <div class="template-actions" data-pagefind-ignore><button class="copy-template" type="button" data-copy-target="plantilla-comunicacion-familia">Copiar comunicación familiar</button><p class="copy-status" data-copy-status role="status" aria-live="polite"></p></div>
+      <pre id="plantilla-comunicacion-familia"><code>Se explica a la familia:
 - Diagnóstico/síndrome probable: ___
 - Evolución esperada: ___
 - Medidas domiciliarias: ___
@@ -307,6 +309,7 @@ La familia comprende las indicaciones y acepta el plan.</code></pre>
         </table>
       </div>
     </section>
+    <section class="related-guides" aria-label="Otras plantillas"><h2>Otras plantillas</h2><a href="boxes-urgencias.html">Valoración, reevaluación y alta</a><a href="curas-y-exploracion.html">Documentar exploración y curas</a><a href="cot-y-trauma.html">Documentación COT y trauma</a></section>
   </article>
 </main>
 <footer class="footer" data-pagefind-ignore>Guardias · Plantillas operativas</footer>

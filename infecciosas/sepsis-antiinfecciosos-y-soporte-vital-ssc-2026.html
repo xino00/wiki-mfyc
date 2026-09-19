@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
     <a class="rail-home" href="index.html">Índice de Infecciosas</a>
@@ -105,29 +108,19 @@
       <a href="../index.html">Inicio</a><span>/</span><a href="index.html">Infecciosas</a><span>/</span><span>Sepsis - Antiinfecciosos y Soporte Vital (SSC 2026)</span>
     </nav>
     <header class="article-header guide-header">
-      <span class="eyebrow">Sepsis</span>
       <h1>Sepsis - Antiinfecciosos y Soporte Vital (SSC 2026)</h1>
-      <p class="lead">Guía de tratamiento una vez reconocida la sepsis: antibiótico a tiempo, cobertura proporcional al riesgo, desescalada, candidemia, ventilación y soporte de órgano sin añadir terapias inútiles.</p>
-      <div class="status-row">
-        <span class="pill">ATB &lt;=1 h si shock</span>
-        <span class="pill">Perfusión prolongada</span>
-        <span class="pill">Desescalar</span>
-        <span class="pill">Soporte por órgano</span>
-      </div>
+      <p class="lead">Tratamiento empírico, bacteriemia, candidemia y soporte respiratorio y de órgano.</p>
     </header>
+
+    <nav class="task-nav" aria-label="Ir directamente a" data-pagefind-ignore>
+      <strong>Ir directamente a</strong>
+      <div><a href="#empirico">Elegir empírico sin foco claro</a><a href="#bacteriemia">Tratar bacteriemia</a><a href="#candida">Valorar cobertura de Candida</a><a href="#respiratorio">Consultar soporte respiratorio</a><a href="#soporte">Consultar soporte de órgano</a><a href="#antibiotico">Revisar tiempo y desescalada</a></div>
+    </nav>
 
     <section class="warning-panel compact" aria-label="Aviso clínico">
       <strong>Principio PROA en sepsis</strong>
       <p>La sepsis obliga a tratar pronto, no a tratarlo todo. Amplía si hay riesgo real de MDR, anaerobios o Candida; estrecha en cuanto microbiología y evolución lo permitan.</p>
     </section>
-
-    <div class="clinical-lede" data-tone="red">
-      <div>
-        <span class="eyebrow">Tratamiento activo y proporcional</span>
-        <h2>La primera dosis salva tiempo; la reevaluación evita daño</h2>
-      </div>
-      <p>En shock o sepsis probable, el antibiótico no espera. Después, foco, microbiología, función renal, soporte respiratorio y evolución deben estrechar espectro, retirar tratamientos inútiles y fijar duración.</p>
-    </div>
 
     <div class="signal-strip" aria-label="Tres cierres en antiinfecciosos y soporte de sepsis">
       <span data-tone="red"><strong>T</strong><em>Tiempo: shock o sepsis probable reciben primera dosis en la primera hora.</em></span>
@@ -168,10 +161,13 @@
     </section>
     
 
+<details class="reference-details" data-pagefind-ignore>
+<summary>Todos los apartados</summary>
 <nav class="guide-toc" aria-label="Índice de la ficha">
   <strong>En esta ficha</strong>
   <div><a href="#puerta">Puerta</a><a href="#antibiotico">Antibiótico</a><a href="#empirico">Empírico</a><a href="#bacteriemia">Bacteriemia</a><a href="#candida">Candida</a><a href="#respiratorio">Respiratorio</a><a href="#soporte">Soporte</a><a href="#no-hacer">No hacer</a><a href="#trampas">Trampas</a></div>
 </nav>
+</details>
     <section class="article-content">
       <section class="practice-section" id="puerta">
         <div class="practice-section-head">
@@ -480,8 +476,8 @@
 
     </section>
 
-    <section class="content-panel related-panel">
-  <h2>Relacionados</h2>
+    <section class="content-panel related-panel related-guides">
+  <h2>Continuar la consulta</h2>
   <div class="related-grid"><a href="sepsis-abordaje-inicial-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Abordaje Inicial (SSC 2026)</strong></a><a href="sepsis-hemodinamica-y-reanimacion-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Hemodinámica y Reanimación (SSC 2026)</strong></a><a href="sepsis-cuidados-post-uci-y-objetivos-ssc-2026.html"><span>Sepsis</span><strong>Sepsis - Cuidados Post-UCI y Objetivos (SSC 2026)</strong></a></div>
 </section>
   </article>

@@ -19,7 +19,8 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="guide-page">
+<!-- shared-header:start -->
 <header class="site-bar" data-base="../" data-pagefind-ignore>
   <a class="brand" href="../index.html" aria-label="Inicio">
     <span class="brand-mark">MF</span>
@@ -30,12 +31,12 @@
   </button>
   <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
     <a href="../index.html">Inicio</a>
+    <a href="../index.html#consulta">Consulta</a>
     <a href="../urgencias/index.html">Urgencias</a>
-    <a href="../cardio/index.html">Cardio</a>
-    <a href="../infecciosas/index.html">Infecciosas</a>
-    <a href="../guardias/index.html">Guardias</a>
+    <a href="../index.html#tratamientos">Tratamientos</a>
+    <a href="../index.html#tecnicas">Plantillas</a>
     <details class="nav-more">
-      <summary>Módulos</summary>
+      <summary>Biblioteca</summary>
       <div class="nav-more-panel">
         <a href="../urgencias/index.html">Urgencias</a>
         <a href="../cardio/index.html">Cardiología</a>
@@ -61,6 +62,8 @@
     <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema">Tema</button>
   </div>
 </header>
+<script src="../guide-catalog.js"></script>
+<!-- shared-header:end -->
 
 <main class="doc-layout">
   <aside class="module-rail" data-pagefind-ignore aria-label="Índice del módulo">
@@ -84,17 +87,20 @@
     </nav>
 
     <header class="article-header guide-header">
-      <span class="eyebrow">Urgente</span>
       <h1>Hemorragia digestiva</h1>
       <p class="lead">Ruta práctica para hematemesis, melenas, rectorragia y sangrado en cirrótico: estabilizar, estratificar, localizar y no empeorar el resangrado.</p>
-      <div class="status-row">
-        <span class="pill">GBS</span>
-        <span class="pill">Forrest</span>
-        <span class="pill">Oakland</span>
-        <span class="pill">Baveno VII</span>
-      </div>
     </header>
 
+    <nav class="task-nav" aria-label="Tareas en esta guía" data-pagefind-ignore>
+      <a href="#entrada">Estabilizar y clasificar el sangrado</a>
+      <a href="#destino">Decidir el circuito inicial</a>
+      <a href="#hda">Consultar HDA no varicosa</a>
+      <a href="#portal">Tratar sospecha de sangrado portal</a>
+      <a href="#hdb">Valorar hemorragia baja</a>
+      <a href="#antitromboticos">Revisar antitrombóticos</a>
+    </nav>
+    <details class="reference-details" data-pagefind-ignore>
+      <summary>Todos los apartados de hemorragia digestiva</summary>
     <nav class="guide-toc" aria-label="Índice de la ficha">
       <strong>En esta ficha</strong>
       <div>
@@ -107,8 +113,10 @@
         <a href="#trampas">Trampas</a>
       </div>
     </nav>
+    </details>
 
     <section class="article-content">
+      <p>Baveno VII.</p>
       <div class="clinical-lede" data-tone="red">
         <div>
           <span class="eyebrow">Sangrado activo</span>
@@ -536,6 +544,13 @@
         </ul>
       </section>
 
+    </section>
+    <section class="related-guides" aria-label="Guías relacionadas" data-pagefind-ignore>
+      <h2>Completar el manejo del sangrado</h2>
+      <a href="cirrosis-y-hepatopatia.html">Cirrosis y hepatopatía metabólica</a>
+      <a href="../hemato-reuma/anemia.html">Anemia</a>
+      <a href="eii.html">Enfermedad inflamatoria intestinal</a>
+      <a href="proctologia-y-cirugia-menor.html">Proctología y drenaje</a>
     </section>
   </article>
 </main>
