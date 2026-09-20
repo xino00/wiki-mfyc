@@ -3,7 +3,7 @@
 
 const fs = require("node:fs");
 const path = require("node:path");
-const { walkPublicHtml, sourceHashes, writeManifest, checkIntegrity } = require("./pagefind_artifacts");
+const { walkSearchableHtml, sourceHashes, writeManifest, checkIntegrity } = require("./pagefind_artifacts");
 
 function recoverInterruptedInstall(root) {
   const target = path.join(root, "pagefind");
@@ -41,7 +41,7 @@ function checkResponse(response, operation) {
 async function buildSearch(root) {
   root = path.resolve(root);
   recoverInterruptedInstall(root);
-  const pages = walkPublicHtml(root);
+  const pages = walkSearchableHtml(root);
   if (!pages.length) throw new Error("No se encontraron páginas HTML públicas para indexar.");
   const sources = sourceHashes(root);
   const pagefind = await import("pagefind");

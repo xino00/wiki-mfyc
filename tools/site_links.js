@@ -3,6 +3,11 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
+// Las páginas retiradas declaran un destino local; no son artículos del catálogo.
+function guideRedirect(html) {
+  return html.match(/<meta name="guide-redirect" content="([^"]+)">/i)?.[1] || null;
+}
+
 // Catálogos y configuración usan rutas HTML relativas a la raíz pública.
 function checkHtmlTarget(root, href, label) {
   if (typeof href !== "string" || !/^[^/?#][^?#]*\.html(?:#[^?#]+)?$/.test(href) || href.includes(":")) {
@@ -26,4 +31,4 @@ function checkHtmlTarget(root, href, label) {
   return { target, id, html };
 }
 
-module.exports = { checkHtmlTarget };
+module.exports = { checkHtmlTarget, guideRedirect };

@@ -3,6 +3,7 @@
 const { createHash } = require("node:crypto");
 const fs = require("node:fs");
 const path = require("node:path");
+const { guideRedirect } = require("./site_links");
 
 const manifestName = "integrity.json";
 const skippedDirectories = new Set([".git", ".github", "node_modules", "pagefind", "tools"]);
@@ -27,6 +28,10 @@ function walkArtifacts(dir) {
     if (!entry.isFile()) throw new Error(`Artefacto Pagefind no regular: ${full}`);
     return [full];
   });
+}
+
+function walkSearchableHtml(root) {
+  return walkPublicHtml(root).filter((file) => !guideRedirect(fs.readFileSync(file, "utf8")));
 }
 
 function hashes(root, files) {
@@ -70,4 +75,4 @@ function checkIntegrity(root, indexDir) {
   compareHashes(manifest.sources, sourceHashes(root), "Fuentes de Pagefind");
 }
 
-module.exports = { walkPublicHtml, sourceHashes, artifactHashes, writeManifest, checkIntegrity };
+module.exports = { walkPublicHtml, walkSearchableHtml, sourceHashes, artifactHashes, writeManifest, checkIntegrity };

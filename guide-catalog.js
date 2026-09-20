@@ -927,7 +927,7 @@ var GUIDE_CATALOG = [
       { label: "Revisar peso y función renal", href: "infecciosas/proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html#ajuste" },
       { label: "Valorar paso a vía oral", href: "infecciosas/proa-guia-de-antimicrobianos-y-sindromes-infecciosos.html#paso-oral" }
     ],
-    related: ["proa-infecciones-respiratorias", "proa-infecciones-de-transmision-sexual-its", "proa-infecciones-del-tracto-urinario-itu", "proa-infecciones-de-piel-y-partes-blandas"]
+    related: ["proa-infecciones-respiratorias", "proa-infecciones-de-transmision-sexual-its", "itu-pielonefritis-y-prostatitis", "proa-infecciones-de-piel-y-partes-blandas"]
   },
   {
     id: "proa-infecciones-de-piel-y-partes-blandas",
@@ -959,22 +959,6 @@ var GUIDE_CATALOG = [
       { label: "Consultar sífilis y vulvovaginitis", href: "infecciosas/proa-infecciones-de-transmision-sexual-its.html#sifilis-vaginitis" }
     ],
     related: ["proa-infecciones-gastrointestinales", "proa-infecciones-respiratorias", "proa-infecciones-de-piel-y-partes-blandas"]
-  },
-  {
-    id: "proa-infecciones-del-tracto-urinario-itu",
-    title: "ITU: tratamiento antimicrobiano (PROA)",
-    href: "infecciosas/proa-infecciones-del-tracto-urinario-itu.html",
-    context: "Tratamientos",
-    kind: "Referencia",
-    aliases: ["ITU", "infección urinaria", "cistitis", "pielonefritis", "prostatitis", "antibiótico urinario"],
-    tasks: [
-      { label: "Decidir si tratar", href: "infecciosas/proa-infecciones-del-tracto-urinario-itu.html#triaje-proa" },
-      { label: "Consultar pauta de cistitis", href: "infecciosas/proa-infecciones-del-tracto-urinario-itu.html#cistitis" },
-      { label: "Tratar pielonefritis o prostatitis", href: "infecciosas/proa-infecciones-del-tracto-urinario-itu.html#parenquima" },
-      { label: "Revisar dispositivo y muestra", href: "infecciosas/proa-infecciones-del-tracto-urinario-itu.html#dispositivos" },
-      { label: "Consultar alternativas en BLEE", href: "infecciosas/proa-infecciones-del-tracto-urinario-itu.html#blee" }
-    ],
-    related: ["proa-guia-de-antimicrobianos-y-sindromes-infecciosos", "proa-infecciones-gastrointestinales", "proa-infecciones-respiratorias"]
   },
   {
     id: "proa-infecciones-gastrointestinales",
@@ -1218,20 +1202,24 @@ var GUIDE_CATALOG = [
   },
   {
     id: "itu-pielonefritis-y-prostatitis",
-    title: "ITU, pielonefritis y prostatitis: valoración clínica",
+    title: "ITU, pielonefritis y prostatitis",
     href: "nefro-uro/itu-pielonefritis-y-prostatitis.html",
     context: "Urgencias",
     kind: "Valoración inicial",
-    aliases: ["ITU", "infección urinaria", "cistitis", "pielonefritis", "prostatitis", "urocultivo"],
+    aliases: ["ITU", "infección urinaria", "cistitis", "pielonefritis", "prostatitis", "urocultivo", "EAU", "PROA ITU", "antibiótico urinario", "nitrofurantoína", "fosfomicina", "ITU localizada", "ITU sistémica", "bacteriuria asintomática", "cistitis recurrente", "metenamina", "candiduria", "ITU con sonda", "BLEE urinaria"],
     tasks: [
       { label: "Valorar síntomas y gravedad", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#triaje" },
       { label: "Revisar cultivo y resistencias", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#micro-cultivo" },
       { label: "Tratar cistitis", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#cistitis" },
-      { label: "Valorar pielonefritis", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#pna" },
+      { label: "Tratar pielonefritis", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#pna" },
       { label: "Consultar prostatitis", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#prostatitis" },
-      { label: "Revisar situaciones especiales", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#especiales" }
+      { label: "Revisar dispositivo y muestra", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#dispositivos" },
+      { label: "Elegir tratamiento en BLEE", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#blee" },
+      { label: "Revisar situaciones especiales", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#especiales" },
+      { label: "Prevenir recurrencias", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#recurrencias" },
+      { label: "Interpretar candiduria", href: "nefro-uro/itu-pielonefritis-y-prostatitis.html#candiduria" }
     ],
-    related: ["urologia-urgente", "proa-infecciones-del-tracto-urinario-itu", "sepsis-y-shock-septico"]
+    related: ["urologia-urgente", "gramnegativos-resistentes-idsa-2024-estudio-interactivo", "sepsis-y-shock-septico"]
   },
   {
     id: "urologia-urgente",

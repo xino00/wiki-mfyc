@@ -84,6 +84,22 @@ test("Un fallo al instalar restaura el índice anterior", (t) => {
   assert.equal(fs.existsSync(path.join(root, ".pagefind-backup")), false);
 });
 
+test("Las redirecciones no se indexan y siguen protegidas por el manifiesto", async (t) => {
+  const root = temporaryRoot(t);
+  populate(root, ["index.html"]);
+  const retired = write(root, "retirada.html", '<!doctype html><html lang="es"><head><title>Guía retirada</title><meta name="guide-redirect" content="index.html"></head><body><h1>Contenido trasladado</h1></body></html>');
+  await buildSearch(root);
+  const indexDir = path.join(root, "pagefind");
+  const entry = JSON.parse(fs.readFileSync(path.join(indexDir, "pagefind-entry.json"), "utf8"));
+  assert.equal(Object.values(entry.languages).reduce((total, language) => total + language.page_count, 0), 1);
+  const fragments = fs.readdirSync(path.join(indexDir, "fragment")).map((name) =>
+    JSON.parse(gunzipSync(fs.readFileSync(path.join(indexDir, "fragment", name))).subarray(12).toString()));
+  assert.deepEqual(fragments.map(({ url }) => url), ["/"]);
+  checkIntegrity(root, indexDir);
+  fs.appendFileSync(retired, "<!-- cambio en la redirección -->");
+  assert.throws(() => checkIntegrity(root, indexDir), /Fuentes de Pagefind: cambió retirada.html/);
+});
+
 test("Recupera una instalación interrumpida antes y después de colocar el índice nuevo", (t) => {
   const root = temporaryRoot(t);
   write(root, ".pagefind-backup/sentinel", "anterior");

@@ -29,6 +29,14 @@ Un enlace roto, una ancla oculta o un fallo de copia se puede corregir como camb
 6. Ejecutar `node tools/sync_chrome.js`, `npm run build:search`, `npm run check` y `git diff --check`. Revisar también los archivos nuevos y eliminados del índice generado.
 7. Abrir la página modificada en móvil y escritorio. Comprobar el primer apartado, tablas, menú de secciones, enlaces relacionados, modo oscuro e impresión si se ha tocado el formato.
 
+## Fusión de guías y enlaces antiguos
+
+Conservar una sola entrada clínica en `guide-catalog.js` y en el registro editorial. Actualizar los enlaces internos hacia esa guía y mantener la URL retirada como página de redirección para los enlaces externos guardados.
+
+La página retirada declara `<meta name="guide-redirect" content="ruta-relativa.html">` y `robots: noindex, follow`, sin `article.article`. Sus enlaces visibles cubren las anclas antiguas y permiten continuar sin JavaScript; el script reutiliza esos destinos y conserva los parámetros de consulta. `sync_chrome.js` apunta la URL canónica al destino, y Pagefind excluye la redirección del índice, aunque conserva su hash en el manifiesto de integridad. El destino debe ser local y no puede ser otra redirección.
+
+Comprobar redirección y anclas bajo HTTP, la subruta de publicación y `file://`, además del enlace sin JavaScript. Las pruebas de fusión de ITU en `check_search.js` cubren esos recorridos.
+
 ## Publicación y recuperación
 
 La CI comprueba cada push y pull request. Preparar un cambio revisable con propósito, módulos, comprobaciones y capturas cuando haya cambios visuales. Publicar la raíz de este repositorio con el mecanismo de GitHub Pages ya configurado; no subir fuentes privadas ni registros de participantes.

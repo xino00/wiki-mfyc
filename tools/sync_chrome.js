@@ -11,6 +11,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const config = require("../site.config.json");
+const { checkHtmlTarget, guideRedirect } = require("./site_links");
 
 const root = path.resolve(__dirname, "..");
 const skippedDirectories = new Set([".git", ".github", "node_modules", "pagefind"]);
@@ -98,7 +99,13 @@ ${modules}
 function buildMeta(file, html) {
   const title = escapeHtml(pageTitle(html));
   const description = escapeHtml(pageDescription(html));
-  const url = escapeHtml(pageUrl(file));
+  const redirect = guideRedirect(html);
+  let canonicalFile = file;
+  if (redirect) {
+    const route = path.relative(root, path.resolve(path.dirname(file), redirect)).split(path.sep).join("/");
+    canonicalFile = checkHtmlTarget(root, route, `${path.relative(root, file)}: redirección`).target;
+  }
+  const url = escapeHtml(pageUrl(canonicalFile));
   return `<!-- shared-meta:start -->
   <link rel="canonical" href="${url}">
   <meta property="og:type" content="website">

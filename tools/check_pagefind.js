@@ -3,7 +3,7 @@
 
 const fs = require("node:fs");
 const path = require("node:path");
-const { walkPublicHtml, checkIntegrity } = require("./pagefind_artifacts");
+const { walkSearchableHtml, checkIntegrity } = require("./pagefind_artifacts");
 
 const root = path.resolve(__dirname, "..");
 const indexDir = path.join(root, "pagefind");
@@ -18,7 +18,7 @@ function main() {
   const languages = Object.values(entry.languages || {});
   if (!languages.length) throw new Error("El índice Pagefind no declara ningún idioma.");
 
-  const htmlCount = walkPublicHtml(root).length;
+  const htmlCount = walkSearchableHtml(root).length;
   const indexedCount = languages.reduce((total, language) => total + Number(language.page_count || 0), 0);
   if (indexedCount !== htmlCount) {
     throw new Error(`Pagefind contiene ${indexedCount}/${htmlCount} páginas. Ejecuta npm run build:search.`);

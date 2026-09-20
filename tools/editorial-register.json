@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "scope": "Mantenimiento de las 103 guías y plantillas. Las referencias se observan en el HTML publicado; este registro no acredita revisión clínica ni consulta de los originales. pendiente_identificar señala que falta vincular fuentes autorizadas, sin afirmar su ausencia en el contenido.",
+  "scope": "Mantenimiento de las 102 guías y plantillas. Las referencias se observan en el HTML publicado; este registro no acredita revisión clínica ni consulta de los originales. pendiente_identificar señala que falta vincular fuentes autorizadas, sin afirmar su ausencia en el contenido.",
   "records": [
     {
       "id": "dolor-toracico",
@@ -848,16 +848,6 @@
       "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
     },
     {
-      "id": "proa-infecciones-del-tracto-urinario-itu",
-      "href": "infecciosas/proa-infecciones-del-tracto-urinario-itu.html",
-      "owner": null,
-      "clinicalReview": "pendiente_asignar",
-      "lastClinicalReview": null,
-      "sourceStatus": "pendiente_identificar",
-      "sourcesObserved": [],
-      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
-    },
-    {
       "id": "proa-infecciones-gastrointestinales",
       "href": "infecciosas/proa-infecciones-gastrointestinales.html",
       "owner": null,
@@ -1013,9 +1003,24 @@
       "owner": null,
       "clinicalReview": "pendiente_asignar",
       "lastClinicalReview": null,
-      "sourceStatus": "pendiente_identificar",
-      "sourcesObserved": [],
-      "nextReview": "Asignar responsable e identificar documentos autorizados y ediciones para una futura revisión clínica. No se han contrastado los originales durante esta adaptación de navegación."
+      "sourceStatus": "identificadas_en_html",
+      "sourcesObserved": [
+        {
+          "title": "EAU Guidelines on Urological Infections, 2026 — The Guideline",
+          "url": "https://uroweb.org/guidelines/urological-infections/chapter/the-guideline",
+          "htmlLocation": "nefro-uro/itu-pielonefritis-y-prostatitis.html#fuentes",
+          "sections": ["3.1–3.8", "3.11", "3.17", "tablas 3, 5 y 6"]
+        },
+        {
+          "title": "PROA FJD 2023, según nota local de ITU; mapa de sensibilidad de 2022",
+          "htmlLocation": "nefro-uro/itu-pielonefritis-y-prostatitis.html#fuentes"
+        },
+        {
+          "title": "Manual de Diagnóstico y Terapéutica Médica del Hospital Universitario 12 de Octubre, 9.ª ed., 2022, cap. 68, y PROA FJD 2023, citados en la nota local Pielonefritis Aguda",
+          "htmlLocation": "nefro-uro/itu-pielonefritis-y-prostatitis.html#fuentes"
+        }
+      ],
+      "nextReview": "Asignar responsable clínico. Actualización documental EAU y fusión con PROA ITU del 20/09/2026 registradas en tools/clinical-reviews/2026-09-20-eau-itu.md; no equivalen a validación clínica humana. Comprobar originales del contenido local conservado, antibiograma vigente y disponibilidad de fármacos."
     },
     {
       "id": "urologia-urgente",

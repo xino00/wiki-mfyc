@@ -8,6 +8,7 @@ const path = require("node:path");
 const { pathToFileURL } = require("node:url");
 const { chromium } = require("playwright");
 const catalog = require("../guide-catalog");
+const { walkSearchableHtml } = require("./pagefind_artifacts");
 
 const root = path.resolve(__dirname, "..");
 const deploymentPath = "/wiki-mfyc/";
@@ -487,7 +488,7 @@ async function checkCurrentNavigation(page, baseUrl) {
 }
 
 async function checkLibrary(page, baseUrl) {
-  const routes = walkHtml(root).map((file) => path.relative(root, file).split(path.sep).join("/"));
+  const routes = walkSearchableHtml(root).map((file) => path.relative(root, file).split(path.sep).join("/"));
   const failures = [];
   for (const width of [320, 900, 1440]) {
     await page.setViewportSize({ width, height: 900 });
@@ -552,6 +553,7 @@ async function checkLocalCatalog(browser) {
       ["gota", "hemato-reuma/monoartritis-y-gota.html"],
       ["epistaxis", "trauma-derma-orl/orl-frecuente.html"],
       ["plantilla planta", "guardias/planta.html"],
+      ["PROA ITU", "nefro-uro/itu-pielonefritis-y-prostatitis.html"],
     ]) {
       await page.goto(home);
       await page.locator(".site-bar [data-search-open]").click();
@@ -593,6 +595,48 @@ async function checkLocalCatalog(browser) {
   } finally {
     await page.close();
   }
+}
+
+async function checkMergedItu(browser, page, baseUrl) {
+  const previous = "infecciosas/proa-infecciones-del-tracto-urinario-itu.html";
+  const current = "nefro-uro/itu-pielonefritis-y-prostatitis.html";
+  const anchors = [
+    ["", ""], ["puerta", "triaje"], ["triaje-proa", "triaje"], ["cistitis", "cistitis"],
+    ["parenquima", "pna"], ["dispositivos", "dispositivos"], ["blee", "blee"],
+    ["resistencias", "resistencias"], ["fuentes", "fuentes"], ["%70arenquima", "pna"],
+    ["desconocida", "desconocida"], ["%E0%A4%A", "%E0%A4%A"],
+  ];
+  for (const mounted of [baseUrl, new URL(deploymentPath, baseUrl).href, pathToFileURL(`${root}${path.sep}`).href]) {
+    for (const [before, after] of anchors) {
+      await page.goto(new URL(`${previous}?origen=guardado${before ? `#${before}` : ""}`, mounted).href, { waitUntil: "domcontentloaded" });
+      await page.waitForURL(new URL(`${current}?origen=guardado${after ? `#${after}` : ""}`, mounted).href);
+      assert.equal(await page.locator("h1").textContent(), "ITU, pielonefritis y prostatitis");
+      if (after && !["desconocida", "%E0%A4%A"].includes(after)) {
+        await page.locator(`[id="${after}"]`).waitFor({ state: "visible" });
+      }
+    }
+  }
+  for (const mounted of [baseUrl, new URL(deploymentPath, baseUrl).href]) {
+    await page.goto(mounted, { waitUntil: "domcontentloaded" });
+    await page.locator(".site-bar [data-search-open]").click();
+    await searchFor(page, "PROA ITU");
+    assert.equal(await resultLink(page, current).count(), 1, "ITU debe tener un único resultado canónico");
+    assert.equal(await resultLink(page, previous).count(), 0, "La ficha retirada reaparece en el buscador");
+  }
+  const fallback = await browser.newPage({ javaScriptEnabled: false });
+  try {
+    for (const mounted of [baseUrl, pathToFileURL(`${root}${path.sep}`).href]) {
+      await fallback.goto(new URL(previous, mounted).href, { waitUntil: "domcontentloaded" });
+      const canonical = await fallback.locator('link[rel="canonical"]').getAttribute("href");
+      assert.ok(canonical.endsWith(`/${current}`), "La URL retirada conserva metadatos canónicos propios");
+      await fallback.locator("#parenquima").click();
+      await fallback.waitForURL(new URL(`${current}#pna`, mounted).href);
+      await fallback.locator("#pna").waitFor({ state: "visible" });
+    }
+  } finally {
+    await fallback.close();
+  }
+  console.log("OK: ITU unificada; redirección y ocho anclas antiguas en raíz/subruta/file://, fragmentos codificados, enlace sin JavaScript y búsqueda única.");
 }
 
 async function main() {
@@ -640,6 +684,7 @@ async function main() {
     await checkTemplateCopy(page, new URL(deploymentPath, baseUrl).href);
     await checkCollapsedAnchor(page, new URL(deploymentPath, baseUrl).href);
     await checkLocalCatalog(browser);
+    await checkMergedItu(browser, page, baseUrl);
     await checkLibrary(page, new URL(deploymentPath, baseUrl).href);
     assert.deepEqual(browserErrors, [], `Errores de página: ${browserErrors.join(" | ")}`);
     console.log(`OK: ${searchablePages.length} páginas, ${controllerCount} filtros locales; seis recorridos en raíz/subruta, 27 copias y copia denegada, anclas plegadas, Pagefind en escritorio/móvil, foco, scroll y recuperación de red probados en Chromium.`);

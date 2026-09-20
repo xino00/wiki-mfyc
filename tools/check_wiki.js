@@ -4,7 +4,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 const config = require("../site.config.json");
-const { checkHtmlTarget } = require("./site_links");
+const { checkHtmlTarget, guideRedirect } = require("./site_links");
 
 const root = path.resolve(__dirname, "..");
 const skippedDirectories = new Set([".git", ".github", "node_modules", "pagefind"]);
@@ -64,6 +64,19 @@ function checkStructure(file, html, failures) {
   ];
   for (const [expression, message] of rules) {
     if (!expression.test(html)) failures.push(`${name}: ${message}`);
+  }
+
+  const redirect = guideRedirect(html);
+  if (redirect) {
+    if (!/<meta name="robots" content="noindex, follow">/.test(html)) failures.push(`${name}: redirección sin noindex`);
+    if (/<article\b[^>]*class="[^"]*\barticle\b/.test(html)) failures.push(`${name}: una redirección no puede conservar un artículo`);
+    try {
+      const route = relative(path.resolve(path.dirname(file), redirect));
+      const target = checkHtmlTarget(root, route, `${name}: redirección`);
+      if (target.target === file || guideRedirect(target.html)) throw new Error(`${name}: redirección circular o encadenada`);
+    } catch (error) {
+      failures.push(error.message);
+    }
   }
 
   const exactCounts = [
@@ -144,8 +157,9 @@ function main() {
   checkLinks(htmlFiles, failures);
 
   if (failures.length) throw new Error(failures.join("\n"));
-  const articleCount = htmlFiles.filter((file) => path.basename(file) !== "index.html").length;
-  console.log(`OK: ${htmlFiles.length} HTML, ${articleCount} artículos, estructura y enlaces locales válidos.`);
+  const articleCount = htmlFiles.filter((file) => /<article\b[^>]*class="[^"]*\barticle\b/.test(fs.readFileSync(file, "utf8"))).length;
+  const redirectCount = htmlFiles.filter((file) => guideRedirect(fs.readFileSync(file, "utf8"))).length;
+  console.log(`OK: ${htmlFiles.length} HTML, ${articleCount} artículos, ${redirectCount} redirecciones; estructura y enlaces locales válidos.`);
 }
 
 try {
