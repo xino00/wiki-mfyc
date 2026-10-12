@@ -1,7 +1,55 @@
 {
   "schema": 1,
-  "scope": "Mantenimiento de las 102 guías y plantillas. Las referencias se observan en el HTML publicado; este registro no acredita revisión clínica ni consulta de los originales. pendiente_identificar señala que falta vincular fuentes autorizadas, sin afirmar su ausencia en el contenido.",
+  "scope": "Mantenimiento de las 103 guías y plantillas. Las referencias se observan en el HTML publicado; este registro no acredita revisión clínica ni consulta de los originales. pendiente_identificar señala que falta vincular fuentes autorizadas, sin afirmar su ausencia en el contenido.",
   "records": [
+    {
+      "id": "meningitis-bacteriana-aguda",
+      "href": "infecciosas/meningitis-bacteriana-aguda.html",
+      "owner": null,
+      "clinicalReview": "pendiente_revision",
+      "lastClinicalReview": null,
+      "sourceStatus": "identificadas_en_html",
+      "authorizedSource": {
+        "filename": "Meningitis_bacteriana_aguda_0.6.docx",
+        "location": "SNC_infecciosas/entregables (fuera del checkout público)",
+        "sha256": "3b61c5dbd98bf7f44169207cec9957047d6f95f20740b358bd5146988751c772",
+        "scope": "Única fuente autorizada: cuerpo final del Word; comentarios usados para detectar problemas, sin aplicar automáticamente sus propuestas."
+      },
+      "documentaryReviewEvidence": "tools/clinical-reviews/2026-10-12-meningitis-word-06.md",
+      "sourcesObserved": [
+        {
+          "title": "SEN. Infecciones bacterianas. Manual del residente de neurología, 2025, pp. 619–31; referencia citada por el Word 0.6",
+          "htmlLocation": "infecciosas/meningitis-bacteriana-aguda.html#referencias"
+        },
+        {
+          "title": "SEN. Infecciones víricas. Manual del residente de neurología, 2025, pp. 643–57; referencia citada por el Word 0.6",
+          "htmlLocation": "infecciosas/meningitis-bacteriana-aguda.html#referencias"
+        },
+        {
+          "title": "Mensa y Soriano. Guía de terapéutica antimicrobiana 2026, 36.ª ed.; referencia citada por el Word 0.6",
+          "htmlLocation": "infecciosas/meningitis-bacteriana-aguda.html#referencias"
+        },
+        {
+          "title": "ESCMID guideline: diagnosis and treatment of acute bacterial meningitis, 2016; referencia citada por el Word 0.6",
+          "htmlLocation": "infecciosas/meningitis-bacteriana-aguda.html#referencias"
+        },
+        {
+          "title": "NICE NG240, 2024; referencia citada por el Word 0.6",
+          "url": "https://www.nice.org.uk/guidance/ng240",
+          "htmlLocation": "infecciosas/meningitis-bacteriana-aguda.html#referencias"
+        },
+        {
+          "title": "SEMES. Manejo de infecciones en urgencias, 2012, pp. 145–57; referencia citada por el Word 0.6",
+          "htmlLocation": "infecciosas/meningitis-bacteriana-aguda.html#referencias"
+        },
+        {
+          "title": "Hasbun. Initial therapy and prognosis of community-acquired bacterial meningitis in adults. UpToDate, actualizado 24/07/2025; referencia citada por el Word 0.6",
+          "url": "https://www.uptodate.com/contents/initial-therapy-and-prognosis-of-community-acquired-bacterial-meningitis-in-adults",
+          "htmlLocation": "infecciosas/meningitis-bacteriana-aguda.html#referencias"
+        }
+      ],
+      "nextReview": "Asignar responsable clínico. El cotejo documental con el Word 0.6 y su pasada adversarial no acreditan revisión humana, nueva comprobación de los originales citados ni vigencia. Conservar las ambigüedades sobre dosis, vías y límites descritas en la evidencia; resistencias FJD proceden de informes internos de 2024."
+    },
     {
       "id": "dolor-toracico",
       "href": "urgencias/dolor-toracico.html",

@@ -867,6 +867,24 @@ var GUIDE_CATALOG = [
     related: ["bacteriemia-y-candidemia", "sepsis-abordaje-inicial-ssc-2026", "neutropenia-febril-nf", "osteomielitis-y-artritis-septica"]
   },
   {
+    id: "meningitis-bacteriana-aguda",
+    title: "Meningitis bacteriana aguda del adulto",
+    href: "infecciosas/meningitis-bacteriana-aguda.html",
+    context: "Urgencias",
+    kind: "Valoración inicial",
+    aliases: ["meningitis", "MBA", "meningitis bacteriana", "infección del SNC", "SNC", "punción lumbar", "LCR"],
+    searchPriority: 30,
+    tasks: [
+      { label: "Valorar la sospecha clínica", href: "infecciosas/meningitis-bacteriana-aguda.html#sospecha" },
+      { label: "Decidir TC y punción lumbar", href: "infecciosas/meningitis-bacteriana-aguda.html#tc-y-puncion-lumbar" },
+      { label: "Iniciar tratamiento empírico", href: "infecciosas/meningitis-bacteriana-aguda.html#tratamiento-empirico" },
+      { label: "Interpretar el LCR", href: "infecciosas/meningitis-bacteriana-aguda.html#pruebas-y-lcr" },
+      { label: "Ajustar tratamiento y duración", href: "infecciosas/meningitis-bacteriana-aguda.html#tratamiento-dirigido" },
+      { label: "Revisar profilaxis y seguimiento", href: "infecciosas/meningitis-bacteriana-aguda.html#profilaxis-y-seguimiento" }
+    ],
+    related: ["infeccion-snc-y-mielopatias", "sepsis-abordaje-inicial-ssc-2026", "proa-guia-de-antimicrobianos-y-sindromes-infecciosos"]
+  },
+  {
     id: "neutropenia-febril-nf",
     title: "Neutropenia Febril (NF)",
     href: "infecciosas/neutropenia-febril-nf.html",
@@ -1417,7 +1435,7 @@ var GUIDE_CATALOG = [
       { label: "Hipertensión intracraneal", href: "neuro/infeccion-snc-y-mielopatias.html#htic" },
       { label: "Revisar la orden inicial", href: "neuro/infeccion-snc-y-mielopatias.html#tratamiento" }
     ],
-    related: ["coma-y-confusion", "crisis-y-neuromuscular", "esclerosis-multiple-y-sincope"]
+    related: ["meningitis-bacteriana-aguda", "coma-y-confusion", "crisis-y-neuromuscular", "esclerosis-multiple-y-sincope"]
   },
   {
     id: "tce",
